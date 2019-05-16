@@ -1,0 +1,28 @@
+<!-- Most valid html will work in here, excluding images. -->
+
+<h1>Welcome to the Imperial Space Station Tide !</h1>
+
+These are the glorious days<br> 
+of the Empire. Although the <br>
+Death Star has been destroyed,<br>
+Imperial troops have driven<br>
+the Syndicate forces from their <br>
+hidden base and pursued them <br>
+across the galaxy. <br><br>
+
+On the Imperial Space Station<br> 
+Tide meanwhile, Imperial Law<br>
+is strictly enforced. Its <br>
+personnel works tirelessly <br>
+together to ensure the might<br>
+and prosperity of the Empire.<br><br>
+
+Lately though, rumours have <br>
+reached the ears of the command <br>
+staff that the cowardly rebels <br>
+are planning to infiltrate the<br>
+station and hinder the Empires<br>
+quest for rightful domination.<br><br>
+
+Are any of these rumours true?<br><br>
+Time will tell...

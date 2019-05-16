@@ -1,0 +1,11 @@
+{
+    "map_name": "Purge",
+    "map_path": "map_files/IPB Purge",
+    "map_file": "Purge.dmm",
+    "shuttles": {
+	    "cargo": "cargo_box",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_box"
+    }
+}

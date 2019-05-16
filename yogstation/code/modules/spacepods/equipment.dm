@@ -1,6 +1,6 @@
 /obj/item/spacepod_equipment
 	var/obj/spacepod/spacepod
-	icon = 'yogstation/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/YOG/parts.dmi'
 	var/slot = SPACEPOD_SLOT_MISC
 	var/slot_space = 1
 
@@ -192,7 +192,7 @@
 	projectile_type = /obj/item/projectile/beam/disabler
 	shot_cost = 400
 	fire_sound = 'sound/weapons/taser2.ogg'
-	overlay_icon = 'yogstation/icons/obj/spacepods/2x2.dmi'
+	overlay_icon = 'icons/starwars/YOG/2x2.dmi'
 	overlay_icon_state = "pod_weapon_disabler"
 
 /obj/item/spacepod_equipment/weaponry/burst_disabler
@@ -204,7 +204,7 @@
 	shots_per = 3
 	fire_sound = 'sound/weapons/taser2.ogg'
 	fire_delay = 30
-	overlay_icon = 'yogstation/icons/obj/spacepods/2x2.dmi'
+	overlay_icon = 'icons/starwars/YOG/2x2.dmi'
 	overlay_icon_state = "pod_weapon_disabler"
 
 /obj/item/spacepod_equipment/weaponry/laser
@@ -214,14 +214,14 @@
 	projectile_type = /obj/item/projectile/beam
 	shot_cost = 600
 	fire_sound = 'sound/weapons/Laser.ogg'
-	overlay_icon = 'yogstation/icons/obj/spacepods/2x2.dmi'
+	overlay_icon = 'icons/starwars/YOG/2x2.dmi'
 	overlay_icon_state = "pod_weapon_laser"
 
 // MINING LASERS
 /obj/item/spacepod_equipment/weaponry/basic_pod_ka
 	name = "weak kinetic accelerator"
 	desc = "A weak kinetic accelerator for space pods, fires bursts of energy that cut through rock."
-	icon = 'yogstation/goon/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_taser"
 	projectile_type = /obj/item/projectile/kinetic/pod
 	shot_cost = 300
@@ -231,7 +231,7 @@
 /obj/item/spacepod_equipment/weaponry/pod_ka
 	name = "kinetic accelerator system"
 	desc = "A kinetic accelerator system for space pods, fires bursts of energy that cut through rock."
-	icon = 'yogstation/goon/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_m_laser"
 	projectile_type = /obj/item/projectile/kinetic/pod/regular
 	shot_cost = 250
@@ -248,13 +248,13 @@
 /obj/item/spacepod_equipment/weaponry/plasma_cutter
 	name = "plasma cutter system"
 	desc = "A plasma cutter system for space pods. It is capable of expelling concentrated plasma bursts to mine or cut off xeno limbs!"
-	icon = 'yogstation/goon/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_p_cutter"
 	projectile_type = /obj/item/projectile/plasma
 	shot_cost = 250
 	fire_delay = 10
 	fire_sound = 'sound/weapons/plasma_cutter.ogg'
-	overlay_icon = 'yogstation/icons/obj/spacepods/2x2.dmi'
+	overlay_icon = 'icons/starwars/YOG/2x2.dmi'
 	overlay_icon_state = "pod_weapon_plasma"
 
 /obj/item/spacepod_equipment/weaponry/plasma_cutter/adv
@@ -274,7 +274,7 @@
 /obj/item/spacepod_equipment/tracker
 	name = "spacepod tracking system"
 	desc = "A tracking device for spacepods."
-	icon = 'yogstation/goon/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_locator"
 
 /*
@@ -347,7 +347,7 @@
 /obj/item/spacepod_key
 	name = "spacepod key"
 	desc = "A key for a spacepod lock."
-	icon = 'yogstation/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/YOG/parts.dmi'
 	icon_state = "podkey"
 	w_class = WEIGHT_CLASS_TINY
 	var/id = null
@@ -360,7 +360,7 @@
 /obj/item/device/lock_buster
 	name = "pod lock buster"
 	desc = "Destroys a podlock in mere seconds once applied. Waranty void if used."
-	icon = 'yogstation/icons/obj/spacepods/parts.dmi'
+	icon = 'icons/starwars/YOG/parts.dmi'
 	icon_state = "lock_buster_off"
 	var/on = FALSE
 

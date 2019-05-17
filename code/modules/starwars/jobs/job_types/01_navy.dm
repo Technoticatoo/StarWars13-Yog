@@ -73,7 +73,7 @@ Lieutenant
 	title = "Lieutenant"
 	flag = HOP
 	department_head = list("Captain")
-	department_flag = CIVILIAN
+	department_flag = ENGSEC
 	head_announce = list(RADIO_CHANNEL_SUPPLY, RADIO_CHANNEL_SERVICE)
 	faction = "Station"
 	total_positions = 1

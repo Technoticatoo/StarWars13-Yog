@@ -5,7 +5,7 @@ Quartermaster
 	title = "Quartermaster"
 	flag = QUARTERMASTER
 	department_head = list("Lieutenant")
-	department_flag = ENGSEC
+	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
@@ -72,7 +72,7 @@ Cargo Technician
 	title = "Cargo Technician"
 	flag = CARGOTECH
 	department_head = list("Quartermaster")
-	department_flag = ENGSEC
+	department_flag = CIVILIAN
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1

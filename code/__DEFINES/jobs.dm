@@ -23,6 +23,7 @@
 #define SITH			(1<<17)
 #define REQOFF			(1<<18)
 #define AWAYLEAD		(1<<19)
+#define HOP				(1<<20)
 
 #define MEDSCI			(1<<1)
 
@@ -41,21 +42,20 @@
 
 #define CIVILIAN		(1<<2)
 
-#define HOP				(1<<0)
-#define BARTENDER		(1<<1)
-//#define BOTANIST		(1<<2)
-#define COOK			(1<<3)
-#define JANITOR			(1<<4)
+#define BARTENDER		(1<<0)
+//#define BOTANIST		(1<<1)
+#define COOK			(1<<1)
+#define JANITOR			(1<<2)
 //#define CURATOR			(1<<5)
-#define QUARTERMASTER	(1<<5)
-#define CARGOTECH		(1<<6)
-#define MINER			(1<<7)
+#define QUARTERMASTER	(1<<3)
+#define CARGOTECH		(1<<4)
+#define MINER			(1<<5)
 //#define LAWYER			(1<<9)
-#define CHAPLAIN		(1<<8)
+#define CHAPLAIN		(1<<6)
 //#define CLOWN			(1<<11)
 //#define MIME			(1<<12)
-#define ASSISTANT		(1<<9)
-#define PRISONER		(1<<10)
+#define ASSISTANT		(1<<7)
+#define PRISONER		(1<<8)
 
 
 #define JOB_AVAILABLE 0

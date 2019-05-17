@@ -70,7 +70,7 @@ Sith Acolyte
 */
 /datum/job/chaplain
 	title = "Sith Acolyte"
-	flag = ENGSEC
+	flag = CHAPLAIN
 	department_head = list("Sith")
 	department_flag = CIVILIAN
 	faction = "Station"

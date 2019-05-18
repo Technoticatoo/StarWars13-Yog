@@ -1,6 +1,7 @@
 /datum/game_mode
 	var/traitor_name = "traitor"
 	var/list/datum/mind/traitors = list()
+	var/list/datum/mind/rebels = list()
 
 	var/datum/mind/exchange_red
 	var/datum/mind/exchange_blue

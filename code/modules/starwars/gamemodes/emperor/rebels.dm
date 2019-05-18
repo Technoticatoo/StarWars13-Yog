@@ -12,7 +12,7 @@
 	reroll_friendly = 1
 	enemy_minimum_age = 0
 	var/rebel_name = "rebel"
-	var/list/datum/mind/rebels = list()
+	//var/list/datum/mind/rebels = list()
 
 	announce_span = "danger"
 	announce_text = "There are rebel agents on the station!\n\

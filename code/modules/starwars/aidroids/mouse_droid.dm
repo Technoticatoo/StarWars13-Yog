@@ -3,7 +3,7 @@
 	name = "\improper Mouse droid"
 	desc = "A little cleaning robot, he looks so excited!"
 	icon = 'icons/mob/aibots.dmi'
-	icon_state = "mousedroid0"
+	icon_state = "cleanbot0"
 	density = FALSE
 	anchored = FALSE
 	health = 25
@@ -179,10 +179,10 @@
 		/obj/effect/decal/cleanable/robot_debris,
 		/obj/effect/decal/cleanable/crayon,
 		/obj/effect/decal/cleanable/molten_object,
-		///obj/effect/decal/cleanable/tomato_smudge,
-		///obj/effect/decal/cleanable/egg_smudge,
-		///obj/effect/decal/cleanable/pie_smudge,
-		///obj/effect/decal/cleanable/flour,
+		/obj/effect/decal/cleanable/tomato_smudge,
+		/obj/effect/decal/cleanable/egg_smudge,
+		/obj/effect/decal/cleanable/pie_smudge,
+		/obj/effect/decal/cleanable/flour,
 		/obj/effect/decal/cleanable/ash,
 		/obj/effect/decal/cleanable/greenglow,
 		/obj/effect/decal/cleanable/dirt,

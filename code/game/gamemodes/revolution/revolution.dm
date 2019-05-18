@@ -13,7 +13,7 @@
 	report_type = "revolution"
 	antag_flag = ROLE_REV
 	false_report_weight = 10
-	restricted_jobs = list("Security Officer", "Warden", "Detective", "AI", "Cyborg","Captain", "Head of Personnel", "Head of Security", "Chief Engineer", "Research Director", "Chief Medical Officer")
+	restricted_jobs = list("AI", "Cyborg","Captain", "Head of Personnel", "Alpha Squad Sergeant", "Bravo Squad Sergeant", "Alpha Squad Stormtrooper", "Bravo Squad Stormtrooper", "Warden", "Head Engineer", "Research Director", "Chief Medical Officer", "Coalition Administrative Officer")
 	required_players = 30
 	required_enemies = 2
 	recommended_enemies = 3

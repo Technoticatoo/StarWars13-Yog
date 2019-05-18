@@ -144,7 +144,7 @@
 
 	var/datum/objective/assassinate/kill_objective = new
 	kill_objective.owner = owner
-	kill_objective.find_target_by_role("rebel")
+	kill_objective.find_target_by_role("Emperor")
 	add_objective(kill_objective)
 
 	/*if(prob(50))

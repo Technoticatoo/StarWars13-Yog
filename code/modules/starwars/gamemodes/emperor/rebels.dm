@@ -6,7 +6,7 @@
 	false_report_weight = 20 //Reports of rebels are pretty common.
 	restricted_jobs = list("Cyborg")//They are part of the AI if he is rebel so are they, they use to get double chances
 	protected_jobs = list("Alpha Squad Sergeant", "Bravo Squad Sergeant", "Alpha Squad Stormtrooper", "Bravo Squad Stormtrooper", "Warden", "Detective", "Captain of the Guard", "Captain", "Lieutenant", "Sith", "Enperor") //YOGS -  added the hop
-	required_players = 0
+	required_players = 1
 	required_enemies = 1
 	recommended_enemies = 4
 	reroll_friendly = 1
@@ -16,7 +16,7 @@
 
 	announce_span = "danger"
 	announce_text = "There are rebel agents on the station!\n\
-	<span class='danger'>Traitors</span>: Accomplish your objectives.\n\
+	<span class='danger'>Rebels</span>: Accomplish your objectives.\n\
 	<span class='notice'>Crew</span>: Do not let the traitors succeed!"
 
 	var/list/datum/mind/pre_rebels = list()

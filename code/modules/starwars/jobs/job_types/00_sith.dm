@@ -1,15 +1,16 @@
 /datum/job/emperor/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
-    ..()
-    if (visualsOnly)
-        return
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
-	H.mind..AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
-	H.mind..AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
-	H.mind..AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
-	H.mind..AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
+	..()
+	if (visualsOnly)
+		return
+
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
 
 /datum/job/emperor
 	title = "Emperor"
@@ -67,7 +68,7 @@
 
 /datum/job/emperor/announce(mob/living/carbon/human/H)
 	..()
-	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, The Emperor, [H.real_name] on deck, tremble in fear, and perish before him, you who disobey him!"))
+	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "The Emperor, [H.real_name] on deck, tremble in fear, and perish before him, you who disobey him!"))
 
 /datum/job/sith/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
     ..()

@@ -40,7 +40,7 @@
 #define ROLE_VAMPIRE			"Vampire" // Yogs
 #define ROLE_BATTLEROYALE		"Battle Royale Contestant" //Yogs - Battle Royale Mode
 #define ROLE_GANG				"gangster" // Yogs
-#define ROLE_EMPEROR				"emperor"
+#define ROLE_REBEL				"REBEL"
 
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
 //The gamemode specific ones are just so the gamemodes can query whether a player is old enough
@@ -58,7 +58,7 @@ GLOBAL_LIST_INIT(special_roles, list(
 	ROLE_CULTIST = /datum/game_mode/cult,
 	ROLE_BLOB,
 	ROLE_NINJA,
-	ROLE_EMPEROR = /datum/game_mode/traitor/emperor,
+	ROLE_REBEL = /datum/game_mode/rebel,
 	ROLE_OBSESSED,
 	ROLE_MONKEY = /datum/game_mode/monkey,
 	ROLE_REVENANT,

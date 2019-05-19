@@ -2646,6 +2646,7 @@
 #include "code\modules\spells\spell_types\turf_teleport.dm"
 #include "code\modules\spells\spell_types\voice_of_god.dm"
 #include "code\modules\spells\spell_types\wizard.dm"
+#include "code\modules\starwars\emperor_whitelist.dm"
 #include "code\modules\starwars\hardsuit_storage.dm"
 #include "code\modules\starwars\spawnpoints.dm"
 #include "code\modules\starwars\vending.dm"

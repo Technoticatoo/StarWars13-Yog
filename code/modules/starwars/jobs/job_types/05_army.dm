@@ -101,7 +101,7 @@ Alpha Squad Sergeant
 	return L
 
 /datum/outfit/job/asergeant
-	name = "Alpha Squad Sergeant Sergeant"
+	name = "Alpha Squad Sergeant"
 	jobtype = /datum/job/asergeant
 
 	belt = /obj/item/pda/warden
@@ -235,7 +235,7 @@ Alpha Squad Stormtrooper
 
 
 /datum/outfit/job/atrooper
-	name = "Alpjha Squad Stormtrooper"
+	name = "Alpha Squad Stormtrooper"
 	jobtype = /datum/job/atrooper
 
 	belt = /obj/item/pda/security
@@ -294,7 +294,7 @@ Bravo Squad Sergeant
 	return L
 
 /datum/outfit/job/bsergeant
-	name = "Bravo Squad Sergeant Sergeant"
+	name = "Bravo Squad Sergeant"
 	jobtype = /datum/job/bsergeant
 
 	belt = /obj/item/pda/warden

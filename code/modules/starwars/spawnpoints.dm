@@ -12,7 +12,7 @@
 	icon_state = "cotg"
 
 /obj/effect/landmark/start/imperial/asergeant
-	name = "Alpha Squad Stormtrooper Sergeant"
+	name = "Alpha Squad Sergeant"
 	icon_state = "asergeant"
 
 /obj/effect/landmark/start/imperial/atrooper
@@ -20,7 +20,7 @@
 	icon_state = "atrooper"
 
 /obj/effect/landmark/start/imperial/bsergeant
-	name = "Bravo Squad Stormtrooper Sergeant"
+	name = "Bravo Squad Sergeant"
 	icon_state = "bsergeant"
 
 /obj/effect/landmark/start/imperial/btrooper

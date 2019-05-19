@@ -774,7 +774,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			lastJob = job
 
 			if(!check_emperorwhitelist(user.ckey) && rank == "Emperor")
-				HTML += "<font color=white>[rank]</font></td><td>{Whitelisted]</td></tr>"
+				HTML += "<font color=white>[rank]</font></td><td>|Whitelisted|</td></tr>"
 				continue
 			if(is_banned_from(user.ckey, rank))
 				HTML += "<font color=red>[rank]</font></td><td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"

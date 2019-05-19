@@ -1,4 +1,5 @@
 GLOBAL_LIST_INIT(command_positions, list(
+	"Emperor",
 	"Captain",
 	"Sith",
 	"Warden",

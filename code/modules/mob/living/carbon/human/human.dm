@@ -1077,3 +1077,15 @@
 
 /mob/living/carbon/human/species/zombie/krokodil_addict
 	race = /datum/species/krokodil_addict
+
+/mob/living/carbon/human/species/wookie
+	race = /datum/species/wookie
+
+/mob/living/carbon/human/species/twilek
+	race = /datum/species/twilek
+
+/mob/living/carbon/human/species/rodian
+	race = /datum/species/rodian
+
+/mob/living/carbon/human/species/zabrak
+	race = /datum/species/zabrak

@@ -5,8 +5,8 @@
 	//Zabrak
 	name = "Zabrak"
 	id = "zabrak"
-	ignored_by = list(/mob/living/simple_animal/hostile/faithless)
-	meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/shadow
+	//ignored_by = list(/mob/living/simple_animal/hostile/faithless)
+	//meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/shadow
 	species_traits = list(MUTCOLORS,EYECOLOR)
 	default_features = list("mcolor" = "853", "wings" = "None")
 

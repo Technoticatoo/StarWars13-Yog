@@ -76,3 +76,8 @@ purge areas
 /area/purge/sec/prison_hall_central
 	name = "Prison Hall Central"
 	icon_state = "captain"
+
+//purge med
+/area/purge/med/check
+	name = "Medical Checkpoint"
+	icon_state = "med_check"

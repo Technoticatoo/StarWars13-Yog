@@ -5,7 +5,7 @@
 	//ignored_by = list(/mob/living/simple_animal/hostile/faithless)
 	//meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/shadow
 	default_color = "FFFFFF"
-	species_traits = list(EYECOLOR,FACEHAIR,LIPS,MUTCOLORS)
+	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,MUTCOLORS)
 	default_features = list("mcolor" = "FFF", "wings" = "None")
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = GROSS | RAW

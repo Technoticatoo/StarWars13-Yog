@@ -490,7 +490,7 @@
 
 /datum/sprite_accessory/hair/shavedmohawk
 	name = "Mohawk (Unshaven)"
-	icon_state = "hair_unshavenmohawk"
+	icon_state = "hair_unshaven_mohawk"
 
 /datum/sprite_accessory/hair/mulder
 	name = "Mulder"

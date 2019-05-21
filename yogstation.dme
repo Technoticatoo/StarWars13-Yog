@@ -2674,6 +2674,7 @@
 #include "code\modules\starwars\jobs\job_types\09_silicon.dm"
 #include "code\modules\starwars\jobs\job_types\10_assistant.dm"
 #include "code\modules\starwars\jobs\job_types\11_prisoner.dm"
+#include "code\modules\starwars\species\bothan.dm"
 #include "code\modules\starwars\species\rodian.dm"
 #include "code\modules\starwars\species\twilek.dm"
 #include "code\modules\starwars\species\wookie.dm"

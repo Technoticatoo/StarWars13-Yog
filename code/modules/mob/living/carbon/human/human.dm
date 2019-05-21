@@ -1089,3 +1089,6 @@
 
 /mob/living/carbon/human/species/zabrak
 	race = /datum/species/zabrak
+
+/mob/living/carbon/human/species/bothan
+	race = /datum/species/bothan

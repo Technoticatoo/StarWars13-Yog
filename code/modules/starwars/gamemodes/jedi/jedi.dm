@@ -6,7 +6,7 @@
 	config_tag = "jedi"
 	antag_flag = ROLE_JEDI
 	false_report_weight = 10
-	required_players = 20
+	required_players = 1
 	required_enemies = 1
 	recommended_enemies = 1
 	enemy_minimum_age = 14

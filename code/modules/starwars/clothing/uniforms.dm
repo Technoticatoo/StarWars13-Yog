@@ -107,3 +107,11 @@
 	name = "Jedi's Robes"
 	desc = "The modestly brown robes of a Jedi Knight."
 	icon_state = "jedi"
+
+/obj/item/clothing/under/color/jedi
+	alternate_worn_icon = 'icons/starwars/clothing/uniform_mob.dmi'
+	icon = 'icons/starwars/clothing/uniform_obj.dmi'
+	name = "jedi clothes"
+	icon_state = "jedi"
+	item_state = "jedi"
+	item_color = "jedi"

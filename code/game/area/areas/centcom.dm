@@ -109,6 +109,16 @@
 	noteleport = TRUE
 	flags_1 = NONE
 
+//Jedi
+/area/jedi_station
+	name = "Jedi's Temple"
+	icon_state = "yellow"
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	requires_power = FALSE
+	has_gravity = STANDARD_GRAVITY
+	noteleport = TRUE
+	flags_1 = NONE
+
 //Abductors
 /area/abductor_ship
 	name = "Abductor Ship"

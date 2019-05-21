@@ -440,3 +440,13 @@
 			animate(src, alpha = 0, transform = skew, time = duration)
 	else
 		return INITIALIZE_HINT_QDEL
+
+/obj/effect/temp_visual/jedi
+	name = "water"
+	icon = 'icons/mob/mob.dmi'
+	icon_state = "reappear"
+	duration = 5
+
+/obj/effect/temp_visual/jedi/out
+	icon_state = "liquify"
+	duration = 12

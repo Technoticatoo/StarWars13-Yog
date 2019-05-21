@@ -16,7 +16,8 @@
 									//By setting this to 0 you can effectively disable an event.
 
 	var/holidayID = ""				//string which should be in the SSeventss.holidays list if you wish this event to be holiday-specific
-									//anything with a (non-null) holidayID which does not match holiday, cannot run.
+
+	var/jedievent = FALSE								//anything with a (non-null) holidayID which does not match holiday, cannot run.
 	var/wizardevent = FALSE
 	var/random = FALSE				//If the event has occured randomly, or if it was forced by an admin or in-game occurance
 	var/alert_observers = TRUE		//should we let the ghosts and admins know this event is firing
@@ -35,6 +36,9 @@
 /datum/round_event_control/wizard
 	wizardevent = TRUE
 
+/datum/round_event_control/jedi
+	jedievent = TRUE
+
 // Checks if the event can be spawned. Used by event controller and "false alarm" event.
 // Admin-created events override this.
 /datum/round_event_control/proc/canSpawnEvent(var/players_amt, var/gamemode)
@@ -43,6 +47,8 @@
 	if(earliest_start >= world.time-SSticker.round_start_time)
 		return FALSE
 	if(wizardevent != SSevents.wizardmode)
+		return FALSE
+	if(jedievent != SSevents.jedimode)
 		return FALSE
 	if(players_amt < min_players)
 		return FALSE

@@ -306,3 +306,5 @@
 #define SLIME_EXTRACT (1<<5)
 //Wabbacjack staff projectiles
 #define WABBAJACK     (1<<6)
+
+#define JEDI_AGE_MIN		30	//youngest a jedi can be

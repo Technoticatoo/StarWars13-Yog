@@ -155,7 +155,8 @@
 		/area/tdome,
 		/area/wizard_station,
 		/area/hilbertshotel,
-		/area/hilbertshotelstorage
+		/area/hilbertshotelstorage,
+		/area/jedi_station
 	)
 	for (var/type in SPECIALS)
 		if ( istype(A,type) )

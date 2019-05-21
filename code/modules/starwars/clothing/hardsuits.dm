@@ -93,3 +93,32 @@
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/sith
 	jetpack = /obj/item/tank/jetpack/suit
 
+
+/obj/item/clothing/head/helmet/space/hardsuit/jedi
+	name = "gem-encrusted hardsuit helmet"
+	desc = "A bizarre gem-encrusted helmet that radiates magical energies."
+	icon_state = "hardsuit0-wiz"
+	item_state = "wiz_helm"
+	item_color = "wiz"
+	resistance_flags = FIRE_PROOF | ACID_PROOF //No longer shall our kind be foiled by lone chemists with spray bottles!
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	heat_protection = HEAD												//Uncomment to enable firesuit protection
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+
+/obj/item/clothing/suit/space/hardsuit/jedi
+	icon_state = "hardsuit-wiz"
+	name = "gem-encrusted hardsuit"
+	desc = "A bizarre gem-encrusted suit that radiates magical energies."
+	item_state = "wiz_hardsuit"
+	w_class = WEIGHT_CLASS_NORMAL
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 20, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 100, "acid" = 100)
+	allowed = list(/obj/item/teleportation_scroll, /obj/item/tank/internals)
+	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS					//Uncomment to enable firesuit protection
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/jedi
+
+/obj/item/clothing/suit/space/hardsuit/jedi/Initialize()
+	. = ..()
+	AddComponent(/datum/component/anti_magic, TRUE, FALSE)
+

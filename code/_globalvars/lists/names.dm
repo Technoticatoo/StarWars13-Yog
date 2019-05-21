@@ -1,4 +1,6 @@
 GLOBAL_LIST_INIT(ai_names, world.file2list("strings/names/ai.txt"))
+GLOBAL_LIST_INIT(jedi_first, world.file2list("strings/names/jedifirst.txt"))
+GLOBAL_LIST_INIT(jedi_second, world.file2list("strings/names/jedisecond.txt"))
 GLOBAL_LIST_INIT(wizard_first, world.file2list("strings/names/wizardfirst.txt"))
 GLOBAL_LIST_INIT(wizard_second, world.file2list("strings/names/wizardsecond.txt"))
 GLOBAL_LIST_INIT(ninja_titles, world.file2list("strings/names/ninjatitle.txt"))

@@ -323,6 +323,9 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 			if("revolution")
 				if(is_revolutionary(M))
 					return 2
+			if("jedi")
+				if(isjedi(M))
+					return 2
 			if("cult")
 				if(M.mind in SSticker.mode.cult)
 					return 2

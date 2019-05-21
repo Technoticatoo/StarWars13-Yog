@@ -20,6 +20,7 @@ GLOBAL_LIST_EMPTY(generic_event_spawns)			//handles clockwork portal+eminence te
 GLOBAL_LIST_EMPTY(jobspawn_overrides)			//These will take precedence over normal spawnpoints if created.
 GLOBAL_LIST_EMPTY(stationroom_landmarks)		//yogs - list of all spawns for stationrooms
 
+GLOBAL_LIST_EMPTY(jedistart)
 GLOBAL_LIST_EMPTY(wizardstart)
 GLOBAL_LIST_EMPTY(nukeop_start)
 GLOBAL_LIST_EMPTY(nukeop_leader_start)

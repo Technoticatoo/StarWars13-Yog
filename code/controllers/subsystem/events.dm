@@ -13,6 +13,7 @@ SUBSYSTEM_DEF(events)
 
 	var/list/holidays			//List of all holidays occuring today or null if no holidays
 	var/wizardmode = FALSE
+	var/jedimode = FALSE
 
 /datum/controller/subsystem/events/Initialize(time, zlevel)
 	for(var/type in typesof(/datum/round_event_control))
@@ -118,6 +119,8 @@ SUBSYSTEM_DEF(events)
 			holiday	+= dat
 		else if(E.wizardevent)
 			magic 	+= dat
+		else if(E.jedievent)
+			magic 	+= dat
 		else
 			normal 	+= dat
 
@@ -181,6 +184,10 @@ SUBSYSTEM_DEF(events)
 	message_admins("Summon Events has been [wizardmode ? "enabled, events will occur every [SSevents.frequency_lower / 600] to [SSevents.frequency_upper / 600] minutes" : "disabled"]!")
 	log_game("Summon Events was [wizardmode ? "enabled" : "disabled"]!")
 
+/datum/controller/subsystem/events/proc/toggleJedimode()
+	jedimode = !jedimode
+	message_admins("Summon Events has been [jedimode ? "enabled, events will occur every [SSevents.frequency_lower / 600] to [SSevents.frequency_upper / 600] minutes" : "disabled"]!")
+	log_game("Summon Events was [jedimode ? "enabled" : "disabled"]!")
 
 /datum/controller/subsystem/events/proc/resetFrequency()
 	frequency_lower = initial(frequency_lower)

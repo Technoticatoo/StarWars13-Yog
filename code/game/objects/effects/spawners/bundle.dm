@@ -168,3 +168,11 @@
 	items = list(
 		/obj/item/clothing/mask/gas/sexymime,
 		/obj/item/clothing/under/sexymime)
+
+/obj/effect/spawner/bundle/costume/jedi
+	name = "jedi costume spawner"
+	items = list(
+		/obj/item/clothing/shoes/sandal,
+		/obj/item/clothing/suit/wizrobe/fake,
+		/obj/item/clothing/head/jedi/fake,
+		/obj/item/staff)

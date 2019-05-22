@@ -3,7 +3,7 @@
 	desc = "Slow your target to a crawl!."
 	clothes_req = FALSE
 	invocation = "Force Slow"
-	invocation_type = "emote"
+	invocation_type = "shout"
 	cooldown_min = 50 //12 deciseconds reduction per rank
 	charge_max = 100
 	var/amt_knockdown = 0

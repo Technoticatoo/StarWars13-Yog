@@ -8,10 +8,10 @@
 	var/strip = TRUE //strip before equipping
 	var/allow_rename = TRUE
 	var/hud_version = "jedi"
-	var/datum/team/jedi/wiz_team //Only created if jedi summons apprentices
+	var/datum/team/jedi/jed_team //Only created if jedi summons apprentices
 	var/move_to_lair = TRUE
 	var/outfit_type = /datum/outfit/jedi
-	var/wiz_age = JEDI_AGE_MIN /* Jedis by nature cannot be too young. */
+	var/jed_age = JEDI_AGE_MIN /* Jedis by nature cannot be too young. */
 	can_hijack = HIJACK_HIJACKER
 
 /datum/antagonist/jedi/on_gain()
@@ -36,20 +36,20 @@
 		return
 	if(!istype(new_team))
 		stack_trace("Wrong team type passed to [type] initialization.")
-	wiz_team = new_team
+	jed_team = new_team
 
 /datum/antagonist/jedi/get_team()
-	return wiz_team
+	return jed_team
 
 /datum/team/jedi
 	name = "jedi team"
 	var/datum/antagonist/jedi/master_jedi
 
-/datum/antagonist/jedi/proc/create_wiz_team()
-	wiz_team = new(owner)
-	wiz_team.name = "[owner.current.real_name] team"
-	wiz_team.master_jedi = src
-	update_wiz_icons_added(owner.current)
+/datum/antagonist/jedi/proc/create_jed_team()
+	jed_team = new(owner)
+	jed_team.name = "[owner.current.real_name] team"
+	jed_team.master_jedi = src
+	update_jed_icons_added(owner.current)
 
 /datum/antagonist/jedi/proc/send_to_lair()
 	if(!owner || !owner.current)
@@ -120,8 +120,8 @@
 		H.delete_equipment()
 	//Jedis are human by default. Use the mirror if you want something else.
 	H.set_species(/datum/species/human)
-	if(H.age < wiz_age)
-		H.age = wiz_age
+	if(H.age < jed_age)
+		H.age = jed_age
 	H.equipOutfit(outfit_type)
 	owner.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
@@ -146,22 +146,22 @@
 	var/jedi_name_first = pick(GLOB.jedi_first)
 	var/jedi_name_second = pick(GLOB.jedi_second)
 	var/randomname = "[jedi_name_first] [jedi_name_second]"
-	var/mob/living/wiz_mob = owner.current
-	var/newname = copytext(sanitize(input(wiz_mob, "You are the [name]. Would you like to change your name to something else?", "Name change", randomname) as null|text),1,MAX_NAME_LEN)
+	var/mob/living/jed_mob = owner.current
+	var/newname = copytext(sanitize(input(jed_mob, "You are the [name]. Would you like to change your name to something else?", "Name change", randomname) as null|text),1,MAX_NAME_LEN)
 
 	if (!newname)
 		newname = randomname
 
-	wiz_mob.fully_replace_character_name(wiz_mob.real_name, newname)
+	jed_mob.fully_replace_character_name(jed_mob.real_name, newname)
 
 /datum/antagonist/jedi/apply_innate_effects(mob/living/mob_override)
 	var/mob/living/M = mob_override || owner.current
-	update_wiz_icons_added(M, wiz_team ? TRUE : FALSE) //Don't bother showing the icon if you're solo jedi
+	update_jed_icons_added(M, jed_team ? TRUE : FALSE) //Don't bother showing the icon if you're solo jedi
 	M.faction |= ROLE_JEDI
 
 /datum/antagonist/jedi/remove_innate_effects(mob/living/mob_override)
 	var/mob/living/M = mob_override || owner.current
-	update_wiz_icons_removed(M)
+	update_jed_icons_removed(M)
 	M.faction -= ROLE_JEDI
 
 
@@ -178,7 +178,7 @@
 	var/datum/mind/master
 	var/school = APPRENTICE_DESTRUCTION
 	outfit_type = /datum/outfit/jedi/apprentice
-	wiz_age = APPRENTICE_AGE_MIN
+	jed_age = APPRENTICE_AGE_MIN
 
 /datum/antagonist/jedi/apprentice/greet()
 	to_chat(owner, "<B>You are [master.current.real_name]'s apprentice! You are bound by the force to follow [master.p_their()] orders and help [master.p_them()] in accomplishing [master.p_their()] goals.")
@@ -256,15 +256,15 @@
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/turf_teleport/blink(null))
 	owner.AddSpell(new /obj/effect/proc_holder/spell/targeted/ethereal_jaunt(null))
 
-/datum/antagonist/jedi/proc/update_wiz_icons_added(mob/living/wiz,join = TRUE)
-	var/datum/atom_hud/antag/wizhud = GLOB.huds[ANTAG_HUD_WIZ]
-	wizhud.join_hud(wiz)
-	set_antag_hud(wiz, hud_version)
+/datum/antagonist/jedi/proc/update_jed_icons_added(mob/living/jed,join = TRUE)
+	var/datum/atom_hud/antag/jedhud = GLOB.huds[ANTAG_HUD_WIZ]
+	jedhud.join_hud(jed)
+	set_antag_hud(jed, hud_version)
 
-/datum/antagonist/jedi/proc/update_wiz_icons_removed(mob/living/wiz)
-	var/datum/atom_hud/antag/wizhud = GLOB.huds[ANTAG_HUD_WIZ]
-	wizhud.leave_hud(wiz)
-	set_antag_hud(wiz, null)
+/datum/antagonist/jedi/proc/update_jed_icons_removed(mob/living/jed)
+	var/datum/atom_hud/antag/jedhud = GLOB.huds[ANTAG_HUD_WIZ]
+	jedhud.leave_hud(jed)
+	set_antag_hud(jed, null)
 
 
 /datum/antagonist/jedi/academy

@@ -1092,3 +1092,9 @@
 
 /mob/living/carbon/human/species/bothan
 	race = /datum/species/bothan
+
+/mob/living/carbon/human/species/pdroid
+	race = /datum/species/droids/pdroid
+
+/mob/living/carbon/human/species/adroid
+	race = /datum/species/droids/adroid

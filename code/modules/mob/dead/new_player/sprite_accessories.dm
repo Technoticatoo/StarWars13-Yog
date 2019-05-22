@@ -260,9 +260,9 @@
 	name = "Cornrow Bun"
 	icon_state = "hair_cornrowbun"
 
-/datum/sprite_accessory/hair/cornrowbraid
+/*/datum/sprite_accessory/hair/cornrowbraid
 	name = "Cornrow Braid"
-	icon_state = "hair_rowbraid"
+	icon_state = "hair_rowbraid"*/
 
 /datum/sprite_accessory/hair/cornrowdualtail
 	name = "Cornrow Dual Tail"

@@ -26,8 +26,8 @@
 	if(GLOB.jedistart.len == 0)
 		setup_error = "No jedi starting location found"
 		return FALSE
-	for(var/datum/mind/wiz in jedis)
-		wiz.current.forceMove(pick(GLOB.jedistart))
+	for(var/datum/mind/jed in jedis)
+		jed.current.forceMove(pick(GLOB.jedistart))
 	return TRUE
 
 

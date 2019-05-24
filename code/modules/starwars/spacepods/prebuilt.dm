@@ -55,6 +55,19 @@
 	name = "Tie Bomber"
 	icon_state = "tie_bomber2"
 	locked = TRUE
+	max_passengers = 2
+	armor_type = /obj/item/pod_parts/armor/bomber
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
+		/obj/item/spacepod_equipment/lock/keyed/sec,
+		/obj/item/spacepod_equipment/tracker,
+		/obj/item/spacepod_equipment/cargo/chair)
+
+/obj/spacepod/prebuilt/ishuttle
+	icon = 'icons/starwars/spacepods/shuttle.dmi'
+	name = "Imperial Shuttle"
+	icon_state = "shuttle"
+	locked = TRUE
+	max_passengers = 6
 	armor_type = /obj/item/pod_parts/armor/bomber
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
 		/obj/item/spacepod_equipment/lock/keyed/sec,

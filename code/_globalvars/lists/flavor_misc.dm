@@ -18,6 +18,7 @@ GLOBAL_LIST_EMPTY(undershirt_f)	 //stores only undershirt name
 GLOBAL_LIST_EMPTY(socks_list)		//stores /datum/sprite_accessory/socks indexed by name
 	//Lizard Bits (all datum lists indexed by name)
 GLOBAL_LIST_EMPTY(body_markings_list)
+GLOBAL_LIST_EMPTY(droid_markings_list)
 GLOBAL_LIST_EMPTY(tails_list_lizard)
 GLOBAL_LIST_EMPTY(animated_tails_list_lizard)
 GLOBAL_LIST_EMPTY(snouts_list)

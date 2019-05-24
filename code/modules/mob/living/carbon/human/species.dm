@@ -589,6 +589,9 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		else if ("wings" in mutant_bodyparts)
 			bodyparts_to_add -= "wings_open"
 
+/*	if("droid_markings" in mutant_bodyparts)
+		bodyparts_to_add -= "droid_markings"'*/
+
 	//Digitigrade legs are stuck in the phantom zone between true limbs and mutant bodyparts. Mainly it just needs more agressive updating than most limbs.
 	var/update_needed = FALSE
 	var/not_digitigrade = TRUE
@@ -646,6 +649,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.ears_list[H.dna.features["ears"]]
 				if("body_markings")
 					S = GLOB.body_markings_list[H.dna.features["body_markings"]]
+				if("droid_markings")
+					S = GLOB.droid_markings_list[H.dna.features["droid_markings"]]
 				if("wings")
 					S = GLOB.wings_list[H.dna.features["wings"]]
 				if("wingsopen")

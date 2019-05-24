@@ -1867,3 +1867,5 @@
 /datum/sprite_accessory/moth_wings/snow
 	name = "Snow"
 	icon_state = "snow"
+
+

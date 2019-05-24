@@ -414,6 +414,9 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		icon = pod_armor.pod_icon
 		icon_state = pod_armor.pod_icon_state
 	else
+	//	if(pod_armor.pod_icon == "shuttle")
+	//		icon = 'icons/starwars/spacepods/shuttle.dmi'
+	//	else
 		icon = 'icons/starwars/fighters.dmi'
 		icon_state = initial(icon_state)
 

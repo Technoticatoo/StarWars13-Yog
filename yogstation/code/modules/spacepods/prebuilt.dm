@@ -60,3 +60,17 @@
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)
+
+/*/obj/spacepod/prebuilt/ishuttle
+	icon = 'icons/starwars/spacepods/shuttle.dmi'
+	name = "Imperial Shuttle"
+	icon_state = "shuttle"
+	locked = FALSE
+	bound_width = 96
+	bound_height = 96
+	max_passengers = 6
+	armor_type = "shuttle"
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
+		/obj/item/spacepod_equipment/lock/keyed/sec,
+		/obj/item/spacepod_equipment/tracker,
+		/obj/item/spacepod_equipment/cargo/chair)*/

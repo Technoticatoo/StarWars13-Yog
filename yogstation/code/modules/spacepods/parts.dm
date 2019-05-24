@@ -3,6 +3,13 @@
 	w_class = WEIGHT_CLASS_GIGANTIC
 	flags_1 = CONDUCT_1
 
+
+/obj/item/shuttle_parts
+	icon = 'icons/starwars/spacepods/parts.dmi'
+	w_class = WEIGHT_CLASS_GIGANTIC
+	flags_1 = CONDUCT_1
+
+
 /obj/item/pod_parts/core
 	name = "space pod core"
 	icon_state = "core"
@@ -169,7 +176,7 @@
 
 /obj/item/pod_parts/armor/fighter
 	name = "tie fighter armor"
-	icon_state = "pod_armor_mil"
+	icon_state = "tie_fihgter"
 	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
 	pod_icon_state = "tie_fighter"
 	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
@@ -177,7 +184,7 @@
 
 /obj/item/pod_parts/armor/interceptor
 	name = "tie interceptor armor"
-	icon_state = "pod_armor_mil"
+	icon_state = "tie_interceptor_armor"
 	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
 	pod_icon_state = "tie_interceptor"
 	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
@@ -185,8 +192,17 @@
 
 /obj/item/pod_parts/armor/bomber
 	name = "tie bomber armor"
-	icon_state = "pod_armor_mil"
+	icon_state = "tie_bomber2_armor"
 	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
 	pod_icon_state = "tie_bomber2"
 	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
 	pod_integrity = 350
+
+/*/obj/item/pod_parts/armor/shuttle
+	icon = 'icons/starwars/spacepods/shuttle.dmi'
+	name = "shuttle armor"
+	icon_state = "shuttle_armor"
+	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	pod_icon_state = "shuttle"
+	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_integrity = 350*/

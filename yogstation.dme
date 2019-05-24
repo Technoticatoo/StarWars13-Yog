@@ -1,3 +1,4 @@
+
 // DM Environment file for tgstation.dme.
 // All manual changes should be made outside the BEGIN_ and END_ blocks.
 // New source code should be placed in .dm files: choose File/New --> Code File.
@@ -2683,6 +2684,7 @@
 #include "code\modules\starwars\jobs\job_types\11_prisoner.dm"
 #include "code\modules\starwars\simple_animals\jedi.dm"
 #include "code\modules\starwars\species\bothan.dm"
+#include "code\modules\starwars\species\droid_markings.dm"
 #include "code\modules\starwars\species\droids.dm"
 #include "code\modules\starwars\species\rodian.dm"
 #include "code\modules\starwars\species\twilek.dm"

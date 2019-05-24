@@ -64,7 +64,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/skin_tone = "caucasian1"		//Skin color
 	var/eye_color = "000"				//Eye color
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
-	var/list/features = list("mcolor" = "FFF", "ethcolor" = "9c3030", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "legs" = "Normal Legs", "moth_wings" = "Plain")
+	var/list/features = list("mcolor" = "FFF", "ethcolor" = "9c3030", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "droid_markings" = "None", "legs" = "Normal Legs", "moth_wings" = "Plain")
 
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
@@ -374,6 +374,19 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<h3>Body Markings</h3>"
 
 				dat += "<a href='?_src_=prefs;preference=body_markings;task=input'>[features["body_markings"]]</a><BR>"
+
+				mutant_category++
+				if(mutant_category >= MAX_MUTANT_ROWS)
+					dat += "</td>"
+					mutant_category = 0
+
+			if("droid_markings" in pref_species.default_features)
+				if(!mutant_category)
+					dat += APPEARANCE_CATEGORY_COLUMN
+
+				dat += "<h3>Droid Markings</h3>"
+
+				dat += "<a href='?_src_=prefs;preference=droid_markings;task=input'>[features["droid_markings"]]</a><BR>"
 
 				mutant_category++
 				if(mutant_category >= MAX_MUTANT_ROWS)
@@ -1437,6 +1450,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_body_markings = input(user, "Choose your character's body markings:", "Character Preference") as null|anything in GLOB.body_markings_list
 					if(new_body_markings)
 						features["body_markings"] = new_body_markings
+
+				if("droid_markings")
+					var/new_droid_markings
+					new_droid_markings = input(user, "Choose your droid's markings:", "Character Preference") as null|anything in GLOB.droid_markings_list
+					if(new_droid_markings)
+						features["droid_markings"] = new_droid_markings
 
 				if("legs")
 					var/new_legs

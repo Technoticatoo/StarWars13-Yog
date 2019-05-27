@@ -45,6 +45,7 @@
 
 /obj/structure/emergency_shield/hangarshield
 	name = "hangar barrier"
+	icon_state = "shield-hangar"
 	desc = "A shield keeping atmosphere isndie the hangar but allowing ships through. (Don't ask us how that is possible, we just work here)"
 	density = FALSE
 	CanAtmosPass = ATMOS_PASS_NO

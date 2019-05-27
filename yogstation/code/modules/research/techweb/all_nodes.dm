@@ -15,8 +15,8 @@
 
 /datum/techweb_node/spacepod_basic
 	id = "spacepod_basic"
-	display_name = "Spacepod Construction"
-	description = "Basic stuff to construct Spacepods. Don't crash your first spacepod into the station, especially while going more than 10 m/s."
+	display_name = "Spaceship Construction"
+	description = "Basic stuff to construct Spaceships. Don't crash your first spacepod into the station, especially while going more than 10 m/s."
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 2500
 	prereq_ids = list("base")
@@ -24,7 +24,7 @@
 
 /datum/techweb_node/spacepod_lock
 	id = "spacepod_lock"
-	display_name = "Spacepod Security"
+	display_name = "Spaceship Security"
 	description = "Keeps greytiders out of your spacepods."
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2750)
 	export_price = 2750
@@ -33,7 +33,7 @@
 
 /datum/techweb_node/spacepod_disabler
 	id = "spacepod_disabler"
-	display_name = "Spacepod Weaponry"
+	display_name = "Spaceship Weaponry"
 	description = "For a bit of pew pew space battles"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 3500
@@ -42,7 +42,7 @@
 
 /datum/techweb_node/spacepod_lasers
 	id = "spacepod_lasers"
-	display_name = "Advanced Spacepod Weaponry"
+	display_name = "Advanced Spaceship Weaponry"
 	description = "For a lot of pew pew space battles. PEW PEW PEW!! Shit, I missed. I need better aim. Whatever."
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5250)
 	export_price = 5250
@@ -51,7 +51,7 @@
 
 /datum/techweb_node/spacepod_ka
 	id = "spacepod_ka"
-	display_name = "Spacepod Mining Tech"
+	display_name = "Spaceship Mining Tech"
 	description = "Cutting up asteroids using your spacepods"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 500
@@ -60,7 +60,7 @@
 
 /datum/techweb_node/spacepod_advmining
 	id = "spacepod_aka"
-	display_name = "Advanced Spacepod Mining Tech"
+	display_name = "Advanced Spaceship Mining Tech"
 	description = "Cutting up asteroids using your spacepods.... faster!"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3500)
 	export_price = 3500
@@ -69,7 +69,7 @@
 
 /datum/techweb_node/spacepod_advplasmacutter
 	id = "spacepod_apc"
-	display_name = "Advanced Spacepod Plasma Cutter"
+	display_name = "Advanced Spaceship Plasma Cutter"
 	description = "Cutting up asteroids using your spacepods........... FASTERRRRRR!!!!!! Oh shit, that was gibtonite."
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4500)
 	export_price = 4500
@@ -78,7 +78,7 @@
 
 /datum/techweb_node/spacepod_pseat
 	id = "spacepod_pseat"
-	display_name = "Spacepod Passenger Seat"
+	display_name = "Spaceship Passenger Seat"
 	description = "For bringing along victims as you fly off into the far reaches of space"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 3750)
 	export_price = 3750
@@ -87,7 +87,7 @@
 
 /datum/techweb_node/spacepod_storage
 	id = "spacepod_storage"
-	display_name = "Spacepod Storage"
+	display_name = "Spaceship Storage"
 	description = "For storing the stuff you find in the far reaches of space"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 4500)
 	export_price = 4500
@@ -96,7 +96,7 @@
 
 /datum/techweb_node/spacepod_lockbuster
 	id = "spacepod_lockbuster"
-	display_name = "Spacepod Lock Buster"
+	display_name = "Spaceship Lock Buster"
 	description = "For when someone's being really naughty with a spacepod"
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 8500)
 	export_price = 8500
@@ -105,13 +105,13 @@
 
 /datum/techweb_node/spacepod_iarmor
 	id = "spacepod_iarmor"
-	display_name = "Advanced Spacepod Armor"
+	display_name = "Advanced Spaceship Armor"
 	description = "Better protection for your precious ride. You'll need it if you plan on engaging in spacepod battles."
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2750)
 	export_price = 2750
 	prereq_ids = list("spacepod_storage", "high_efficiency")
 	design_ids = list("podarmor_industiral", "podarmor_sec", "podarmor_gold")
-	
+
 /datum/techweb_node/syndicate_surgery
 	id = "syndicate_surgery"
 	display_name = "Syndicate Surgery"

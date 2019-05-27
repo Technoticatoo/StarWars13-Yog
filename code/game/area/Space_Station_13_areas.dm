@@ -1104,3 +1104,15 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/quartermaster/mining/garage
 	name = "Cargo Mining Garage "
 	icon_state = "mine_garage"
+
+//HANGAR
+
+/area/hangar
+	name = "Hangar"
+	icon_state = "hangar"
+	ambientsounds = HIGHSEC
+
+/area/hangar/security
+	name = "Hangar Security"
+	icon_state = "hangsec"
+	ambientsounds = HIGHSEC

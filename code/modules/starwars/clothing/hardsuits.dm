@@ -122,3 +122,16 @@
 	. = ..()
 	AddComponent(/datum/component/anti_magic, TRUE, FALSE)
 
+
+// Tie Pilot
+/obj/item/clothing/head/helmet/space/hardsuit/imperial/tiepilot
+	name = "Tie Pilot Helmet"
+	desc = "A helmet of a tie pilot of the Imperial Navy."
+	basestate = "tiepilot_helmet"
+	icon_state = "tiepilot_helmet0"
+
+/obj/item/clothing/suit/space/hardsuit/imperial/tiepilot
+	name = "Tie Pilot Suit"
+	desc = "The flight suit of a tie pilot of the Imperial Navy."
+	icon_state = "tiepilot_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/tiepilot

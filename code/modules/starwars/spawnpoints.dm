@@ -26,3 +26,7 @@
 /obj/effect/landmark/start/imperial/btrooper
 	name = "Bravo Squad Stormtrooper"
 	icon_state = "btrooper"
+
+/obj/effect/landmark/start/imperial/tie_pilot
+	name = "Tie Pilot"
+	icon_state = "tie_pilot"

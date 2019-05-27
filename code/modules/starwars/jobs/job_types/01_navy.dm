@@ -191,12 +191,52 @@ Navy Guard
 	name = "Navy Guard"
 	jobtype = /datum/job/navy_guard
 
-	belt = /obj/item/pda/heads/hop
-	ears = /obj/item/radio/headset/heads/hop
-	uniform = /obj/item/clothing/under/rank/head_of_personnel
+	belt = /obj/item/pda/security
+	ears = /obj/item/radio/headset/headset_sec/alt
+	uniform = /obj/item/clothing/under/imperial/crewman
 	shoes = /obj/item/clothing/shoes/imperial
-	head = /obj/item/clothing/head/hopcap
+	head = /obj/item/clothing/head/helmet/imperial/blast
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
+
+/*
+Tie Pilot
+*/
+/datum/job/tie_pilot
+	title = "Tie Pilot"
+	flag = TIEPILOT
+	department_head = list("Lieutenant")
+	department_flag = ENGSEC
+	head_announce = list("Supply", "Service")
+	faction = "Station"
+	total_positions = 8
+	spawn_positions = 8
+	supervisors = "the Lieutenant"
+	selection_color = "#a8e1ff"
+	req_admin_notify = 1
+	minimal_player_age = 10
+	exp_requirements = 180
+	exp_type = EXP_TYPE_CREW
+	exp_type_department = EXP_TYPE_SUPPLY
+
+	outfit = /datum/outfit/job/tie_pilot
+
+	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MORGUE, ACCESS_WEAPONS, ACCESS_FORENSICS_LOCKERS, ACCESS_MINERAL_STOREROOM)
+	minimal_access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_BRIG, ACCESS_COURT, ACCESS_WEAPONS, ACCESS_MECH_SECURITY, ACCESS_MINERAL_STOREROOM) // See /datum/job/officer/get_access()
+	paycheck = PAYCHECK_COMMAND
+	paycheck_department = ACCOUNT_SRV
+	display_order = JOB_DISPLAY_ORDER_TIEPILOT
+
+/datum/outfit/job/tie_pilot
+	name = "Tie Pilot"
+	jobtype = /datum/job/navy_guard
+
+	belt = /obj/item/pda/security
+	ears = /obj/item/radio/headset/headset_sec/alt
+	uniform = /obj/item/clothing/under/imperial/crewman
+	suit = /obj/item/clothing/suit/space/hardsuit/imperial/tiepilot
+	shoes = /obj/item/clothing/shoes/imperial
+	//head = /obj/item/clothing/head/helmet/imperial/blast
+	backpack_contents = list()
 
 
 

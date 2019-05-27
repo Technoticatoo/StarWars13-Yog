@@ -62,6 +62,7 @@ GLOBAL_LIST_INIT(security_positions, list(
 	"Bravo Squad Sergeant",
 	"Alpha Squad Stormtrooper",
 	"Bravo Squad Stormtrooper",
+	"Tie Pilot",
 	"Interrogator",
 	"Crewman",
 	"Navy Guard"))

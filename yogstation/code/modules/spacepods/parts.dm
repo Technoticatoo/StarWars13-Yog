@@ -64,7 +64,7 @@
 		var/obj/item/stack/rods/R = O
 		var/list/linkedparts = find_square()
 		if(!linkedparts)
-			to_chat(user, "<span class='warning'>You cannot assemble a pod frame because you do not have the necessary assembly.</span>")
+			to_chat(user, "<span class='warning'>You cannot assemble a ship frame because you do not have the necessary assembly.</span>")
 			return TRUE
 		if(!R.use(10))
 			to_chat(user, "<span class='warning'>You need 10 rods for this.</span>")
@@ -81,7 +81,7 @@
 			if(EAST)
 				pod.angle = 90
 		pod.process(2)
-		to_chat(user, "<span class='notice'>You strut the pod frame together.</span>")
+		to_chat(user, "<span class='notice'>You strut the ship frame together.</span>")
 		for(var/obj/item/pod_parts/pod_frame/F in linkedparts)
 			if(1 == turn(F.dir, -F.link_angle)) //if the part links north during construction, as the bottom left part always does
 				pod.forceMove(F.loc)
@@ -95,79 +95,79 @@
 		return TRUE
 
 /obj/item/pod_parts/pod_frame/fore_port
-	name = "fore port pod frame"
+	name = "fore port ship frame"
 	icon_state = "pod_fp"
-	desc = "A space pod frame component. This is the fore port component."
+	desc = "A spaceship frame component. This is the fore port component."
 	link_to = /obj/item/pod_parts/pod_frame/fore_starboard
 	link_angle = 90
 
 /obj/item/pod_parts/pod_frame/fore_starboard
-	name = "fore starboard pod frame"
+	name = "fore starboard shiü frame"
 	icon_state = "pod_fs"
-	desc = "A space pod frame component. This is the fore starboard component."
+	desc = "A spaceship frame component. This is the fore starboard component."
 	link_to = /obj/item/pod_parts/pod_frame/aft_starboard
 	link_angle = 180
 
 /obj/item/pod_parts/pod_frame/aft_port
-	name = "aft port pod frame"
+	name = "aft port ship frame"
 	icon_state = "pod_ap"
-	desc = "A space pod frame component. This is the aft port component."
+	desc = "A spaceship frame component. This is the aft port component."
 	link_to = /obj/item/pod_parts/pod_frame/fore_port
 	link_angle = 0
 
 /obj/item/pod_parts/pod_frame/aft_starboard
-	name = "aft starboard pod frame"
+	name = "aft starboard ship frame"
 	icon_state = "pod_as"
-	desc = "A space pod frame component. This is the aft starboard component."
+	desc = "A spaceship frame component. This is the aft starboard component."
 	link_to = /obj/item/pod_parts/pod_frame/aft_port
 	link_angle = 270
 
 /obj/item/pod_parts/armor
-	name = "civilian pod armor"
+	name = "civilian ship armor"
 	icon_state = "pod_armor_civ"
-	desc = "Spacepod armor. This is the civilian version. It looks rather flimsy."
+	desc = "Spaceship armor. This is the civilian version. It looks rather flimsy."
 	var/pod_icon = 'icons/starwars/fighters.dmi'
 	var/pod_icon_state = "pod_civ"
-	var/pod_desc = "A sleek civilian space pod."
+	var/pod_desc = "A sleek civilian spaceship."
 	var/pod_integrity = 250
 
 /obj/item/pod_parts/armor/syndicate
-	name = "syndicate pod armor"
+	name = "syndicate ship armor"
 	icon_state = "pod_armor_synd"
-	desc = "Tough-looking spacepod armor, with a bold \"FUCK NT\" stenciled directly into it."
+	desc = "Tough-looking spaceship armor, with a bold \"FUCK NT\" stenciled directly into it."
 	pod_icon_state = "pod_synd"
-	pod_desc = "A menacing military space pod with \"FUCK NT\" stenciled onto the side"
+	pod_desc = "A menacing military spaceship with \"FUCK NT\" stenciled onto the side"
 	pod_integrity = 400
 
 /obj/item/pod_parts/armor/black
 	name = "black pod armor"
 	icon_state = "pod_armor_black"
-	desc = "Plain black spacepod armor, with no logos or insignias anywhere on it."
+	desc = "Plain black spaceship armor, with no logos or insignias anywhere on it."
 	pod_icon_state = "pod_black"
-	pod_desc = "An all black space pod with no insignias."
+	pod_desc = "An all black spaceship with no insignias."
 
 /obj/item/pod_parts/armor/gold
 	name = "golden pod armor"
 	icon_state = "pod_armor_gold"
-	desc = "Golden spacepod armor. Looks like what a rich spessmen put on their spacepod."
+	desc = "Golden spaceship armor. Looks like what a rich spessmen put on their spacepod."
 	pod_icon_state = "pod_gold"
-	pod_desc = "A civilian space pod with a gold body, must have cost somebody a pretty penny"
+	pod_desc = "A civilian spaceship with a gold body, must have cost somebody a pretty penny"
 	pod_integrity = 220
 
 /obj/item/pod_parts/armor/industrial
-	name = "industrial pod armor"
+	name = "industrial ship armor"
 	icon_state = "pod_armor_industrial"
-	desc = "Tough industrial-grade spacepod armor. While meant for construction work, it is commonly used in spacepod battles, too."
+	desc = "Tough industrial-grade spaceship armor. While meant for construction work, it is commonly used in spacepod battles, too."
 	pod_icon_state = "pod_industrial"
-	pod_desc = "A rough looking space pod meant for industrial work"
+	pod_desc = "A rough looking spaceship meant for industrial work"
 	pod_integrity = 330
 
 /obj/item/pod_parts/armor/security
-	name = "security pod armor"
+	name = "security ship armor"
 	icon_state = "pod_armor_mil"
-	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	desc = "Tough military-grade ship armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
 	pod_icon_state = "pod_mil"
-	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_desc = "An armed security spaceship with reinforced armor plating brandishing the Nanotrasen Military insignia"
 	pod_integrity = 350
 
 /obj/item/circuitboard/mecha/pod
@@ -177,25 +177,25 @@
 /obj/item/pod_parts/armor/fighter
 	name = "tie fighter armor"
 	icon_state = "tie_fihgter"
-	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	desc = "Tough military-grade tie fighter armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_fighter"
-	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_desc = "An armedtie fighter with reinforced armor plating brandishing the Imperial Navy insignia"
 	pod_integrity = 300
 
 /obj/item/pod_parts/armor/interceptor
 	name = "tie interceptor armor"
 	icon_state = "tie_interceptor_armor"
-	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	desc = "Tough tie interceptor armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_interceptor"
-	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_desc = "An armed tie interceptor with reinforced armor plating brandishing the Imperial Navy insignia"
 	pod_integrity = 280
 
 /obj/item/pod_parts/armor/bomber
 	name = "tie bomber armor"
 	icon_state = "tie_bomber2_armor"
-	desc = "Tough military-grade pod armor, meant for use by the NanoTrasen military and it's sub-divisons for space combat."
+	desc = "Tough military-grade tie bomber armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_bomber2"
-	pod_desc = "An armed security spacepod with reinforced armor plating brandishing the Nanotrasen Military insignia"
+	pod_desc = "An armed tie bomber with reinforced armor plating brandishing the Imperial Navy insignia"
 	pod_integrity = 350
 
 /*/obj/item/pod_parts/armor/shuttle

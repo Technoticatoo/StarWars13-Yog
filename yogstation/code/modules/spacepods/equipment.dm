@@ -73,8 +73,8 @@
 	slot = SPACEPOD_SLOT_CARGO
 
 /obj/item/spacepod_equipment/cargo/large
-	name = "spacepod crate storage system"
-	desc = "A heavy duty storage system for spacepods. Holds one crate."
+	name = "spaceship crate storage system"
+	desc = "A heavy duty storage system for spaceships. Holds one crate."
 	icon_state = "cargo_crate"
 	var/obj/storage = null
 	var/storage_type = /obj/structure/closet/crate
@@ -103,7 +103,7 @@
 
 /obj/spacepod/proc/unload_cargo() // if I could i'd put this on spacepod_equipment but unfortunately BYOND is stupid
 	set name = "Unload Cargo"
-	set category = "Spacepod"
+	set category = "Spaceship"
 	set src = usr.loc
 
 	if(!verb_check())
@@ -140,8 +140,8 @@
 	return FALSE
 
 /obj/item/spacepod_equipment/cargo/large/ore
-	name = "spacepod ore storage system"
-	desc = "An ore storage system for spacepods. Scoops up any ore you drive over. Needs to be loaded with an ore box to work"
+	name = "spaceship ore storage system"
+	desc = "An ore storage system for spaceships. Scoops up any ore you drive over. Needs to be loaded with an ore box to work"
 	icon_state = "cargo_ore"
 	storage_type = /obj/structure/ore_box
 
@@ -161,7 +161,7 @@
 
 /obj/item/spacepod_equipment/cargo/chair
 	name = "passenger seat"
-	desc = "A passenger seat for a spacepod."
+	desc = "A passenger seat for a spaceship."
 	icon_state = "sec_cargo_chair"
 	var/occupant_mod = 1
 
@@ -187,7 +187,7 @@
 
 /obj/item/spacepod_equipment/weaponry/disabler
 	name = "disabler system"
-	desc = "A weak disabler system for space pods, fires disabler beams."
+	desc = "A weak disabler system for spaceships, fires disabler beams."
 	icon_state = "weapon_taser"
 	projectile_type = /obj/item/projectile/beam/disabler
 	shot_cost = 400
@@ -197,7 +197,7 @@
 
 /obj/item/spacepod_equipment/weaponry/burst_disabler
 	name = "burst disabler system"
-	desc = "A weak disabler system for space pods, this one fires 3 at a time."
+	desc = "A weak disabler system for spaceships, this one fires 3 at a time."
 	icon_state = "weapon_burst_taser"
 	projectile_type = /obj/item/projectile/beam/disabler
 	shot_cost = 1200
@@ -209,7 +209,7 @@
 
 /obj/item/spacepod_equipment/weaponry/laser
 	name = "laser system"
-	desc = "A weak laser system for space pods, fires concentrated bursts of energy."
+	desc = "A weak laser system for spaceships, fires concentrated bursts of energy."
 	icon_state = "weapon_laser"
 	projectile_type = /obj/item/projectile/beam
 	shot_cost = 600
@@ -220,7 +220,7 @@
 // MINING LASERS
 /obj/item/spacepod_equipment/weaponry/basic_pod_ka
 	name = "weak kinetic accelerator"
-	desc = "A weak kinetic accelerator for space pods, fires bursts of energy that cut through rock."
+	desc = "A weak kinetic accelerator for spaceships, fires bursts of energy that cut through rock."
 	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_taser"
 	projectile_type = /obj/item/projectile/kinetic/pod
@@ -230,7 +230,7 @@
 
 /obj/item/spacepod_equipment/weaponry/pod_ka
 	name = "kinetic accelerator system"
-	desc = "A kinetic accelerator system for space pods, fires bursts of energy that cut through rock."
+	desc = "A kinetic accelerator system for spaceships, fires bursts of energy that cut through rock."
 	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_m_laser"
 	projectile_type = /obj/item/projectile/kinetic/pod/regular
@@ -247,7 +247,7 @@
 
 /obj/item/spacepod_equipment/weaponry/plasma_cutter
 	name = "plasma cutter system"
-	desc = "A plasma cutter system for space pods. It is capable of expelling concentrated plasma bursts to mine or cut off xeno limbs!"
+	desc = "A plasma cutter system for spaceships. It is capable of expelling concentrated plasma bursts to mine or cut off xeno limbs!"
 	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_p_cutter"
 	projectile_type = /obj/item/projectile/plasma
@@ -259,7 +259,7 @@
 
 /obj/item/spacepod_equipment/weaponry/plasma_cutter/adv
 	name = "enhanced plasma cutter system"
-	desc = "An enhanced plasma cutter system for space pods. It is capable of expelling concentrated plasma bursts to mine or cut off xeno faces!"
+	desc = "An enhanced plasma cutter system for spaceships. It is capable of expelling concentrated plasma bursts to mine or cut off xeno faces!"
 	icon_state = "pod_ap_cutter"
 	projectile_type = /obj/item/projectile/plasma/adv
 	shot_cost = 200
@@ -273,7 +273,7 @@
 
 /obj/item/spacepod_equipment/tracker
 	name = "spacepod tracking system"
-	desc = "A tracking device for spacepods."
+	desc = "A tracking device for spaceships."
 	icon = 'icons/starwars/spacepods/parts.dmi'
 	icon_state = "pod_locator"
 
@@ -284,7 +284,7 @@
 */
 
 /obj/item/spacepod_equipment/lock
-	name = "pod lock"
+	name = "ship lock"
 	desc = "You shouldn't be seeing this"
 	icon_state = "blank"
 	slot = SPACEPOD_SLOT_LOCK
@@ -306,8 +306,8 @@
 
 // Key and Tumbler System
 /obj/item/spacepod_equipment/lock/keyed
-	name = "spacepod tumbler lock"
-	desc = "A locking system to stop podjacking. This version uses a standalone key."
+	name = "spaceship tumbler lock"
+	desc = "A locking system to stop shipjacking. This version uses a standalone key."
 	icon_state = "lock_tumbler"
 	var/static/id_source = 0
 	var/id = null
@@ -341,25 +341,25 @@
 		..()
 
 /obj/item/spacepod_equipment/lock/keyed/sec
-	id = "security spacepod"
+	id = "security spaceship"
 
 // The key
 /obj/item/spacepod_key
-	name = "spacepod key"
-	desc = "A key for a spacepod lock."
+	name = "spaceship key"
+	desc = "A key for a spaceship lock."
 	icon = 'icons/starwars/YOG/parts.dmi'
 	icon_state = "podkey"
 	w_class = WEIGHT_CLASS_TINY
 	var/id = null
 
 /obj/item/spacepod_key/sec
-	name = "security spacepod key"
-	desc = "Unlocks the security spacepod. Probably best kept out of assistant hands."
-	id = "security spacepod"
+	name = "navy spaceship key"
+	desc = "Unlocks the navy spaceship. Probably best kept out of assistant hands."
+	id = "security spaceship"
 
 /obj/item/device/lock_buster
-	name = "pod lock buster"
-	desc = "Destroys a podlock in mere seconds once applied. Waranty void if used."
+	name = "ship lock buster"
+	desc = "Destroys a shiplock in mere seconds once applied. Waranty void if used."
 	icon = 'icons/starwars/YOG/parts.dmi'
 	icon_state = "lock_buster_off"
 	var/on = FALSE

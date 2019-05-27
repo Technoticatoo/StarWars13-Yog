@@ -1,3 +1,162 @@
+//MELEE
+
+/obj/item/melee/transforming/energy
+	hitsound_on = 'sound/weapons/blade1.ogg'
+	heat = 3500
+	max_integrity = 200
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 30)
+	resistance_flags = FIRE_PROOF
+	var/brightness_on = 3
+
+/obj/item/melee/transforming/energy/Initialize()
+	. = ..()
+	if(active)
+		set_light(brightness_on)
+		START_PROCESSING(SSobj, src)
+
+/obj/item/melee/transforming/energy/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/melee/transforming/energy/suicide_act(mob/user)
+	if(!active)
+		transform_weapon(user, TRUE)
+	user.visible_message("<span class='suicide'>[user] is [pick("slitting [user.p_their()] stomach open with", "falling on")] [src]! It looks like [user.p_theyre()] trying to commit seppuku!</span>")
+	return (BRUTELOSS|FIRELOSS)
+
+/obj/item/melee/transforming/energy/add_blood_DNA(list/blood_dna)
+	return FALSE
+
+/obj/item/melee/transforming/energy/is_sharp()
+	return active * sharpness
+
+/obj/item/melee/transforming/energy/process()
+	open_flame()
+
+/obj/item/melee/transforming/energy/transform_weapon(mob/living/user, supress_message_text)
+	. = ..()
+	if(.)
+		if(active)
+			if(item_color)
+				icon_state = "sword[item_color]"
+			START_PROCESSING(SSobj, src)
+			set_light(brightness_on)
+		else
+			STOP_PROCESSING(SSobj, src)
+			set_light(0)
+
+/obj/item/melee/transforming/energy/is_hot()
+	return active * heat
+
+/obj/item/melee/transforming/energy/ignition_effect(atom/A, mob/user)
+	if(!active)
+		return ""
+
+	var/in_mouth = ""
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(C.wear_mask)
+			in_mouth = ", barely missing [C.p_their()] nose"
+	. = "<span class='warning'>[user] swings [user.p_their()] [name][in_mouth]. [user.p_they(TRUE)] light[user.p_s()] [user.p_their()] [A.name] in the process.</span>"
+	playsound(loc, hitsound, get_clamped_volume(), 1, -1)
+	add_fingerprint(user)
+
+/obj/item/melee/transforming/energy/sword
+	name = "Lightsaber"
+	desc = "May the force be within you."
+	icon_state = "sword0"
+	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	force = 3
+	throwforce = 5
+	hitsound = "swing_hit" //it starts deactivated
+	attack_verb_off = list("tapped", "poked")
+	throw_speed = 3
+	throw_range = 5
+	sharpness = IS_SHARP
+	embedding = list("embed_chance" = 75, "embedded_impact_pain_multiplier" = 10)
+	armour_penetration = 35
+	block_chance = 50
+
+/obj/item/melee/transforming/energy/sword/transform_weapon(mob/living/user, supress_message_text)
+	. = ..()
+	if(. && active && item_color)
+		icon_state = "sword[item_color]"
+
+/obj/item/melee/transforming/energy/sword/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
+	if(active)
+		return ..()
+	return 0
+
+/obj/item/melee/transforming/energy/sword/saber
+	var/list/possible_colors = list("red" = LIGHT_COLOR_RED, "blue" = LIGHT_COLOR_LIGHT_CYAN, "green" = LIGHT_COLOR_GREEN, "purple" = LIGHT_COLOR_LAVENDER)
+	var/hacked = FALSE
+
+/obj/item/melee/transforming/energy/sword/saber/Initialize(mapload)
+	. = ..()
+	if(LAZYLEN(possible_colors))
+		var/set_color = pick(possible_colors)
+		item_color = set_color
+		light_color = possible_colors[set_color]
+
+/obj/item/melee/transforming/energy/sword/saber/process()
+	. = ..()
+	if(hacked)
+		var/set_color = pick(possible_colors)
+		light_color = possible_colors[set_color]
+		update_light()
+
+/*/obj/item/melee/transforming/energy/sword/saber/throw_impact(atom/hit_atom)
+	throw_at(thrownby, throw_range+3, throw_speed, null)
+	..()
+
+
+/obj/item/melee/transforming/energy/sword/saber/throw_at(atom/target, range, speed, mob/thrower, spin=1)
+	var/turf/T = thrower.loc
+	var/turf/U = get_step(thrower, thrower.dir)
+	var/direction= get_dir(U, T)
+	var/invdir = 0
+	if(direction == 8)
+		invdir = 4
+	else if(direction == 4)
+		invdir = 8
+	else if(direction == 1)
+		invdir = 2
+	else if(direction == 2)
+		invdir = 1
+
+	src.newtonian_move(invdir)
+	to_chat(thrower, "Lightsaber away! T=[T],U=[U],DIR=[get_dir(U, T)]")
+	..()*/
+
+/obj/item/melee/transforming/energy/sword/saber/red
+	possible_colors = list("red" = LIGHT_COLOR_RED)
+
+/obj/item/melee/transforming/energy/sword/saber/blue
+	possible_colors = list("blue" = LIGHT_COLOR_LIGHT_CYAN)
+
+/obj/item/melee/transforming/energy/sword/saber/green
+	possible_colors = list("green" = LIGHT_COLOR_GREEN)
+
+/obj/item/melee/transforming/energy/sword/saber/purple
+	possible_colors = list("purple" = LIGHT_COLOR_LAVENDER)
+
+/obj/item/melee/transforming/energy/sword/saber/attackby(obj/item/W, mob/living/user, params)
+	if(W.tool_behaviour == TOOL_MULTITOOL)
+		if(!hacked)
+			hacked = TRUE
+			item_color = "rainbow"
+			to_chat(user, "<span class='warning'>RNBW_ENGAGE</span>")
+
+			if(active)
+				icon_state = "swordrainbow"
+				user.update_inv_hands()
+		else
+			to_chat(user, "<span class='warning'>It's already fabulous!</span>")
+	else
+		return ..()
+
+
 // STUN KILL TOGGLE WEAPONS
 /obj/item/gun/energy/e_gun/starwars
 	icon = 'icons/starwars/weapons.dmi'

@@ -621,6 +621,7 @@
 		SSthrowing.currentrun[src] = TT
 	TT.tick()
 
+
 /atom/movable/proc/handle_buckled_mob_movement(newloc,direct)
 	for(var/m in buckled_mobs)
 		var/mob/living/buckled_mob = m

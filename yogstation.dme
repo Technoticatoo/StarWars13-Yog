@@ -2667,6 +2667,7 @@
 #include "code\modules\starwars\force_powers\force_slow.dm"
 #include "code\modules\starwars\force_powers\force_speed.dm"
 #include "code\modules\starwars\force_powers\force_throw.dm"
+#include "code\modules\starwars\force_powers\saber_return.dm"
 #include "code\modules\starwars\gamemodes\emperor\rebels.dm"
 #include "code\modules\starwars\gamemodes\jedi\jedi.dm"
 #include "code\modules\starwars\items\pda.dm"

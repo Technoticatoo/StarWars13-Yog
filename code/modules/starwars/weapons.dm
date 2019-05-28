@@ -1,4 +1,5 @@
 //MELEE
+GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 
 /obj/item/melee/transforming/energy
 	hitsound_on = 'sound/weapons/blade1.ogg'
@@ -78,6 +79,7 @@
 	armour_penetration = 35
 	block_chance = 50
 
+
 /obj/item/melee/transforming/energy/sword/transform_weapon(mob/living/user, supress_message_text)
 	. = ..()
 	if(. && active && item_color)
@@ -106,28 +108,9 @@
 		light_color = possible_colors[set_color]
 		update_light()
 
-/*/obj/item/melee/transforming/energy/sword/saber/throw_impact(atom/hit_atom)
-	throw_at(thrownby, throw_range+3, throw_speed, null)
+/obj/item/melee/transforming/energy/sword/saber/safe_throw_at(atom/target, range, speed, mob/thrower, spin=1)
 	..()
-
-
-/obj/item/melee/transforming/energy/sword/saber/throw_at(atom/target, range, speed, mob/thrower, spin=1)
-	var/turf/T = thrower.loc
-	var/turf/U = get_step(thrower, thrower.dir)
-	var/direction= get_dir(U, T)
-	var/invdir = 0
-	if(direction == 8)
-		invdir = 4
-	else if(direction == 4)
-		invdir = 8
-	else if(direction == 1)
-		invdir = 2
-	else if(direction == 2)
-		invdir = 1
-
-	src.newtonian_move(invdir)
-	to_chat(thrower, "Lightsaber away! T=[T],U=[U],DIR=[get_dir(U, T)]")
-	..()*/
+	GLOB.thrown_weapon = src
 
 /obj/item/melee/transforming/energy/sword/saber/red
 	possible_colors = list("red" = LIGHT_COLOR_RED)

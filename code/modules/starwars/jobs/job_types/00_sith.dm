@@ -11,6 +11,8 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
+
 
 /datum/job/emperor
 	title = "Emperor"
@@ -78,6 +80,7 @@
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
+    H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
 
 /datum/job/sith
 	title = "Sith"

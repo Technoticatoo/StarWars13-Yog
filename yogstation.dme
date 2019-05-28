@@ -2691,6 +2691,7 @@
 #include "code\modules\starwars\species\twilek.dm"
 #include "code\modules\starwars\species\wookie.dm"
 #include "code\modules\starwars\species\zabrak.dm"
+#include "code\modules\starwars\species\languages\star_wars_language.dm"
 #include "code\modules\station_goals\bsa.dm"
 #include "code\modules\station_goals\dna_vault.dm"
 #include "code\modules\station_goals\shield.dm"

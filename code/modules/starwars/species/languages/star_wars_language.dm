@@ -9,6 +9,9 @@
 	default_priority = 100
 	icon_state = "galcom"
 
+/datum/language_holder/rodese
+	languages = list(/datum/language/rodese)
+
 /datum/language/shyriiwook
 	name = "Shyriiwook"
 	desc = "RAWRGWAWGGR!"
@@ -18,6 +21,9 @@
 	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_UNDERSTOOD
 	default_priority = 100
 	icon_state = "galcom"
+
+/datum/language_holder/shyriiwook
+	languages = list(/datum/language/shyriiwook)
 
 /datum/language/bothese
 	name = "Bothese"
@@ -29,6 +35,9 @@
 	default_priority = 100
 	icon_state = "galcom"
 
+/datum/language_holder/bothese
+	languages = list(/datum/language/bothese)
+
 /datum/language/twileki
 	name = "Twilek'i"
 	desc = "Tail-head speak."
@@ -38,6 +47,9 @@
 	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_UNDERSTOOD
 	default_priority = 100
 	icon_state = "galcom"
+
+/datum/language_holder/twileki
+	languages = list(/datum/language/twileki)
 
 /datum/language/zabraki
 	name = "Zabraki"
@@ -49,6 +61,8 @@
 	default_priority = 100
 	icon_state = "galcom"
 
+/datum/language_holder/zabraki
+	languages = list(/datum/language/zabraki)
 
 //Syllable Lists
 /*

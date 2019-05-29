@@ -14,3 +14,6 @@
 
 /datum/species/rodian/qualifies_for_rank(rank, list/features)
 	return TRUE	//Rodians are always allowed in all roles
+
+/datum/species/rodian/after_equip_job(datum/job/J, mob/living/carbon/human/H)
+	H.grant_language(/datum/language/rodese)

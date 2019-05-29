@@ -19,6 +19,11 @@
 		/datum/language/aphasia,
 		/datum/language/piratespeak,
 		/datum/language/japanese,
+		/datum/language/rodese,
+		/datum/language/shyriiwook,
+		/datum/language/bothese,
+		/datum/language/twileki,
+		/datum/language/zabraki,
 		/datum/language/machine //yogs
 	))
 

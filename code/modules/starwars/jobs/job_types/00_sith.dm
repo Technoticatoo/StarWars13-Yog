@@ -21,7 +21,7 @@
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
-	spawn_positions = 1
+	spawn_positions = 0
 	supervisors = "None"
 	selection_color = "#afafaf"
 	req_admin_notify = 1
@@ -43,7 +43,7 @@
 
 /datum/outfit/job/emperor
 	name = "Emperor"
-	jobtype = /datum/job/sith
+	jobtype = /datum/job/emperor
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/sith

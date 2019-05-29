@@ -30,3 +30,7 @@
 /obj/effect/landmark/start/imperial/tie_pilot
 	name = "Tie Pilot"
 	icon_state = "tie_pilot"
+
+/obj/effect/landmark/start/imperial/emperor
+	name = "Emperor"
+	icon_state = "emperor"

@@ -4,10 +4,10 @@
 
 
 /mob/living/simple_animal/bot/medbot
-	name = "\improper Medibot"
-	desc = "A little medical robot. He looks somewhat underwhelmed."
-	icon = 'icons/mob/aibots.dmi'
-	icon_state = "medibot0"
+	name = "\improper Medical Droid"
+	desc = "A imperial medical droid. He looks somewhat underwhelmed."
+	icon = 'icons/starwars/mob/droids.dmi'
+	icon_state = "fx-6_medical_droid"
 	density = FALSE
 	anchored = FALSE
 	health = 20
@@ -59,6 +59,7 @@
 /mob/living/simple_animal/bot/medbot/mysterious
 	name = "\improper Mysterious Medibot"
 	desc = "International Medibot of mystery."
+	icon = 'icons/mob/aibots.dmi'
 	skin = "bezerk"
 	treatment_brute = "tricordrazine"
 	treatment_fire = "tricordrazine"
@@ -66,6 +67,7 @@
 
 /mob/living/simple_animal/bot/medbot/derelict
 	name = "\improper Old Medibot"
+	icon = 'icons/mob/aibots.dmi'
 	desc = "Looks like it hasn't been modified since the late 2080s."
 	skin = "bezerk"
 	heal_threshold = 0

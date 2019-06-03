@@ -25,6 +25,7 @@
 	if (isnull(precision))
 		precision = 0
 
+
 	switch(channel)
 		if(TELEPORT_CHANNEL_BLUESPACE)
 			if(istype(teleatom, /obj/item/storage/backpack/holding))
@@ -46,14 +47,11 @@
 			effectin = sparks
 		if (!effectout)
 			effectout = sparks
-
 	// perform the teleport
 	var/turf/curturf = get_turf(teleatom)
 	var/turf/destturf = get_teleport_turf(get_turf(destination), precision)
-
 	if(!destturf || !curturf || destturf.is_transition_turf())
 		return FALSE
-
 	var/area/A = get_area(curturf)
 	var/area/B = get_area(destturf)
 	if(!forced && (teleatom.has_trait(TRAIT_NO_TELEPORT) || A.noteleport || B.noteleport))

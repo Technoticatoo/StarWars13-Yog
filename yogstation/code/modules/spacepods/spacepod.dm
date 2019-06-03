@@ -559,6 +559,22 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	if(remove_rider(usr))
 		to_chat(usr, "<span class='notice'>You climb out of [src].</span>")
 
+/obj/spacepod/verb/warp_planets()
+	set name = "Warp to Sector"
+	set category = "Spaceship"
+	set src = usr.loc
+	//var/area/thearea = "/area/planets/sector"
+	//playsound(get_turf(usr), sound1, 50,1)
+	/*var/list/L = list()
+	for(var/turf/T in get_area_turfs(/area/planets/sector))
+		to_chat(usr, "this: [T] and [usr] this : ")
+		L+=T*/
+	if(!verb_check())
+		return
+
+	to_chat(usr,"Test [pick(get_area_turfs(/area/planets/sector))]")
+	do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+
 /obj/spacepod/verb/lock_pod()
 	set name = "Lock Doors"
 	set category = "Spaceship"

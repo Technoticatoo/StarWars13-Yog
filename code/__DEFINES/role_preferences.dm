@@ -41,7 +41,7 @@
 #define ROLE_BATTLEROYALE		"Battle Royale Contestant" //Yogs - Battle Royale Mode
 #define ROLE_GANG				"gangster" // Yogs
 #define ROLE_REBEL				"rebel"
-#define ROLE_JEDI				"jedi"
+#define ROLE_JEDI				"Jedi"
 //Missing assignment means it's not a gamemode specific role, IT'S NOT A BUG OR ERROR.
 //The gamemode specific ones are just so the gamemodes can query whether a player is old enough
 //(in game days played) to play that role

@@ -179,7 +179,7 @@
 	icon_state = "tie_fihgter"
 	desc = "Tough military-grade tie fighter armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_fighter"
-	pod_desc = "An armedtie fighter with reinforced armor plating brandishing the Imperial Navy insignia"
+	pod_desc = "An armed tie fighter with reinforced armor plating brandishing the Imperial Navy insignia"
 	pod_integrity = 300
 
 /obj/item/pod_parts/armor/interceptor

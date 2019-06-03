@@ -560,7 +560,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		to_chat(usr, "<span class='notice'>You climb out of [src].</span>")
 
 /obj/spacepod/verb/warp_planets()
-	set name = "Warp to Sector"
+	set name = "Jump to Sector"
 	set category = "Spaceship"
 	set src = usr.loc
 	//var/area/thearea = "/area/planets/sector"
@@ -571,9 +571,32 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		L+=T*/
 	if(!verb_check())
 		return
+	if(src.loc == /turf/open/space/basic || src.loc == "home")
+		do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+	else if(src.loc == "sector")
+		to_chat(usr, "The ship is already at the desired destination")
+	else
+		to_chat("You can not enter hyperspace when not in space")
 
-	to_chat(usr,"Test [pick(get_area_turfs(/area/planets/sector))]")
-	do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+/obj/spacepod/verb/warp_home()
+	set name = "Jump home"
+	set category = "Spaceship"
+	set src = usr.loc
+	//var/area/thearea = "/area/planets/sector"
+	//playsound(get_turf(usr), sound1, 50,1)
+	/*var/list/L = list()
+	for(var/turf/T in get_area_turfs(/area/planets/sector))
+		to_chat(usr, "this: [T] and [usr] this : ")
+		L+=T*/
+	if(!verb_check())
+		return
+	if(src.loc == "space" || src.loc=="sector")
+		do_teleport(src, pick(get_area_turfs(/area/purge/home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+	else if(src.loc == "home")
+		to_chat(usr, "The ship is already at the desired destination")
+	else
+		to_chat("You can not enter hyperspace when not in space")
+
 
 /obj/spacepod/verb/lock_pod()
 	set name = "Lock Doors"

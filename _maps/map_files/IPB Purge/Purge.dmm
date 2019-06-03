@@ -1105,7 +1105,7 @@
 "vm" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 10},/obj/machinery/requests_console{department = "Bar"; departmentType = 2; pixel_x = 30; receive_ore_updates = 1},/turf/open/floor/plasteel,/area/security/main)
 "vn" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/security/main)
 "vo" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/light,/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/turf/open/floor/plasteel,/area/hallway/primary/starboard)
-"vp" = (/turf/open/space/basic,/area/purge/home)
+"vp" = (/turf/open/space/home_sector,/area/purge/home)
 "vq" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/quartermaster)
 "vr" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/light{dir = 4; pixel_x = 7},/turf/open/floor/plasteel,/area/security/main)
 "vs" = (/obj/machinery/camera{c_tag = "Quartermaster's Office"; dir = 4},/obj/effect/turf_decal/tile/brown{dir = 8},/obj/effect/turf_decal/tile/brown{dir = 1},/turf/open/floor/plasteel,/area/quartermaster/qm)

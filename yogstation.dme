@@ -2677,6 +2677,7 @@
 #include "code\modules\starwars\gamemodes\emperor\rebels.dm"
 #include "code\modules\starwars\gamemodes\jedi\jedi.dm"
 #include "code\modules\starwars\items\pda.dm"
+#include "code\modules\starwars\items\warpfield.dm"
 #include "code\modules\starwars\jobs\job_types\00_sith.dm"
 #include "code\modules\starwars\jobs\job_types\01_navy.dm"
 #include "code\modules\starwars\jobs\job_types\02_engineers.dm"

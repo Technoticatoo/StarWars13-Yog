@@ -571,12 +571,12 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		L+=T*/
 	if(!verb_check())
 		return
-	if(src.loc == /turf/open/space/basic || src.loc == "home")
-		do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
-	else if(src.loc == "sector")
+	if(istype(loc, /turf/open/space/arrival_sector))
 		to_chat(usr, "The ship is already at the desired destination")
+	else if(istype(loc, /turf/open/space))
+		do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
 	else
-		to_chat("You can not enter hyperspace when not in space")
+		to_chat(usr, "You can not enter hyperspace when not in space")
 
 /obj/spacepod/verb/warp_home()
 	set name = "Jump home"
@@ -590,12 +590,12 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		L+=T*/
 	if(!verb_check())
 		return
-	if(src.loc == "space" || src.loc=="sector")
-		do_teleport(src, pick(get_area_turfs(/area/purge/home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
-	else if(src.loc == "home")
+	if(istype(loc, /turf/open/space/home_sector))
 		to_chat(usr, "The ship is already at the desired destination")
+	else if(istype(loc, /turf/open/space))
+		do_teleport(src, pick(get_area_turfs(/area/purge/home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
 	else
-		to_chat("You can not enter hyperspace when not in space")
+		to_chat(usr, "You can not enter hyperspace when not in space")
 
 
 /obj/spacepod/verb/lock_pod()

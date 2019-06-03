@@ -1,5 +1,6 @@
 /turf/open/planets
 	icon = 'icons/starwars/planets/planets.dmi'
+	layer = TURF_DECAL_LAYER
 
 /turf/open/planets/exoplanet1
 	desc = "A majestic blue planet"

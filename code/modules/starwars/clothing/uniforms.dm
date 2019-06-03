@@ -115,3 +115,25 @@
 	icon_state = "jedi"
 	item_state = "jedi"
 	item_color = "jedi"
+
+/obj/item/clothing/under/imperial/civilian
+	name = "Civilian Jumpsuit"
+	desc = "A Standard Issue Civilian Jumpsuit"
+	alternate_worn_icon = 'icons/starwars/clothing/civilian_mob.dmi'
+	icon = 'icons/starwars/clothing/civilian_obj.dmi'
+	icon_state = "impworker_uniform"
+	strip_delay = 50
+	alt_covers_chest = TRUE
+	sensor_mode = SENSOR_COORDS
+	random_sensor = FALSE
+
+/obj/item/clothing/under/imperial/dancer
+	name = "A dancers Outfit"
+	desc = "An Alluring Dancers Outfit"
+	alternate_worn_icon = 'icons/starwars/clothing/civilian_mob.dmi'
+	icon = 'icons/starwars/clothing/civilian_obj.dmi'
+	icon_state = "dancer_uniform"
+	strip_delay = 50
+	alt_covers_chest = FALSE
+	sensor_mode = SENSOR_COORDS
+	random_sensor = FALSE

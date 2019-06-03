@@ -1,7 +1,8 @@
-obj/structure/warpfield
+/obj/structure/warpfield
 	name = "warpfield"
 	icon = 'icons/starwars/effects.dmi'
 	icon_state = "warpfield"
+	invisibility = INVISIBILITY_MAXIMUM
 	density = FALSE
 	anchored = TRUE
 	move_resist = INFINITY

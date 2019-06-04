@@ -228,7 +228,7 @@ Tie Pilot
 
 /datum/outfit/job/tie_pilot
 	name = "Tie Pilot"
-	jobtype = /datum/job/navy_guard
+	jobtype = /datum/job/tie_pilot
 
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt

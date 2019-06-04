@@ -17,3 +17,4 @@
 	intact = 0
 	baseturfs = /turf/open/space
 	planetary_atmos = FALSE
+

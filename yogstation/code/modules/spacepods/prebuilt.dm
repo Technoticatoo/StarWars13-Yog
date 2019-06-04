@@ -74,3 +74,33 @@
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,
 		/obj/item/spacepod_equipment/cargo/chair)*/
+
+/obj/spacepod/prebuilt/xwing
+	name = "Rebel X-Wing Fighter"
+	icon_state = "xwing"
+	locked = FALSE
+	armor_type = /obj/item/pod_parts/armor/xwing
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
+		/obj/item/spacepod_equipment/lock/keyed/sec,
+		/obj/item/spacepod_equipment/tracker,
+		/obj/item/spacepod_equipment/cargo/chair)
+
+/obj/spacepod/prebuilt/awing
+	name = "rebel A-Wing Interceptor"
+	icon_state = "awing"
+	locked = FALSE
+	armor_type = /obj/item/pod_parts/armor/awing
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
+		/obj/item/spacepod_equipment/lock/keyed/sec,
+		/obj/item/spacepod_equipment/tracker,
+		/obj/item/spacepod_equipment/cargo/chair)
+
+/obj/spacepod/prebuilt/ywing
+	name = "Rebel Y-Wing Bomber"
+	icon_state = "ywing"
+	locked = FALSE
+	armor_type = /obj/item/pod_parts/armor/ywing
+	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
+		/obj/item/spacepod_equipment/lock/keyed/sec,
+		/obj/item/spacepod_equipment/tracker,
+		/obj/item/spacepod_equipment/cargo/chair)

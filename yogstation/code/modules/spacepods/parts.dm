@@ -176,7 +176,7 @@
 
 /obj/item/pod_parts/armor/fighter
 	name = "tie fighter armor"
-	icon_state = "tie_fihgter"
+	icon_state = "tie_fighter_armor"
 	desc = "Tough military-grade tie fighter armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_fighter"
 	pod_desc = "An armed tie fighter with reinforced armor plating brandishing the Imperial Navy insignia"
@@ -196,6 +196,30 @@
 	desc = "Tough military-grade tie bomber armor, meant for use by the imperial navy and it's sub-divisons for space combat."
 	pod_icon_state = "tie_bomber2"
 	pod_desc = "An armed tie bomber with reinforced armor plating brandishing the Imperial Navy insignia"
+	pod_integrity = 350
+
+/obj/item/pod_parts/armor/xwing
+	name = "x-wing armor"
+	icon_state = "xwing_armor"
+	desc = "Tough military-grade x-wing armor, meant for use by the rebel alliance for space combat."
+	pod_icon_state = "xwing"
+	pod_desc = "An armed x-wing with reinforced armor plating brandishing the rebel alliance insignia"
+	pod_integrity = 300
+
+/obj/item/pod_parts/armor/awing
+	name = "a-wing interceptor armor"
+	icon_state = "awing_armor"
+	desc = "Tough a-wing interceptor armor, meant for use by the rebel alliance for space combat."
+	pod_icon_state = "awing"
+	pod_desc = "An armed a-wing interceptor with reinforced armor plating brandishing the rebel alliance insignia"
+	pod_integrity = 280
+
+/obj/item/pod_parts/armor/ywing
+	name = "y-wing bomber armor"
+	icon_state = "ywing_armor"
+	desc = "Tough y-wing bomber armor, meant for use by the rebel alliance for space combat."
+	pod_icon_state = "ywing"
+	pod_desc = "An armed y-wing bomber with reinforced armor plating brandishing the rebel alliance insignia"
 	pod_integrity = 350
 
 /*/obj/item/pod_parts/armor/shuttle

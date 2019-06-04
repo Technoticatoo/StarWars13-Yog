@@ -14216,7 +14216,7 @@
 /area/crew_quarters/theatre)
 "aCr" = (
 /obj/structure/disposalpipe/segment,
-/mob/living/simple_animal/bot/honkbot,
+/obj/item/bot_assembly/honkbot,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "aCs" = (

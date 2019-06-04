@@ -2691,6 +2691,8 @@
 #include "code\modules\starwars\jobs\job_types\09_silicon.dm"
 #include "code\modules\starwars\jobs\job_types\10_assistant.dm"
 #include "code\modules\starwars\jobs\job_types\11_prisoner.dm"
+#include "code\modules\starwars\maps\rebel_base\rebel_base.dm"
+#include "code\modules\starwars\maps\rebel_base\rebel_base.dmm"
 #include "code\modules\starwars\planets\planets.dm"
 #include "code\modules\starwars\simple_animals\jedi.dm"
 #include "code\modules\starwars\species\bothan.dm"

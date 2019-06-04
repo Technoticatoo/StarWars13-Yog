@@ -1,13 +1,5 @@
 //BAY TURFS!
 
-/turf/open/mineral
-	name = "impassable rock"
-	icon = 'icons/turf/walls.dmi'
-	icon_state = "rock-dark"
-	blocks_air = 1
-	density = 1
-	opacity = 1
-
 /turf/open/mask
 	name = "mask"
 	icon = 'icons/turf/walls.dmi'
@@ -43,4 +35,48 @@
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_state = "steel"
 	//initial_flooring = /decl/flooring/tiling
+
+/turf/open/wall/away/blueriver/livingwall
+	name = "alien wall"
+	desc = "You feel a sense of dread from just looking at this wall. Its surface seems to be constantly moving, as if it were breathing."
+	icon = 'icons/starwars/riverturfs.dmi'
+	icon_state = "evilwall_1"
+	opacity = 1
+	density = 1
+	temperature = 233
+
+/turf/open/wall/away/blueriver/livingwall/Initialize()
+	.=..()
+
+	if(prob(80))
+		icon_state = "evilwall_[rand(1,8)]"
+
+/turf/open/floor/away/blueriver/alienfloor
+	name = "glowing floor"
+	desc = "The floor glows without any apparent reason"
+	icon = 'icons/starwars/riverturfs.dmi'
+	icon_state = "floor"
+	temperature = 233
+
+/turf/open/floor/away/blueriver/alienfloor/Initialize()
+	.=..()
+
+/turf/open/wall/supermatter/no_spread
+	name = "weird liquid"
+	desc = "The viscous liquid glows and moves as if it were alive."
+	icon='icons/starwars/blueriver.dmi'
+	icon_state = "bluespacecrystal1"
+	layer = GASFIRE_LAYER
+	plane = BYOND_LIGHTING_PLANE
+	opacity = 0
+	dynamic_lighting = 0
+
+/turf/open/wall/supermatter/no_spread/Initialize()
+	.=..()
+
+	icon_state = "bluespacecrystal[rand(1,3)]"
+	set_light(0.7, 1, 5, l_color = "#0066ff")
+
+
+
 

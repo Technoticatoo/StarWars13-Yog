@@ -1,17 +1,17 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/unsimulated/mineral{
+/turf/open/mineral{
 	temperature = 233
 	},
 /area/bluespaceriver/underground)
 "b" = (
-/turf/unsimulated/wall/supermatter/no_spread,
+/turf/open/wall/supermatter/no_spread,
 /area/bluespaceriver/underground)
 "c" = (
-/turf/unsimulated/wall/away/blueriver/livingwall,
+/turf/open/wall/away/blueriver/livingwall,
 /area/bluespaceriver/underground)
 "d" = (
-/turf/unsimulated/wall/supermatter/no_spread{
+/turf/open/wall/supermatter/no_spread{
 	plane = -19
 	},
 /area/bluespaceriver/underground)
@@ -22,10 +22,10 @@
 	color = "BLUE";
 	desc = "Slightly transparent. You are not sure what it is."
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "f" = (
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "g" = (
 /obj/machinery/replicator{
@@ -33,52 +33,52 @@
 	anchored = 1;
 	color = "BLUE"
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "h" = (
 /obj/item/weapon/pickaxe/xeno/brush,
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "i" = (
 /obj/item/weapon/pickaxe/xeno/six_pick,
 /obj/item/device/measuring_tape,
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "j" = (
 /obj/item/device/camera,
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "k" = (
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "l" = (
 /obj/item/weapon/gun/energy/plasmacutter,
 /obj/item/device/depth_scanner,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "m" = (
 /mob/living/simple_animal/hostile/hive_alien/defender,
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "n" = (
 /obj/item/roller,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "o" = (
 /obj/structure/ladder/up,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "p" = (
 /obj/structure/catwalk,
-/turf/simulated/floor/plating,
+/turf/open/floor/plating,
 /area/bluespaceriver/underground)
 "q" = (
 /obj/item/weapon/crowbar,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "r" = (
 /obj/structure/barricade,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "s" = (
 /obj/item/weapon/cell/infinite{
@@ -89,15 +89,15 @@
 	icon_state = "delivery";
 	name = "alien power cell"
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "t" = (
 /obj/item/device/geiger,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "u" = (
 /obj/item/weapon/pickaxe/drill,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "v" = (
 /obj/structure/deity{
@@ -110,11 +110,11 @@
 	desc = "A strange unerganomic pistol clearly not designed for a human hand. You are surprised that it actually has a trigger.";
 	name = "strange gun"
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "w" = (
 /obj/structure/closet/excavation,
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "x" = (
 /obj/machinery/crystal_static{
@@ -123,14 +123,14 @@
 	color = "BLUE";
 	desc = "Slightly transparent. You are not sure what it is."
 	},
-/turf/simulated/floor/asteroid,
+/turf/open/floor/asteroid,
 /area/bluespaceriver/underground)
 "y" = (
 /obj/machinery/giga_drill{
 	alpha = 129;
 	color = "BLUE"
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 "z" = (
 /obj/machinery/artifact{
@@ -138,7 +138,7 @@
 	anchored = 0;
 	color = "BLUE"
 	},
-/turf/simulated/floor/away/blueriver/alienfloor,
+/turf/open/floor/away/blueriver/alienfloor,
 /area/bluespaceriver/underground)
 
 (1,1,1) = {"

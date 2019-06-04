@@ -335,3 +335,21 @@
 	..()
 	for(var/i in 1 to 3)
 		new /obj/item/storage/box/lethalshot(src)
+
+
+//star wars secure lockers
+
+/obj/structure/closet/secure_closet/imperial_pilot
+	name = "\proper pilots locker"
+	req_access = list(ACCESS_SECURITY)
+	icon_state = "sec"
+
+/obj/structure/closet/secure_closet/imperial_pilot/PopulateContents()
+	..()
+	new /obj/item/clothing/head/helmet/space/hardsuit/imperial/tiepilot(src)
+	new /obj/item/clothing/suit/space/hardsuit/imperial/tiepilot(src)
+	new /obj/item/radio/headset/headset_sec/alt(src)
+	new /obj/item/clothing/under/imperial/crewman(src)
+	new /obj/item/clothing/shoes/imperial(src)
+	new /obj/item/pda/security(src)
+	new /obj/item/spacepod_key/sec(src)

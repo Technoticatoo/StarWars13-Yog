@@ -45,3 +45,27 @@
 	alt_covers_chest = TRUE
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
+
+/obj/item/clothing/under/rebels/tan
+	name = "Another Rebel Tan Uniform"
+	desc = "Another Rebel's Tan Uniform"
+	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
+	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
+	icon_state = "rebel_tan2"
+	//armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	strip_delay = 50
+	alt_covers_chest = TRUE
+	sensor_mode = SENSOR_COORDS
+	random_sensor = FALSE
+
+/obj/item/clothing/under/rebels/green
+	name = "Rebel Green Uniform"
+	desc = "A Rebel's Green Uniform"
+	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
+	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
+	icon_state = "rebel_green"
+	//armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
+	strip_delay = 50
+	alt_covers_chest = TRUE
+	sensor_mode = SENSOR_COORDS
+	random_sensor = FALSE

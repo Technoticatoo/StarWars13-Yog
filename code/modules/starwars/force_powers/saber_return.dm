@@ -13,4 +13,5 @@
 
 /obj/effect/proc_holder/spell/self/saber_return/cast(mob/living/carbon/human/user)
 	if(GLOB.thrown_weapon)
+		user.drop_all_held_items()
 		user.put_in_hands(GLOB.thrown_weapon)

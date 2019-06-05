@@ -10,6 +10,7 @@
 	//disliked_food = GROSS | RAW
 	//liked_food = JUNKFOOD | FRIED
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
+	no_equip = list(SLOT_WEAR_MASK, SLOT_GLOVES, SLOT_SHOES)
 	brutemod = 3
 	punchdamagelow = 2
 	punchdamagehigh = 14

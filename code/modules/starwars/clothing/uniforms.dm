@@ -28,7 +28,7 @@
 /obj/item/clothing/under/imperial/lieutenant
 	name = "Lieutenant's Uniform"
 	desc = "A Standard Issue Imperial Lieutenant's Uniform"
-	icon_state = "lieutenant"
+	icon_state = "grey_uniform"
 
 // ENGINEERING
 

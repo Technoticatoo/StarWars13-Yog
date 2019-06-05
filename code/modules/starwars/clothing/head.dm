@@ -26,7 +26,7 @@
 /obj/item/clothing/head/helmet/imperial/lieutenant
 	name = "Lieutenant's Cap"
 	desc = "A Standard Issue Imperial Lieutenant's Cap"
-	icon_state = "lieutenant"
+	icon_state = "grey_cap"
 
 /obj/item/clothing/head/helmet/imperial/blast
 	name = "blast helmet"

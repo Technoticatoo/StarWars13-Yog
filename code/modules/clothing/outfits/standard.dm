@@ -446,21 +446,3 @@
 		/obj/item/melee/transforming/energy/axe=1,\
 		/obj/item/storage/part_replacer/bluespace/tier4=1)
 
-/datum/outfit/emperor
-	//name = "The Emperor"
-	name= "Emperor"
-	id = /obj/item/card/id/gold
-	uniform =  /obj/item/clothing/under/imperial/sith
-	belt = /obj/item/pda/sith
-	suit = /obj/item/clothing/suit/wizrobe
-	shoes = /obj/item/clothing/shoes/combat
-	ears = /obj/item/radio/headset/heads/sith/alt
-	gloves = /obj/item/clothing/gloves/color/sith
-	head = /obj/item/clothing/head/sithat
-	/*head = /obj/item/clothing/head/jedi*/
-	//r_pocket = /obj/item/teleportation_scroll
-	/*r_hand = /obj/item/spellbook
-	l_hand = /obj/item/staff*/
-	back = /obj/item/storage/backpack
-	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1, /obj/item/card/id/departmental_budget/civ=1)
-	implants = list(/obj/item/implant/mindshield)

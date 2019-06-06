@@ -153,11 +153,11 @@ Crewman
 	name = "Crewman"
 	jobtype = /datum/job/crewman
 
-	belt = /obj/item/pda/heads/hop
-	ears = /obj/item/radio/headset/heads/hop
+	belt = /obj/item/pda/janitor
+	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/imperial/crewman
 	shoes = /obj/item/clothing/shoes/imperial
-	head = /obj/item/clothing/head/hopcap
+//	head = /obj/item/clothing/head/hopcap
 
 /*
 Navy Guard

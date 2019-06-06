@@ -594,4 +594,76 @@
 	desc = "This informational poster teaches the viewer what carbon dioxide is."
 	icon_state = "poster35_legit"
 
+//star wars
+
+/obj/structure/sign/poster/official/imperial
+	poster_item_name = "imperial banner"
+	poster_item_desc = "An official Imperial flag to foster a compliant and obedient workforce. It comes with state-of-the-art adhesive backing, for easy pinning to any vertical surface."
+	poster_item_icon_state = "rolled_legit"
+
+/obj/structure/sign/poster/official/imperial/banner_01
+	name = "imperial banner"
+	desc = "Fancy Imperial banner."
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "imperialbanner_new"
+
+/obj/structure/sign/poster/official/imperial/banner_01/old
+	name = "old imperial banner"
+	desc = "Ruined Fancy Imperial banner."
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "imperialbanner_old"
+
+/obj/structure/sign/poster/official/imperial/banner_02
+	name = "imperial banner"
+	desc = "Imperial banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "imperial_2"
+
+/obj/structure/sign/poster/official/imperial/invert
+	name = "inverted imperial banner"
+	desc = "Inverted Imperial banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "Impsymbol_invert"
+
+/obj/structure/sign/poster/official/imperial/transp
+	name = "transparent imperial banner"
+	desc = "transparent imperial banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "impsymbol_trans"
+
+
+//republic
+
+/obj/structure/sign/poster/official/republic/rep_banner_01
+	name = "republic banner"
+	desc = "republic banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "republicbanner_new"
+
+/obj/structure/sign/poster/official/republic/rep_banner_01_old
+	name = "republic banner"
+	desc = "republic banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "republicbanner_old"
+
+//rebel
+
+/obj/structure/sign/poster/official/rebel/reb_banner_01
+	name = "rebel banner"
+	desc = "rebel banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "rebelbanner_new"
+
+/obj/structure/sign/poster/official/rebel/reb_banner_01_old
+	name = "old rebel banner"
+	desc = "old rebel banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "rebelbanner_old"
+
+/obj/structure/sign/poster/official/rebel/reb_banner_transp
+	name = "trnsparent rebel banner"
+	desc = "trnsparent rebel banner"
+	icon = 'icons/starwars/obj/flags.dmi'
+	icon_state = "rebelsymbol_trans"
+
 #undef PLACE_SPEED

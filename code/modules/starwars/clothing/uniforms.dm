@@ -25,6 +25,11 @@
 	desc = "A Standard Issue Imperial Captain of the Guard's Uniform"
 	icon_state = "cotg"
 
+/obj/item/clothing/under/imperial/cao
+	name = "Coalition Administrative Officer's Uniform"
+	desc = "A Standard Issue Imperial Coalition Administrative Officer's Uniform"
+	icon_state = "CAO"
+
 /obj/item/clothing/under/imperial/lieutenant
 	name = "Lieutenant's Uniform"
 	desc = "A Standard Issue Imperial Lieutenant's Uniform"
@@ -65,7 +70,7 @@
 	icon_state = "medical_surgeon"
 
 /obj/item/clothing/under/imperial/medical/cmo
-	name = "Cheif Medical Officer's Uniform"
+	name = "Chief Medical Officer's Uniform"
 	desc = "A Standard Issue Imperial Cheif Medical Officer's Uniform"
 	icon_state = "medical_cmo"
 
@@ -82,6 +87,11 @@
 	name = "Imperial Stormtrooper's Jumpsuit"
 	desc = "A Standard Issue Imperial Stormtrooper's Jumpsuit"
 	icon_state = "stormtrooper"
+
+/obj/item/clothing/under/imperial/interrogator
+	name = "Imperial Interrogator's Jumpsuit"
+	desc = "A Standard Issue Imperial Interrogator's Jumpsuit"
+	icon_state = "interrogator"
 
 // SITH
 /obj/item/clothing/under/imperial/sith
@@ -137,3 +147,10 @@
 	alt_covers_chest = FALSE
 	sensor_mode = SENSOR_COORDS
 	random_sensor = FALSE
+
+//SUPPLY
+
+/obj/item/clothing/under/imperial/cargo
+	name = "Cargo Technician's Uniform"
+	desc = "A Standard Issue Imperial Cargo Technician's Uniform"
+	icon_state = "CAO"

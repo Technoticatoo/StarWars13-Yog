@@ -23,6 +23,11 @@
 	desc = "A Standard Issue Imperial Captain of the Guard's Cap"
 	icon_state = "cotg"
 
+/obj/item/clothing/head/helmet/imperial/cao
+	name = "Coalition Administrative Officer's Cap"
+	desc = "A Standard Issue Imperial Coalition Administrative Officer's Cap"
+	icon_state = "cotg"
+
 /obj/item/clothing/head/helmet/imperial/lieutenant
 	name = "Lieutenant's Cap"
 	desc = "A Standard Issue Imperial Lieutenant's Cap"
@@ -43,3 +48,13 @@
 	armor = list("melee" = 15, "bullet" = 60, "laser" = 10, "energy" = 10, "bomb" = 40, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 50)
 	can_flashlight = 0
 	dog_fashion = null
+
+/obj/item/clothing/head/helmet/imperial/cargo
+	name = "Cargo Technician's Cap"
+	desc = "A Standard Issue Imperial Cargo Technician's Cap"
+	icon_state = "cotg"
+
+/obj/item/clothing/head/helmet/imperial/interrogator
+	name = "Interrogator's Cap"
+	desc = "A Standard Issue Imperial Interrogator's Cap"
+	icon_state = "cotg"

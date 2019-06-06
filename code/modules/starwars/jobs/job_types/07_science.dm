@@ -39,10 +39,11 @@ Coalition Administrative Officer
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	belt = /obj/item/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
-	uniform = /obj/item/clothing/under/rank/bartender
+	uniform = /obj/item/clothing/under/imperial/cao
+	head = /obj/item/clothing/head/helmet/imperial/cao
 	suit = /obj/item/clothing/suit/armor/vest
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/card/id/departmental_budget/sci=1)
-	shoes = /obj/item/clothing/shoes/laceup
+	shoes = /obj/item/clothing/shoes/imperial
 
 
 /*

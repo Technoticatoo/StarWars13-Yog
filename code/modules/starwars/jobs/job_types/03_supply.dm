@@ -26,7 +26,7 @@ Quartermaster
 
 	belt = /obj/item/pda/quartermaster
 	ears = /obj/item/radio/headset/headset_cargo
-	uniform = /obj/item/clothing/under/rank/cargo
+	uniform =/obj/item/clothing/under/imperial/cargo
 	shoes = /obj/item/clothing/shoes/imperial
 	glasses = /obj/item/clothing/glasses/sunglasses
 	l_hand = /obj/item/clipboard
@@ -90,7 +90,7 @@ Cargo Technician
 /datum/outfit/job/cargo_tech
 	name = "Cargo Technician"
 	jobtype = /datum/job/cargo_tech
-
+	head = /obj/item/clothing/head/helmet/imperial/cargo
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/rank/cargotech

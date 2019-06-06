@@ -39,7 +39,7 @@
 	dog_fashion = null
 
 /obj/item/clothing/head/helmet/rebels/squadleader
-	name = "Rebel Suqd Leader's Helmet"
+	name = "Rebel Squad Leader's Helmet"
 	desc = "A Rebel Squad Leader's helmet"
 	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
 	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'

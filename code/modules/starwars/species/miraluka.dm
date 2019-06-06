@@ -6,6 +6,7 @@
 	//meat = /obj/item/reagent_containers/food/snacks/meat/slab/human/mutant/shadow
 	default_color = "FFFFFF"
 	species_traits = list(NOEYESPRITES,LIPS,HAIR,FACEHAIR)
+	use_skintones = 1
 	default_features = list("mcolor" = "FFF", "wings" = "None")
 	//inherent_traits = list(TRAIT_BLIND)
 	skinned_type = /obj/item/stack/sheet/animalhide/human

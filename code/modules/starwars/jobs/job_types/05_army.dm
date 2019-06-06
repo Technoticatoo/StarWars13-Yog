@@ -486,7 +486,7 @@ Interrogator
 	belt = /obj/item/pda/detective
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/interrogator
-	shoes = obj/item/clothing/shoes/imperial
+	shoes = /obj/item/clothing/shoes/imperial
 	//suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/imperial/interrogator

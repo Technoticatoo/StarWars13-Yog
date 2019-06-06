@@ -1098,3 +1098,6 @@
 
 /mob/living/carbon/human/species/adroid
 	race = /datum/species/droids/adroid
+
+/mob/living/carbon/human/species/miraluka
+	race = /datum/species/miraluka

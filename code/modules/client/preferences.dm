@@ -66,6 +66,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/list/features = list("mcolor" = "FFF", "ethcolor" = "9c3030", "tail_lizard" = "Smooth", "tail_human" = "None", "snout" = "Round", "horns" = "None", "ears" = "None", "wings" = "None", "frills" = "None", "spines" = "None", "body_markings" = "None", "droid_markings" = "None", "legs" = "Normal Legs", "moth_wings" = "Plain")
 
+//STAR WARS
+	var preferred_side = "Empire"
+
+//
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
 	var/prefered_security_department = SEC_DEPT_RANDOM
@@ -88,6 +92,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/job_engsec_high = 0
 	var/job_engsec_med = 0
 	var/job_engsec_low = 0
+
+	var/job_rebels_high = 0
+	var/job_rebels_med = 0
+	var/job_rebels_low = 0
 
 		// Want randomjob if preferences already filled - Donkie
 	var/joblessrole = BERANDOMJOB  //defaults to 1 for fewer assistants
@@ -220,6 +228,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Custom Job Preferences:</b><BR>"
 			dat += "<a href='?_src_=prefs;preference=ai_core_icon;task=input'><b>Preferred AI Core Display:</b> [preferred_ai_core_display]</a><br>"
 			dat += "<a href='?_src_=prefs;preference=sec_dept;task=input'><b>Preferred Security Department:</b> [prefered_security_department]</a><BR></td>"
+			dat += "<a href='?_src_=prefs;preference=chooseside;task=input'><b>Preferred Side:</b> [preferred_side]</a><BR></td>"
 
 			dat += "</tr></table>"
 
@@ -749,6 +758,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	//height - Screen's height.
 
 	var/width = widthPerColumn
+	var/factionside = "Station"
 
 	var/HTML = "<center>"
 	if(SSjob.occupations.len <= 0)
@@ -756,6 +766,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Done</a></center><br>" // Easier to press up here.
 
 	else
+		if(preferred_side == "Rebels")
+			factionside = "Rebels"
+		else
+			factionside = "Station"
+
 		HTML += "<b>Choose occupation chances</b><br>"
 		HTML += "<div align='center'>Left-click to raise an occupation preference, right-click to lower it.<br></div>"
 		HTML += "<center><a href='?_src_=prefs;preference=job;task=close'>Done</a></center><br>" // Easier to press up here.
@@ -770,91 +785,91 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		var/datum/job/overflow = SSjob.GetJob(SSjob.overflow_role)
 
 		for(var/datum/job/job in sortList(SSjob.occupations, /proc/cmp_job_display_asc))
+			if(job.faction == factionside)
+				index += 1
+				if((index >= limit) || (job.title in splitJobs))
+					width += widthPerColumn
+					if((index < limit) && (lastJob != null))
+						//If the cells were broken up by a job in the splitJob list then it will fill in the rest of the cells with
+						//the last job's selection color. Creating a rather nice effect.
+						for(var/i = 0, i < (limit - index), i += 1)
+							HTML += "<tr bgcolor='[lastJob.selection_color]'><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
+					HTML += "</table></td><td width='20%'><table width='100%' cellpadding='1' cellspacing='0'>"
+					index = 0
 
-			index += 1
-			if((index >= limit) || (job.title in splitJobs))
-				width += widthPerColumn
-				if((index < limit) && (lastJob != null))
-					//If the cells were broken up by a job in the splitJob list then it will fill in the rest of the cells with
-					//the last job's selection color. Creating a rather nice effect.
-					for(var/i = 0, i < (limit - index), i += 1)
-						HTML += "<tr bgcolor='[lastJob.selection_color]'><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
-				HTML += "</table></td><td width='20%'><table width='100%' cellpadding='1' cellspacing='0'>"
-				index = 0
+				HTML += "<tr bgcolor='[job.selection_color]'><td width='60%' align='right'>"
+				var/rank = job.title
+				lastJob = job
 
-			HTML += "<tr bgcolor='[job.selection_color]'><td width='60%' align='right'>"
-			var/rank = job.title
-			lastJob = job
-
-			if(!check_emperorwhitelist(user.ckey) && rank == "Emperor")
-				HTML += "<font color=white>[rank]</font></td><td>|Whitelisted|</td></tr>"
-				continue
-			if(is_banned_from(user.ckey, rank))
-				HTML += "<font color=red>[rank]</font></td><td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"
-				continue
-			var/required_playtime_remaining = job.required_playtime_remaining(user.client)
-			if(required_playtime_remaining)
-				HTML += "<font color=red>[rank]</font></td><td><font color=red> \[ [get_exp_format(required_playtime_remaining)] as [job.get_exp_req_type()] \] </font></td></tr>"
-				continue
-			if(!job.player_old_enough(user.client))
-				var/available_in_days = job.available_in_days(user.client)
-				HTML += "<font color=red>[rank]</font></td><td><font color=red> \[IN [(available_in_days)] DAYS\]</font></td></tr>"
-				continue
-			if((job_civilian_low & overflow.flag) && (rank != SSjob.overflow_role) && !is_banned_from(user.ckey, SSjob.overflow_role))
-				HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
-				continue
-			// yogs start - Donor features, quiet round
-			if(((rank in GLOB.command_positions) || (rank in GLOB.nonhuman_positions)) && (src.toggles & QUIET_ROUND))
-				HTML += "<font color=blue>[rank]</font></td><td><font color=blue><b> \[QUIET\]</b></font></td></tr>"
-				continue
-			// yogs end
-			if((rank in GLOB.command_positions) || (rank == "AI"))//Bold head jobs
-				HTML += "<b><span class='dark'>[rank]</span></b>"
-			else
-				HTML += "<span class='dark'>[rank]</span>"
-
-			HTML += "</td><td width='40%'>"
-
-			var/prefLevelLabel = "ERROR"
-			var/prefLevelColor = "pink"
-			var/prefUpperLevel = -1 // level to assign on left click
-			var/prefLowerLevel = -1 // level to assign on right click
-
-			if(GetJobDepartment(job, 1) & job.flag)
-				prefLevelLabel = "High"
-				prefLevelColor = "slateblue"
-				prefUpperLevel = 4
-				prefLowerLevel = 2
-			else if(GetJobDepartment(job, 2) & job.flag)
-				prefLevelLabel = "Medium"
-				prefLevelColor = "green"
-				prefUpperLevel = 1
-				prefLowerLevel = 3
-			else if(GetJobDepartment(job, 3) & job.flag)
-				prefLevelLabel = "Low"
-				prefLevelColor = "orange"
-				prefUpperLevel = 2
-				prefLowerLevel = 4
-			else
-				prefLevelLabel = "NEVER"
-				prefLevelColor = "red"
-				prefUpperLevel = 3
-				prefLowerLevel = 1
-
-
-			HTML += "<a class='white' href='?_src_=prefs;preference=job;task=setJobLevel;level=[prefUpperLevel];text=[rank]' oncontextmenu='javascript:return setJobPrefRedirect([prefLowerLevel], \"[rank]\");'>"
-
-			if(rank == SSjob.overflow_role)//Overflow is special
-				if(job_civilian_low & overflow.flag)
-					HTML += "<font color=green>Yes</font>"
+				if(!check_emperorwhitelist(user.ckey) && rank == "Emperor")
+					HTML += "<font color=white>[rank]</font></td><td>|Whitelisted|</td></tr>"
+					continue
+				if(is_banned_from(user.ckey, rank))
+					HTML += "<font color=red>[rank]</font></td><td><a href='?_src_=prefs;bancheck=[rank]'> BANNED</a></td></tr>"
+					continue
+				var/required_playtime_remaining = job.required_playtime_remaining(user.client)
+				if(required_playtime_remaining)
+					HTML += "<font color=red>[rank]</font></td><td><font color=red> \[ [get_exp_format(required_playtime_remaining)] as [job.get_exp_req_type()] \] </font></td></tr>"
+					continue
+				if(!job.player_old_enough(user.client))
+					var/available_in_days = job.available_in_days(user.client)
+					HTML += "<font color=red>[rank]</font></td><td><font color=red> \[IN [(available_in_days)] DAYS\]</font></td></tr>"
+					continue
+				if((job_civilian_low & overflow.flag) && (rank != SSjob.overflow_role) && !is_banned_from(user.ckey, SSjob.overflow_role))
+					HTML += "<font color=orange>[rank]</font></td><td></td></tr>"
+					continue
+				// yogs start - Donor features, quiet round
+				if(((rank in GLOB.command_positions) || (rank in GLOB.nonhuman_positions)) && (src.toggles & QUIET_ROUND))
+					HTML += "<font color=blue>[rank]</font></td><td><font color=blue><b> \[QUIET\]</b></font></td></tr>"
+					continue
+				// yogs end
+				if((rank in GLOB.command_positions) || (rank == "AI"))//Bold head jobs
+					HTML += "<b><span class='dark'>[rank]</span></b>"
 				else
-					HTML += "<font color=red>No</font>"
+					HTML += "<span class='dark'>[rank]</span>"
+
+				HTML += "</td><td width='40%'>"
+
+				var/prefLevelLabel = "ERROR"
+				var/prefLevelColor = "pink"
+				var/prefUpperLevel = -1 // level to assign on left click
+				var/prefLowerLevel = -1 // level to assign on right click
+
+				if(GetJobDepartment(job, 1) & job.flag)
+					prefLevelLabel = "High"
+					prefLevelColor = "slateblue"
+					prefUpperLevel = 4
+					prefLowerLevel = 2
+				else if(GetJobDepartment(job, 2) & job.flag)
+					prefLevelLabel = "Medium"
+					prefLevelColor = "green"
+					prefUpperLevel = 1
+					prefLowerLevel = 3
+				else if(GetJobDepartment(job, 3) & job.flag)
+					prefLevelLabel = "Low"
+					prefLevelColor = "orange"
+					prefUpperLevel = 2
+					prefLowerLevel = 4
+				else
+					prefLevelLabel = "NEVER"
+					prefLevelColor = "red"
+					prefUpperLevel = 3
+					prefLowerLevel = 1
+
+
+				HTML += "<a class='white' href='?_src_=prefs;preference=job;task=setJobLevel;level=[prefUpperLevel];text=[rank]' oncontextmenu='javascript:return setJobPrefRedirect([prefLowerLevel], \"[rank]\");'>"
+
+				if(rank == SSjob.overflow_role)//Overflow is special
+					if(job_civilian_low & overflow.flag)
+						HTML += "<font color=green>Yes</font>"
+					else
+						HTML += "<font color=red>No</font>"
+					HTML += "</a></td></tr>"
+					continue
+
+				HTML += "<font color=[prefLevelColor]>[prefLevelLabel]</font>"
 				HTML += "</a></td></tr>"
-				continue
-
-			HTML += "<font color=[prefLevelColor]>[prefLevelLabel]</font>"
-			HTML += "</a></td></tr>"
-
+//!!!!
 		for(var/i = 1, i < (limit - index), i += 1) // Finish the column so it is even
 			HTML += "<tr bgcolor='[lastJob.selection_color]'><td width='60%' align='right'>&nbsp</td><td>&nbsp</td></tr>"
 
@@ -883,9 +898,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		job_civilian_med |= job_civilian_high
 		job_engsec_med |= job_engsec_high
 		job_medsci_med |= job_medsci_high
+		job_rebels_med |= job_rebels_high
 		job_civilian_high = 0
 		job_engsec_high = 0
 		job_medsci_high = 0
+		job_rebels_high = 0
 
 	if (job.department_flag == CIVILIAN)
 		job_civilian_low &= ~job.flag
@@ -927,6 +944,20 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				job_medsci_med |= job.flag
 			if (3)
 				job_medsci_low |= job.flag
+
+		return 1
+	else if (job.department_flag == REBELS)
+		job_rebels_low &= ~job.flag
+		job_rebels_med &= ~job.flag
+		job_rebels_high &= ~job.flag
+
+		switch(level)
+			if (1)
+				job_rebels_high |= job.flag
+			if (2)
+				job_rebels_med |= job.flag
+			if (3)
+				job_rebels_low |= job.flag
 
 		return 1
 
@@ -1004,6 +1035,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					return job_engsec_med
 				if(3)
 					return job_engsec_low
+		if(REBELS)
+			switch(level)
+				if(1)
+					return job_rebels_high
+				if(2)
+					return job_rebels_med
+				if(3)
+					return job_rebels_low
 	return 0
 
 /datum/preferences/proc/SetQuirks(mob/user)
@@ -1503,6 +1542,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/department = input(user, "Choose your preferred security department:", "Security Departments") as null|anything in GLOB.security_depts_prefs
 					if(department)
 						prefered_security_department = department
+
+				if("chooseside")
+					var/pside = input(user, "Choose your preferred security Side:", "Side") as null|anything in GLOB.side_prefs
+					if(pside)
+						preferred_side = pside
 
 				if ("preferred_map")
 					var/maplist = list()

@@ -49,7 +49,7 @@ SUBSYSTEM_DEF(job)
 		var/datum/job/job = new J()
 		if(!job)
 			continue
-		if(job.faction != faction)
+		if(job.faction != faction && job.faction != "Rebels")
 			continue
 		if(!job.config_check())
 			continue

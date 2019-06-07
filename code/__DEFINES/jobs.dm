@@ -60,6 +60,18 @@
 #define PRISONER		(1<<8)
 
 
+#define REBELS			(1<<3)
+
+#define RGENERAL		(1<<0)
+#define RCOMMANDER		(1<<1)
+#define RPILOT			(1<<2)
+#define RSOLDIER		(1<<3)
+#define RAGENT			(1<<4)
+#define RMEDIC			(1<<5)
+#define RSUPPORT		(1<<6)
+
+
+
 #define JOB_AVAILABLE 0
 #define JOB_UNAVAILABLE_GENERIC 1
 #define JOB_UNAVAILABLE_BANNED 2
@@ -113,6 +125,19 @@
 #define JOB_DISPLAY_ORDER_CYBORG 39
 #define JOB_DISPLAY_ORDER_PRISONER 40
 
+
+#define JOB_DISPLAY_ORDER_RGENERAL 41
+#define JOB_DISPLAY_ORDER_RCOMMANDER 42
+#define JOB_DISPLAY_ORDER_RPILOT 43
+#define JOB_DISPLAY_ORDER_RSOLDIER 44
+#define JOB_DISPLAY_ORDER_RAGENT 45
+#define JOB_DISPLAY_ORDER_RMEDIC 46
+#define JOB_DISPLAY_ORDER_RSUPPORT 47
+
+//#define JOB_DISPLAY_ORDER_AI 37
+//#define JOB_DISPLAY_ORDER_CYBORG 38 //yogs end - this list was changed to include the yogs jobs
+
+
 /*
 #define JOB_DISPLAY_ORDER_ASSISTANT 1 //yogs start - this list has been changed to include the yogs jobs.
 #define JOB_DISPLAY_ORDER_CAPTAIN 2
@@ -152,5 +177,4 @@
 #define JOB_DISPLAY_ORDER_SECURITY_OFFICER 36
 */
 
-#define JOB_DISPLAY_ORDER_AI 37
-#define JOB_DISPLAY_ORDER_CYBORG 38 //yogs end - this list was changed to include the yogs jobs
+

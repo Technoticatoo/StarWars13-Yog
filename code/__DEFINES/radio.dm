@@ -49,7 +49,6 @@
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
 
-
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
@@ -103,3 +102,47 @@
 #define RADIO_MAGNETS "magnets"
 
 #define DEFAULT_SIGNALER_CODE 30
+
+
+//STAR WARS
+
+// Radios use a large variety of predefined frequencies.
+
+//say based modes like binary are in living/say.dm
+
+#define RADIO_CHANNEL_REBCOM "Rebel Command"
+#define RADIO_KEY_REBCOM "rc"
+#define RADIO_TOKEN_REBCOM ":rc"
+
+#define RADIO_CHANNEL_REBMIL "Rebel Military"
+#define RADIO_KEY_REBMIL "rm"
+#define RADIO_TOKEN_REBMIL ":rm"
+
+#define RADIO_CHANNEL_REBMED "Rebel Medical"
+#define RADIO_KEY_REBMED "rm"
+#define RADIO_TOKEN_REBMED ":rm"
+
+#define RADIO_CHANNEL_REBSEC "Rebel Agents"
+#define RADIO_KEY_REBSEC "ra"
+#define RADIO_TOKEN_REBSEC ":ra"
+
+#define RADIO_CHANNEL_REBSQD "Rebel Squadron"
+#define RADIO_KEY_REBSQD "rs"
+#define RADIO_TOKEN_REBSQD ":rs"
+
+#define RADIO_CHANNEL_REBBRD "Rebel Broadcast"
+#define RADIO_KEY_REBBRD "rb"
+#define RADIO_TOKEN_REBBRD ":rb"
+
+//#define FREQ_COMMON 1459  // Common comms frequency, dark green
+
+#define FREQ_REBCOM 1470
+#define FREQ_REBMIL 1471
+#define FREQ_REBMED 1472
+#define FREQ_REBSEC 1473
+#define FREQ_REBSQD 1474
+#define FREQ_REBBRD 1475
+
+//#define MAX_FREQ 1489 // ------------------------------------------------------
+
+

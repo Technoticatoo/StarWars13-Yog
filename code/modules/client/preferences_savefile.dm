@@ -286,6 +286,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	S["preferred_ai_core_display"] >> preferred_ai_core_display
 	S["prefered_security_department"] >> prefered_security_department
+	S["preferred_side"] >> preferred_side
 
 	//Jobs
 	S["joblessrole"]		>> joblessrole
@@ -298,6 +299,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["job_engsec_high"]	>> job_engsec_high
 	S["job_engsec_med"]		>> job_engsec_med
 	S["job_engsec_low"]		>> job_engsec_low
+	S["job_rebels_high"]	>> job_rebels_high
+	S["job_rebels_med"]		>> job_rebels_med
+	S["job_rebelsc_low"]	>> job_rebels_low
 
 	//Quirks
 	S["all_quirks"]			>> all_quirks
@@ -373,6 +377,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	job_engsec_high = sanitize_integer(job_engsec_high, 0, 65535, initial(job_engsec_high))
 	job_engsec_med = sanitize_integer(job_engsec_med, 0, 65535, initial(job_engsec_med))
 	job_engsec_low = sanitize_integer(job_engsec_low, 0, 65535, initial(job_engsec_low))
+	job_rebels_high = sanitize_integer(job_rebels_high, 0, 65535, initial(job_rebels_high))
+	job_rebels_med = sanitize_integer(job_rebels_med, 0, 65535, initial(job_rebels_med))
+	job_rebels_low = sanitize_integer(job_rebels_low, 0, 65535, initial(job_rebels_low))
 
 	all_quirks = SANITIZE_LIST(all_quirks)
 	positive_quirks = SANITIZE_LIST(positive_quirks)
@@ -430,6 +437,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	WRITE_FILE(S["preferred_ai_core_display"] ,  preferred_ai_core_display)
 	WRITE_FILE(S["prefered_security_department"] , prefered_security_department)
+	WRITE_FILE(S["preferred_side"] , preferred_side)
 
 	//Jobs
 	WRITE_FILE(S["joblessrole"]		, joblessrole)
@@ -442,6 +450,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["job_engsec_high"]	, job_engsec_high)
 	WRITE_FILE(S["job_engsec_med"]		, job_engsec_med)
 	WRITE_FILE(S["job_engsec_low"]		, job_engsec_low)
+	WRITE_FILE(S["job_rebels_high"]	, job_rebels_high)
+	WRITE_FILE(S["job_rebels_med"]		, job_rebels_med)
+	WRITE_FILE(S["job_rebels_low"]		, job_rebels_low)
 
 	//Quirks
 	WRITE_FILE(S["all_quirks"]			, all_quirks)

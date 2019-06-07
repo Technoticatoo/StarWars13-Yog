@@ -9,7 +9,9 @@ GLOBAL_LIST_INIT(command_positions, list(
 	"Research Director",
 	"Chief Medical Officer",
 	"Quartermaster",
-	"Coalition Administrative Officer"))
+	"Coalition Administrative Officer",
+	"General",
+	"Commander"))
 
 
 GLOBAL_LIST_INIT(engineering_positions, list(

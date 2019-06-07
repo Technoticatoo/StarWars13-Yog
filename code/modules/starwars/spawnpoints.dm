@@ -283,13 +283,12 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Tie Pilot"
 	icon_state = "tie_pilot"
 
-//EMPEROR
-
-/obj/effect/landmark/start/imperial/emperor
-	name = "Emperor"
-	icon_state = "emperor"
-
 //ENGINEERING
+
+/obj/effect/landmark/start/imperial/chief_engineer
+	name = "Chief Engineer"
+	icon_state = "chief_engineer"
+
 /obj/effect/landmark/start/imperial/engineer_sergeant
 	name = "Engineer Sergeant"
 	icon_state = "engineer_sergeant"
@@ -302,13 +301,31 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Engineer Private"
 	icon_state = "engineer_private"
 
+//EMPEROR
+
+/obj/effect/landmark/start/imperial/emperor
+	name = "Emperor"
+	icon_state = "emperor"
+
 //SITH
 
 /obj/effect/landmark/start/imperial/sith
 	name = "Sith"
 	icon_state = "sith"
 
+/obj/effect/landmark/start/imperial/acolyte
+	name = "Sith Acolyte"
+	icon_state = "acolyte"
+
 //NAVY & SUPPLY
+
+/obj/effect/landmark/start/imperial/captain
+	name = "Captain"
+	icon_state = "captain"
+
+/obj/effect/landmark/start/imperial/lieutenant
+	name = "Lieutenant"
+	icon_state = "lieutenant"
 
 /obj/effect/landmark/start/imperial/crewman
 	name = "Crewman"
@@ -364,8 +381,56 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 //SCIENCE
 
+/obj/effect/landmark/start/imperial/cao
+	name = "Coalition Administrative Officer"
+	icon_state = "cao"
+
+/obj/effect/landmark/start/imperial/rd
+	name = "Research Director"
+	icon_state = "rd"
+
+/obj/effect/landmark/start/imperial/researcher
+	name = "Researcher"
+	icon_state = "researcher"
+
+/obj/effect/landmark/start/imperial/roboticist
+	name = "Roboticist"
+	icon_state = "roboticist"
+
+/obj/effect/landmark/start/imperial/clerk
+	name = "Clerk"
+	icon_state = "clerk"
+
+//CIVILIAN
+
+/obj/effect/landmark/start/imperial/miner
+	name = "Miner"
+	icon_state = "miner"
+
+/obj/effect/landmark/start/imperial/bartender
+	name = "Bartender"
+	icon_state = "bartender"
 
 
+/obj/effect/landmark/start/imperial/cook
+	name = "Cook"
+	icon_state = "cook"
+
+/obj/effect/landmark/start/imperial/janitor
+	name = "Janitor"
+	icon_state = "janitor"
+
+/obj/effect/landmark/start/imperial/ai
+	name = "AI"
+	icon_state = "ai"
+
+/obj/effect/landmark/start/imperial/cyborg
+	name = "Cyborg"
+	icon_state = "cyborg"
+
+/obj/effect/landmark/start/imperial/assistant
+	name = "Assistant"
+	icon_state = "assistant"
 
 
 

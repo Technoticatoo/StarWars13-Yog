@@ -251,9 +251,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon = 'icons/starwars/spawnpoints.dmi'
 	icon_state = "imperial"
 
+//PRISONER
+
 /obj/effect/landmark/start/imperial/prisoner
 	name = "Prisoner"
 	icon_state = "prisoner"
+
+//ARMY
 
 /obj/effect/landmark/start/imperial/cotg
 	name = "Captain of the Guard"
@@ -279,10 +283,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Tie Pilot"
 	icon_state = "tie_pilot"
 
+//EMPEROR
+
 /obj/effect/landmark/start/imperial/emperor
 	name = "Emperor"
 	icon_state = "emperor"
 
+//ENGINEERING
 /obj/effect/landmark/start/imperial/engineer_sergeant
 	name = "Engineer Sergeant"
 	icon_state = "engineer_sergeant"
@@ -295,9 +302,13 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Engineer Private"
 	icon_state = "engineer_private"
 
+//SITH
+
 /obj/effect/landmark/start/imperial/sith
 	name = "Sith"
 	icon_state = "sith"
+
+//NAVY & SUPPLY
 
 /obj/effect/landmark/start/imperial/crewman
 	name = "Crewman"
@@ -327,4 +338,35 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/imperial/shipwarden
 	name = "The Ships Warden"
 	icon_state = "shipwarden"
+
+//MEDICAL
+
+/obj/effect/landmark/start/imperial/cmo
+	name = "Chief Medical Officer"
+	icon_state = "cmo"
+
+/obj/effect/landmark/start/imperial/head_surgeon
+	name = "Head Surgeon"
+	icon_state = "head_surgeon"
+
+/obj/effect/landmark/start/imperial/storm_surgeon
+	name = "Stormtrooper Surgeon"
+	icon_state = "storm_surgeon"
+
+/obj/effect/landmark/start/imperial/imperial_medic
+	name = "Imperial Medic"
+	icon_state = "imperial_medic"
+
+/obj/effect/landmark/start/imperial/geneticist
+	name = "Geneticist"
+	icon_state = "geneticist"
+
+
+//SCIENCE
+
+
+
+
+
+
 

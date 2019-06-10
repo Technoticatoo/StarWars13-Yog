@@ -2663,6 +2663,7 @@
 #include "code\modules\starwars\clothing\uniforms.dm"
 #include "code\modules\starwars\clothing\wiz_robe.dm"
 #include "code\modules\starwars\clothing\mandalorian\hardsuits.dm"
+#include "code\modules\starwars\clothing\rebel\hardsuits.dm"
 #include "code\modules\starwars\clothing\rebel\head.dm"
 #include "code\modules\starwars\clothing\rebel\uniforms.dm"
 #include "code\modules\starwars\corpses\corpses.dm"

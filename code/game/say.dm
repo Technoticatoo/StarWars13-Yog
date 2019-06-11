@@ -17,6 +17,12 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_CTF_RED]" = "redteamradio",
 	//yogs start -- alternative radio freqs being a different color
 	"[FREQ_CTF_BLUE]" = "blueteamradio",
+	"[FREQ_REBCOM]" = "rebcomradio",
+	"[FREQ_REBMIL]" = "rebmilradio",
+	"[FREQ_REBMED]" = "rebmedradio",
+	"[FREQ_REBSEC]" = "rebsecradio",
+	"[FREQ_REBSQD]" = "rebsqdradio",
+	"[FREQ_REBBRD]" = "rebbrdradio",
 	"[FREQ_COMMON]" = "commonradio"
 	//yogs end
 	))
@@ -214,13 +220,13 @@ INITIALIZE_IMMEDIATE(/atom/movable/virtualspeaker)
 	return job
 
 // Yogs start -- Returns the TRUE voice if bool is true
-/atom/movable/virtualspeaker/GetVoice(bool) 
+/atom/movable/virtualspeaker/GetVoice(bool)
 	if(bool && realvoice)
 		return realvoice
 	else
 		return "[src]"
 
-/* 
+/*
 // Commented out because this was causing NTSL to not properly be capable of editing verb_say & al.
 // However, I don't exactly know why it was even in here in the first place, so,
 // if there's some weird bugs involving virtualspeaker, check here first.

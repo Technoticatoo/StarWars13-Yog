@@ -3,7 +3,6 @@
 	icon_state = "reb_com"
 	channels = list(RADIO_CHANNEL_REBCOM = 1, RADIO_CHANNEL_REBMIL = 1, RADIO_CHANNEL_REBMED = 1, RADIO_CHANNEL_REBSEC = 1, RADIO_CHANNEL_REBSQD = 1, RADIO_CHANNEL_REBBRD = 1)
 
-
 /obj/item/encryptionkey/headset_rebmil
 	name = "rebel military radio encryption key"
 	icon_state = "reb_mil"

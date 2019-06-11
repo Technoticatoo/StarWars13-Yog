@@ -111,28 +111,28 @@
 //say based modes like binary are in living/say.dm
 
 #define RADIO_CHANNEL_REBCOM "Rebel Command"
-#define RADIO_KEY_REBCOM "rc"
-#define RADIO_TOKEN_REBCOM ":rc"
+#define RADIO_KEY_REBCOM "f"
+#define RADIO_TOKEN_REBCOM ":f"
 
 #define RADIO_CHANNEL_REBMIL "Rebel Military"
-#define RADIO_KEY_REBMIL "rm"
-#define RADIO_TOKEN_REBMIL ":rm"
+#define RADIO_KEY_REBMIL "g"
+#define RADIO_TOKEN_REBMIL ":g"
 
 #define RADIO_CHANNEL_REBMED "Rebel Medical"
-#define RADIO_KEY_REBMED "rd"
-#define RADIO_TOKEN_REBMED ":rd"
+#define RADIO_KEY_REBMED "h"
+#define RADIO_TOKEN_REBMED ":h"
 
 #define RADIO_CHANNEL_REBSEC "Rebel Agents"
-#define RADIO_KEY_REBSEC "ra"
-#define RADIO_TOKEN_REBSEC ":ra"
+#define RADIO_KEY_REBSEC "j"
+#define RADIO_TOKEN_REBSEC ":j"
 
 #define RADIO_CHANNEL_REBSQD "Rebel Squadron"
-#define RADIO_KEY_REBSQD "rs"
-#define RADIO_TOKEN_REBSQD ":rs"
+#define RADIO_KEY_REBSQD "k"
+#define RADIO_TOKEN_REBSQD ":k"
 
 #define RADIO_CHANNEL_REBBRD "Rebel Broadcast"
-#define RADIO_KEY_REBBRD "rb"
-#define RADIO_TOKEN_REBBRD ":rb"
+#define RADIO_KEY_REBBRD "l"
+#define RADIO_TOKEN_REBBRD ":l"
 
 //#define FREQ_COMMON 1459  // Common comms frequency, dark green
 

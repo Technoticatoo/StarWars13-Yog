@@ -12,7 +12,7 @@
 
 /area/rebels/squadron
 	name = "Squadron"
-	icon_state = "rebels_aquadron"
+	icon_state = "rebels_squadron"
 
 /area/rebels/agents
 	name = "Agents"

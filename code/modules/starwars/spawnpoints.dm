@@ -433,5 +433,44 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "assistant"
 
 
+//REBELS
+
+/obj/effect/landmark/start/rebels
+	name = "Rebels"
+	icon = 'icons/starwars/spawnpoints.dmi'
+	icon_state = "rebels"
+
+
+/obj/effect/landmark/start/rebels/general
+	name = "General"
+	icon_state = "rebel_general"
+
+/obj/effect/landmark/start/rebels/commander
+	name = "Commander"
+	icon_state = "rebel_commander"
+
+/obj/effect/landmark/start/rebels/agent
+	name = "Agent"
+	icon_state = "rebel_agent"
+
+/obj/effect/landmark/start/rebels/soldier
+	name = "Soldier"
+	icon_state = "rebel_soldier"
+
+/obj/effect/landmark/start/rebels/medic
+	name = "Medic"
+	icon_state = "rebel_medic"
+
+/obj/effect/landmark/start/rebels/pilot
+	name = "Fighter Pilot"
+	icon_state = "rebel_fighter_pilot"
+
+/obj/effect/landmark/start/rebels/support
+	name = "Support"
+	icon_state = "rebel_support"
+
+
+
+
 
 

@@ -228,7 +228,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Custom Job Preferences:</b><BR>"
 			dat += "<a href='?_src_=prefs;preference=ai_core_icon;task=input'><b>Preferred AI Core Display:</b> [preferred_ai_core_display]</a><br>"
 			dat += "<a href='?_src_=prefs;preference=sec_dept;task=input'><b>Preferred Security Department:</b> [prefered_security_department]</a><BR></td>"
-			dat += "<a href='?_src_=prefs;preference=chooseside;task=input'><b>Preferred Side:</b> [preferred_side]</a><BR></td>"
+			dat += "<a href='?_src_=prefs;preference=chooseside;task=input'><b>Preferred Side:</b> [preferred_side]</a><BR>Remember to set the jobs of the opposing side to never.<BR><BR></td>"
 
 			dat += "</tr></table>"
 

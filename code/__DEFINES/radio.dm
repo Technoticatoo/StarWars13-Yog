@@ -119,8 +119,8 @@
 #define RADIO_TOKEN_REBMIL ":rm"
 
 #define RADIO_CHANNEL_REBMED "Rebel Medical"
-#define RADIO_KEY_REBMED "rm"
-#define RADIO_TOKEN_REBMED ":rm"
+#define RADIO_KEY_REBMED "rd"
+#define RADIO_TOKEN_REBMED ":rd"
 
 #define RADIO_CHANNEL_REBSEC "Rebel Agents"
 #define RADIO_KEY_REBSEC "ra"

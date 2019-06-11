@@ -4,6 +4,7 @@
 	name = "mask"
 	icon = 'icons/turf/walls.dmi'
 	icon_state = "rockvault"
+	initial_gas_mix = "o2=22;n2=82;TEMP=255.37"
 
 /turf/open/floor/exoplanet
 	name = "space land"

@@ -1,13 +1,13 @@
 "aa" = (/turf/closed/wall,/area/rebels/command)
 "ab" = (/turf/open/mask{temperature = 230},/area/bluespaceriver/ground)
 "ac" = (/turf/open/floor/plating,/area/rebels/command)
-"ad" = (/obj/structure/flora/grass/brown,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"ae" = (/obj/structure/flora/tree/pine,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"af" = (/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"ag" = (/obj/structure/flora/bush,/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"ah" = (/obj/structure/flora/grass/green,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"ai" = (/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"aj" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
+"ad" = (/obj/structure/flora/grass/brown,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"ae" = (/obj/structure/flora/tree/pine,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"af" = (/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"ag" = (/obj/structure/flora/bush,/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"ah" = (/obj/structure/flora/grass/green,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"ai" = (/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"aj" = (/obj/structure/flora/ausbushes/brflowers,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "ak" = (/obj/machinery/computer/monitor,/turf/open/floor/tiled,/area/rebels/command)
 "al" = (/obj/machinery/computer/security,/turf/open/floor/tiled,/area/rebels/command)
 "am" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/bluespaceriver/ground)
@@ -20,7 +20,7 @@
 "at" = (/turf/closed/wall,/area/rebels/general)
 "au" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/rebels/squadron)
 "av" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/command)
-"aw" = (/obj/structure/filingcabinet,/turf/open/floor/tiled,/area/rebels/general)
+"aw" = (/obj/structure/filingcabinet,/turf/open/floor/tiled,/area/rebels/latejoin)
 "ax" = (/turf/closed/wall,/area/rebels/medical)
 "ay" = (/obj/machinery/door/airlock/command,/turf/open/floor/tiled,/area/rebels/command)
 "az" = (/obj/structure/sign/directions/command{icon_state = "direction_bridge"; dir = 1},/turf/closed/wall,/area/rebels/command)
@@ -30,44 +30,44 @@
 "aD" = (/obj/structure/table,/obj/item/stack/sheet/glass/fifty,/turf/open/floor/tiled,/area/rebels/medical)
 "aE" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/rebels/medical)
 "aF" = (/turf/open/floor/tiled,/area/rebels/medical)
-"aG" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/open/floor/tiled,/area/rebels/general)
-"aH" = (/obj/structure/table,/turf/open/floor/tiled,/area/rebels/general)
-"aI" = (/obj/structure/chair/stool/bar,/turf/open/floor/tiled,/area/rebels/general)
-"aJ" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/rebels/general)
-"aK" = (/obj/structure/table/glass,/turf/open/floor/tiled,/area/rebels/general)
+"aG" = (/turf/open/floor/tiled,/area/rebels/latejoin)
+"aH" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/open/floor/tiled,/area/rebels/latejoin)
+"aI" = (/obj/structure/table,/turf/open/floor/tiled,/area/rebels/latejoin)
+"aJ" = (/obj/structure/chair/stool/bar,/turf/open/floor/tiled,/area/rebels/latejoin)
+"aK" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/rebels/latejoin)
 "aL" = (/obj/spacepod/prebuilt/xwing,/turf/open/floor/plasteel,/area/rebels/squadron)
-"aM" = (/obj/structure/table,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/turf/open/floor/tiled,/area/rebels/general)
+"aM" = (/obj/structure/table/glass,/turf/open/floor/tiled,/area/rebels/latejoin)
 "aN" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/bluespaceriver/ground)
 "aO" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/rebels/medical)
-"aP" = (/obj/structure/table,/obj/item/pizzabox,/obj/item/pizzabox,/obj/item/pizzabox,/turf/open/floor/tiled,/area/rebels/general)
+"aP" = (/obj/structure/table,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/turf/open/floor/tiled,/area/rebels/latejoin)
 "aQ" = (/turf/closed/wall,/area/rebels/agents)
 "aR" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/rebels/agents)
 "aS" = (/obj/machinery/light{dir = 8},/turf/open/floor/tiled,/area/rebels/medical)
 "aT" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/rebels/medical)
-"aU" = (/obj/machinery/microwave,/obj/machinery/light{dir = 8},/turf/open/floor/tiled,/area/rebels/general)
-"aV" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/rebels/general)
+"aU" = (/obj/structure/table,/obj/item/pizzabox,/obj/item/pizzabox,/obj/item/pizzabox,/turf/open/floor/tiled,/area/rebels/latejoin)
+"aV" = (/obj/machinery/microwave,/obj/machinery/light{dir = 8},/turf/open/floor/tiled,/area/rebels/latejoin)
 "aW" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/rebels/agents)
 "aX" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/open/floor/plasteel,/area/rebels/agents)
 "aY" = (/turf/open/floor/plasteel,/area/rebels/agents)
 "aZ" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel,/area/rebels/squadron)
-"ba" = (/obj/machinery/vending/boozeomat,/turf/open/floor/tiled,/area/rebels/general)
+"ba" = (/obj/effect/landmark/start/rebels/support,/turf/open/floor/tiled,/area/rebels/latejoin)
 "bb" = (/obj/effect/landmark/start/rebels/commander,/turf/open/floor/tiled,/area/rebels/command)
 "bc" = (/obj/machinery/door/airlock/science,/turf/open/floor/tiled,/area/rebels/medical)
-"bd" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/tiled,/area/rebels/general)
-"be" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/tiled,/area/rebels/general)
-"bf" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/tiled,/area/rebels/general)
+"bd" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/rebels/latejoin)
+"be" = (/obj/machinery/vending/boozeomat,/turf/open/floor/tiled,/area/rebels/latejoin)
+"bf" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/tiled,/area/rebels/latejoin)
 "bg" = (/obj/machinery/door/airlock,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/rebels/general)
 "bh" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/rebels/agents)
-"bi" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
+"bi" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "bj" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/rebels/agents)
 "bk" = (/obj/machinery/door/airlock,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/rebels/agents)
 "bl" = (/obj/structure/closet/wardrobe/science_white,/turf/open/floor/tiled,/area/rebels/medical)
 "bm" = (/obj/structure/table,/obj/item/storage/toolbox,/turf/open/floor/tiled,/area/rebels/medical)
 "bn" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/medical)
 "bo" = (/obj/structure/sign/directions/engineering{icon_state = "direction_eng"; dir = 8},/turf/closed/wall,/area/rebels/medical)
-"bp" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/tiled,/area/rebels/general)
-"bq" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/rebels/general)
-"br" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/general)
+"bp" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/tiled,/area/rebels/latejoin)
+"bq" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/tiled,/area/rebels/latejoin)
+"br" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/tiled,/area/rebels/latejoin)
 "bs" = (/turf/closed/wall,/area/rebels/support)
 "bt" = (/obj/structure/sign/directions/medical,/turf/closed/wall,/area/rebels/support)
 "bu" = (/obj/machinery/door/airlock/science,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/rebels/support)
@@ -114,15 +114,17 @@
 "cj" = (/obj/structure/ore_box,/turf/open/floor/tiled,/area/rebels/general)
 "ck" = (/obj/machinery/door/airlock,/turf/open/floor/plating,/area/rebels/general)
 "cl" = (/obj/effect/landmark/start/rebels/medic,/turf/open/floor/tiled,/area/rebels/medical)
-"cm" = (/obj/effect/landmark/start/rebels/support,/turf/open/floor/tiled,/area/rebels/general)
+"cm" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/rebels/latejoin)
 "cn" = (/obj/effect/landmark/start/rebels/agent,/turf/open/floor/plasteel,/area/rebels/agents)
 "co" = (/obj/effect/landmark/start/rebels/pilot,/turf/open/floor/plasteel,/area/rebels/squadron)
 "cp" = (/obj/effect/landmark/start/rebels/support,/turf/open/floor/tiled,/area/rebels/support)
 "cq" = (/obj/effect/landmark/start/rebels/soldier,/turf/open/floor/tiled,/area/rebels/military)
-"cy" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"cA" = (/obj/structure/flora/grass/both,/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"cB" = (/obj/structure/flora/grass/both,/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
-"cC" = (/turf/open/floor/plating/asteroid/snow{temperature = 240},/area/bluespaceriver/ground)
+"cr" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/latejoin)
+"cs" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/rebels/latejoin)
+"cy" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"cA" = (/obj/structure/flora/grass/both,/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"cB" = (/obj/structure/flora/grass/both,/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"cC" = (/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "cD" = (/turf/open/floor/mineral{temperature = 233},/area/bluespaceriver/ground)
 
 (1,1,1) = {"
@@ -162,14 +164,14 @@ cDabababababcCabcCcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaaaacCcCcCcCcCcCcCcCcCcC
 cDabababababcCcCcCcCcCcCcCcCcCcCaaaaasaqbbaqbbaqaqbAaqaqaqaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCarararararararararcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
 cDababababababcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaqaqaqaaaaatcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCarauarararauarararauarcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
 cDababababababcCcCcCcCcCcCcCaaaaaqaqaqaqbbaqbbavaqaqaqaqaqaaawatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCahcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCababababababababababcD
-cDababababababcCcCcCcCcCcCaxaaaaaaaaaaaaaaaaaaaaaaaaayazaaaaaAaAatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
-cDababababababcCcCcCcCcCaxaxaBaCaDaEaFaxaGaAaHaIaAaAaAaAaAaJaAaAaKatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararaLararararaLarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
-cDababababababcCcCcCcCcCaxaFaFaFaFaFaFaxaMaAaHaIaAaAaAaAaAaAaAaAaAaAatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcD
-cDababababababcCcCcCcCcCaxaFclaFclaFaOaxaPaAaHaIaAaAaAaAaAaAaAaAaAaAataQaRaRaRaQaQcCcCcCcCcCcCcCcCcCarararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
-cDabababababcCcCcCcCcCcCaxaSaFaFaFaFaTaxaUaAaHaIaAaAcmaAaAaAaAaAaAaVataWaXaYaYaWaRcCcCcCcCcCcCcCcCaZararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
-cDabababababcCcCcCcCcCcCaxaFclaFclaFaFaxbaaAaHaIaAaAaAaAaAaAaAaAaAaAataYcnaYcnaYaRamcCcCcCcCaicCcCarararararaLararararaLararararararcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCabababababababcD
-cDabababababcCcCcCcCcCcCaxaFaFaFaFaFaFbcaAaAbdbebebebebebebebfbebebebgbhbjbhbhbhbkaNaNaNaNaNaNaNaNaucoarcoauarararauarararauarararaucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcD
-cDabababababcCcCadcCcCcCaxblaBbmaFbnaFbobpaAbqaAaAaAbraAbsbtbubsbvbsbsbwcnaYcnaYaRamcCcCcCcCcCcCcCarararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
+cDababababababcCcCcCcCcCcCaxaaaaaaaaaaaaaaaaaaaaaaaaayazaaaaaGaGatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
+cDababababababcCcCcCcCcCaxaxaBaCaDaEaFaxaHaGaIaJaGaGaGaGaGaKaGaGaMatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararaLararararaLarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcD
+cDababababababcCcCcCcCcCaxaFaFaFaFaFaFaxaPaGaIaJaGcsaGaGaGaGaGaGaGaGatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcD
+cDababababababcCcCcCcCcCaxaFclaFclaFaOaxaUaGaIaJaGaGaGaGaGaGaGaGaGaGataQaRaRaRaQaQcCcCcCcCcCcCcCcCcCarararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
+cDabababababcCcCcCcCcCcCaxaSaFaFaFaFaTaxaVaGaIaJaGaGbaaGaGaGaGaGaGbdataWaXaYaYaWaRcCcCcCcCcCcCcCcCaZararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
+cDabababababcCcCcCcCcCcCaxaFclaFclaFaFaxbeaGaIaJaGaGaGaGaGaGaGaGaGaGataYcnaYcnaYaRamcCcCcCcCaicCcCarararararaLararararaLararararararcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCabababababababcD
+cDabababababcCcCcCcCcCcCaxaFaFaFaFaFaFbcaGaGbfbpbpbpbpbpbpbpbqbpbpbpbgbhbjbhbhbhbkaNaNaNaNaNaNaNaNaucoarcoauarararauarararauarararaucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcD
+cDabababababcCcCadcCcCcCaxblaBbmaFbnaFbobraGcmaGaGaGcraGbsbtbubsbvbsbsbwcnaYcnaYaRamcCcCcCcCcCcCcCarararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
 cDababababababcCcCcCcCcCaxaxaxaxbcaxaxaxbxbxbybxbxbxbxbxbsbzcpbBbCbDbsaWbEbEbEaWaRcCcCcCcCcCcCcCcCarcoarcoarararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcD
 cDababababababcCcCcCcCcCbxbFbFbFbFbGbHbIbJbKbLbMbMbNbObPbsbQbRcpcpbSbsaQaRaRaRaQaQcCcCcCcCcCcCcCcCcCararararbTararararbTarararararcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcD
 cDababababababcCcCcCcCcCbxbxbFbFbFbFbFbFbFbUbFbFbFbUbFbFbsbVcpbBbWbsbscCcCcCcCcCcCcCcCcCcCahcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCaiabababababababababcD

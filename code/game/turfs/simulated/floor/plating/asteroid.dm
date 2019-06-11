@@ -347,3 +347,21 @@
 /turf/open/floor/plating/asteroid/snow/atmosphere
 	initial_gas_mix = FROZEN_ATMOS
 	planetary_atmos = FALSE
+
+/turf/open/floor/plating/asteroid/snow/planetary
+	initial_gas_mix = "o2=22;n2=82;TEMP=255.37"
+	planetary_atmos = TRUE
+
+/turf/open/floor/plating/asteroid/snow/planetary/ice
+	name = "icy snow"
+	desc = "Looks colder."
+	baseturfs = /turf/open/floor/plating/asteroid/snow/ice
+	initial_gas_mix = "o2=22;n2=82;TEMP=255.37"
+	floor_variance = 0
+	icon_state = "snow-ice"
+	icon_plating = "snow-ice"
+	environment_type = "snow_cavern"
+	footstep = FOOTSTEP_FLOOR
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY

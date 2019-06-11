@@ -68,10 +68,22 @@ GLOBAL_LIST_INIT(security_positions, list(
 	"Interrogator",
 	"Crewman",
 	"Navy Guard"))
+//STAR WARS EDIT
 
 GLOBAL_LIST_INIT(council_positions, list(
 	"Sith",
 	"Sith Acolyte"))
+
+GLOBAL_LIST_INIT(rebel_positions, list(
+	"General",
+	"Commander",
+	"Fighter Pilot",
+	"Soldier",
+	"Medic",
+	"Agent",
+	"Support"))
+
+//END OF
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(
 	"AI",

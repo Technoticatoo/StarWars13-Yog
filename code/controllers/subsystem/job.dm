@@ -571,26 +571,51 @@ SUBSYSTEM_DEF(job)
 
 /datum/controller/subsystem/job/proc/SendToLateJoin(mob/M, buckle = TRUE)
 	var/atom/destination
+//STAR WARS EDIT
+	var/datum/job/J = SSjob.GetJob(M.mind.assigned_role) //STAR WARS EDIT
+	var/area/rebels/latejoin/B = ""
+
 	if(M.mind && M.mind.assigned_role && length(GLOB.jobspawn_overrides[M.mind.assigned_role])) //We're doing something special today.
 		destination = pick(GLOB.jobspawn_overrides[M.mind.assigned_role])
 		destination.JoinPlayerHere(M, FALSE)
 		return
-
-	if(latejoin_trackers.len)
-		destination = pick(latejoin_trackers)
-		destination.JoinPlayerHere(M, buckle)
-		return
+	if(J.faction == "Rebels")
+		B = GLOB.areas_by_type[/area/rebels/latejoin]
+	else
+		if(latejoin_trackers.len)
+			destination = pick(latejoin_trackers)
+			destination.JoinPlayerHere(M, buckle)
+			return
 
 	//bad mojo
-	var/area/shuttle/arrival/A = GLOB.areas_by_type[/area/shuttle/arrival]
+	var/area/shuttle/arrival/A = ""
+
+	if(J.faction != "Rebels")
+		A = GLOB.areas_by_type[/area/shuttle/arrival]
+
+	if(B)
+		//first check if we can find a chair
+		var/obj/structure/chair/C = locate() in B
+		if(C)
+			C.JoinPlayerHere(M, buckle)
+			return
+		//last hurrah
+		var/list/avail = list()
+		for(var/turf/T in B)
+			if(!is_blocked_turf(T, TRUE))
+				avail += T
+		if(avail.len)
+			destination = pick(avail)
+			destination.JoinPlayerHere(M, FALSE)
+			return
+
 	if(A)
 		//first check if we can find a chair
 		var/obj/structure/chair/C = locate() in A
 		if(C)
 			C.JoinPlayerHere(M, buckle)
 			return
-
-		//last hurrah
+			//last hurrah
 		var/list/avail = list()
 		for(var/turf/T in A)
 			if(!is_blocked_turf(T, TRUE))
@@ -601,7 +626,13 @@ SUBSYSTEM_DEF(job)
 			return
 
 	//pick an open spot on arrivals and dump em
-	var/list/arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))
+	var/list/arrivals_turfs = ""
+
+	if(J.faction == "Rebels")
+		arrivals_turfs = shuffle(get_area_turfs(/area/rebels/latejoin))
+	else
+		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))
+
 	if(arrivals_turfs.len)
 		for(var/turf/T in arrivals_turfs)
 			if(!is_blocked_turf(T, TRUE))
@@ -615,6 +646,7 @@ SUBSYSTEM_DEF(job)
 		message_admins(msg)
 		CRASH(msg)
 
+//END OF STAR WARS EDIT
 
 ///////////////////////////////////
 //Keeps track of all living heads//

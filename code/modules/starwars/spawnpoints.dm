@@ -469,6 +469,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	name = "Support"
 	icon_state = "rebel_support"
 
+/obj/effect/landmark/start/rebels/latejoin
+	name = "lateJoin"
+	icon_state = "rebel_latejoin"
+
 
 
 

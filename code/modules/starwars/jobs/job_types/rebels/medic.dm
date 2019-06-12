@@ -28,7 +28,7 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hos
-	ears = /obj/item/radio/headset/rebels/medical
+	ears = /obj/item/radio/headset/rebel_medical
 	uniform = /obj/item/clothing/under/imperial/cotg
 	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat

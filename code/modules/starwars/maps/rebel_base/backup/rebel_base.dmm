@@ -122,8 +122,8 @@
 "cr" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/latejoin)
 "cs" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/rebels/latejoin)
 "ct" = (/turf/closed/indestructible/rock,/area/bluespaceriver/ground)
-"cu" = (/turf/open/floor/arrival/rebel_base,/area/warpto/rebel_base)
-"cv" = (/obj/structure/ladder,/obj/structure/warpfield/rebel_underground,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"cu" = (/turf/open/floor/plating/asteroid/snow/planetary/arrival/rebel_base,/area/bluespaceriver/ground)
+"cy" = (/obj/structure/ladder,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "cA" = (/obj/structure/flora/grass/both,/obj/structure/flora/grass/both,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "cB" = (/obj/structure/flora/grass/both,/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "cC" = (/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
@@ -187,7 +187,7 @@ ctcDabababababababababcCcCcCcCcCcCcCcCataAaAaAaAaAaAaAaAcjatcCcCcCcCcCcCcCcCcCcC
 ctcDabababababababababcCcCcCcCcCcCcCcCatatatatatckatatatatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
 ctcDabababababababababcCcCcCcCcCcCcCcCcCcCbicCcCcCcCcCbicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
 ctcDabababababababababcCcCcCcCcCcCcCcCcCcCcCcCcucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababababcDct
-ctcDababababababababababcCcCcCcCcCcCcCcCcCcCcCcvcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDababababababababababcCcCcCcCcCcCcCcCcCcCcCcycCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
 ctcDababababababababababcCahcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababababcDct
 ctcDababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababababcDct
 ctcDabababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCabababababababababcDct

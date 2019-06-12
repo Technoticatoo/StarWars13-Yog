@@ -55,12 +55,12 @@ em						{font-style: normal;	font-weight: bold;}
 .aiprivradio			{color: #ff00ff;}
 .redteamradio           {color: #ff0000;}
 .blueteamradio          {color: #0000ff;}
-.rebcomradio          {color: #d13030;}
-.rebmilradio          {color: #d13030;}
-.rebmedradio          {color: #d13030;}
-.rebsecradio          {color: #d13030;}
-.rebsqdradio          {color: #d13030;}
-.rebbrdradio          {color: #d13030;}
+.rebcomradio			{color: #d13030;}
+.rebmilradio 			{color: #d13030;}
+.rebmedradio			{color: #d13030;}
+.rebsecradio			{color: #d13030;}
+.rebsqdradio			{color: #d13030;}
+.rebbrdradio			{color: #d13030;}
 
 .yell					{					font-weight: bold;}
 

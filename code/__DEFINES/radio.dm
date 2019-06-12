@@ -49,6 +49,34 @@
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
 
+//STAR WARS
+
+#define RADIO_CHANNEL_REBCOM "Rebel Command"
+#define RADIO_KEY_REBCOM "1"
+#define RADIO_TOKEN_REBCOM ":1"
+
+#define RADIO_CHANNEL_REBMIL "Rebel Military"
+#define RADIO_KEY_REBMIL "2"
+#define RADIO_TOKEN_REBMIL ":2"
+
+#define RADIO_CHANNEL_REBMED "Rebel Medical"
+#define RADIO_KEY_REBMED "3"
+#define RADIO_TOKEN_REBMED ":3"
+
+#define RADIO_CHANNEL_REBSEC "Rebel Agents"
+#define RADIO_KEY_REBSEC "4"
+#define RADIO_TOKEN_REBSEC ":4"
+
+#define RADIO_CHANNEL_REBSQD "Rebel Squadron"
+#define RADIO_KEY_REBSQD "5"
+#define RADIO_TOKEN_REBSQD ":5"
+
+#define RADIO_CHANNEL_REBBRD "Rebel Broadcast"
+#define RADIO_KEY_REBBRD "6"
+#define RADIO_TOKEN_REBBRD ":6"
+
+// END OFF
+
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
@@ -63,6 +91,13 @@
 #define FREQ_MEDICAL 1355  // Medical comms frequency, soft blue
 #define FREQ_ENGINEERING 1357  // Engineering comms frequency, orange
 #define FREQ_SECURITY 1359  // Security comms frequency, red
+
+#define FREQ_REBCOM 1361
+#define FREQ_REBMIL 1363
+#define FREQ_REBMED 1365
+#define FREQ_REBSEC 1367
+#define FREQ_REBSQD 1369
+#define FREQ_REBBRD 1371
 
 #define FREQ_STATUS_DISPLAYS 1435
 #define FREQ_ATMOS_ALARMS 1437  // air alarms <-> alert computers
@@ -104,45 +139,6 @@
 #define DEFAULT_SIGNALER_CODE 30
 
 
-//STAR WARS
 
-// Radios use a large variety of predefined frequencies.
-
-//say based modes like binary are in living/say.dm
-
-#define RADIO_CHANNEL_REBCOM "Rebel Command"
-#define RADIO_KEY_REBCOM "f"
-#define RADIO_TOKEN_REBCOM ":f"
-
-#define RADIO_CHANNEL_REBMIL "Rebel Military"
-#define RADIO_KEY_REBMIL "g"
-#define RADIO_TOKEN_REBMIL ":g"
-
-#define RADIO_CHANNEL_REBMED "Rebel Medical"
-#define RADIO_KEY_REBMED "h"
-#define RADIO_TOKEN_REBMED ":h"
-
-#define RADIO_CHANNEL_REBSEC "Rebel Agents"
-#define RADIO_KEY_REBSEC "j"
-#define RADIO_TOKEN_REBSEC ":j"
-
-#define RADIO_CHANNEL_REBSQD "Rebel Squadron"
-#define RADIO_KEY_REBSQD "k"
-#define RADIO_TOKEN_REBSQD ":k"
-
-#define RADIO_CHANNEL_REBBRD "Rebel Broadcast"
-#define RADIO_KEY_REBBRD "l"
-#define RADIO_TOKEN_REBBRD ":l"
-
-//#define FREQ_COMMON 1459  // Common comms frequency, dark green
-
-#define FREQ_REBCOM 1470
-#define FREQ_REBMIL 1471
-#define FREQ_REBMED 1472
-#define FREQ_REBSEC 1473
-#define FREQ_REBSQD 1474
-#define FREQ_REBBRD 1475
-
-//#define MAX_FREQ 1489 // ------------------------------------------------------
 
 

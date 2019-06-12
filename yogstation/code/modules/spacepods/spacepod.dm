@@ -60,6 +60,8 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	var/last_rotate = 0
 
 	var/brakes = TRUE
+	var/pilotview = 0
+	var/zoomoutby = 5
 	var/user_thrust_dir = 0
 	var/forward_maxthrust = 6
 	var/backward_maxthrust = 3
@@ -559,6 +561,23 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	if(remove_rider(usr))
 		to_chat(usr, "<span class='notice'>You climb out of [src].</span>")
 
+/obj/spacepod/verb/toggle_view()
+	set name = "Toggle View"
+	set category = "Spaceship"
+	set src = usr.loc
+
+	if(!verb_check())
+		return
+
+	if(pilotview == 0 )
+		pilotview = zoomoutby
+		usr.client.change_view(world.view + pilotview)
+	else
+		pilotview = 0
+		usr.client.change_view(world.view)
+
+	to_chat(usr, "<span class='notice'>You toggle the viewscreen.</span>")
+
 /obj/spacepod/verb/warp_planets()
 	set name = "Jump to Sector"
 	set category = "Spaceship"
@@ -622,6 +641,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		return
 	brakes = !brakes
 	to_chat(usr, "<span class='notice'>You toggle the brakes [brakes ? "on" : "off"].</span>")
+
 
 /obj/spacepod/AltClick(user)
 	if(!verb_check(user = user))

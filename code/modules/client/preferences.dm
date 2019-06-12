@@ -1544,7 +1544,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						prefered_security_department = department
 
 				if("chooseside")
-					var/pside = input(user, "Choose your preferred security Side:", "Side") as null|anything in GLOB.side_prefs
+					var/pside = input(user, "Choose your preferred Side:", "Side") as null|anything in GLOB.side_prefs
 					if(pside)
 						preferred_side = pside
 

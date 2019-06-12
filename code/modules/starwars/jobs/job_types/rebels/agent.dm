@@ -28,7 +28,7 @@
 
 	//id = /obj/item/card/id/silver
 	//belt = /obj/item/pda/heads/hos
-	ears = /obj/item/radio/headset/rebels/agent
+	ears = /obj/item/radio/headset/rebel_agent
 	uniform = /obj/item/clothing/under/rebels/grey
 	shoes = /obj/item/clothing/shoes/imperial
 	suit = /obj/item/clothing/suit/space/hardsuit/rebel/agent

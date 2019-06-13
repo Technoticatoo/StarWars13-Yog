@@ -2684,6 +2684,7 @@
 #include "code\modules\starwars\gamemodes\emperor\rebels.dm"
 #include "code\modules\starwars\gamemodes\jedi\jedi.dm"
 #include "code\modules\starwars\items\headsets.dm"
+#include "code\modules\starwars\items\notes.dm"
 #include "code\modules\starwars\items\pda.dm"
 #include "code\modules\starwars\items\rebel_headsets.dm"
 #include "code\modules\starwars\items\warpfield.dm"

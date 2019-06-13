@@ -46,4 +46,4 @@
 	name = "rebel support radio headset"
 	desc = "Headset used by the rebel support staff, tasked with support and service tasks.\nChannels are as follows: :6 - rebel broadcast."
 	icon_state = "srv_headset"
-	keyslot = new /obj/item/encryptionkey/headset_rebsup
+	keyslot = new /obj/item/encryptionkey/headset_rebbrd

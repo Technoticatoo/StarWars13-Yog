@@ -23,7 +23,7 @@
 	icon_state = "reb_sqd"
 	channels = list(RADIO_CHANNEL_REBSQD = 1, RADIO_CHANNEL_REBBRD = 1)
 
-/obj/item/encryptionkey/headset_rebsup
+/obj/item/encryptionkey/headset_rebbrd
 	name = "rebel support radio encryption key"
 	icon_state = "reb_sup"
 	channels = list(RADIO_CHANNEL_REBBRD = 1)

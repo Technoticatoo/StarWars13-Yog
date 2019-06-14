@@ -78,9 +78,23 @@ purge areas
 	icon_state = "captain"
 
 //purge med
-/area/purge/med/check
+
+/area/purge/medical/checkpoint
 	name = "Medical Checkpoint"
 	icon_state = "med_check"
+
+/area/purge/medical/morgue
+	name = "Medical Morgue"
+	icon_state = "med_morgue"
+
+/area/purge/medical/storage
+	name = "Medical Storage"
+	icon_state = "med_storage"
+
+/area/purge/medical/main
+	name = "Medical"
+	icon_state = "med_main"
+
 
 /area/purge/home
 	name = "Home"

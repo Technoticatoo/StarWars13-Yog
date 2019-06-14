@@ -193,7 +193,9 @@
 	category = list("Spaceship Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_ALL
 
-/*/datum/design/loot_box
+//loot_box not used
+/*
+/datum/design/loot_box
 	name = "Spaceship Loot Storage Module"
 	desc = "Allows the construction of a Spaceship Auxillary Cargo Module."
 	id = "podcargo_lootbox"
@@ -201,8 +203,8 @@
 	materials = list(MAT_METAL=7500, MAT_GLASS=2500)
 	build_path = /obj/item/spacepod_equipment/cargo/loot_box
 	category = list("Spaceship Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_ALL*/
-
+	departmental_flags = DEPARTMENTAL_FLAG_ALL
+*/
 //////////////////////////////////////////
 //////SPACEPOD LOCK ITEMS////////////////
 //////////////////////////////////////////

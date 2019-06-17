@@ -75,6 +75,7 @@ GLOBAL_LIST_INIT(council_positions, list(
 	"Sith Acolyte"))
 
 GLOBAL_LIST_INIT(rebel_positions, list(
+	"Jedi Knight",
 	"General",
 	"Commander",
 	"Fighter Pilot",

@@ -13,6 +13,7 @@
 
 	var/check_anti_magic = TRUE
 	var/check_holy = FALSE
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "force_slow"
 
 /obj/effect/proc_holder/spell/targeted/forceslow/cast(list/targets,mob/user = usr)

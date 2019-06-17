@@ -9,6 +9,7 @@
 	invocation_type = "whisper"
 	school = "restoration"
 	sound = 'sound/magic/staff_healing.ogg'
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "force_heal"
 
 

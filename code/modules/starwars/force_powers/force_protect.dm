@@ -8,6 +8,7 @@
 	invocation_type = "shout"
 	school = "transmutation"
 	//sound = 'sound/magic/staff_healing.ogg'
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "force_armor"
 
 

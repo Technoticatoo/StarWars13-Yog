@@ -9,6 +9,7 @@
 	school = "conjuration"
 	charge_max = 100
 	cooldown_min = 50
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "saber_return"
 
 /obj/effect/proc_holder/spell/self/saber_return/cast(mob/living/carbon/human/user)

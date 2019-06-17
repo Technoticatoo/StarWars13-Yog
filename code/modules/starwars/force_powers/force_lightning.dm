@@ -13,7 +13,7 @@
 	var/ready = FALSE
 	var/static/mutable_appearance/halo
 	var/sound/Snd // so far only way i can think of to stop a sound, thank MSO for the idea.
-
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "lightning"
 
 /obj/effect/proc_holder/spell/targeted/forceln/Click()

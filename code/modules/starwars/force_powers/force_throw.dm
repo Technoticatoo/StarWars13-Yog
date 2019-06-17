@@ -12,7 +12,7 @@
 	var/maxthrow = 5
 	var/sparkle_path = /obj/effect/temp_visual/gravpush
 	var/anti_magic_check = TRUE
-
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "repulse"
 
 /obj/effect/proc_holder/spell/aoe_turf/forceth/cast(list/targets,mob/user = usr, var/stun_amt = 40)

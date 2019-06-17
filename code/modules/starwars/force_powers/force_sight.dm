@@ -13,7 +13,8 @@
 
 	var/check_anti_magic = TRUE
 	var/check_holy = FALSE
-	action_icon_state = "forcesight"
+	action_icon = 'icons/starwars/force_powers.dmi'
+	action_icon_state = "force_sight"
 
 /obj/effect/proc_holder/spell/self/forcesight/cast(mob/user = usr)
 	var/mob/living/carbon/mira = usr

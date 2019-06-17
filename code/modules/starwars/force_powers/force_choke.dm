@@ -23,6 +23,7 @@
 
 	var/check_anti_magic = TRUE
 	var/check_holy = FALSE
+	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "force_choke"
 
 /obj/effect/proc_holder/spell/targeted/forceck/cast(list/targets,mob/user = usr)

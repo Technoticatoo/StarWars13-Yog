@@ -441,7 +441,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	icon_state = "rebels"
 
 /obj/effect/landmark/start/rebels/jedi
-	name = "jedi"
+	name = "Jedi Knight"
 	icon_state = "rebel_jedi"
 
 /obj/effect/landmark/start/rebels/general

@@ -13,7 +13,7 @@
 
 
 /datum/job/jedi
-	title = "Jedi"
+	title = "Jedi Knight"
 	flag = JEDI
 	department_head = list("General")
 	department_flag = REBELS

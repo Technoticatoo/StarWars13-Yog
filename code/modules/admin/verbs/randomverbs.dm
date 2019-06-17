@@ -457,10 +457,10 @@ Traitors and the like can also be revived with the previous role mostly intact.
 
 
 	switch(new_character.mind.special_role)
-		if(ROLE_JEDI)
+		/*if(ROLE_JEDI)
 			new_character.forceMove(pick(GLOB.jedistart))
 			var/datum/antagonist/jedi/A = new_character.mind.has_antag_datum(/datum/antagonist/jedi,TRUE)
-			A.equip_jedi()
+			A.equip_jedi()*/
 		if(ROLE_WIZARD)
 			new_character.forceMove(pick(GLOB.wizardstart))
 			var/datum/antagonist/wizard/A = new_character.mind.has_antag_datum(/datum/antagonist/wizard,TRUE)

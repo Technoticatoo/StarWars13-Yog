@@ -4,9 +4,20 @@
 	icon_state = "com_headset"
 	keyslot = new /obj/item/encryptionkey/headset_rebcom
 
-/obj/item/radio/headset/heads/general/ComponentInitialize()
+/obj/item/radio/headset/heads/rebel_general/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
+
+/obj/item/radio/headset/heads/rebel_jedi
+	name = "\proper the jedi knight's headset"
+	desc = "The headset of the Jedi Knight.\nChannels are as follows: :1 - rebel command, :2 - rebel military, :3 - rebel medical, :4 - rebel agents, :5 - rebel squadron, :6 - rebel broadcast."
+	icon_state = "com_headset"
+	keyslot = new /obj/item/encryptionkey/headset_rebcom
+
+/obj/item/radio/headset/heads/rebel_jedi/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))
+
 
 /obj/item/radio/headset/heads/rebel_commander
 	name = "\proper the rebel commander's headset"

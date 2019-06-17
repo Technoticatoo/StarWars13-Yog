@@ -146,7 +146,7 @@
 	new_character.mind.make_Wizard()
 	return TRUE
 
-/datum/admins/proc/makeJedi()
+/*/datum/admins/proc/makeJedi()
 
 	var/list/mob/dead/observer/candidates = pollGhostCandidates("Do you wish to be considered for the position of a Jedi Foundation 'diplomat'?", ROLE_JEDI, null)
 
@@ -155,7 +155,7 @@
 	var/mob/living/carbon/human/new_character = makeBody(selected)
 	new_character.mind.make_Jedi()
 	return TRUE
-
+*/
 
 /datum/admins/proc/makeCult()
 	var/datum/game_mode/cult/temp = new

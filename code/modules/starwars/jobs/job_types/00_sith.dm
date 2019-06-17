@@ -30,7 +30,7 @@
 	minimal_player_age = 14
 	exp_requirements = 180
 	exp_type = EXP_TYPE_COMMAND
-	var/hud_version = "jedi"
+	var/hud_version = "wizard"
 
 	outfit = /datum/outfit/job/sith
 

@@ -127,14 +127,14 @@
 				else
 					message_admins("[key_name_admin(usr)] tried to create a wizard. Unfortunately, there were no candidates available.")
 					log_admin("[key_name(usr)] failed to create a wizard.")
-			if("jedi")
+			/*if("jedi")
 				message_admins("[key_name(usr)] is creating a jedi...")
 				if(src.makeJedi())
 					message_admins("[key_name(usr)] created a jedi.")
 					log_admin("[key_name(usr)] created a jedi.")
 				else
 					message_admins("[key_name_admin(usr)] tried to create a jedi. Unfortunately, there were no candidates available.")
-					log_admin("[key_name(usr)] failed to create a jedi.")
+					log_admin("[key_name(usr)] failed to create a jedi.")*/
 			if("nukeops")
 				message_admins("[key_name(usr)] is creating a nuke team...")
 				if(src.makeNukeTeam())

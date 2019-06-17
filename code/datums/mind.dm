@@ -217,9 +217,10 @@
 	remove_antag_datum(/datum/antagonist/wizard)
 	special_role = null
 
-/datum/mind/proc/remove_jedi()
+/*/datum/mind/proc/remove_jedi()
 	remove_antag_datum(/datum/antagonist/jedi)
 	special_role = null
+*/
 
 /datum/mind/proc/remove_cultist()
 	if(src in SSticker.mode.cult)
@@ -618,12 +619,12 @@
 		assigned_role = ROLE_WIZARD
 		add_antag_datum(/datum/antagonist/wizard)
 
-/datum/mind/proc/make_Jedi()
+/*/datum/mind/proc/make_Jedi()
 	if(!has_antag_datum(/datum/antagonist/jedi))
 		special_role = ROLE_JEDI
 		assigned_role = ROLE_JEDI
 		add_antag_datum(/datum/antagonist/jedi)
-
+*/
 
 /datum/mind/proc/make_Cultist()
 	// yogs start - Donor features, quiet round

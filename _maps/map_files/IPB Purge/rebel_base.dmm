@@ -123,7 +123,7 @@
 "cs" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/rebels/latejoin)
 "ct" = (/turf/closed/indestructible/rock,/area/bluespaceriver/ground)
 "cu" = (/turf/open/floor/arrival/rebel_base,/area/warpto/rebel_base)
-"cv" = (/obj/structure/ladder,/obj/structure/warpfield/rebel_underground,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
+"cv" = (/obj/structure/warpfield/rebel_underground,/obj/structure/starwars/ladder/down,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "cw" = (/turf/closed/wall,/area/rebels/latejoin)
 "cx" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/rebels/latejoin)
 "cy" = (/obj/machinery/light{dir = 8},/obj/structure/table,/turf/open/floor/tiled,/area/rebels/medical)

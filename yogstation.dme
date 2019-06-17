@@ -2715,6 +2715,7 @@
 #include "code\modules\starwars\jobs\job_types\rebels\medic.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\soldier.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\support.dm"
+#include "code\modules\starwars\objects\structures\ladder.dm"
 #include "code\modules\starwars\planets\planets.dm"
 #include "code\modules\starwars\radio\encryptionkey.dm"
 #include "code\modules\starwars\species\bothan.dm"

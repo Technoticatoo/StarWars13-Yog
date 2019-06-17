@@ -1,6 +1,6 @@
 "aa" = (/turf/open/floor/plasteel/airless,/area/rebels/military)
 "ab" = (/obj/machinery/light/floor,/turf/open/floor/plasteel/airless,/area/rebels/military)
-"ac" = (/obj/structure/ladder,/obj/structure/warpfield/rebel_base,/turf/open/floor/plasteel/airless,/area/space)
+"ac" = (/obj/structure/warpfield/rebel_base,/obj/structure/starwars/ladder/up,/turf/open/floor/plasteel/airless,/area/space)
 "ad" = (/turf/open/floor/arrival/rebel_underground,/area/warpto/rebel_underground)
 "ae" = (/turf/closed/indestructible/rock,/area/rebels/military)
 "af" = (/turf/closed/wall,/area/rebels/military)

@@ -2665,6 +2665,7 @@
 #include "code\modules\starwars\clothing\mandalorian\hardsuits.dm"
 #include "code\modules\starwars\clothing\rebel\hardsuits.dm"
 #include "code\modules\starwars\clothing\rebel\head.dm"
+#include "code\modules\starwars\clothing\rebel\shoes.dm"
 #include "code\modules\starwars\clothing\rebel\uniforms.dm"
 #include "code\modules\starwars\corpses\corpses.dm"
 #include "code\modules\starwars\datums\emperor.dm"

@@ -28,12 +28,21 @@
 	exp_type = EXP_TYPE_COMMAND
 	var/hud_version = "wizard"
 
-	outfit = /datum/outfit/jedi
+	outfit = /datum/outfit/job/jedi
 
 	access = list(ACCESS_REBELS_COMMAND, ACCESS_REBELS_MILITARY, ACCESS_REBELS_MEDICAL, ACCESS_REBELS_SQUADRON, ACCESS_REBELS_AGENTS, ACCESS_REBELS_SUPPORT, ACCESS_REBELS_GENERAL)
 	minimal_access = list(ACCESS_REBELS_COMMAND, ACCESS_REBELS_MILITARY, ACCESS_REBELS_MEDICAL, ACCESS_REBELS_SQUADRON, ACCESS_REBELS_AGENTS, ACCESS_REBELS_SUPPORT, ACCESS_REBELS_GENERAL)
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
 	display_order = JOB_DISPLAY_ORDER_JEDI
+
+/datum/outfit/job/jedi
+	name= "Jedi"
+	uniform = /obj/item/clothing/under/rebels/jedi
+	shoes = /obj/item/clothing/shoes/rebels/jedi
+	ears = /obj/item/radio/headset/heads/rebel_jedi
+	head = /obj/item/clothing/head/helmet/rebels/jedi
+	back = /obj/item/storage/backpack
+	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/blue=1, /obj/item/storage/box=1)
 
 

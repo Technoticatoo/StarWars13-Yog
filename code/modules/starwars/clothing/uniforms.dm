@@ -99,32 +99,6 @@
 	desc = "The jet-black robes of a Sith Lord."
 	icon_state = "sith"
 
-// REBEL
-
-/obj/item/clothing/under/rebel
-	name = "Rebel Jumpsuit"
-	desc = "Your typical Rebel Jumpsuit"
-	alternate_worn_icon = 'icons/starwars/clothing/uniform_mob.dmi'
-	icon = 'icons/starwars/clothing/uniform_obj.dmi'
-	icon_state = "rebel"
-	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
-	strip_delay = 50
-	alt_covers_chest = TRUE
-	sensor_mode = SENSOR_COORDS
-	random_sensor = FALSE
-
-/obj/item/clothing/under/rebel/jedi
-	name = "Jedi's Robes"
-	desc = "The modestly brown robes of a Jedi Knight."
-	icon_state = "jedi"
-
-/obj/item/clothing/under/color/jedi
-	alternate_worn_icon = 'icons/starwars/clothing/uniform_mob.dmi'
-	icon = 'icons/starwars/clothing/uniform_obj.dmi'
-	name = "jedi clothes"
-	icon_state = "jedi"
-	item_state = "jedi"
-	item_color = "jedi"
 
 /obj/item/clothing/under/imperial/civilian
 	name = "Civilian Jumpsuit"

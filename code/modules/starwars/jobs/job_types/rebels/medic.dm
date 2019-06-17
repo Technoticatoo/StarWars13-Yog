@@ -30,7 +30,7 @@
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/rebel_medical
 	uniform = /obj/item/clothing/under/imperial/cotg
-	shoes = /obj/item/clothing/shoes/imperial
+	shoes = /obj/item/clothing/shoes/rebels
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/hos
 	head = /obj/item/clothing/head/helmet/imperial/cotg

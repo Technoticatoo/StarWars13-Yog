@@ -1,12 +1,3 @@
-/datum/outfit/jedi
-	name= "Jedi"
-	uniform = /obj/item/clothing/under/rebel/jedi
-	shoes = /obj/item/clothing/shoes/rebel/jedi
-	ears = /obj/item/radio/headset/heads/rebel_jedi
-	head = /obj/item/clothing/head/jedi
-	back = /obj/item/storage/backpack
-	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/blue=1, /obj/item/storage/box=1)
-
 /*/datum/outfit/jedi/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(visualsOnly)
 		return

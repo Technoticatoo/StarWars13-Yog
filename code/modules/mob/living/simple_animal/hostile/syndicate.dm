@@ -314,3 +314,43 @@
 /mob/living/simple_animal/hostile/viscerator/Initialize()
 	. = ..()
 	AddComponent(/datum/component/swarming)
+
+
+//star wars
+
+/mob/living/simple_animal/hostile/scavenger_droid/scav
+	name = "Scavenger Droid"
+	desc = "This droid is used mostly by Trandoshan mercenaries."
+	icon = 'icons/starwars/mob/droids.dmi'	//MEEE
+	icon_state = "scav"	//meee
+	icon_living = "scav"	//meee
+	icon_dead = "scav"	//meee
+	icon_gib = "scav"	//meeee
+	mob_biotypes = list(MOB_ROBOTIC)
+	speak_chance = 0
+	turns_per_move = 5
+	response_help = "pokes"
+	response_disarm = "shoves"
+	response_harm = "cuts"
+	speed = 0
+	stat_attack = CONSCIOUS
+	robust_searching = 1
+	maxHealth = 75
+	health = 75
+	harm_intent_damage = 10
+	melee_damage_lower = 0
+	melee_damage_upper = 15
+	attacktext = "hits"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	a_intent = INTENT_HARM
+	loot = list(/obj/effect/mob_spawn/human/corpse/syndicatesoldier)
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	unsuitable_atmos_damage = 15
+	faction = list(ROLE_REBEL)	//rebel for now
+	check_friendly_fire = 1
+	status_flags = CANPUSH
+	del_on_death = 1
+	dodging = TRUE
+	rapid_melee = 2
+
+	do_footstep = TRUE

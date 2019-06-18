@@ -139,6 +139,13 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	else
 		return ..()
 
+/obj/item/melee/transforming/energy/sword/saber/AltClick(user)
+	var/lcolor = input(user, "Choose your lightsaber color:", "Color") as null|anything in GLOB.lightsaber_color
+	if(lcolor)
+		light_color = possible_colors[lcolor]
+		icon_state = "sword[lcolor]"
+		update_light()
+
 
 // STUN KILL TOGGLE WEAPONS
 /obj/item/gun/energy/e_gun/starwars

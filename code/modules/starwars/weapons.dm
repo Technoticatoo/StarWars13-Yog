@@ -93,6 +93,7 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 /obj/item/melee/transforming/energy/sword/saber
 	var/list/possible_colors = list("red" = LIGHT_COLOR_RED, "blue" = LIGHT_COLOR_LIGHT_CYAN, "green" = LIGHT_COLOR_GREEN, "purple" = LIGHT_COLOR_LAVENDER)
 	var/hacked = FALSE
+	var/colorchanged = 0
 
 /obj/item/melee/transforming/energy/sword/saber/Initialize(mapload)
 	. = ..()
@@ -140,11 +141,14 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 		return ..()
 
 /obj/item/melee/transforming/energy/sword/saber/AltClick(user)
-	var/lcolor = input(user, "Choose your lightsaber color:", "Color") as null|anything in GLOB.lightsaber_color
-	if(lcolor)
-		light_color = possible_colors[lcolor]
-		icon_state = "sword[lcolor]"
-		update_light()
+	if(colorchanged == 0)
+		item_color = input(user, "Choose your lightsaber color:", "Color") as null|anything in GLOB.lightsaber_color
+		if(item_color)
+			light_color = possible_colors[item_color]
+			//icon_state = "sword[item_color]"
+			transform_weapon(user, TRUE)
+			update_light()
+			colorchanged = 1
 
 
 // STUN KILL TOGGLE WEAPONS

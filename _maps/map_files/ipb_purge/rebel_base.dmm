@@ -15,10 +15,10 @@
 "ao" = (/obj/machinery/computer/atmos_alert,/turf/open/floor/tiled,/area/rebels/command)
 "ap" = (/obj/structure/table/reinforced,/obj/item/storage/toolbox,/turf/open/floor/tiled,/area/rebels/command)
 "aq" = (/turf/open/floor/tiled,/area/rebels/command)
-"ar" = (/turf/open/floor/plasteel,/area/rebels/squadron)
+"ar" = (/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "as" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/rebels/command)
 "at" = (/turf/closed/wall,/area/rebels/general)
-"au" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/rebels/squadron)
+"au" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "av" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/command)
 "aw" = (/obj/structure/filingcabinet,/turf/open/floor/tiled,/area/rebels/latejoin)
 "ax" = (/turf/closed/wall,/area/rebels/medical)
@@ -35,7 +35,7 @@
 "aI" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 4},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
 "aJ" = (/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
 "aK" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/rebels/latejoin)
-"aL" = (/obj/spacepod/prebuilt/xwing,/turf/open/floor/plasteel,/area/rebels/squadron)
+"aL" = (/obj/spacepod/prebuilt/xwing,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "aM" = (/obj/structure/table/glass,/turf/open/floor/tiled,/area/rebels/latejoin)
 "aN" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/bluespaceriver/ground)
 "aO" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/rebels/medical)
@@ -49,7 +49,7 @@
 "aW" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/rebels/agents)
 "aX" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/open/floor/plasteel,/area/rebels/agents)
 "aY" = (/turf/open/floor/plasteel,/area/rebels/agents)
-"aZ" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel,/area/rebels/squadron)
+"aZ" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "ba" = (/obj/effect/landmark/start/rebels/support,/turf/open/floor/tiled,/area/rebels/latejoin)
 "bb" = (/obj/effect/landmark/start/rebels/commander,/turf/open/floor/tiled,/area/rebels/command)
 "bc" = (/obj/machinery/door/airlock/science,/turf/open/floor/tiled,/area/rebels/medical)
@@ -95,7 +95,7 @@
 "bQ" = (/obj/machinery/vending/boozeomat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/rebels/latejoin)
 "bR" = (/obj/structure/sign/directions/science{icon_state = "direction_sci"; dir = 8},/turf/closed/wall,/area/rebels/medical)
 "bS" = (/obj/structure/sign/directions/science{icon_state = "direction_sci"; dir = 1},/turf/closed/wall,/area/rebels/medical)
-"bT" = (/obj/spacepod/prebuilt/ywing,/turf/open/floor/plasteel,/area/rebels/squadron)
+"bT" = (/obj/effect/landmark/start/rebels/pilot,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "bU" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/table,/obj/item/stack/sheet/metal/fifty,/turf/open/floor/plasteel,/area/rebels/military)
 "bV" = (/obj/structure/sign/directions/engineering,/turf/closed/wall,/area/rebels/military)
 "bW" = (/obj/structure/closet/secure_closet/medical1,/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/rebels/support)
@@ -108,7 +108,7 @@
 "cd" = (/obj/effect/landmark/start/rebels/soldier,/turf/open/floor/plasteel,/area/rebels/military)
 "ce" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/rebels/military)
 "cf" = (/obj/item/storage/firstaid,/obj/item/storage/firstaid,/obj/item/storage/firstaid/advanced,/obj/structure/table,/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/rebels/support)
-"cg" = (/obj/spacepod/prebuilt/awing,/turf/open/floor/plasteel,/area/rebels/squadron)
+"cg" = (/obj/spacepod/prebuilt/ywing,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "ch" = (/obj/machinery/light,/turf/open/floor/plasteel,/area/rebels/military)
 "ci" = (/obj/structure/closet/emcloset,/obj/machinery/light,/turf/open/floor/plasteel,/area/rebels/military)
 "cj" = (/obj/structure/closet/radiation,/turf/open/floor/plasteel,/area/rebels/military)
@@ -116,7 +116,7 @@
 "cl" = (/obj/effect/landmark/start/rebels/medic,/turf/open/floor/tiled,/area/rebels/medical)
 "cm" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/rebels/latejoin)
 "cn" = (/obj/effect/landmark/start/rebels/agent,/turf/open/floor/plasteel,/area/rebels/agents)
-"co" = (/obj/effect/landmark/start/rebels/pilot,/turf/open/floor/plasteel,/area/rebels/squadron)
+"co" = (/obj/spacepod/prebuilt/awing,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "cp" = (/obj/machinery/power/apc{dir = 8; pixel_x = -24},/obj/structure/cable{icon_state = "0-4"},/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/rebels/support)
 "cq" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/chair,/turf/open/floor/plasteel,/area/rebels/general)
 "cr" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/latejoin)
@@ -145,6 +145,9 @@
 "cO" = (/obj/machinery/telecomms/relay/preset/rebels,/turf/open/floor/tiled,/area/rebels/command)
 "cP" = (/obj/effect/landmark/start/rebels/latejoin,/turf/open/floor/tiled,/area/rebels/latejoin)
 "cQ" = (/obj/effect/landmark/start/rebels/jedi,/turf/open/floor/plasteel,/area/rebels/general)
+"cR" = (/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/warpto/rebel_home)
+"cS" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/warpto/rebel_home)
+"cT" = (/obj/spacepod/prebuilt/xwing,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/warpto/rebel_home)
 
 (1,1,1) = {"
 ctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctctct
@@ -180,24 +183,24 @@ ctcDababababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaHaIcCcCcCcCcC
 ctcDababababababababcCcCcCcCcCcCcCcCcCcCcCaaaaaaaaaaaaaacCcCcCcCcCaJaPcCcCahcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababababcDct
 ctcDababababababcCcCcCcCcCcCcCcCafcCcCcCacaaakalanaoaoaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababababcDct
 ctcDabababababababcCcCcCcCcCcCcCcCcCcCaaaaapaAaAaAaAaAaqaaaacCcCcCaUcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDabababababcCabcCcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDabababababcCcCcCcCcCaecCcCcCcCaaaaasaqbbaqbbaqaqbAaqaqcOaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCarararararararararcCcCcCafcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDababababababcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaqaqaqaaaaatcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCarauarararauarararauarcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDababababababcCcCafcCcCcCcCaaaaaqaqaqaqbbaqbbavaqaqaqaqaqaaawatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCahcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCababababababababababcDct
-ctcDababababababcCcCcCcCcCcCaxaaaaaaaaaaaaaaaaaaaaaaaaayazaaaaaGaGatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDababababababcCcCcCcCcCaxaxaBaCaDaEaSaxaVbebobzaGaKaGaGcwaKaGaGaMatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararaLararararaLarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
-ctcDababababababcCcCcCcCcCaxaFaFaFaFaFaFaxbBbebobzaGcsaGaGcxaGaGaGaGaGatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
+ctcDabababababcCabcCcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDabababababcCcCcCcCcCaecCcCcCcCaaaaasaqbbaqbbaqaqbAaqaqcOaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcCcCcCafcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDababababababcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaqaqaqaaaaatcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcRcScRcRcRcScRcRcRcScRcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDababababababcCcCafcCcCcCcCaaaaaqaqaqaqbbaqbbavaqaqaqaqaqaaawatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCahcCcCcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCababababababababababcDct
+ctcDababababababcCcCcCcCcCcCaxaaaaaaaaaaaaaaaaaaaaaaaaayazaaaaaGaGatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDababababababcCcCcCcCcCaxaxaBaCaDaEaSaxaVbebobzaGaKaGaGcwaKaGaGaMatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcRcRcTcRcRcRcRcTcRcRcRcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababcDct
+ctcDababababababcCcCcCcCcCaxaFaFaFaFaFaFaxbBbebobzaGcsaGaGcxaGaGaGaGaGatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarcRcScRcRcRcScRcRcRcScRarcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
 ctcDababababababcCcCcCcCcCaxaSclaFclaFaOaxbCbebobzaGaGaGaGcxaGcPaGcPaGataQaRaRaRaQaQcCcCcCcCcCcCcCcCcCarararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
 ctcDabababababcCcCcCcCcCcCaxcybFaFaFaFaTaxbDbebobzaGaGbaaGcxaGcPaGcPbdataWaXaYaYaWaRcCcCcCcCcCcCcCcCaZararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
 ctcDabababababcCcCcCcCcCcCaxaSclaFclaFaFaxbQbebobzaGaGaGaGcwaGaGaGaGaGataYcnaYcnaYaQamcCcCcCcCaicCcCarararararaLararararaLararararararcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCabababababababcDct
-ctcDabababababcCcCcCcCcCcCaxaFaFaFaFaFaFbcaGaGbfbpbpbpbpbpbGbpbqbpbpbpbgbhbjbhbhbhbkaNaNaNaNaNaNaNaNaucoarcoauarararauarararauarararaucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
+ctcDabababababcCcCcCcCcCcCaxaFaFaFaFaFaFbcaGaGbfbpbpbpbpbpbGbpbqbpbpbpbgbhbjbhbhbhbkaNaNaNaNaNaNaNaNaubTarbTauarararauarararauarararaucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
 ctcDabababababcCcCadcCcCcCaxblaBbmaFbnaFbRbraGcmaGaGaGcraGbsbtbubsbvbsbsbwcnaYcnaYaQamcCcCcCcCcCcCcCarararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
-ctcDababababababcCcCcCaecCaxaxaxbSbcaxaxaxbxbxbybVbxbxbxbxbsbWbXbYbZcfbsaWbEbEbEaWaRcCcCcCcCcCcCcCcCarcoarcoarararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
-ctcDababababababcCcCcCcCcCbxbHbHbHbHbIbJbKbLbMbNbObObPbUcabscpcGbXbXcHbsaQaRaRaRaQaQcCcCcCcCcCcCcCcCcCararararbTararararbTarararararcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
+ctcDababababababcCcCcCaecCaxaxaxbSbcaxaxaxbxbxbybVbxbxbxbxbsbWbXbYbZcfbsaWbEbEbEaWaRcCcCcCcCcCcCcCcCarbTarbTarararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct
+ctcDababababababcCcCcCcCcCbxbHbHbHbHbIbJbKbLbMbNbObObPbUcabscpcGbXbXcHbsaQaRaRaRaQaQcCcCcCcCcCcCcCcCcCararararcgararararcgarararararcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
 ctcDababababababcCcCcCcCcCbxbxbHbHbHbHbHbHbHcbbHbHbHcbbHbHbscIbXbYcJbsbscCcCcCcCcCcCcCcCcCcCahcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCaiabababababababababcDct
 ctcDababababcCcCcCcCcCcCcCcCbxbxbHbHbHcdbHcdcbcdbHcdcbbHbHbsbYcKcLbsbscCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararararararcCcCafcCcCcCcCcCcCaicCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCabababababababababcDct
 ctcDababababcCcCcCcCcCcCcCcCcCbxbxbHbHbHbHbHcbbHbHbHcbbHbHbsbYcMbsbscCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcCcCcCcCaiaicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
-ctcDababababababahcCcCcCcCcCcCcCbxbxcecebHchccbHbHbHcccicjbscNbsbscCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararcgararararcgarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCababababababababcDct
+ctcDababababababahcCcCcCcCcCcCcCbxbxcecebHchccbHbHbHcccicjbscNbsbscCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararcoararararcoarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCababababababababcDct
 ctcDabababababababcCcCcCcCcCcCcCcCbxbxbxbxbxbxbHbHbHbxbxbxbsbsbscCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarauarararauarararauarcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababcDct
 ctcDabababababababababcCcCafcCcCcCcCatatckcqczckckckczcqcEatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababcDct
 ctcDabababababababababcCcCcCcCcCcCcCcCatckckckcQckckckckcEatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararaicCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababcDct

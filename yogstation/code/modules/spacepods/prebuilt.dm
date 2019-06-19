@@ -34,6 +34,7 @@
 /obj/spacepod/prebuilt/fighter
 	name = "Tie Fighter"
 	icon_state = "tie_fighter"
+	podtype = "empire"
 	locked = FALSE
 	armor_type = /obj/item/pod_parts/armor/fighter
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
@@ -44,6 +45,7 @@
 /obj/spacepod/prebuilt/interceptor
 	name = "Tie Interceptor"
 	icon_state = "tie_interceptor"
+	podtype = "empire"
 	locked = TRUE
 	armor_type = /obj/item/pod_parts/armor/interceptor
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
@@ -54,6 +56,7 @@
 /obj/spacepod/prebuilt/bomber
 	name = "Tie Bomber"
 	icon_state = "tie_bomber2"
+	podtype = "empire"
 	locked = TRUE
 	armor_type = /obj/item/pod_parts/armor/bomber
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
@@ -78,6 +81,7 @@
 /obj/spacepod/prebuilt/xwing
 	name = "Rebel X-Wing Fighter"
 	icon_state = "xwing"
+	podtype = "rebel"
 	locked = FALSE
 	armor_type = /obj/item/pod_parts/armor/xwing
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
@@ -88,6 +92,7 @@
 /obj/spacepod/prebuilt/awing
 	name = "rebel A-Wing Interceptor"
 	icon_state = "awing"
+	podtype = "rebel"
 	locked = FALSE
 	armor_type = /obj/item/pod_parts/armor/awing
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
@@ -98,6 +103,7 @@
 /obj/spacepod/prebuilt/ywing
 	name = "Rebel Y-Wing Bomber"
 	icon_state = "ywing"
+	podtype = "rebel"
 	locked = FALSE
 	armor_type = /obj/item/pod_parts/armor/ywing
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,

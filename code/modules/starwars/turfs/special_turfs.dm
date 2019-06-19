@@ -44,3 +44,21 @@
 	broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
 	burnt_states = list("floorscorched1", "floorscorched2")
 
+/turf/open/floor/plasteel/arrival/arrival_rebelbase
+	icon_state = "floor"
+	floor_tile = /obj/item/stack/tile/plasteel
+	broken_states = list("damaged1", "damaged2", "damaged3", "damaged4", "damaged5")
+	burnt_states = list("floorscorched1", "floorscorched2")
+
+/turf/open/space/arrival_rebelsector
+	gender = PLURAL
+	name = "sector"
+	desc = "A sector in space."
+	icon = 'icons/turf/space.dmi'
+	icon_state = "0"
+	intact = 0
+	baseturfs = /turf/open/space
+	planetary_atmos = FALSE
+
+
+

@@ -1,3 +1,4 @@
+
 //Preferences stuff
 	//Hairstyles
 GLOBAL_LIST_EMPTY(hair_styles_list)			//stores /datum/sprite_accessory/hair indexed by name

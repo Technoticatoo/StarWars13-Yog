@@ -18,7 +18,7 @@
 
 /obj/structure/warpfield/rebel_underground/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
 	do_teleport(AM, pick(get_area_turfs(/area/warpto/rebel_underground)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, no_effects=TRUE, forced = TRUE)
-	to_chat(usr , "Warped!")
+	//to_chat(usr , "Warped!")
 
 /obj/structure/warpfield/rebel_base
 	name = "rebel_base"
@@ -26,6 +26,20 @@
 
 /obj/structure/warpfield/rebel_base/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
 	do_teleport(AM, pick(get_area_turfs(/area/warpto/rebel_base)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, no_effects=TRUE, forced = TRUE)
-	to_chat(usr , "Warped!")
+	//to_chat(usr , "Warped!")
 
-//Bump(atom/A)
+
+/obj/structure/warpfield/ipb_purge
+	name = "ipb_purge"
+	icon_state = "warp_ipb_purge"
+
+/obj/structure/warpfield/ipb_purge/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
+	do_teleport(AM, pick(get_area_turfs(/area/purge/home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
+
+
+/obj/structure/warpfield/rebel_base_space
+	name = "rebel_base_space"
+	icon_state = "warp_rebel_basespace"
+
+/obj/structure/warpfield/rebel_base_space/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
+	do_teleport(AM, pick(get_area_turfs(/area/warpto/rebel_home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)

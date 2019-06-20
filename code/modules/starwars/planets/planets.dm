@@ -17,3 +17,11 @@
 	desc = "The Death Star"
 	name = "Death Star"
 	icon_state = "deathstar"
+
+/turf/open/planets/purge
+	desc = "IPB Purge"
+	name = "purge"
+	icon_state = "purge"
+
+
+

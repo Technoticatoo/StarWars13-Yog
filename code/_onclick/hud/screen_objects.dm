@@ -715,3 +715,14 @@
 /obj/screen/component_button/Click(params)
 	if(parent)
 		parent.component_click(src, params)
+
+
+//STAR WARS
+
+/obj/screen/turf_locator
+	name = "turf locator"
+	icon = 'icons/starwars/hud.dmi'
+	icon_state = "turf_locator"
+	alpha = 0 //invisible
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	screen_loc = ui_tl_dir

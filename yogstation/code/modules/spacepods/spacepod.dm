@@ -61,6 +61,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 	var/brakes = TRUE
 	var/pilotview = 0
+	var/trackingon= FALSE
 	var/zoomoutby = 5
 	var/user_thrust_dir = 0
 	var/forward_maxthrust = 6
@@ -578,6 +579,32 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 	to_chat(usr, "<span class='notice'>You toggle the viewscreen.</span>")
 
+
+/obj/spacepod/verb/toggle_tracking()
+	set name = "Toggle Tracking"
+	set category = "Spaceship"
+	set src = usr.loc
+	var/mob/living/user = usr
+
+	if(!verb_check())
+		return
+
+	if(!trackingon)
+		trackingon = TRUE
+		user.start_tracking()
+		if(podtype == "empire")
+			user.update_tracking(pick(get_area_turfs(/area/planets/rebelsector)))
+		else
+			user.update_tracking(pick(get_area_turfs(/area/planets/sector)))
+		user.hud_used.turf_locator.alpha = 128
+	else
+		trackingon = FALSE
+		user.clear_tracking()
+		user.hud_used.turf_locator.alpha = 0
+
+	to_chat(usr, "<span class='notice'>You toggle destination tracking.</span>")
+
+
 /obj/spacepod/verb/warp_planets()
 	set name = "Jump to Sector"
 	set category = "Spaceship"
@@ -739,6 +766,8 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	if(M.client)
 		M.client.pixel_x = 0
 		M.client.pixel_y = 0
+
+	M.clear_tracking()
 	return TRUE
 
 /obj/spacepod/onMouseMove(object,location,control,params)

@@ -41,7 +41,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/obj/screen/rest_icon
 	var/obj/screen/throw_icon
 	var/obj/screen/module_store_icon
-
+	var/obj/screen/turf_locator //STAR WARS
 	var/list/static_inventory = list() //the screen objects which are static
 	var/list/toggleable_inventory = list() //the screen objects which can be hidden
 	var/list/obj/screen/hotkeybuttons = list() //the buttons that can be used via hotkeys
@@ -50,7 +50,6 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/list/inv_slots[SLOTS_AMT] // /obj/screen/inventory objects, ordered by their slot ID.
 	var/list/hand_slots // /obj/screen/inventory/hand objects, assoc list of "[held_index]" = object
 	var/list/obj/screen/plane_master/plane_masters = list() // see "appearance_flags" in the ref, assoc list of "[plane]" = object
-
 	var/obj/screen/movable/action_button/hide_toggle/hide_actions_toggle
 	var/action_buttons_hidden = FALSE
 

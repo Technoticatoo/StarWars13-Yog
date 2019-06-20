@@ -4,7 +4,6 @@
 	if(world.time > last_slowprocess + 15)
 		last_slowprocess = world.time
 		slowprocess()
-
 	var/last_offset_x = offset_x
 	var/last_offset_y = offset_y
 	var/last_angle = angle

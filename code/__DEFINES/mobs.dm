@@ -307,4 +307,8 @@
 //Wabbacjack staff projectiles
 #define WABBAJACK     (1<<6)
 
+
+//STAR WARS
 #define JEDI_AGE_MIN		30	//youngest a jedi can be
+#define HUD_TURF_LOCATOR_COOLDOWN		0.5 SECONDS
+#define HUD_TURF_LOCATOR_PROCESS_COOLDOWN		10 SECONDS

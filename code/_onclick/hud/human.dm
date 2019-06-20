@@ -86,6 +86,8 @@
 
 	var/obj/screen/using
 	var/obj/screen/inventory/inv_box
+	turf_locator = new /obj/screen/turf_locator  //STAR WARS
+	infodisplay += turf_locator //STAR WARS
 
 	using = new /obj/screen/craft
 	using.icon = ui_style
@@ -297,6 +299,8 @@
 
 	devilsouldisplay = new /obj/screen/devil/soul_counter
 	infodisplay += devilsouldisplay
+
+
 
 	zone_select =  new /obj/screen/zone_sel()
 	zone_select.icon = ui_style

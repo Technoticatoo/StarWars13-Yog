@@ -58,3 +58,39 @@
 	desc = "Headset used by the rebel support staff, tasked with support and service tasks.\nChannels are as follows: :6 - rebel broadcast."
 	icon_state = "srv_headset"
 	keyslot = new /obj/item/encryptionkey/headset_rebbrd
+
+
+//TODO
+/*
+/obj/item/radio/headset/dropped(mob/living/carbon/human/user)
+			user.hud_used.SL_locator.alpha = 0
+	return ..()
+
+/obj/item/radio/headset/proc/toggle_sl_direction(mob/living/carbon/human/user)
+	if(!headset_hud_on)
+		to_chat(user, "<span class='warning'>You need to turn the HUD on first!</span>")
+		return
+	if(sl_direction)
+		if(user.mind && user.assigned_squad && user.hud_used?.SL_locator)
+			user.hud_used.SL_locator.alpha = 0
+
+		if(is_squadleader)
+			SSdirection.clear_leader(tracking_id)
+			SSdirection.stop_tracking("marine-sl", user)
+		else
+			SSdirection.stop_tracking(tracking_id, user)
+		sl_direction = FALSE
+		to_chat(user, "<span class='notice'>You toggle the SL directional display off.</span>")
+		playsound(loc, 'sound/machines/click.ogg', 15, 0, 1)
+	else
+		if(user.mind && user.assigned_squad && user.hud_used?.SL_locator)
+			user.hud_used.SL_locator.alpha = 128
+			if(is_squadleader)
+				SSdirection.set_leader(tracking_id, user)
+				SSdirection.start_tracking("marine-sl", user)
+			else
+				SSdirection.start_tracking(tracking_id, user)
+
+		sl_direction = TRUE
+		to_chat(user, "<span class='notice'>You toggle the SL directional display on.</span>")
+		playsound(loc, 'sound/machines/click.ogg', 15, 0, 1)*/

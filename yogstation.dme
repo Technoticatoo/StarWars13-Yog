@@ -2646,6 +2646,7 @@
 #include "code\modules\starwars\weapon_ammo.dm"
 #include "code\modules\starwars\weapons.dm"
 #include "code\modules\starwars\abilities\charge.dm"
+#include "code\modules\starwars\aidroids\hutt_droid.dm"
 #include "code\modules\starwars\aidroids\med_droid.dm"
 #include "code\modules\starwars\aidroids\mouse_droid.dm"
 #include "code\modules\starwars\antagonists\emperor\rebels.dm"

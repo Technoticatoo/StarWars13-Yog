@@ -1,0 +1,38 @@
+"a" = (/turf/open/space/basic,/area/ruin/unpowered/no_grav)
+"b" = (/turf/closed/mineral/random,/area/ruin/space/has_grav/powered)
+"c" = (/turf/open/space/basic,/area/ruin/space/has_grav/powered)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaabbbbbbbbbbbbbbbbbbaaaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbcaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbccaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbccaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbccaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaabbbbbbbbbbbbbbbbbbbbbbbbbaaa
+aaaaaaaaabbbbbbbbbbbbbbbbbbaaaaa
+aaaaaaaaabbbbbbbbbbbbbbbbbbaaaaa
+aaaaaaaaaaaaaaabbbbbbbbbaaaaaaaa
+aaaaaaaaaaaaaaaaaaabbbbbaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}

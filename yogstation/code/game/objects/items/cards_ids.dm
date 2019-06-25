@@ -1,5 +1,5 @@
 /obj/item/card
-	icon = 'yogstation/icons/obj/card.dmi'
+	icon = 'icons/starwars/obj/id.dmi'
 	var/has_fluff
 
 /obj/item/card/id/update_label(newname, newjob)
@@ -58,13 +58,13 @@
 	overlays += idfluff[job][2]
 
 /obj/item/card/id/silver
-	icon_state = "id_silver"
+	icon_state = "id_warden" //STAR WARS
 
 /obj/item/card/id/gold
-	icon_state = "id_gold"
+	icon_state = "id_emperor" //STAR WARS
 
 /obj/item/card/id/captains_spare
-	icon_state = "id_gold"
+	icon_state = "id_emperor"
 
 /obj/item/card/emag/emag_act(mob/user)
 	var/otherEmag = user.get_active_held_item()

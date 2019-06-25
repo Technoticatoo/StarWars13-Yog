@@ -7,12 +7,12 @@
 	desc = "A heavy wooden bin, which can be filled with trash."
 	density = TRUE
 	pressure_resistance = 5*ONE_ATMOSPHERE
-
+	var/trash_type = "paper"
 /obj/structure/trash_bin/attackby(obj/item/W, mob/user, params)
-	if (istype(W, /obj/item/stack/ore))
+	if (istype(W, trash_type))
 		user.transferItemToLoc(W, src)
 	else if(SEND_SIGNAL(W, COMSIG_CONTAINS_STORAGE))
-		SEND_SIGNAL(W, COMSIG_TRY_STORAGE_TAKE_TYPE, /obj/item/stack/ore, src)
+		SEND_SIGNAL(W, COMSIG_TRY_STORAGE_TAKE_TYPE, trash_type, src)
 		to_chat(user, "<span class='notice'>You empty the trash in [W] into \the [src].</span>")
 	else
 		return ..()
@@ -86,3 +86,15 @@
 
 /obj/structure/trash_bin/onTransitZ()
 	return
+
+/obj/structure/trash_bin/paper
+	name = "trash bin - paper"
+	trash_type = "paper"
+
+/obj/structure/trash_bin/glass
+	name = "trash bin - glass"
+	trash_type = "glass"
+
+/obj/structure/trash_bin/food
+	name = "trash bin - food"
+	trash_type = "food"

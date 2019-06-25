@@ -2719,6 +2719,7 @@
 #include "code\modules\starwars\objects\structures\ladder.dm"
 #include "code\modules\starwars\objects\structures\planets.dm"
 #include "code\modules\starwars\objects\structures\purge.dm"
+#include "code\modules\starwars\objects\structures\trash_bins.dm"
 #include "code\modules\starwars\objects\structures\warpfields.dm"
 #include "code\modules\starwars\planets\planets.dm"
 #include "code\modules\starwars\radio\encryptionkey.dm"

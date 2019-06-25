@@ -64,8 +64,8 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	var/trackingon= FALSE
 	var/zoomoutby = 5
 	var/user_thrust_dir = 0
-	var/forward_maxthrust = 6
-	var/backward_maxthrust = 3
+	var/forward_maxthrust = 3
+	var/backward_maxthrust = 2
 	var/side_maxthrust = 1
 
 	var/lights = 0

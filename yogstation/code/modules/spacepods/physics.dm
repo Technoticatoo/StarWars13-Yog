@@ -37,6 +37,7 @@
 		var/drag = 0
 		for(var/turf/T in locs)
 			if(isspaceturf(T))
+				drag += 0.1 //STAR WARS
 				continue
 			drag += 0.001
 			var/floating = FALSE

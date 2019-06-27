@@ -1,8 +1,8 @@
 	/**********************Ore box**************************/
 
 /obj/structure/trash_bin
-	icon = 'icons/obj/mining.dmi'
-	icon_state = "orebox"
+	icon = 'icons/starwars/trash_bins.dmi'
+	icon_state = "bin"
 	name = "trash bin"
 	desc = "A heavy wooden bin, which can be filled with trash."
 	density = TRUE
@@ -89,12 +89,15 @@
 
 /obj/structure/trash_bin/paper
 	name = "trash bin - paper"
+	icon_state = "bin_paper"
 	trash_type = "paper"
 
 /obj/structure/trash_bin/glass
 	name = "trash bin - glass"
+	icon_state = "bin_glass"
 	trash_type = "glass"
 
 /obj/structure/trash_bin/food
 	name = "trash bin - food"
+	icon_state = "bin_food"
 	trash_type = "food"

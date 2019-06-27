@@ -1,13 +1,14 @@
 	/**********************Ore box**************************/
 
 /obj/structure/trash_bin
-	icon = 'icons/starwars/trash_bins.dmi'
+	icon = 'icons/starwars/obj/trash_bins.dmi'
 	icon_state = "bin"
 	name = "trash bin"
 	desc = "A heavy wooden bin, which can be filled with trash."
 	density = TRUE
 	pressure_resistance = 5*ONE_ATMOSPHERE
 	var/trash_type = "paper"
+
 /obj/structure/trash_bin/attackby(obj/item/W, mob/user, params)
 	if (istype(W, trash_type))
 		user.transferItemToLoc(W, src)

@@ -341,6 +341,12 @@
 		N.send_to_spawnpoint = FALSE
 		N.nukeop_outfit = null
 		add_antag_datum(N,converter.nuke_team)
+	else if(is_rebel_operative(creator))
+		var/datum/antagonist/rebel_prisoner/converter = creator.mind.has_antag_datum(/datum/antagonist/rebel_prisoner,TRUE)
+		var/datum/antagonist/rebel_prisoner/N = new()
+		N.send_to_spawnpoint = FALSE
+		N.rebel_prisoner_outfit = null
+		add_antag_datum(N,converter.prisoner_team)
 
 
 	enslaved_to = creator

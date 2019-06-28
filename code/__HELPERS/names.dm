@@ -153,6 +153,32 @@ GLOBAL_VAR(command_name)
 	return name
 
 
+/proc/rebel_prisoner_name()
+	var/name = ""
+
+	// Prefix
+	name += pick("Clandestine", "Red", "Blue", "Black", "RI", "Secret", "Freedom")
+
+	// Suffix
+	if (prob(80))
+		name += " "
+
+		// Full
+		if (prob(60))
+			name += pick("Rebels", "Resistance", "Fighters", "Group", "Holdings", "Systems", "Agents" )
+		// Broken
+		else
+			name += pick("Rebellion", "Inc.", "System")
+			name += pick("", "-")
+			name += pick("Tech", "Sun", "Co", "Tek", "X", "Inc", "Code")
+	// Small
+	else
+		name += pick("-", "*", "")
+		name += pick("Tech", "Sun", "Co", "Tek", "X", "Inc", "Gen", "Star", "Dyne", "Code")
+
+	return name
+
+
 //Traitors and traitor silicons will get these. Revs will not.
 GLOBAL_VAR(syndicate_code_phrase) //Code phrase for traitors.
 GLOBAL_VAR(syndicate_code_response) //Code response for traitors.

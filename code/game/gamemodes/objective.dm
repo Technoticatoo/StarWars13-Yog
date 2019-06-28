@@ -469,6 +469,17 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 		return TRUE
 	return FALSE
 
+/datum/objective/rebel_destruction
+	name = "rebel destruction"
+	explanation_text = "Prevent the imps from fiding the rebel codes."
+	martyr_compatible = 1
+
+/datum/objective/rebel_destruction/check_completion()
+	if(SSticker && SSticker.mode && SSticker.mode.station_was_nuked)
+		return TRUE
+	return FALSE
+
+
 GLOBAL_LIST_EMPTY(possible_items)
 /datum/objective/steal
 	name = "steal"

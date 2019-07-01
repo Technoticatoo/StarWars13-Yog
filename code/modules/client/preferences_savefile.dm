@@ -301,7 +301,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["job_engsec_low"]		>> job_engsec_low
 	S["job_rebels_high"]	>> job_rebels_high
 	S["job_rebels_med"]		>> job_rebels_med
-	S["job_rebelsc_low"]	>> job_rebels_low
+	S["job_rebels_low"]		>> job_rebels_low
+	S["job_mercs_high"]		>> job_mercs_high
+	S["job_mercs_med"]		>> job_mercs_med
+	S["job_mercs_low"]		>> job_mercs_low
 
 	//Quirks
 	S["all_quirks"]			>> all_quirks
@@ -380,6 +383,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	job_rebels_high = sanitize_integer(job_rebels_high, 0, 65535, initial(job_rebels_high))
 	job_rebels_med = sanitize_integer(job_rebels_med, 0, 65535, initial(job_rebels_med))
 	job_rebels_low = sanitize_integer(job_rebels_low, 0, 65535, initial(job_rebels_low))
+	job_mercs_high = sanitize_integer(job_mercs_high, 0, 65535, initial(job_mercs_high))
+	job_mercs_med = sanitize_integer(job_mercs_med, 0, 65535, initial(job_mercs_med))
+	job_mercs_low = sanitize_integer(job_mercs_low, 0, 65535, initial(job_mercs_low))
 
 	all_quirks = SANITIZE_LIST(all_quirks)
 	positive_quirks = SANITIZE_LIST(positive_quirks)
@@ -453,6 +459,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["job_rebels_high"]	, job_rebels_high)
 	WRITE_FILE(S["job_rebels_med"]		, job_rebels_med)
 	WRITE_FILE(S["job_rebels_low"]		, job_rebels_low)
+	WRITE_FILE(S["job_mercs_high"]	, job_mercs_high)
+	WRITE_FILE(S["job_mercss_med"]		, job_mercs_med)
+	WRITE_FILE(S["job_mercs_low"]		, job_mercs_low)
 
 	//Quirks
 	WRITE_FILE(S["all_quirks"]			, all_quirks)

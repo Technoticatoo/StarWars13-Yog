@@ -49,7 +49,7 @@ SUBSYSTEM_DEF(job)
 		var/datum/job/job = new J()
 		if(!job)
 			continue
-		if(job.faction != faction && job.faction != "Rebels")
+		if(job.faction != faction && job.faction != "Rebels" && job.faction != "Mercenaries")
 			continue
 		if(!job.config_check())
 			continue
@@ -581,6 +581,8 @@ SUBSYSTEM_DEF(job)
 		return
 	if(J.faction == "Rebels")
 		B = GLOB.areas_by_type[/area/rebels/latejoin]
+	else if(J.faction == "Mercenaries")
+		B = GLOB.areas_by_type[/area/mercs/latejoin]
 	else
 		if(latejoin_trackers.len)
 			destination = pick(latejoin_trackers)
@@ -590,7 +592,7 @@ SUBSYSTEM_DEF(job)
 	//bad mojo
 	var/area/shuttle/arrival/A = ""
 
-	if(J.faction != "Rebels")
+	if(J.faction != "Rebels" && J.faction != "Mercenaries")
 		A = GLOB.areas_by_type[/area/shuttle/arrival]
 
 	if(B)
@@ -629,6 +631,8 @@ SUBSYSTEM_DEF(job)
 	var/list/arrivals_turfs = ""
 
 	if(J.faction == "Rebels")
+		arrivals_turfs = shuffle(get_area_turfs(/area/rebels/latejoin))
+	else if(J.faction == "Mercenaries")
 		arrivals_turfs = shuffle(get_area_turfs(/area/rebels/latejoin))
 	else
 		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))

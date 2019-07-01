@@ -37,7 +37,7 @@
 
 	// Determine what job is marked as 'High' priority, and dress them up as such.
 	var/datum/job/previewJob
-	var/highRankFlag = job_civilian_high | job_medsci_high | job_engsec_high | job_rebels_high
+	var/highRankFlag = job_civilian_high | job_medsci_high | job_engsec_high | job_rebels_high | job_mercs_high
 
 	if(job_civilian_low & ASSISTANT)
 		previewJob = SSjob.GetJob("Assistant")
@@ -51,6 +51,8 @@
 			highDeptFlag = ENGSEC
 		else if(job_rebels_high)
 			highDeptFlag = REBELS
+		else if(job_mercs_high)
+			highDeptFlag = MERCENARIES
 
 		for(var/datum/job/job in SSjob.occupations)
 			if(job.flag == highRankFlag && job.department_flag == highDeptFlag)

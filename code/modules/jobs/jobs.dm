@@ -84,6 +84,12 @@ GLOBAL_LIST_INIT(rebel_positions, list(
 	"Agent",
 	"Support"))
 
+GLOBAL_LIST_INIT(merc_positions, list(
+	"Leader",
+	"Mercenary",
+	"Paylord",
+	"Overwatch"))
+
 //END OF
 
 GLOBAL_LIST_INIT(nonhuman_positions, list(

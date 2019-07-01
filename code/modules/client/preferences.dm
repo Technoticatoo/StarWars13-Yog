@@ -97,6 +97,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/job_rebels_med = 0
 	var/job_rebels_low = 0
 
+	var/job_mercs_high = 0
+	var/job_mercs_med = 0
+	var/job_mercs_low = 0
+
 		// Want randomjob if preferences already filled - Donkie
 	var/joblessrole = BERANDOMJOB  //defaults to 1 for fewer assistants
 
@@ -228,7 +232,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<b>Custom Job Preferences:</b><BR>"
 			dat += "<a href='?_src_=prefs;preference=ai_core_icon;task=input'><b>Preferred AI Core Display:</b> [preferred_ai_core_display]</a><br>"
 			dat += "<a href='?_src_=prefs;preference=sec_dept;task=input'><b>Preferred Security Department:</b> [prefered_security_department]</a><BR></td>"
-			dat += "<a href='?_src_=prefs;preference=chooseside;task=input'><b>Preferred Side:</b> [preferred_side]</a><BR>Remember to set the jobs of the opposing side to never.<BR><BR></td>"
+			dat += "<a href='?_src_=prefs;preference=chooseside;task=input'><b>Preferred Side:</b> [preferred_side]</a><BR>Remember to set the jobs of the opposing sides to never.<BR><BR></td>"
 
 			dat += "</tr></table>"
 
@@ -768,6 +772,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	else
 		if(preferred_side == "Rebels")
 			factionside = "Rebels"
+		else if(preferred_side == "Mercenaries")
+			factionside = "Mercenaries"
 		else
 			factionside = "Station"
 
@@ -899,10 +905,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		job_engsec_med |= job_engsec_high
 		job_medsci_med |= job_medsci_high
 		job_rebels_med |= job_rebels_high
+		job_mercs_med |= job_mercs_high
 		job_civilian_high = 0
 		job_engsec_high = 0
 		job_medsci_high = 0
 		job_rebels_high = 0
+		job_mercs_high = 0
+
 
 	if (job.department_flag == CIVILIAN)
 		job_civilian_low &= ~job.flag
@@ -960,6 +969,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				job_rebels_low |= job.flag
 
 		return 1
+	else if (job.department_flag == MERCENARIES)
+		job_mercs_low &= ~job.flag
+		job_mercs_med &= ~job.flag
+		job_mercs_high &= ~job.flag
+
+		switch(level)
+			if (1)
+				job_mercs_high |= job.flag
+			if (2)
+				job_mercs_med |= job.flag
+			if (3)
+				job_mercs_low |= job.flag
+
+		return 1
+
 
 	return 0
 
@@ -1043,6 +1067,14 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					return job_rebels_med
 				if(3)
 					return job_rebels_low
+		if(MERCENARIES)
+			switch(level)
+				if(1)
+					return job_mercs_high
+				if(2)
+					return job_mercs_med
+				if(3)
+					return job_mercs_low
 	return 0
 
 /datum/preferences/proc/SetQuirks(mob/user)

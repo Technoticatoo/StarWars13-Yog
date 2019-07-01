@@ -71,6 +71,14 @@
 #define RMEDIC			(1<<6)
 #define RSUPPORT		(1<<7)
 
+#define MERCENARIES		(1<<4)
+
+#define LEADER			(1<<0)
+#define MERCENARY		(1<<1)
+#define PAYLORD			(1<<2)
+#define OVERWATCH		(1<<3)
+
+
 
 
 #define JOB_AVAILABLE 0

@@ -2710,6 +2710,7 @@
 #include "code\modules\starwars\jobs\job_types\09_silicon.dm"
 #include "code\modules\starwars\jobs\job_types\10_assistant.dm"
 #include "code\modules\starwars\jobs\job_types\11_prisoner.dm"
+#include "code\modules\starwars\jobs\job_types\mercenaries\mercenaries.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\agent.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\commander.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\fighter_pilot.dm"

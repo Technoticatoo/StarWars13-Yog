@@ -16,6 +16,7 @@
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
 #include "_maps\purge.dm"
+#include "_maps\map_files\ipb_purge\mercenary_desert.dmm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -2737,6 +2738,7 @@
 #include "code\modules\starwars\species\zabrak.dm"
 #include "code\modules\starwars\species\languages\star_wars_language.dm"
 #include "code\modules\starwars\turfs\bay_turfs.dm"
+#include "code\modules\starwars\turfs\desert.dm"
 #include "code\modules\starwars\turfs\special_turfs.dm"
 #include "code\modules\station_goals\bsa.dm"
 #include "code\modules\station_goals\dna_vault.dm"

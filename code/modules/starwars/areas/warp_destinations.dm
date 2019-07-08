@@ -12,3 +12,14 @@
 	name = "Home"
 	icon_state = "rebelhome"
 	has_gravity = STANDARD_GRAVITY
+
+
+/area/warpto/mercenary_base
+	name = "Mercenary Base"
+	icon_state = "mercenaries_base"
+	has_gravity = STANDARD_GRAVITY
+
+/area/warpto/mercenary_home
+	name = "Home"
+	icon_state = "mercenaries_home"
+	has_gravity = STANDARD_GRAVITY

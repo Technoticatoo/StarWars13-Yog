@@ -75,6 +75,21 @@
 #define RADIO_KEY_REBBRD "6"
 #define RADIO_TOKEN_REBBRD ":6"
 
+
+//MERCS
+
+#define RADIO_CHANNEL_MERCCOM "Mercenary Command"
+#define RADIO_KEY_MERCCOM "7"
+#define RADIO_TOKEN_MERCCOM ":7"
+
+#define RADIO_CHANNEL_MERCSUP "Mercenary Overwatch"
+#define RADIO_KEY_MERCSUP "8"
+#define RADIO_TOKEN_MERCSUP ":8"
+
+#define RADIO_CHANNEL_MERCBRD "Mercenary Broadcast"
+#define RADIO_KEY_MERCBRD "9"
+#define RADIO_TOKEN_MERCBRD ":9"
+
 // END OFF
 
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
@@ -98,6 +113,11 @@
 #define FREQ_REBSEC 1367
 #define FREQ_REBSQD 1369
 #define FREQ_REBBRD 1371
+
+#define FREQ_MERCCOM 1381
+#define FREQ_MERCSUP 1383
+#define FREQ_MERCBRD 1385
+
 
 #define FREQ_STATUS_DISPLAYS 1435
 #define FREQ_ATMOS_ALARMS 1437  // air alarms <-> alert computers

@@ -23,6 +23,9 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_REBSEC]" = "rebsecradio",
 	"[FREQ_REBSQD]" = "rebsqdradio",
 	"[FREQ_REBBRD]" = "rebbrdradio",
+	"[FREQ_MERCCOM]" = "merccomradio",
+	"[FREQ_MERCSUP]" = "mercsupradio",
+	"[FREQ_MERCBRD]" = "mercbrdradio",
 	"[FREQ_COMMON]" = "commonradio"
 	//yogs end
 	))

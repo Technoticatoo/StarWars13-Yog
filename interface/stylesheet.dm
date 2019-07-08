@@ -61,6 +61,9 @@ em						{font-style: normal;	font-weight: bold;}
 .rebsecradio			{color: #d13030;}
 .rebsqdradio			{color: #d13030;}
 .rebbrdradio			{color: #d13030;}
+.merccomradio			{color: #d13030;}
+.mercsupradio			{color: #d13030;}
+.mercbrdradio			{color: #d13030;}
 
 .yell					{					font-weight: bold;}
 

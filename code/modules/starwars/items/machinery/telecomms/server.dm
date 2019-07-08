@@ -35,3 +35,29 @@
 	. = ..()
 	for(var/i = MIN_FREQ, i <= MAX_FREQ, i += 2)
 		freq_listening |= i
+
+
+//MERCENARIES
+
+/obj/machinery/telecomms/server/presets/mercs
+	network = "tcommsatmercs"
+
+/obj/machinery/telecomms/server/presets/mercs/merccom
+	id = "Mercenary Command Server"
+	freq_listening = list(FREQ_MERCCOM)
+	autolinkers = list("merccom")
+
+/obj/machinery/telecomms/server/presets/mercs/mercsup
+	id = "Mercenary Overwatch Server"
+	freq_listening = list(FREQ_MERCSUP)
+	autolinkers = list("mercsup")
+
+/obj/machinery/telecomms/server/presets/mercs/mercbrd
+	id = "Mercenary Broacast Server"
+	freq_listening = list(FREQ_MERCBRD)
+	autolinkers = list("mercbrd")
+
+/obj/machinery/telecomms/server/presets/mercs/mercbrd/Initialize()
+	. = ..()
+	for(var/i = MIN_FREQ, i <= MAX_FREQ, i += 2)
+		freq_listening |= i

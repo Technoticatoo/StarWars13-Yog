@@ -153,6 +153,12 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "RebSqd")
 		if(FREQ_REBBRD)
 			record_feedback("tally", "radio_usage", 1, "RebBrd")
+		if(FREQ_MERCCOM)
+			record_feedback("tally", "radio_usage", 1, "MercCom")
+		if(FREQ_MERCSUP)
+			record_feedback("tally", "radio_usage", 1, "MercSup")
+		if(FREQ_MERCBRD)
+			record_feedback("tally", "radio_usage", 1, "MercBrd")
 		else
 			record_feedback("tally", "radio_usage", 1, "other")
 

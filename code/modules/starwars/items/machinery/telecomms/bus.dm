@@ -14,3 +14,21 @@
 	network = "tcommsatrebels"
 	freq_listening = list(FREQ_REBMED, FREQ_REBBRD)
 	autolinkers = list("processor3", "rebmed", "rebbrd")
+
+//Preset Buses
+
+/obj/machinery/telecomms/bus/preset_one/mercs
+	network = "tcommsatmercs"
+	freq_listening = list(FREQ_MERCCOM)
+	autolinkers = list("processor1", "merccom")
+
+/obj/machinery/telecomms/bus/preset_two/mercs
+	network = "tcommsatmercs"
+	freq_listening = list(FREQ_MERCBRD)
+	autolinkers = list("processor2", "mercbrd")
+
+/obj/machinery/telecomms/bus/preset_three/mercs
+	network = "tcommsatmercs"
+	freq_listening = list(FREQ_MERCSUP)
+	autolinkers = list("processor3", "mercsup")
+

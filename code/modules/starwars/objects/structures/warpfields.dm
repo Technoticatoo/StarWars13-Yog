@@ -43,3 +43,11 @@
 
 /obj/structure/warpfield/rebel_base_space/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
 	do_teleport(AM, pick(get_area_turfs(/area/warpto/rebel_home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
+
+
+/obj/structure/warpfield/mercenary_base_space
+	name = "mercenary_base_space"
+	icon_state = "warp_mercs_basespace"
+
+/obj/structure/warpfield/rmercenary_base_space/Crossed(atom/movable/AM) //A mob moving on a tile with a projectile is hit by it.
+	do_teleport(AM, pick(get_area_turfs(/area/warpto/mercenary_home)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)

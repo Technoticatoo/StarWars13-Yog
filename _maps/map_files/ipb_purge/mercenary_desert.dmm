@@ -31,6 +31,8 @@
 "aE" = (/obj/structure/table,/obj/item/folder/blue,/obj/item/pen/blue,/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "aF" = (/obj/structure/flora/tree/jungle/small,/turf/open/floor/starwars/desert,/area/bluespaceriver/desert)
 "aG" = (/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/starwars/desert,/area/bluespaceriver/desert)
+"aH" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
+"aI" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
 "aJ" = (/turf/closed/wall,/area/mercenaries/command)
 "aK" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/circuit/telecomms/mainframe,/area/tcommsatmercenaries/server)
 "aL" = (/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/circuit/telecomms/mainframe,/area/tcommsatmercenaries/server)
@@ -59,6 +61,7 @@
 "bi" = (/obj/structure/closet/emcloset,/obj/machinery/camera{c_tag = "Telecomms Monitoring"; dir = 8; network = list("tcomms")},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "bj" = (/obj/structure/table/reinforced,/obj/item/storage/toolbox,/turf/open/floor/tiled,/area/mercenaries/command)
 "bk" = (/obj/structure/chair{dir = 1},/turf/open/floor/tiled,/area/mercenaries/command)
+"bl" = (/obj/structure/table,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
 "bm" = (/turf/open/floor/tiled,/area/mercenaries/command)
 "bn" = (/obj/machinery/camera{c_tag = "Telecomms Server Room"; dir = 4; network = list("tcomms")},/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
 "bo" = (/obj/machinery/power/terminal{dir = 1},/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
@@ -80,7 +83,7 @@
 "bE" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/mercenaries/command)
 "bF" = (/obj/effect/landmark/start/mercenaries/leader,/turf/open/floor/tiled,/area/mercenaries/command)
 "bG" = (/obj/effect/landmark/start/mercenaries/paylord,/turf/open/floor/tiled,/area/mercenaries/command)
-"bH" = (/obj/machinery/telecomms/relay/preset/rebels,/turf/open/floor/tiled,/area/mercenaries/command)
+"bH" = (/obj/structure/chair/stool/bar,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
 "bI" = (/turf/closed/wall,/area/mercenaries/general)
 "bJ" = (/obj/machinery/telecomms/bus/preset_two/mercs,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
 "bK" = (/obj/machinery/telecomms/bus/preset_one/mercs,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
@@ -104,6 +107,7 @@
 "cc" = (/obj/structure/rack,/obj/item/storage/toolbox/mechanical{pixel_x = -2; pixel_y = -1},/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "cd" = (/obj/machinery/light,/turf/open/floor/tiled,/area/mercenaries/command)
 "ce" = (/obj/structure/filingcabinet,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cf" = (/turf/open/floor/tiled,/area/mercenaries/general)
 "cg" = (/obj/machinery/door/airlock/command,/turf/open/floor/tiled,/area/mercenaries/command)
 "ch" = (/obj/structure/sign/directions/command{icon_state = "direction_bridge"; dir = 1},/turf/closed/wall,/area/mercenaries/command)
 "ci" = (/turf/open/floor/tiled,/area/mercenaries/latejoin)
@@ -113,35 +117,34 @@
 "cm" = (/obj/structure/table,/obj/item/stack/sheet/glass/fifty,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cn" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/table,/turf/open/floor/tiled,/area/mercenaries/medical)
 "co" = (/obj/structure/table,/turf/open/floor/tiled,/area/mercenaries/medical)
-"cp" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cq" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cr" = (/obj/structure/table,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cs" = (/obj/structure/chair/stool/bar,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
+"cp" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/mercenaries/general)
+"cq" = (/obj/structure/table,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
+"cr" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/mercenaries/general)
+"cs" = (/obj/structure/table,/obj/item/pizzabox,/obj/item/pizzabox,/obj/item/pizzabox,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
 "ct" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cu" = (/obj/structure/table/glass,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cv" = (/turf/open/floor/tiled,/area/mercenaries/medical)
-"cw" = (/obj/structure/table,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cx" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cw" = (/obj/machinery/microwave,/obj/machinery/light{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
+"cx" = (/obj/machinery/vending/boozeomat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/general)
 "cy" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/mercenaries/general)
-"cz" = (/obj/machinery/telecomms/message_server/mercs,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cz" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/tiled,/area/mercenaries/general)
 "cA" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/mercenaries/medical)
-"cB" = (/obj/structure/table,/obj/item/pizzabox,/obj/item/pizzabox,/obj/item/pizzabox,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
+"cB" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/tiled,/area/mercenaries/general)
 "cC" = (/obj/effect/landmark/start/mercenaries/overwatch,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cD" = (/obj/machinery/light{dir = 8},/obj/structure/table,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cE" = (/obj/structure/chair{icon_state = "chair"; dir = 8},/turf/open/floor/tiled,/area/mercenaries/medical)
 "cF" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/mercenaries/medical)
-"cG" = (/obj/machinery/microwave,/obj/machinery/light{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cH" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/telecomms/message_server/mercs,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cG" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/tiled,/area/mercenaries/general)
+"cH" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/mercenaries/general)
 "cI" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cJ" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/mercenaries/general)
 "cK" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/open/floor/plasteel,/area/mercenaries/general)
 "cL" = (/turf/open/floor/plasteel,/area/mercenaries/general)
 "cM" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/mercenaries/squadron)
-"cN" = (/obj/machinery/vending/boozeomat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
+"cN" = (/obj/machinery/light,/turf/open/floor/tiled,/area/mercenaries/general)
 "cO" = (/obj/effect/landmark/start/mercenaries/mercs,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cP" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/mercenaries/squadron)
 "cQ" = (/obj/machinery/door/airlock/science,/turf/open/floor/tiled,/area/mercenaries/medical)
-"cR" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cS" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cT" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock,/turf/open/floor/tiled,/area/mercenaries/general)
 "cU" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "2-8"},/turf/open/floor/tiled,/area/mercenaries/latejoin)
@@ -154,9 +157,6 @@
 "db" = (/obj/structure/table,/obj/item/storage/toolbox,/turf/open/floor/tiled,/area/mercenaries/medical)
 "dc" = (/obj/machinery/light,/turf/open/floor/tiled,/area/mercenaries/medical)
 "dd" = (/obj/structure/sign/directions/science{icon_state = "direction_sci"; dir = 8},/turf/closed/wall,/area/mercenaries/medical)
-"de" = (/obj/structure/closet/secure_closet/freezer/kitchen,/turf/open/floor/tiled,/area/mercenaries/latejoin)
-"df" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/mercenaries/latejoin)
-"dg" = (/obj/machinery/light,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "dh" = (/obj/structure/sign/directions/medical,/turf/closed/wall,/area/mercenaries/general)
 "di" = (/obj/machinery/door/airlock/science,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/tiled,/area/mercenaries/support)
 "dj" = (/obj/structure/table/glass,/obj/item/storage/firstaid,/turf/open/floor/tiled,/area/mercenaries/support)
@@ -228,17 +228,17 @@ acafayazaqaAafafataBaCaDaEacaYaYaYaYaYaYaJaJaJaJaJaJaJaYaYaYaYaYaaabaYaYdIaYaYaY
 acafafaKaLaMaNaOaPaQaRaSaTacaYdIaYaYaYaUaJaVaWaXaZaZaJaJaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaFaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 acadbabbbcadaqbdbebfbgbhbiacaYaYaYaYaJaJbjbkbkbkbkbkbmaJaJaYaYaYaGaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 acbnboadadadbpbqbrbsanbtbuacaYaYaYaJaJbmbmbmbmbmbFbmbmbmaJaJaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-acafbwbxadbybzaNatbAawbBbCbDaJaJaJaJbEbmbmbGbmbmbmbmbmbmbHaJbIaYaYaYaYaYaYaYaYaYdIaYaYaYaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvaYaYaYdIaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+acafbwbxadbybzaNatbAawbBbCbDaJaJaJaJbEbmbmbGbmbmbmbmbmbmbmaJbIaYaYaYaYaYaYaYaYaYdIaYaYaYaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvaYaYaYdIaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 acadafbJadaeafbNbObPbQbRbSbTbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmaJbIbIaYaYaYaYaYaYaYaYaYaYaFaYaYaYaYaYaYaYaYaYbvbUbvbvbvbUbvbvbvbUbvaYaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 acadafasbWbKafadbYbZcacbccacaJaJbmbmbmbmbmbmbmcdbmbmbmbmbmaJcebIbIaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYdIaYaYbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 acacacacacacacacacacacacacacaJaJaJaJaJaJaJaJaJaJaJaJcgchaJaJcicibIbIaYaYaYaYaYaYaYaYdIaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcjckclcmcncocjcpcqcrcsczctcicibIctcicCcubIbIaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcvcvcvcOcvcvcjcwcqcrcscicxczcicycicCcicCcibIaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbvbvbUbvbvbvbUbvbvbvbUbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcocvcOcvcOcAcjcBcqcrcsczcicicicycicicicicibIbIcycycybIbIaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcDcEcvcOcvcFcjcGcqcrcsciciczcicycicCcicCcIbIcJcKcLcLcJcyaYaYaYaYaYaYaYaYcMbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcocvcOcvcOcvcjcNcqcrcsczcicicibIcicicCcicibIcLcLcLcLcLbIcPaYaYaYaYdRaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjcvcvcvcOcvcvcQcicicRcScScScHcScTcScUcScScScVcWcXcWcWcWcVcYcYcYcYcYcYcYcYbUbvbvbvbUbvbvbvbUbvbvbvbUbvbvbvbUaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
-aYaYaYaYaYaYaYaYaYaYaYaYcjdackdbcvdccvdddecidfcicicidgcibIdhdibIdjbIbIdkcLcLcLcLbIcPaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcjckclcmcncocjaHaIblbHcfcpcfcfbIctcicCcubIbIaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcvcvcvcOcvcvcjcqaIblbHcfcrcfcfcycicCcicCcibIaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYbvbvbUbvbvbvbUbvbvbvbUbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcocvcOcvcOcAcjcsaIblbHcfcfcfcfcycicicicicibIbIcycycybIbIaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcDcEcvcOcvcFcjcwaIblbHcfcfcfcfcycicCcicCcIbIcJcKcLcLcJcyaYaYaYaYaYaYaYaYcMbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcocvcOcvcOcvcjcxaIblbHcfcfcfcfbIcicicCcicibIcLcLcLcLcLbIcPaYaYaYaYdRaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjcvcvcvcOcvcvcQcfcfczcBcBcBcBcBcTcScUcScScScVcWcXcWcWcWcVcYcYcYcYcYcYcYcYbUbvbvbvbUbvbvbvbUbvbvbvbUbvbvbvbUaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
+aYaYaYaYaYaYaYaYaYaYaYaYcjdackdbcvdccvddcGcfcHcfcfcfcNcfbIdhdibIdjbIbIdkcLcLcLcLbIcPaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 aYaYaYaYaYaYaYaYaYaYaYaYcjcjcjdlcQcjcjcjbIbIdmdnbIbIbIbIbIdodqdqdrdsbIcJdtdtdtcJcyaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 aYaYaYaYaYaYaYaYaYaYaYaYbIcLcLcLcLdudtdvdwdxdycWcWdzdAdBbIdCdDdqdqdEbIbIcycycybIbIaYaYaYaYaYaYaYaYaYbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY
 aYaYaYaYaYaYaYaYaYaYaYaYbIbIcLcLcLcLcLcLcLdFcLcLcLdFcLcLbIdGdqdqdHbIbIaYaYaYaYaYaYaYaYaYaYdIaYaYaYaYaYbvbvbUbvbvbvbUbvbvbvbUbvbvaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaYaY

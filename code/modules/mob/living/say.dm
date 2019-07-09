@@ -36,6 +36,10 @@ GLOBAL_LIST_INIT(department_radio_keys, list(
 	RADIO_KEY_REBSEC = RADIO_CHANNEL_REBSEC,
 	RADIO_KEY_REBSQD = RADIO_CHANNEL_REBSQD,
 	RADIO_KEY_REBBRD = RADIO_CHANNEL_REBBRD,
+	//MERCS
+	RADIO_KEY_MERCCOM = RADIO_CHANNEL_MERCCOM,
+	RADIO_KEY_MERCSUP = RADIO_CHANNEL_MERCSUP,
+	RADIO_KEY_MERCBRD = RADIO_CHANNEL_MERCBRD,
 
 	//kinda localization -- rastaf0
 	//same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.

@@ -16,7 +16,7 @@
 	icon = 'icons/starwars/clothing/mandalorian_obj.dmi'
 	icon_state = "pm_armor"
 	armor = list("melee" = 35, "bullet" = 15, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 75, "acid" = 75)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/mercs
 
 
 /obj/item/clothing/head/helmet/space/hardsuit/mercs/grey

@@ -4,8 +4,11 @@
 	desc = "Looks hot."
 	icon = 'icons/starwars/desert_turfs.dmi'
 	baseturfs = /turf/open/floor/plating/asteroid/desert
-	icon_state = "10,4"
-	icon_plating = "10,4"
+	icon_state = "desert"
+	icon_plating = "desert"
+	light_range = 2
+	light_power = 0.75
+	light_color = LIGHT_COLOR_SUN
 	initial_gas_mix = DESERT_ATMOS
 	slowdown = 2
 	environment_type = "desert"

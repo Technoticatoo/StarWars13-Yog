@@ -4,6 +4,13 @@
 	icon_state = "com_headset_alt"
 	keyslot = new /obj/item/encryptionkey/headset_merccom
 
+
+/obj/item/radio/headset/heads/merc_merc
+	name = "\proper a mercenaries headset"
+	desc = "The headset of a Mercenary.\nChannels are as follows: :7 - mercenary command, :8 - mercenary overwatch, :9 - mercenary broadcast."
+	icon_state = "com_headset_alt"
+	keyslot = new /obj/item/encryptionkey/headset_merccom
+
 /obj/item/radio/headset/heads/merc_leader/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/wearertargeting/earprotection, list(SLOT_EARS))

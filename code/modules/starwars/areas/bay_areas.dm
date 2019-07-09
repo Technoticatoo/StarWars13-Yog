@@ -24,5 +24,5 @@
 /area/bluespaceriver/desert
 	name = "\improper Desert Planet Surface"
 	icon_state = "desert"
-	ambientsounds = list('sound/ambience/ambimine.ogg', 'sound/ambience/song_game.ogg')
+	ambientsounds = list('sound/ambience/ambiatm1.ogg', 'sound/ambience/song_game.ogg')
 	//sound_env = ASTEROID

@@ -1,7 +1,3 @@
-/area/mercs/latejoin
-	name = "lateJoin"
-	icon_state = "mercenaries_latejoin"
-
 
 //TO BE REFINED
 

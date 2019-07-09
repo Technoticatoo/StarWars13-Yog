@@ -479,38 +479,8 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 
 //MERCENARIES
 
-/obj/effect/landmark/start/mercs
-	name = "Mercenaries"
-	icon = 'icons/starwars/spawnpoints.dmi'
-	icon_state = "rebels"
 
-/obj/effect/landmark/start/mercs/leader
-	name = "Mercenary Leader"
-	icon = 'icons/starwars/spawnpoints.dmi'
-	icon_state = "rebels"
-
-/obj/effect/landmark/start/mercs/mercenary
-	name = "Mercenary"
-	icon = 'icons/starwars/spawnpoints.dmi'
-	icon_state = "rebels"
-
-/obj/effect/landmark/start/mercs/paylord
-	name = "Paylord"
-	icon = 'icons/starwars/spawnpoints.dmi'
-	icon_state = "rebels"
-
-/obj/effect/landmark/start/mercs/overwatch
-	name = "Overwatch"
-	icon = 'icons/starwars/spawnpoints.dmi'
-	icon_state = "rebels"
-
-
-
-//MERCENARIES
-
-//REBELS
-
-/obj/effect/landmark/start/mercenariess
+/obj/effect/landmark/start/mercenaries
 	name = "Mercenaries"
 	icon = 'icons/starwars/spawnpoints.dmi'
 	icon_state = "mercs"
@@ -530,3 +500,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/start/mercenaries/overwatch
 	name = "Overwatch"
 	icon_state = "mercs_overwatch"
+
+/obj/effect/landmark/start/mercenaries/latejoin
+	name = "lateJoin"
+	icon_state = "mercs_latejoin"

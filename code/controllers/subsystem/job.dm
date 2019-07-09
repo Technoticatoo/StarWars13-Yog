@@ -582,7 +582,7 @@ SUBSYSTEM_DEF(job)
 	if(J.faction == "Rebels")
 		B = GLOB.areas_by_type[/area/rebels/latejoin]
 	else if(J.faction == "Mercenaries")
-		B = GLOB.areas_by_type[/area/mercs/latejoin]
+		B = GLOB.areas_by_type[/area/mercenaries/latejoin]
 	else
 		if(latejoin_trackers.len)
 			destination = pick(latejoin_trackers)

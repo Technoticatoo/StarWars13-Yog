@@ -81,12 +81,14 @@
 "bC" = (/obj/machinery/light_switch{pixel_x = 27},/obj/machinery/atmospherics/pipe/manifold/supply/hidden,/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "bD" = (/obj/machinery/atmospherics/pipe/simple/supply/hidden{dir = 4},/turf/closed/wall/r_wall,/area/tcommsatmercenaries/server)
 "bE" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/mercenaries/command)
-"bF" = (/obj/effect/landmark/start/mercs/leader,/turf/open/floor/tiled,/area/mercenaries/command)
-"bG" = (/obj/effect/landmark/start/mercs/paylord,/turf/open/floor/tiled,/area/mercenaries/command)
+"bF" = (/obj/effect/landmark/start/mercenaries/leader,/turf/open/floor/tiled,/area/mercenaries/command)
+"bG" = (/obj/effect/landmark/start/mercenaries/paylord,/turf/open/floor/tiled,/area/mercenaries/command)
 "bH" = (/obj/machinery/telecomms/relay/preset/rebels,/turf/open/floor/tiled,/area/mercenaries/command)
 "bI" = (/turf/closed/wall,/area/mercenaries/general)
 "bJ" = (/obj/machinery/telecomms/bus/preset_two/mercs,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
 "bK" = (/obj/machinery/telecomms/bus/preset_one/mercs,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsatmercenaries/server)
+"bL" = (/turf/open/floor/plasteel,/area/mercenaries/latejoin)
+"bM" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/chair,/turf/open/floor/plasteel,/area/mercenaries/latejoin)
 "bN" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/circuit/telecomms/mainframe,/area/tcommsatmercenaries/server)
 "bO" = (/obj/effect/spawner/structure/window/reinforced,/obj/structure/cable{icon_state = "0-2"},/obj/structure/cable,/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/tcommsatmercenaries/server)
 "bP" = (/obj/machinery/computer/telecomms/monitor{dir = 4; network = "tcommsat"},/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow{dir = 8},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
@@ -95,7 +97,9 @@
 "bS" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "bT" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/structure/cable{icon_state = "4-8"},/obj/machinery/door/airlock/engineering/glass{name = "Engineering"; req_access_txt = "32"},/obj/machinery/door/firedoor,/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "bU" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/mercenaries/squadron)
+"bV" = (/obj/structure/chair,/turf/open/floor/plasteel,/area/mercenaries/latejoin)
 "bW" = (/obj/structure/sign/warning/nosmoking{pixel_y = -32},/obj/machinery/light,/turf/open/floor/circuit/telecomms/mainframe,/area/tcommsatmercenaries/server)
+"bX" = (/obj/structure/ore_box,/turf/open/floor/plasteel,/area/mercenaries/latejoin)
 "bY" = (/obj/effect/spawner/structure/window/reinforced,/obj/structure/cable,/obj/machinery/door/firedoor,/turf/open/floor/plating,/area/tcommsatmercenaries/server)
 "bZ" = (/obj/structure/table,/obj/item/book/manual/wiki/tcomms,/obj/item/radio/off,/obj/effect/turf_decal/tile/yellow{dir = 1},/obj/effect/turf_decal/tile/yellow,/obj/effect/turf_decal/tile/yellow{dir = 8},/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
 "ca" = (/obj/item/radio/intercom{pixel_y = -35},/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/obj/effect/landmark/event_spawn,/turf/open/floor/plasteel,/area/tcommsatmercenaries/server)
@@ -123,21 +127,22 @@
 "cw" = (/obj/structure/table,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/item/reagent_containers/glass/rag,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
 "cx" = (/obj/structure/chair/comfy/shuttle,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cy" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/mercenaries/general)
-"cz" = (/obj/effect/landmark/start/mercs/mercenary,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cz" = (/obj/machinery/telecomms/message_server/mercs,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cA" = (/obj/machinery/computer/rdconsole,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cB" = (/obj/structure/table,/obj/item/pizzabox,/obj/item/pizzabox,/obj/item/pizzabox,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cC" = (/obj/effect/landmark/start/mercs/overwatch,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cC" = (/obj/effect/landmark/start/mercenaries/overwatch,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cD" = (/obj/machinery/light{dir = 8},/obj/structure/table,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cE" = (/obj/structure/chair{icon_state = "chair"; dir = 8},/turf/open/floor/tiled,/area/mercenaries/medical)
 "cF" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/mercenaries/medical)
 "cG" = (/obj/machinery/microwave,/obj/machinery/light{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
-"cH" = (/obj/structure/cable{icon_state = "4-8"},/obj/effect/landmark/start/mercs/mercenary,/turf/open/floor/tiled,/area/mercenaries/latejoin)
+"cH" = (/obj/structure/cable{icon_state = "4-8"},/obj/machinery/telecomms/message_server/mercs,/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cI" = (/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/mercenaries/latejoin)
 "cJ" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/mercenaries/general)
 "cK" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/open/floor/plasteel,/area/mercenaries/general)
 "cL" = (/turf/open/floor/plasteel,/area/mercenaries/general)
 "cM" = (/obj/item/storage/toolbox/mechanical,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/mercenaries/squadron)
 "cN" = (/obj/machinery/vending/boozeomat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/mercenaries/latejoin)
+"cO" = (/obj/effect/landmark/start/mercenaries/mercs,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cP" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/mercenaries/squadron)
 "cQ" = (/obj/machinery/door/airlock/science,/turf/open/floor/tiled,/area/mercenaries/medical)
 "cR" = (/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/tiled,/area/mercenaries/latejoin)
@@ -148,6 +153,7 @@
 "cW" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/mercenaries/general)
 "cX" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel,/area/mercenaries/general)
 "cY" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/mercenaries/squadron)
+"cZ" = (/obj/effect/landmark/start/mercenaries/latejoin,/turf/open/floor/plasteel,/area/mercenaries/latejoin)
 "da" = (/obj/structure/closet/wardrobe/science_white,/turf/open/floor/tiled,/area/mercenaries/medical)
 "db" = (/obj/structure/table,/obj/item/storage/toolbox,/turf/open/floor/tiled,/area/mercenaries/medical)
 "dc" = (/obj/machinery/light,/turf/open/floor/tiled,/area/mercenaries/medical)
@@ -189,10 +195,6 @@
 "dO" = (/obj/structure/closet/emcloset,/obj/machinery/light,/turf/open/floor/plasteel,/area/mercenaries/general)
 "dP" = (/obj/structure/closet/radiation,/turf/open/floor/plasteel,/area/mercenaries/general)
 "dQ" = (/obj/structure/closet/crate/medical,/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/mercenaries/support)
-"dR" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/chair,/turf/open/floor/plasteel,/area/mercenaries/general)
-"dS" = (/obj/structure/chair,/turf/open/floor/plasteel,/area/mercenaries/general)
-"dT" = (/obj/structure/ore_box,/turf/open/floor/plasteel,/area/mercenaries/general)
-"dU" = (/obj/effect/landmark/start/rebels/jedi,/turf/open/floor/plasteel,/area/mercenaries/general)
 "dV" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel,/area/mercenaries/general)
 
 (1,1,1) = {"
@@ -231,12 +233,12 @@ acafbwbxadbybzaNatbAawbBbCbDaJaJaJaJbEbmbmbGbmbmbmbmbmbmbHaJbIaaaaaaaaaaaaaaaaaa
 acadafbJadaeafbNbObPbQbRbSbTbmbmbmbmbmbmbmbmbmbmbmbmbmbmbmaJbIbIaaaaaaaaaaaaaaaaaaaaaYaaaaaaaaaaaaaaaaaabvbUbvbvbvbUbvbvbvbUbvaaaaaaaaaaaaaaaaaaabababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 acadafasbWbKafadbYbZcacbccacaJaJbmbmbmbmbmbmbmcdbmbmbmbmbmaJcebIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaHaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaabababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 acacacacacacacacacacacacacacaJaJaJaJaJaJaJaJaJaJaJaJcgchaJaJcicibIbIaaaaaaaaaaaaaaaacfaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaabababababababababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcjckclcmcncocjcpcqcrcsczctcicibIctcicicubIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcvcvcvcvcvcvcjcwcqcrcscicxczcicycicCcicCcibIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbUbvbvbvbUbvbvbvbUbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcocvcvcvcvcAcjcBcqcrcsczcicicicycicicicicibIbIcycycybIbIaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcDcEcvcvcvcFcjcGcqcrcsciciczcicycicCcicCcIbIcJcKcLcLcJcyaaaaaaaaaaaaaaaacMbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcocvcvcvcvcvcjcNcqcrcsczcicicibIcicicicicibIcLcLcLcLcLbIcPaaaaaaaacfaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaacjcvcvcvcvcvcvcQcicicRcScScScHcScTcScUcScScScVcWcXcWcWcWcVcYcYcYcYcYcYcYcYbUbvbvbvbUbvbvbvbUbvbvbvbUbvbvbvbUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcjckclcmcncocjcpcqcrcsczctcicibIctcicCcubIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcvcvcvcOcvcvcjcwcqcrcscicxczcicycicCcicCcibIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbUbvbvbvbUbvbvbvbUbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcocvcOcvcOcAcjcBcqcrcsczcicicicycicicicicibIbIcycycybIbIaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcDcEcvcOcvcFcjcGcqcrcsciciczcicycicCcicCcIbIcJcKcLcLcJcyaaaaaaaaaaaaaaaacMbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcocvcOcvcOcvcjcNcqcrcsczcicicibIcicicCcicibIcLcLcLcLcLbIcPaaaaaaaacfaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaacjcvcvcvcOcvcvcQcicicRcScScScHcScTcScUcScScScVcWcXcWcWcWcVcYcYcYcYcYcYcYcYbUbvbvbvbUbvbvbvbUbvbvbvbUbvbvbvbUaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaacjdackdbcvdccvdddecidfcicicidgcibIdhdibIdjbIbIdkcLcLcLcLbIcPaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaacjcjcjdlcQcjcjcjbIbIdmdnbIbIbIbIbIdodqdqdrdsbIcJdtdtdtcJcyaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaabIcLcLcLcLdudtdvdwdxdycWcWdzdAdBbIdCdDdqdqdEbIbIcycycybIbIaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -245,8 +247,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaabIbIcLcLcLcLcLcLdFcLcLcLdFcLcLbIdqdJdKbIbIaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaabIbIcLcLcLcLcLdFcLcLcLdFcLcLbIdqdLbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabIbIcJcJcLdMdNcLcLcLdNdOdPbIdQbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabIbIbIbIbIbIcLcLcLbIbIbIbIbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbUbvbvbvbUbvbvbvbUbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaIaaaaaaaabIbIcLdRdScLcLcLdSdRdTbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabIcLcLcLdUcLcLcLcLdTbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvcfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaIaaaaaaaabIbIbLbMbVcZbLcZbVbMbXbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvbvbvaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabIbLcZbLcZbLbLcZbLbXbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabvbvbvbvbvbvbvcfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabIbIbIbIbIdVbIbIbIbIbIaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

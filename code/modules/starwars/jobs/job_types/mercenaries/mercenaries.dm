@@ -53,8 +53,8 @@
 	department_head = list("Leader")
 	department_flag = MERCENARIES
 	faction = "Mercenaries"
-	total_positions = 12
-	spawn_positions = 12
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Leader"
 	selection_color = "#de6666"
 //	req_admin_notify = 1

@@ -35,6 +35,7 @@
 			"Synthetic" = list(jobs = list(), titles = GLOB.nonhuman_positions, color = "#ccffcc"),
 			"Service" = list(jobs = list(), titles = GLOB.civilian_positions, color = "#cccccc"),
 			"Rebels" = list(jobs = list(), titles = GLOB.rebel_positions, color = "#d12020"),
+			"Mercenaries" = list(jobs = list(), titles = GLOB.merc_positions, color = "#d16f20"),
 			"Medical" = list(jobs = list(), titles = GLOB.medical_positions, color = "#99ffe6", colBreak = TRUE),
 			"Science" = list(jobs = list(), titles = GLOB.science_positions, color = "#e6b3e6"),
 			"Security" = list(jobs = list(), titles = GLOB.security_positions, color = "#ff9999"),

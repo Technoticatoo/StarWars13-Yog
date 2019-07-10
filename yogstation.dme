@@ -15,7 +15,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
-#include "_maps\purge.dm"
+#include "_maps\carajam.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_globals.dm"
@@ -557,6 +557,7 @@
 #include "code\game\area\areas\mining.dm"
 #include "code\game\area\areas\purge.dm"
 #include "code\game\area\areas\shuttles.dm"
+#include "code\game\area\areas\Carajam\carajam.dm"
 #include "code\game\area\areas\ruins\_ruins.dm"
 #include "code\game\area\areas\ruins\lavaland.dm"
 #include "code\game\area\areas\ruins\space.dm"

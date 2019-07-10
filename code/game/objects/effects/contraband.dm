@@ -661,8 +661,8 @@
 	icon_state = "rebelbanner_old"
 
 /obj/structure/sign/poster/official/rebel/reb_banner_transp
-	name = "trnsparent rebel banner"
-	desc = "trnsparent rebel banner"
+	name = "transparent rebel banner"
+	desc = "transparent rebel banner"
 	icon = 'icons/starwars/obj/flags.dmi'
 	icon_state = "rebelsymbol_trans"
 

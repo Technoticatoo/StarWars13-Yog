@@ -16,3 +16,13 @@
 	icon_state = "black_blastarmor"
 	item_state = "black_blastarmor"
 	blood_overlay_type = "armor"
+
+
+/obj/item/clothing/suit/armor/mercs/blastarmor
+	name = "blast-armor vest"
+	desc = "A armored vest that provides decent protection against most types of damage."
+	alternate_worn_icon = 'icons/starwars/clothing/mercenary_mob.dmi'
+	icon = 'icons/starwars/clothing/mercenary_obj.dmi'
+	icon_state = "merc_blastarmor"
+	item_state = "merc_blastarmor"
+	blood_overlay_type = "armor"

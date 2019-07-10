@@ -133,7 +133,7 @@
 	r_pocket = /obj/item/assembly/flash/handheld
 //	l_pocket = /obj/item/restraints/handcuffs
 //	suit_store = /obj/item/gun/energy/e_gun/advtaser
-
+	backpack_contents = list(/obj/item/clothing/suit/armor/mercs/blastarmor=1)
 
 /datum/job/overwatch
 	title = "Overwatch"
@@ -170,3 +170,4 @@
 	r_pocket = /obj/item/assembly/flash/handheld
 //	l_pocket = /obj/item/restraints/handcuffs
 //	suit_store = /obj/item/gun/energy/e_gun/advtaser
+	backpack_contents = list(/obj/item/clothing/suit/armor/mercs/blastarmor=1)

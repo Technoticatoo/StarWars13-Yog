@@ -1,0 +1,11 @@
+{
+    "map_name": "Carajam",
+    "map_path": "map_files/Carajam",
+    "map_file": "Carajam_fit.dmm",
+    "shuttles": {
+	    "cargo": "cargo_box",
+	    "ferry": "ferry_fancy",
+	    "whiteship": "whiteship_box",
+	    "emergency": "emergency_box"
+    }
+}

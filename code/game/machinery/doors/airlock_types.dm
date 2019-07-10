@@ -668,3 +668,17 @@
 
 /obj/machinery/door/airlock/glass_large/narsie_act()
 	return
+
+//star wars
+
+/obj/machinery/door/airlock/glass_large/secure
+	name = "large secure glass airlock"
+	icon = 'icons/obj/doors/airlocks/glass_large/s_door.dmi'
+	overlays_file = 'icons/obj/doors/airlocks/glass_large/overlays.dmi'
+	opacity = 0
+	assemblytype = null
+	glass = TRUE
+	bound_width = 64 // 2x1
+
+/obj/machinery/door/airlock/glass_large/narsie_act()
+	return

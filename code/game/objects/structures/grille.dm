@@ -319,3 +319,22 @@
 	rods_broken = FALSE
 	grille_type = /obj/structure/grille/ratvar
 	broken_type = null
+
+//star wars
+
+/obj/structure/grille/fence
+	icon = 'icons/starwars/obj/fence.dmi'
+	icon_state = "imperial_fence"
+	name = "fence"
+	desc = "A wire mesh in between two poles that creat a structure which stops anything and anyone from passing through it... its a fence."
+	broken_type = /obj/structure/grille/fence/broken
+
+/obj/structure/grille/fence/broken
+	icon_state = "imperial_fence_broken"
+	density = FALSE
+	obj_integrity = 20
+	broken = TRUE
+	rods_amount = 1
+	rods_broken = FALSE
+	grille_type = /obj/structure/grille/fence
+	broken_type = null

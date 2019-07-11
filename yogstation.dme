@@ -2664,6 +2664,7 @@
 #include "code\modules\starwars\clothing\cloaks.dm"
 #include "code\modules\starwars\clothing\hardsuits.dm"
 #include "code\modules\starwars\clothing\head.dm"
+#include "code\modules\starwars\clothing\masks.dm"
 #include "code\modules\starwars\clothing\outfits.dm"
 #include "code\modules\starwars\clothing\shoes.dm"
 #include "code\modules\starwars\clothing\uniforms.dm"

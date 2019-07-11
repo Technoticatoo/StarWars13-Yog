@@ -66,8 +66,8 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	name = "Lightsaber"
 	desc = "May the force be within you."
 	icon_state = "sword0"
-	lefthand_file = 'icons/mob/inhands/weapons/swords_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/swords_righthand.dmi'
+	lefthand_file = 'icons/starwars/obj/swords_lefthand.dmi'
+	righthand_file = 'icons/starwars/obj/swords_righthand.dmi'
 	force = 3
 	throwforce = 5
 	hitsound = "swing_hit" //it starts deactivated
@@ -91,7 +91,7 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	return 0
 
 /obj/item/melee/transforming/energy/sword/saber
-	var/list/possible_colors = list("red" = LIGHT_COLOR_RED, "blue" = LIGHT_COLOR_LIGHT_CYAN, "green" = LIGHT_COLOR_GREEN, "purple" = LIGHT_COLOR_LAVENDER)
+	var/list/possible_colors = list("red" = LIGHT_COLOR_RED, "blue" = LIGHT_COLOR_LIGHT_CYAN, "green" = LIGHT_COLOR_GREEN, "purple" = LIGHT_COLOR_LAVENDER, "cyan" = LIGHT_COLOR_LIGHT_CYAN, "orange" = LIGHT_COLOR_ORANGE, "white" = LIGHT_COLOR_WHITE, "gold" = LIGHT_COLOR_YELLOW)
 	var/hacked = FALSE
 	var/colorchanged = 0
 
@@ -100,7 +100,7 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	if(LAZYLEN(possible_colors))
 		var/set_color = pick(possible_colors)
 		item_color = set_color
-		light_color = possible_colors[set_color]
+		light_color = possible_colors[set_color].
 
 /obj/item/melee/transforming/energy/sword/saber/process()
 	. = ..()
@@ -124,6 +124,18 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 
 /obj/item/melee/transforming/energy/sword/saber/purple
 	possible_colors = list("purple" = LIGHT_COLOR_LAVENDER)
+
+/obj/item/melee/transforming/energy/sword/saber/gold
+	possible_colors = list("gold" = LIGHT_COLOR_YELLOW)
+
+/obj/item/melee/transforming/energy/sword/saber/white
+	possible_colors = list("white" = LIGHT_COLOR_WHITE)
+
+/obj/item/melee/transforming/energy/sword/saber/orange
+	possible_colors = list("orange" = LIGHT_COLOR_ORANGE)
+
+/obj/item/melee/transforming/energy/sword/saber/cyan
+	possible_colors = list("cyan" = LIGHT_COLOR_LIGHT_CYAN)
 
 /obj/item/melee/transforming/energy/sword/saber/attackby(obj/item/W, mob/living/user, params)
 	if(W.tool_behaviour == TOOL_MULTITOOL)

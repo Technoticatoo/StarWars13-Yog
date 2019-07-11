@@ -40,4 +40,45 @@ carajam areas
 	name = "Checkpoint"
 	icon_state = "checkpoint_aux"
 
-//carajam med
+/area/carajam/imperial/sec_room
+	name = "Security Room"
+	icon_state = "security"
+
+/area/carajam/imperial/janitor
+	name = "Custodial Closet"
+	icon_state = "janitor"
+	flags_1 = NONE
+
+/area/carajam/imperial/morgue
+	name = "Morgue"
+	icon_state = "morgue"
+	ambientsounds = SPOOKY
+
+/area/carajam/imperial/medical
+	name = "Medbay"
+	icon_state = "medbay"
+
+/area/carajam/imperial/bunks
+	name = "Bunks"
+	icon_state = "cargo_delivery"
+
+/area/carajam/imperial/storage
+	name = "Storage"
+	icon_state = "cargo_warehouse"
+
+/area/carajam/imperial/canteen
+	name = "Canteen"
+	icon_state = "Sleep"
+	safe = TRUE
+
+/area/carajam/imperial/meeting_room
+	name = "Meeting Roon"
+	icon_state = "meeting"
+
+/area/carajam/imperial/tcomms
+	name = "Telecomms Server Room"
+	icon_state = "tcomsatcham"
+
+/area/carajam/imperial/engineering
+	name = "Engineering"
+	icon_state = "engi_storage"

@@ -33,4 +33,3 @@
 	icon_state = "sandglass"
 	initial_gas_mix = "o2=22;n2=82;TEMP=313.15"
 	planetary_atmos = TRUE
-

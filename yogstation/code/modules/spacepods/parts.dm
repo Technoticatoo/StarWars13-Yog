@@ -222,6 +222,14 @@
 	pod_desc = "An armed y-wing bomber with reinforced armor plating brandishing the rebel alliance insignia"
 	pod_integrity = 350
 
+/obj/item/pod_parts/armor/merc_fighter
+	name = "mercenary fighter armor"
+	icon_state = "merc_fighter_armor"
+	desc = "Tough fighter armor, meant for use by the mercenaries for space combat."
+	pod_icon_state = "ywing"
+	pod_desc = "An armed mercenary fighter with reinforced armor plating"
+	pod_integrity = 350
+
 /*/obj/item/pod_parts/armor/shuttle
 	icon = 'icons/starwars/spacepods/shuttle.dmi'
 	name = "shuttle armor"

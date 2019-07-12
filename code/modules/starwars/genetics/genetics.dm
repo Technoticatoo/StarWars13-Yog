@@ -37,6 +37,7 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceteach(null))
 	. = ..()
 
 

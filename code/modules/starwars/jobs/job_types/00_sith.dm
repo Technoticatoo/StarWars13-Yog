@@ -2,7 +2,7 @@
 	..()
 	if (visualsOnly)
 		return
-	var/add_mutations = list(FORCE_SENSITIVE_1, FORCE_SENSITIVE_2, FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH )
+	var/add_mutations = list(FORCE_SENSITIVE_1, FORCE_SENSITIVE_2, FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH)
 
 	for(var/mutation in add_mutations)
 		if(M.dna.get_mutation(mutation))

@@ -1,4 +1,4 @@
-/datum/job/jedi/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
+/datum/job/jedi/equip(mob/living/carbon/human/M, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	..()
 	if (visualsOnly)
 		return

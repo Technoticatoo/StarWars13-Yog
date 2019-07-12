@@ -45,6 +45,11 @@
 #define YELLING		/datum/mutation/human/yelling
 #define GELADIKINESIS		/datum/mutation/human/geladikinesis
 #define CRYOKINESIS /datum/mutation/human/cryokinesis
+#define FORCE_SENSITIVE_0 /datum/mutation/human/force_sensitive/level_0
+#define FORCE_SENSITIVE_1 /datum/mutation/human/force_sensitive/level_1
+#define FORCE_SENSITIVE_2 /datum/mutation/human/force_sensitive/level_2
+#define FORCE_SENSITIVE_3 /datum/mutation/human/force_sensitive/level_3
+#define FORCE_SENSITIVE_SITH /datum/mutation/human/force_sensitive/sith
 
 
 #define UI_CHANGED "ui changed"

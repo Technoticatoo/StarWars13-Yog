@@ -1,9 +1,18 @@
-/datum/job/emperor/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
+/datum/job/emperor/equip(mob/living/carbon/human/M, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
 	..()
 	if (visualsOnly)
 		return
+	var/add_mutations = list(FORCE_SENSITIVE_1, FORCE_SENSITIVE_2, FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH )
 
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
+	for(var/mutation in add_mutations)
+		if(M.dna.get_mutation(mutation))
+			continue //Skip permanent mutations we already have.
+		if(mutation == RACEMUT && ishuman(M))
+			M = M.dna.add_mutation(mutation, MUT_OTHER)
+		else
+			M.dna.add_mutation(mutation, MUT_OTHER)
+
+	/*H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
@@ -12,7 +21,7 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))*/
 
 
 
@@ -74,16 +83,25 @@
 	..()
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "The Emperor, [H.real_name] on deck, tremble in fear, and perish before him, you who disobey him!"))
 
-/datum/job/sith/equip(mob/living/carbon/human/H, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
-    ..()
-    if (visualsOnly)
-        return
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
+/datum/job/sith/equip(mob/living/carbon/human/M, visualsOnly = FALSE, announce = TRUE, latejoin = FALSE, datum/outfit/outfit_override = null, client/preference_source)
+	..()
+	if (visualsOnly)
+		return
+	var/add_mutations = list(FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH )
+
+	for(var/mutation in add_mutations)
+		if(M.dna.get_mutation(mutation))
+			continue //Skip permanent mutations we already have.
+		if(mutation == RACEMUT && ishuman(M))
+			M = M.dna.add_mutation(mutation, MUT_OTHER)
+		else
+			M.dna.add_mutation(mutation, MUT_OTHER)
+    /*H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
     H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
-    H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))
+    H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))*/
 
 /datum/job/sith
 	title = "Sith"

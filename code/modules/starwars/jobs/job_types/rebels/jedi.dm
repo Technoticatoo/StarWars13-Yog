@@ -2,14 +2,15 @@
 	..()
 	if (visualsOnly)
 		return
+	var/add_mutations = list(FORCE_SENSITIVE_1, FORCE_SENSITIVE_2, FORCE_SENSITIVE_3)
 
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceheal(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forceprotect(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))
+	for(var/mutation in add_mutations)
+		if(M.dna.get_mutation(mutation))
+			continue //Skip permanent mutations we already have.
+		if(mutation == RACEMUT && ishuman(M))
+			M = M.dna.add_mutation(mutation, MUT_OTHER)
+		else
+			M.dna.add_mutation(mutation, MUT_OTHER)
 
 
 /datum/job/jedi

@@ -326,10 +326,11 @@
 	icon = 'icons/starwars/obj/fence.dmi'
 	icon_state = "imperial_fence"
 	name = "fence"
-	desc = "A wire mesh in between two poles that creat a structure which stops anything and anyone from passing through it... its a fence."
+	desc = "A wire mesh in between two poles that creates a structure which stops anything and anyone from passing through it... its a fence."
 	broken_type = /obj/structure/grille/fence/broken
 
 /obj/structure/grille/fence/broken
+	icon = 'icons/starwars/obj/fence.dmi'
 	icon_state = "imperial_fence_broken"
 	density = FALSE
 	obj_integrity = 20

@@ -119,3 +119,11 @@
 		            /obj/item/radio/headset/headset_sec = 1,
 		            /obj/item/clothing/gloves/combat = 1,
 		            /obj/item/tank/internals/oxygen/red = 1)
+//used for zombie mode
+
+/obj/machinery/vending/imperial/alpha/weapons
+	name = "Imperial Weapons Dispenser"
+	desc = "A weapon vendor for Stormtroopers."
+	icon_state = "stormtrooper-alphaspec"
+	products = list(/obj/item/gun/energy/e_gun/starwars/e11 = 20,
+		            /obj/item/gun/energy/laser/starwars/dlt19 = 10)

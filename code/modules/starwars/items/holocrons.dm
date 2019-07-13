@@ -15,29 +15,26 @@
 
 /obj/item/starwars/holocron/jedi/attack_self(mob/living/carbon/human/user = usr)
 	user.taught = user.taught + 1
-	if(user.taught == 10)
-		if(user.dna.get_mutation(mutation) == FORCE_SENSITIVE_2)
-			user = user.dna.add_mutation(FORCE_SENSITIVE_3, MUT_OTHER)
-			user.taught = 0
-			user.visible_message("<span class='warning'>[user] has learned the deepest secrets of the force!</span>", "<span class='notice'>You have learned the deepest secrets of the force!</span>")
-		if(user.dna.get_mutation(mutation) == FORCE_SENSITIVE_1)
-			user = user.dna.add_mutation(FORCE_SENSITIVE_2, MUT_OTHER)
-			user.taught = 0
-			user.visible_message("<span class='warning'>[user] has learned deep secrets of the force!</span>", "<span class='notice'>You have learned deep secrets of the force!</span>")
-		if(user.dna.get_mutation(mutation) == FORCE_SENSITIVE_0)
-			user = user.dna.add_mutation(FORCE_SENSITIVE_1, MUT_OTHER)
-			user.taught = 0
-			user.visible_message("<span class='warning'>[user] has learned secrets of the force!</span>", "<span class='notice'>You have learned secrets of the force!</span>")
-		if(!mutation && user.dna.get_mutation(mutation) == FORCE_SENSITIVE_1)
-			user = user.dna.add_mutation(FORCE_SENSITIVE_0, MUT_OTHER)
-			user.taught = 0
-			user.visible_message("<span class='warning'>[user] has begun their path to the force!</span>", "<span class='notice'>You have taken the first step on the path to the force!</span>")
-
+	if(user.dna.get_mutation(FORCE_SENSITIVE_2) && user.taught == 12)
+		user = user.dna.add_mutation(FORCE_SENSITIVE_3, MUT_OTHER)
+		user.taught = 0
+		user.visible_message("<span class='warning'>[user] has learned the deepest secrets of the force!</span>", "<span class='notice'>You have learned the deepest secrets of the force!</span>")
+	if(user.dna.get_mutation(FORCE_SENSITIVE_1) && user.taught == 8)
+		user = user.dna.add_mutation(FORCE_SENSITIVE_2, MUT_OTHER)
+		user.taught = 0
+		user.visible_message("<span class='warning'>[user] has learned deep secrets of the force!</span>", "<span class='notice'>You have learned deep secrets of the force!</span>")
+	if(user.dna.get_mutation(FORCE_SENSITIVE_0) && user.taught == 6)
+		user = user.dna.add_mutation(FORCE_SENSITIVE_1, MUT_OTHER)
+		user.taught = 0
+		user.visible_message("<span class='warning'>[user] has learned secrets of the force!</span>", "<span class='notice'>You have learned secrets of the force!</span>")
+	if(!user.dna.get_mutation(FORCE_SENSITIVE_0) &&  user.taught == 4)
+		user = user.dna.add_mutation(FORCE_SENSITIVE_0, MUT_OTHER)
+		user.taught = 0
+		user.visible_message("<span class='warning'>[user] has begun their path to the force!</span>", "<span class='notice'>You have taken the first step on the path to the force!</span>")
 
 /obj/item/starwars/holocron/sith/attack_self(mob/living/carbon/human/user = usr)
 	user.taught = user.taught + 1
-	if(user.taught == 10)
-		if(user.dna.get_mutation(mutation) == FORCE_SENSITIVE_0 && user.dna.get_mutation(mutation) == FORCE_SENSITIVE_SITH)
-			user = user.dna.add_mutation(FORCE_SENSITIVE_SITH, MUT_OTHER)
-			user.taught = 0
-			user.visible_message("<span class='warning'>[user] has joined the dark side!</span>", "<span class='notice'>You feel the dark side of the force taking you into its cloying embrace!</span>")
+	if(user.dna.get_mutation(FORCE_SENSITIVE_0) && user.taught == 9)
+		user = user.dna.add_mutation(FORCE_SENSITIVE_SITH, MUT_OTHER)
+		user.taught = 0
+		user.visible_message("<span class='warning'>[user] has joined the dark side!</span>", "<span class='notice'>You feel the dark side of the force taking you into its cloying embrace!</span>")

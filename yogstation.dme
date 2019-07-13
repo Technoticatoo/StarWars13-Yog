@@ -2697,6 +2697,7 @@
 #include "code\modules\starwars\gamemodes\rebel_destruction\rebel_destruction.dm"
 #include "code\modules\starwars\genetics\genetics.dm"
 #include "code\modules\starwars\items\headsets.dm"
+#include "code\modules\starwars\items\holocrons.dm"
 #include "code\modules\starwars\items\mercenary_headsets.dm"
 #include "code\modules\starwars\items\notes.dm"
 #include "code\modules\starwars\items\pda.dm"

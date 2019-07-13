@@ -2730,6 +2730,7 @@
 #include "code\modules\starwars\jobs\job_types\rebels\medic.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\soldier.dm"
 #include "code\modules\starwars\jobs\job_types\rebels\support.dm"
+#include "code\modules\starwars\mob\bantha.dm"
 #include "code\modules\starwars\mob\living.dm"
 #include "code\modules\starwars\mob\rancor.dm"
 #include "code\modules\starwars\objects\imperial_banner.dm"

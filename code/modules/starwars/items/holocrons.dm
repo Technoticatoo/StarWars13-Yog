@@ -15,6 +15,7 @@
 
 /obj/item/starwars/holocron/jedi/attack_self(mob/living/carbon/human/user = usr)
 	user.taught = user.taught + 1
+	user.visible_message("<span class='warning'>[user] is walking the path of the force!</span>", "<span class='notice'>You have taken another step to a deeper understanding of the force!</span>")
 	if(user.dna.get_mutation(FORCE_SENSITIVE_2) && user.taught == 12)
 		user = user.dna.add_mutation(FORCE_SENSITIVE_3, MUT_OTHER)
 		user.taught = 0

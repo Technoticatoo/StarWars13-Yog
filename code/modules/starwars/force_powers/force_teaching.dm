@@ -33,7 +33,7 @@
 			target = target.dna.add_mutation(FORCE_SENSITIVE_1, MUT_OTHER)
 			target.taught = 0
 			target.visible_message("<span class='warning'>[target] has learned secrets of the force!</span>", "<span class='notice'>You have learned secrets of the force!</span>")
-		if(!target.dna.get_mutation(FORCE_SENSITIVE_0) && user.dna.get_mutation(FORCE_SENSITIVE_1) &&  target.taught == 4)
+		if(!target.dna.get_mutation(FORCE_SENSITIVE_0) && (user.dna.get_mutation(FORCE_SENSITIVE_1) || user.dna.get_mutation(FORCE_SENSITIVE_SITH)) &&  target.taught == 4)
 			target = target.dna.add_mutation(FORCE_SENSITIVE_0, MUT_OTHER)
 			target.taught = 0
 			target.visible_message("<span class='warning'>[target] has begun their path to the force!</span>", "<span class='notice'>You have taken the first step on the path to the force!</span>")

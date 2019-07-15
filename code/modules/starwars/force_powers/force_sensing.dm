@@ -86,4 +86,5 @@
 	for (var/target in targets)
 		if(!target)
 			continue
+	user.visible_message("<span class='warning'>[user] is sensing the force!</span>", "<span class='notice'>The force shows you those empowered by it.</span>")
 		//damage/healing

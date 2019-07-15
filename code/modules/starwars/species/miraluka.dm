@@ -14,7 +14,6 @@
 	liked_food = JUNKFOOD | FRIED
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 
-
 /datum/species/miraluka/qualifies_for_rank(rank, list/features)
 	return TRUE	//Twilek are always allowed in all roles
 
@@ -23,4 +22,6 @@
 //	H.dna.activate_mutation(BLINDMUT)
 	H.add_client_colour(/datum/client_colour/monochrome)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forcesight(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcesensing(null))
+
 	//H.grant_language(/datum/language/twileki)

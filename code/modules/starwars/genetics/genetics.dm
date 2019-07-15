@@ -56,6 +56,7 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forcejump(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcepull(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/telepathy(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcedrain(null))
 	. = ..()
 
 /datum/mutation/human/force_sensitive/sith_3/on_acquiring(mob/living/carbon/human/H)

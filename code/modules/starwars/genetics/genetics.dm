@@ -32,11 +32,12 @@
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcewall(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forcejump(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcehealothers(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forcepull(null))
 	. = ..()
 
 /datum/mutation/human/force_sensitive/level_3/on_acquiring(mob/living/carbon/human/H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceslow(null))
-	H.mind.AddSpell(new /obj/effect/proc_holder/spell/aoe_turf/forceth(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceth(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/saber_return(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/force_control(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceteach(null))

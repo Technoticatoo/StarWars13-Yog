@@ -1,22 +1,22 @@
-/obj/effect/proc_holder/spell/targeted/forceth
-	name = "Force Throw"
-	desc = "Use the Force to throw objects or people."
+/obj/effect/proc_holder/spell/targeted/forcepull
+	name = "Force Pull"
+	desc = "Use the force to pull people and objects to you."
 	clothes_req = FALSE
-	invocation = "Force Throw!"
+	invocation = "Force Pull!"
 	invocation_type = "shout"
 	charge_max = 100
 	cooldown_min = 50
 	school = "alteration"
 //	sound = 'sound/magic/staff_healing.ogg'
 	action_icon = 'icons/starwars/force_powers.dmi'
-	action_icon_state = "repulse"
-	var/sparkle_path = /obj/effect/temp_visual/gravpush
+	action_icon_state = "force_pull"
 	var/maxthrow = 5
 	var/obj/item/I
 	var/mob/living/L
 	var/distfromcaster
+	var/sparkle_path = /obj/effect/temp_visual/gravpush
 
-/obj/effect/proc_holder/spell/targeted/forceth/choose_targets(mob/user = usr)
+/obj/effect/proc_holder/spell/targeted/forcepull/choose_targets(mob/user = usr)
 	var/list/targets = list()
 
 	switch(max_targets)
@@ -87,8 +87,7 @@
 
 	perform(targets,user=user)
 
-/obj/effect/proc_holder/spell/targeted/forceth/cast(list/targets,mob/user = usr)
-	var/atom/throwtarget
+/obj/effect/proc_holder/spell/targeted/forcepull/cast(list/targets,mob/user = usr)
 	for (var/t in targets)
 		if (ismob(t))
 			L = t
@@ -98,16 +97,15 @@
 			I = t
 			distfromcaster = get_dist(user, I)
 			// stuff with item as target here
+
 		if(!L && !I)
 			continue
 		//damage/healing
 		if(L)
-			throwtarget = get_edge_target_turf(user, get_dir(user, get_step_away(L, user)))
-			new sparkle_path(get_turf(L), get_dir(user, L)) //created sparkles will disappear on their own
-			user.visible_message("<span class='warning'>The force throws [L] away!</span>", "<span class='notice'>You throw [L] with the force!</span>")
-			L.throw_at(throwtarget, ((CLAMP((maxthrow - (CLAMP(distfromcaster - 2, 0, distfromcaster))), 3, maxthrow))), 1,user)
+			new sparkle_path(get_turf(L), get_dir(L, user)) //created sparkles will disappear on their own
+			user.visible_message("<span class='warning'>The force pulls [L] to [user]!</span>", "<span class='notice'>You pull [L] with the force!</span>")
+			L.throw_at(user, ((CLAMP((maxthrow - (CLAMP(distfromcaster - 2, 0, distfromcaster))), 3, maxthrow))), 1,user)
 		if(I)
-			throwtarget = get_edge_target_turf(user, get_dir(user, get_step_away(I, user)))
-			new sparkle_path(get_turf(I), get_dir(user, I)) //created sparkles will disappear on their own
-			user.visible_message("<span class='warning'>The force throws [I] away!</span>", "<span class='notice'>You throw [I] with the force!</span>")
-			I.throw_at(throwtarget, ((CLAMP((maxthrow - (CLAMP(distfromcaster - 2, 0, distfromcaster))), 3, maxthrow))), 1,user)
+			new sparkle_path(get_turf(I), get_dir(I, user)) //created sparkles will disappear on their own
+			user.visible_message("<span class='warning'>The force pulls [I] to [user]!</span>", "<span class='notice'>You pull [I] with the force!</span>")
+			I.throw_at(user, ((CLAMP((maxthrow - (CLAMP(distfromcaster - 2, 0, distfromcaster))), 3, maxthrow))), 1,user)

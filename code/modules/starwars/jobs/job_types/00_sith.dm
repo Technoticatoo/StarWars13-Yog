@@ -2,7 +2,7 @@
 	..()
 	if (visualsOnly)
 		return
-	var/add_mutations = list(FORCE_SENSITIVE_1, FORCE_SENSITIVE_2, FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH)
+	var/add_mutations = list(FORCE_SENSITIVE_SITH_1, FORCE_SENSITIVE_SITH_2, FORCE_SENSITIVE_SITH_3, FORCE_SENSITIVE_SITH_4)
 
 	for(var/mutation in add_mutations)
 		if(M.dna.get_mutation(mutation))
@@ -87,7 +87,7 @@
 	..()
 	if (visualsOnly)
 		return
-	var/add_mutations = list(FORCE_SENSITIVE_3, FORCE_SENSITIVE_SITH )
+	var/add_mutations = list(FORCE_SENSITIVE_SITH_1, FORCE_SENSITIVE_SITH_2, FORCE_SENSITIVE_SITH_3 )
 
 	for(var/mutation in add_mutations)
 		if(M.dna.get_mutation(mutation))

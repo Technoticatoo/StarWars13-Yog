@@ -49,7 +49,11 @@
 #define FORCE_SENSITIVE_1 /datum/mutation/human/force_sensitive/level_1
 #define FORCE_SENSITIVE_2 /datum/mutation/human/force_sensitive/level_2
 #define FORCE_SENSITIVE_3 /datum/mutation/human/force_sensitive/level_3
-#define FORCE_SENSITIVE_SITH /datum/mutation/human/force_sensitive/sith
+#define FORCE_SENSITIVE_SITH_0 /datum/mutation/human/force_sensitive/sith_0
+#define FORCE_SENSITIVE_SITH_1 /datum/mutation/human/force_sensitive/sith_1
+#define FORCE_SENSITIVE_SITH_2 /datum/mutation/human/force_sensitive/sith_2
+#define FORCE_SENSITIVE_SITH_3 /datum/mutation/human/force_sensitive/sith_3
+#define FORCE_SENSITIVE_SITH_4 /datum/mutation/human/force_sensitive/sith_4
 
 
 #define UI_CHANGED "ui changed"

@@ -44,4 +44,5 @@
 /datum/mutation/human/force_sensitive/sith/on_acquiring(mob/living/carbon/human/H)
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceck(null))
 	H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/forceln(null))
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/forcejump(null))
 	. = ..()

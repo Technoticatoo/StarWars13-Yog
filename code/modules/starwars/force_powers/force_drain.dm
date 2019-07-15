@@ -11,7 +11,7 @@
 	action_icon = 'icons/starwars/force_powers.dmi'
 	action_icon_state = "force_drain"
 
-/obj/effect/proc_holder/spell/targeted/forcehealothers/cast(list/targets,mob/living/carbon/human/user = usr)
+/obj/effect/proc_holder/spell/targeted/forcedrain/cast(list/targets,mob/living/carbon/human/user = usr)
 	for(var/mob/living/target in targets)
 		if(!target)
 			continue

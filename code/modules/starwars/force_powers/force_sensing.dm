@@ -9,7 +9,7 @@
 	school = "alteration"
 //	sound = 'sound/magic/staff_healing.ogg'
 	action_icon = 'icons/starwars/force_powers.dmi'
-	action_icon_state = "force_sense"
+	action_icon_state = "force_sensing"
 
 /obj/effect/proc_holder/spell/targeted/forcesensing/choose_targets(mob/user = usr)
 	var/list/targets = list()

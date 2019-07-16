@@ -31,7 +31,7 @@
 						continue
 					if(!can_target(M))
 						continue
-					if(M.dna.get_mutation(FORCE_SENSITIVE_0) || M.dna.get_mutation(FORCE_SENSITIVE_1) || M.dna.get_mutation(FORCE_SENSITIVE_2) || M.dna.get_mutation(FORCE_SENSITIVE_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_0) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
+					if(/*M.dna.get_mutation(FORCE_SENSITIVE_0) ||*/ M.dna.get_mutation(FORCE_SENSITIVE_1) || M.dna.get_mutation(FORCE_SENSITIVE_2) || M.dna.get_mutation(FORCE_SENSITIVE_3) || /*M.dna.get_mutation(FORCE_SENSITIVE_SITH_0) ||*/ M.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
 						possible_targets += M
 
 				//targets += input("Choose the target for the spell.", "Targeting") as mob in possible_targets
@@ -53,7 +53,7 @@
 									if(los_check(user,L))
 										M = L
 				if(M in view_or_range(range, user, selection_type))
-					if(M.dna.get_mutation(FORCE_SENSITIVE_0) || M.dna.get_mutation(FORCE_SENSITIVE_1) || M.dna.get_mutation(FORCE_SENSITIVE_2) || M.dna.get_mutation(FORCE_SENSITIVE_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_0) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
+					if(M.dna.get_mutation(FORCE_SENSITIVE_1) || M.dna.get_mutation(FORCE_SENSITIVE_2) || M.dna.get_mutation(FORCE_SENSITIVE_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || M.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
 						targets += M
 
 		else
@@ -61,7 +61,7 @@
 			for(var/mob/living/carbon/human/target in view_or_range(range, user, selection_type))
 				if(!can_target(target))
 					continue
-				if(target.dna.get_mutation(FORCE_SENSITIVE_0) || target.dna.get_mutation(FORCE_SENSITIVE_1) || target.dna.get_mutation(FORCE_SENSITIVE_2) || target.dna.get_mutation(FORCE_SENSITIVE_3) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_0) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
+				if(target.dna.get_mutation(FORCE_SENSITIVE_1) || target.dna.get_mutation(FORCE_SENSITIVE_2) || target.dna.get_mutation(FORCE_SENSITIVE_3) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_1) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_2) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_3) || target.dna.get_mutation(FORCE_SENSITIVE_SITH_4))
 					possible_targets += target
 			for(var/i=1,i<=max_targets,i++)
 				if(!possible_targets.len)

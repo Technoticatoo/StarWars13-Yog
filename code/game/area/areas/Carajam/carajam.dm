@@ -82,3 +82,7 @@ carajam areas
 /area/carajam/imperial/engineering
 	name = "Engineering"
 	icon_state = "engi_storage"
+
+/area/carajam/imperial/engineering/garage
+	name = "Imperial Garage"
+	icon_state = "maint_engi"

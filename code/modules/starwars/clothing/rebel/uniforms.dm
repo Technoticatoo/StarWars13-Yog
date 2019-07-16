@@ -84,7 +84,7 @@
 
 /obj/item/clothing/under/rebels/jedi
 	name = "Jedi's Robes"
-	desc = "The modestly brown robes of a Jedi Knight."
+	desc = "The modest brown robes of a Jedi Knight."
 	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
 	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
 	icon_state = "jedi_robe"

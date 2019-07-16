@@ -609,11 +609,13 @@
 		if(user.mind.assigned_role == "Emperor")
 			power_multiplier *= 2
 		//Command staff has authority
-		if(user.mind.assigned_role == "Jedi")
+		else if(user.mind.assigned_role == "Jedi")
 			power_multiplier *= 1.4
 		//Why are you speaking
-		if(user.mind.assigned_role == "Sith")
+		else if(user.mind.assigned_role == "Sith")
 			power_multiplier *= 0.5
+		else
+			power_multiplier *= 1.0
 
 	//Cultists are closer to their gods and are more powerful, but they'll give themselves away
 	if(iscultist(user))

@@ -674,7 +674,7 @@
 /obj/machinery/door/airlock/glass_large/secure
 	name = "large secure glass airlock"
 	icon = 'icons/obj/doors/airlocks/glass_large/s_door.dmi'
-	overlays_file = 'icons/obj/doors/airlocks/glass_large/overlays.dmi'
+	overlays_file = null
 	opacity = 0
 	assemblytype = null
 	glass = TRUE

@@ -875,6 +875,7 @@
 	movement_type = GROUND
 	gold_core_spawnable = NO_SPAWN
 	speak_chance = 3
+	emote_see = list("flutters its ears.")
 	var/memory_saved = FALSE
 	var/rounds_survived = 0
 	var/longest_survival = 0

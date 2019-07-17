@@ -43,7 +43,7 @@
 	shoes = /obj/item/clothing/shoes/rebels/jedi
 	ears = /obj/item/radio/headset/heads/rebel_jedi
 	head = /obj/item/clothing/head/helmet/rebels/jedi
-	back = /obj/item/storage/backpack
+	back = /obj/item/storage/backpack/starwars/rebels
 	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/blue=1, /obj/item/storage/box=1)
 
 

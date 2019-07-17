@@ -41,7 +41,7 @@
 //	l_pocket = /obj/item/restraints/handcuffs
 	backpack_contents = list()
 
-	backpack = /obj/item/storage/backpack/medic
+	backpack = /obj/item/storage/backpack/starwars/rebels
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 

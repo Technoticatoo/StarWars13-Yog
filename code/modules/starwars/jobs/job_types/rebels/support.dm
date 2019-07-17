@@ -42,7 +42,7 @@
 //	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/card/id/departmental_budget/sec=1, /obj/item/clothing/suit/armor/blastarmorblack=1)
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-	backpack = /obj/item/storage/backpack/security
+	backpack = /obj/item/storage/backpack/starwars/rebels
 	satchel = /obj/item/storage/backpack/satchel/sec
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	box = /obj/item/storage/box/security

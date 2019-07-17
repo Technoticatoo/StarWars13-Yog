@@ -386,6 +386,8 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 // STUN KILL TOGGLE WEAPONS
 /obj/item/gun/energy/e_gun/starwars
 	icon = 'icons/starwars/weapons.dmi'
+	lefthand_file = 'icons/starwars/guns/guns_lefthand.dmi'
+	righthand_file = 'icons/starwars/guns/guns_righthand.dmi'
 	item_state = null	//so the human update icon uses the icon_state instead.
 	modifystate = 1
 	can_flashlight = 1
@@ -395,21 +397,27 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 
 //E11
 /obj/item/gun/energy/e_gun/starwars/e11
+	icon = 'icons/starwars/weapons.dmi'
 	name = "E-11 Blaster Rifle"
 	desc = "Combined lethal firepower with impressive range and a versatile design, an advanced cooling system resulted in this blaster's superior performance. Contains two settings: Stun and Kill!"
 	icon_state = "e11"
+	item_state = "e11"
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/e11, /obj/item/ammo_casing/energy/laser/e11)
 
 //DC-15A
 /obj/item/gun/energy/e_gun/starwars/dc15a
+	icon = 'icons/starwars/weapons.dmi'
 	name = "DC-15A Blaster Rifle"
 	desc = "The weapon of choice for the Galactic Republic's clone troopers in the Grand Army of the Republic. Contains two settings: Stun and Kill!"
 	icon_state = "dc15a"
+	item_state = "dc15a"
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/dc15a, /obj/item/ammo_casing/energy/laser/dc15a)
 
 // KILL ONLY WEAPONS
 /obj/item/gun/energy/laser/starwars
 	icon = 'icons/starwars/weapons.dmi'
+	lefthand_file = 'icons/starwars/guns/guns_lefthand.dmi'
+	righthand_file = 'icons/starwars/guns/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	materials = list(MAT_METAL=2000)
 	ammo_x_offset = 1
@@ -458,6 +466,8 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 // DISRUPTOR WEAPONS
 /obj/item/gun/energy/ionrifle/starwars
 	icon = 'icons/starwars/weapons.dmi'
+	lefthand_file = 'icons/starwars/guns/guns_lefthand.dmi'
+	righthand_file = 'icons/starwars/guns/guns_righthand.dmi'
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_BELT
 	ammo_x_offset = 4
@@ -469,4 +479,5 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	name = "E-12D Ion Disruptor"
 	desc = "Based of the original E-11's design, this Ion Disruptor will short out any and all electrical circuits caught in the blast."
 	icon_state = "e12d"
+	item_state = "e12d"
 	ammo_type = list(/obj/item/ammo_casing/energy/ion/e12d)

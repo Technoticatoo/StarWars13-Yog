@@ -29,30 +29,27 @@
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/rebel_medical
-	uniform = /obj/item/clothing/under/imperial/cotg
+	uniform = /obj/item/clothing/under/rebels/blue
 	shoes = /obj/item/clothing/shoes/rebels
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/hos
-	head = /obj/item/clothing/head/helmet/imperial/cotg
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+//	head = /obj/item/clothing/head/helmet/imperial/cotg
+//	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	suit_store = /obj/item/gun/energy/e_gun
-	r_pocket = /obj/item/assembly/flash/handheld
-	l_pocket = /obj/item/restraints/handcuffs
-	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/card/id/departmental_budget/sec=1, /obj/item/clothing/suit/armor/blastarmorblack=1)
+	l_hand = /obj/item/storage/firstaid/regular
+//	r_pocket = /obj/item/assembly/flash/handheld
+//	l_pocket = /obj/item/restraints/handcuffs
+	backpack_contents = list()
 
-	backpack = /obj/item/storage/backpack/security
-	satchel = /obj/item/storage/backpack/satchel/sec
-	duffelbag = /obj/item/storage/backpack/duffelbag/sec
-	box = /obj/item/storage/box/security
+	backpack = /obj/item/storage/backpack/medic
+	satchel = /obj/item/storage/backpack/satchel/med
+	duffelbag = /obj/item/storage/backpack/duffelbag/med
 
-	implants = list(/obj/item/implant/mindshield)
 
-	chameleon_extras = list(/obj/item/gun/energy/e_gun/hos, /obj/item/stamp/hos)
-
-/datum/outfit/job/rmedic/hardsuit
+/*/datum/outfit/job/rmedic/hardsuit
 	name = "Medic (Hardsuit)"
 
 	mask = /obj/item/clothing/mask/gas/sechailer
 	suit = /obj/item/clothing/suit/space/hardsuit/security/hos
 	suit_store = /obj/item/tank/internals/oxygen
-	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/gun/energy/e_gun=1)
+	backpack_contents = list(/obj/item/melee/baton/loaded=1, /obj/item/gun/energy/e_gun=1)*/

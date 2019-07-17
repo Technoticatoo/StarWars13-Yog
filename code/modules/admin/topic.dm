@@ -442,7 +442,7 @@
 			if("parrot")
 				M.change_mob_type( /mob/living/simple_animal/parrot , null, null, delmob )
 			if("polyparrot")
-				M.change_mob_type( /mob/living/simple_animal/parrot/Poly , null, null, delmob )
+				M.change_mob_type( /mob/living/simple_animal/parrot/jarjar , null, null, delmob )
 			if("constructarmored")
 				M.change_mob_type( /mob/living/simple_animal/hostile/construct/armored , null, null, delmob )
 			if("constructbuilder")

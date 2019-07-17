@@ -26,8 +26,8 @@ SUBSYSTEM_DEF(persistence)
 	return ..()
 
 /datum/controller/subsystem/persistence/proc/LoadPoly()
-	for(var/mob/living/simple_animal/parrot/Poly/P in GLOB.alive_mob_list)
-		twitterize(P.speech_buffer, "polytalk")
+	for(var/mob/living/simple_animal/parrot/jarjar/P in GLOB.alive_mob_list)
+		twitterize(P.speech_buffer, "jarjartalk")
 		break //Who's been duping the bird?!
 
 /datum/controller/subsystem/persistence/proc/LoadChiselMessages()

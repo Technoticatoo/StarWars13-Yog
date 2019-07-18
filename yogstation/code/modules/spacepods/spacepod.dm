@@ -591,19 +591,19 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	var/selection_type = "range"
 	var/range = world.view * 3
 	if(podtype == "empire")
-		for(var/obj/structure/starwars/buoy/empire/target in view(range,usr))
+		for(var/obj/structure/starwars/buoy/empire/target in range(range,src))
 			to_chat(usr, "<span class='notice'>Target: [target].</span>")
 			targets += target
 	if(podtype == "rebels")
-		for(var/obj/structure/starwars/buoy/rebels/target in view(range,usr))
+		for(var/obj/structure/starwars/buoy/rebels/target in range(range,src))
 			targets += target
 	if(podtype == "mercs")
-		for(var/obj/structure/starwars/buoy/mercs/target in view(range,usr))
+		for(var/obj/structure/starwars/buoy/mercs/target in range(range,src))
 			targets += target
 
 	var/obj/structure/starwars/buoy/M
 	M = input("Choose the buoy for tracking.", "Tracking") as null|anything in targets
-	if(M in view_or_range(range, user, selection_type))
+	if(M in in range(range,src))
 		tracked_buoy = M
 
 

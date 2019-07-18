@@ -2,6 +2,7 @@
 GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 
 /obj/item/melee/transforming/energy
+	icon = 'icons/obj/items_and_weapons.dmi'
 	hitsound_on = 'sound/weapons/blade1.ogg'
 	heat = 3500
 	max_integrity = 200

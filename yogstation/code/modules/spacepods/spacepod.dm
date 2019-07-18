@@ -24,6 +24,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 	max_integrity = 50
 	integrity_failure = 50
+	var/tracked_buoy = ""
 	var/podtype = ""
 	var/list/equipment = list()
 	var/list/equipment_slot_limits = list(
@@ -580,6 +581,34 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	to_chat(usr, "<span class='notice'>You toggle the viewscreen.</span>")
 
 
+
+/obj/spacepod/verb/select_tracking()
+	set name = "Select Tracking Buoy"
+	set category = "Spaceship"
+	set src = usr.loc
+	var/mob/living/user = usr
+	var/list/targets = list()
+	var/selection_type = "range"
+	var/range = world.view * 3
+	if(podtype == "empire")
+		for(var/obj/structure/starwars/buoy/empire/target in view(range,usr))
+			to_chat(usr, "<span class='notice'>Target: [target].</span>")
+			targets += target
+	if(podtype == "rebels")
+		for(var/obj/structure/starwars/buoy/rebels/target in view(range,usr))
+			targets += target
+	if(podtype == "mercs")
+		for(var/obj/structure/starwars/buoy/mercs/target in view(range,usr))
+			targets += target
+
+	var/obj/structure/starwars/buoy/M
+	M = input("Choose the buoy for tracking.", "Tracking") as null|anything in targets
+	if(M in view_or_range(range, user, selection_type))
+		tracked_buoy = M
+
+
+
+
 /obj/spacepod/verb/toggle_tracking()
 	set name = "Toggle Tracking"
 	set category = "Spaceship"
@@ -593,9 +622,9 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		trackingon = TRUE
 		user.start_tracking()
 		if(podtype == "empire")
-			user.update_tracking(pick(get_area_turfs(/area/planets/rebelsector)))
+			user.update_tracking(pick(get_turf_pixel(tracked_buoy)))
 		else
-			user.update_tracking(pick(get_area_turfs(/area/planets/sector)))
+			user.update_tracking(pick(get_turf_pixel(tracked_buoy)))
 		user.hud_used.turf_locator.alpha = 128
 	else
 		trackingon = FALSE

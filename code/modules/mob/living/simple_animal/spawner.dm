@@ -179,3 +179,37 @@
 	spawn_text = "drops from"
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	sentience_type = SENTIENCE_BOSS
+
+//zombie
+
+/mob/living/simple_animal/hostile/spawner/starwars/zombiespawner
+	anchored = TRUE
+	name = "trash dispenser"
+	desc = "Zombie Spawner. Parent Object. Yell at admins."
+	icon_state = "grinder-o0"
+	icon_living = "grinder-o0"
+	icon = 'icons/obj/recycling.dmi'
+	health = 25
+	maxHealth = 25
+	max_mobs = 10
+	spawn_time = 25
+	mob_types = list()
+	spawn_text = "drops from"
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	sentience_type = SENTIENCE_BOSS
+
+/mob/living/simple_animal/hostile/spawner/starwars/zombiespawner/zombie
+	anchored = TRUE
+	name = "stinking crate"
+	desc = "A crate full of... something."
+	icon_state = "grinder-o0"
+	icon_living = "grinder-o0"
+	icon = 'icons/obj/recycling.dmi'
+	health = 30
+	maxHealth = 30
+	max_mobs = 20
+	spawn_time = 5
+	mob_types = list(/mob/living/simple_animal/hostile/star_zombie)
+	spawn_text = "crawls out from"
+	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
+	sentience_type = SENTIENCE_BOSS

@@ -5,7 +5,7 @@
 //	You do not need to raise this if you are adding new values that have sane defaults.
 //	Only raise this value when changing the meaning/format/name/layout of an existing value
 //	where you would want the updater procs below to run
-#define SAVEFILE_VERSION_MAX	21
+#define SAVEFILE_VERSION_MAX	25
 
 /*
 SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Carn
@@ -299,12 +299,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["job_engsec_high"]	>> job_engsec_high
 	S["job_engsec_med"]		>> job_engsec_med
 	S["job_engsec_low"]		>> job_engsec_low
-/*	S["job_rebels_high"]	>> job_rebels_high
+	S["job_rebels_high"]	>> job_rebels_high
 	S["job_rebels_med"]		>> job_rebels_med
 	S["job_rebels_low"]		>> job_rebels_low
 	S["job_mercs_high"]		>> job_mercs_high
 	S["job_mercs_med"]		>> job_mercs_med
-	S["job_mercs_low"]		>> job_mercs_low*/
+	S["job_mercs_low"]		>> job_mercs_low
 
 	//Quirks
 	S["all_quirks"]			>> all_quirks
@@ -447,7 +447,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//Jobs
 	WRITE_FILE(S["joblessrole"], joblessrole)
-	WRITE_FILE(S["job_civilian_high", job_civilian_high)
+	WRITE_FILE(S["job_civilian_high"], job_civilian_high)
 	WRITE_FILE(S["job_civilian_med"], job_civilian_med)
 	WRITE_FILE(S["job_civilian_low"], job_civilian_low)
 	WRITE_FILE(S["job_medsci_high"], job_medsci_high)
@@ -456,12 +456,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["job_engsec_high"], job_engsec_high)
 	WRITE_FILE(S["job_engsec_med"], job_engsec_med)
 	WRITE_FILE(S["job_engsec_low"], job_engsec_low)
-/*	WRITE_FILE(S["job_rebels_high"], job_rebels_high)
+	WRITE_FILE(S["job_rebels_high"], job_rebels_high)
 	WRITE_FILE(S["job_rebels_med"], job_rebels_med)
 	WRITE_FILE(S["job_rebels_low"], job_rebels_low)
 	WRITE_FILE(S["job_mercs_high"], job_mercs_high)
 	WRITE_FILE(S["job_mercss_med"], job_mercs_med)
-	WRITE_FILE(S["job_mercs_low"], job_mercs_low)*/
+	WRITE_FILE(S["job_mercs_low"], job_mercs_low)
 
 	//Quirks
 	WRITE_FILE(S["all_quirks"]			, all_quirks)

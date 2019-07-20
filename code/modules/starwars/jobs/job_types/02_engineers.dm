@@ -42,7 +42,7 @@ Engineer Sergeant
 	ears = /obj/item/radio/headset/heads/ce
 	uniform = /obj/item/clothing/under/imperial/engineering/head
 	shoes = /obj/item/clothing/shoes/imperial
-	head = /obj/item/clothing/head/hardhat/white
+	head = /obj/item/clothing/head/helmet/imperial/engineer_gold
 	gloves = /obj/item/clothing/gloves/color/black/ce
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/card/id/departmental_budget/eng=1)
 
@@ -106,7 +106,7 @@ Engineer Sergeant
 	ears = /obj/item/radio/headset/heads/ce
 	uniform = /obj/item/clothing/under/imperial/engineering/co
 	shoes = /obj/item/clothing/shoes/imperial
-	head = /obj/item/clothing/head/hardhat/white
+	head = /obj/item/clothing/head/helmet/imperial/engineer_white
 	gloves = /obj/item/clothing/gloves/color/black/ce
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1, /obj/item/modular_computer/tablet/preset/advanced=1, /obj/item/card/id/departmental_budget/eng=1)
 
@@ -167,7 +167,7 @@ Engineer Corporal
 	ears = /obj/item/radio/headset/headset_eng
 	uniform = /obj/item/clothing/under/imperial/engineering/nco
 	shoes = /obj/item/clothing/shoes/workboots
-	head = /obj/item/clothing/head/hardhat
+	head = /obj/item/clothing/head/helmet/imperial/engineer
 	r_pocket = /obj/item/t_scanner
 
 	backpack = /obj/item/storage/backpack/industrial

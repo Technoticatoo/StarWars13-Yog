@@ -59,3 +59,18 @@
 	name = "Interrogator's Cap"
 	desc = "A Standard Issue Imperial Interrogator's Cap"
 	icon_state = "cotg"
+
+/obj/item/clothing/head/helmet/imperial/engineer
+	name = "Engineer's Helmet"
+	desc = "A Standard Issue Imperial Engineer's Helmet"
+	icon_state = "cotg"
+
+/obj/item/clothing/head/helmet/imperial/engineer_white
+	name = "White Engineer's Helmet"
+	desc = "A White Issue Imperial Engineer's Helmet"
+	icon_state = "whiteengineer"
+
+/obj/item/clothing/head/helmet/imperial/engineer_gold
+	name = "Gold Engineer's Helmet"
+	desc = "A Gold Issue Imperial Engineer's Helmet"
+	icon_state = "goldengineer"

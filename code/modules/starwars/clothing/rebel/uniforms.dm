@@ -88,3 +88,18 @@
 	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
 	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
 	icon_state = "jedi_robe"
+
+/obj/item/clothing/under/rebels/brown_robes
+	name = "Brown Robes"
+	desc = "The modest brown robes of a Jedi Knight."
+	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
+	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
+	icon_state = "dbrownrobes"
+
+/obj/item/clothing/under/rebels/red_robes
+	name = "Red Robes"
+	desc = "The modest red robes of a Jedi Knight."
+	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
+	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
+	icon_state = "dredrobes"
+

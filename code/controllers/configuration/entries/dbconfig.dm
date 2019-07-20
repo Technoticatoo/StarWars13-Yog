@@ -12,7 +12,7 @@
 	protection = CONFIG_ENTRY_LOCKED | CONFIG_ENTRY_HIDDEN
 
 /datum/config_entry/string/feedback_database
-	config_entry_value = "test"
+	config_entry_value = "feedback"
 	protection = CONFIG_ENTRY_LOCKED | CONFIG_ENTRY_HIDDEN
 
 /datum/config_entry/string/feedback_login

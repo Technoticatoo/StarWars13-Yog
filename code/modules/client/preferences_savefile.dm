@@ -448,8 +448,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Jobs
 	WRITE_FILE(S["joblessrole"], joblessrole)
 	WRITE_FILE(S["job_civilian_high", job_civilian_high)
-	WRITE_FILE(S["job_civilian_med"] job_civilian_med)
-	WRITE_FILE(S["job_civilian_low"] job_civilian_low)
+	WRITE_FILE(S["job_civilian_med"], job_civilian_med)
+	WRITE_FILE(S["job_civilian_low"], job_civilian_low)
 	WRITE_FILE(S["job_medsci_high"], job_medsci_high)
 	WRITE_FILE(S["job_medsci_med"], job_medsci_med)
 	WRITE_FILE(S["job_medsci_low"], job_medsci_low)

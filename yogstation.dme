@@ -2125,6 +2125,7 @@
 #include "code\modules\mob\living\simple_animal\hostile\pirate.dm"
 #include "code\modules\mob\living\simple_animal\hostile\russian.dm"
 #include "code\modules\mob\living\simple_animal\hostile\skeleton.dm"
+#include "code\modules\mob\living\simple_animal\hostile\star_zombie.dm"
 #include "code\modules\mob\living\simple_animal\hostile\statue.dm"
 #include "code\modules\mob\living\simple_animal\hostile\stickman.dm"
 #include "code\modules\mob\living\simple_animal\hostile\syndicate.dm"

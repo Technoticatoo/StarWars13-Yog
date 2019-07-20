@@ -33,7 +33,7 @@
 	shoes = /obj/item/clothing/shoes/rebels
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/hos
-//	head = /obj/item/clothing/head/helmet/imperial/cotg
+	head = /obj/item/clothing/head/helmet/rebels/rebelmedichelm
 //	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	suit_store = /obj/item/gun/energy/e_gun
 	l_hand = /obj/item/storage/firstaid/regular

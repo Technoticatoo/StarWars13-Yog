@@ -2759,6 +2759,7 @@
 #include "code\modules\starwars\species\languages\star_wars_language.dm"
 #include "code\modules\starwars\turfs\bay_turfs.dm"
 #include "code\modules\starwars\turfs\desert.dm"
+#include "code\modules\starwars\turfs\hyperspace.dm"
 #include "code\modules\starwars\turfs\special_turfs.dm"
 #include "code\modules\station_goals\bsa.dm"
 #include "code\modules\station_goals\dna_vault.dm"

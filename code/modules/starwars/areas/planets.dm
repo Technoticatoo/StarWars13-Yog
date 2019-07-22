@@ -9,3 +9,7 @@
 /area/planets/mercsector
 	name = "Mercenaries Sector"
 	icon_state = "mercenaries_sector"
+
+/area/planets/hyperspace
+	name = "Hyperspace"
+	icon_state = "hyperspace"

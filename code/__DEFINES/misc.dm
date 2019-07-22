@@ -249,6 +249,7 @@ GLOBAL_LIST_INIT(pda_styles, list(MONO, VT, ORBITRON, SHARE))
 
 //Just space
 #define SPACE_ICON_STATE	"[((x + y) ^ ~(x * y) + z) % 25]"
+#define HYPERSPACE_ICON_STATE	"[((x + y) ^ ~(x * y) + z) % 399]"
 
 // Maploader bounds indices
 #define MAP_MINX 1

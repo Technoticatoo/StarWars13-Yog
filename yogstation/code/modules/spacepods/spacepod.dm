@@ -582,7 +582,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 
 
-/obj/spacepod/verb/select_tracking()
+/* /obj/spacepod/verb/select_tracking()
 	set name = "Select Tracking Buoy"
 	set category = "Spaceship"
 	set src = usr.loc
@@ -636,6 +636,46 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 	to_chat(usr, "<span class='notice'>You toggle destination tracking.</span>")
 
+*/
+
+/obj/spacepod/verb/engage_hyperspace()
+	set name = "Engage Hyperspace"
+	set category = "Spaceship"
+	set src = usr.loc
+	var/obj/structure/starwars/buoy/M
+	M = input("Choose the Hyperspace destination.", "Hyperspace") as null|anything in GLOB.hyperspace_targets
+	tracked_buoy = M
+	do_teleport(src, pick(get_area_turfs(/area/planets/hyperspace)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+	addtimer(CALLBACK(src, .proc/hyperjump, src), 1000)
+
+
+/obj/spacepod/proc/hyperjump()
+	do_teleport(src, pick(get_turf_pixel(tracked_buoy)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+
+
+/*	if(!verb_check())
+		return
+	if(podtype == "empire")
+		if(istype(loc, /turf/open/space/arrival_sector))
+			to_chat(usr, "The ship is already at the desired destination")
+		else if(istype(loc, /turf/open/space) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_mercbase) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_rebelbase))
+			do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+		else
+			to_chat(usr, "You can not enter hyperspace when not in space")
+	else if (podtype == "rebel")
+		if(istype(loc, /turf/open/space/arrival_rebelsector))
+			to_chat(usr, "The ship is already at the desired destination")
+		else if(istype(loc, /turf/open/space) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_mercbase) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_rebelbase))
+			do_teleport(src, pick(get_area_turfs(/area/planets/rebelsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+		else
+			to_chat(usr, "You can not enter hyperspace in this location")
+	else if (podtype == "mercs")
+		if(istype(loc, /turf/open/space/arrival_mercsector))
+			to_chat(usr, "The ship is already at the desired destination")
+		else if(istype(loc, /turf/open/space) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_mercbase) ||  istype(loc, /turf/open/floor/plasteel/arrival/arrival_rebelbase))
+			do_teleport(src, pick(get_area_turfs(/area/planets/mercsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+		else
+			to_chat(usr, "You can not enter hyperspace in this location")*/
 
 /obj/spacepod/verb/warp_planets()
 	set name = "Jump to Sector"

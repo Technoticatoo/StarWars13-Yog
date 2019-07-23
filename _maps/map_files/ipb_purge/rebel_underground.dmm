@@ -1,7 +1,7 @@
 "aa" = (/turf/open/floor/plasteel/airless,/area/rebels/military)
 "ab" = (/obj/machinery/light/floor,/turf/open/floor/plasteel/airless,/area/rebels/military)
-"ac" = (/obj/structure/warpfield/rebel_base,/obj/structure/starwars/ladder/up,/turf/open/floor/plasteel/airless,/area/space)
-"ad" = (/turf/open/floor/arrival/rebel_underground,/area/warpto/rebel_underground)
+"ac" = (/obj/structure/chair,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"ad" = (/obj/machinery/vending/cigarette,/turf/open/floor/plasteel/airless,/area/rebels/military)
 "ae" = (/turf/closed/indestructible/rock,/area/rebels/military)
 "af" = (/turf/closed/wall,/area/rebels/military)
 "ag" = (/obj/machinery/light{dir = 1; pixel_y = 7},/turf/open/floor/plasteel/airless,/area/rebels/military)
@@ -92,6 +92,226 @@
 "bN" = (/obj/item/radio/intercom{pixel_y = -35},/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 1},/obj/effect/landmark/event_spawn,/turf/open/floor/plasteel,/area/tcommsatrebels/server)
 "bO" = (/obj/machinery/airalarm{dir = 1; pixel_y = -22},/obj/machinery/light,/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/plasteel,/area/tcommsatrebels/server)
 "bP" = (/obj/structure/rack,/obj/item/storage/toolbox/mechanical{pixel_x = -2; pixel_y = -1},/turf/open/floor/plasteel,/area/tcommsatrebels/server)
+"bQ" = (/obj/item/banner/rebel/banner/logo,/turf/closed/wall,/area/rebels/military)
+"bR" = (/obj/structure/chair{icon_state = "chair"; dir = 8},/turf/open/floor/plasteel/airless,/area/rebels/military)
+"bS" = (/obj/machinery/vending/coffee,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"bT" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"bU" = (/obj/machinery/vending/cola,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"bV" = (/obj/structure/warpfield/rebel_base,/obj/structure/starwars/ladder/up,/turf/open/floor/tiled,/area/space)
+"bW" = (/obj/machinery/vending/wallmed,/turf/closed/wall,/area/rebels/military)
+"bX" = (/obj/machinery/vending/medical,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"bY" = (/turf/open/floor/tiled,/area/warpto/rebel_underground)
+"bZ" = (/obj/machinery/vending/snack,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"ca" = (/turf/open/floor/tiled,/area/rebels/military)
+"cb" = (/obj/machinery/door/firedoor,/turf/open/floor/tiled,/area/rebels/military)
+"cc" = (/obj/structure/sign/directions/medical,/turf/closed/wall,/area/rebels/military)
+"cd" = (/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/obj/structure/closet,/obj/item/card/id/away/hotel/securty,/obj/item/flashlight/seclite,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/e_gun,/obj/item/clothing/under/rebels/grey,/obj/item/clothing/suit/armor/vest/alt,/obj/item/storage/belt/holster,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/restraints/handcuffs,/turf/open/floor/tiled,/area/rebels/military)
+"ce" = (/obj/machinery/vending/security,/turf/open/floor/tiled,/area/rebels/military)
+"cf" = (/obj/machinery/vending/snack,/turf/open/floor/tiled,/area/rebels/military)
+"cg" = (/obj/machinery/vending/cigarette,/turf/open/floor/tiled,/area/rebels/military)
+"ch" = (/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"ci" = (/obj/machinery/door/poddoor/shutters/preopen{id = "cellrebel1"; name = "security shutters"},/turf/open/floor/tiled,/area/rebels/military)
+"cj" = (/obj/structure/sign/directions/security,/turf/closed/wall,/area/rebels/military)
+"ck" = (/obj/structure/rack,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/item/clothing/head/helmet/rebels,/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cl" = (/obj/structure/rack,/obj/item/clothing/head/helmet/rebels/pilothelmet,/obj/item/clothing/head/helmet/rebels/pilothelmet,/obj/item/clothing/head/helmet/rebels/pilothelmet,/obj/item/clothing/head/helmet/rebels/pilothelmet,/obj/item/clothing/head/helmet/rebels/pilothelmet,/turf/open/floor/tiled,/area/rebels/military)
+"cm" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/rack,/obj/item/storage/backpack/starwars/rebels,/obj/item/storage/backpack/starwars/rebels,/obj/item/storage/backpack/starwars/rebels,/obj/item/storage/backpack/starwars/rebels,/turf/open/floor/tiled,/area/rebels/military)
+"cn" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/rack,/obj/item/gun/energy/e_gun/starwars/dc15a,/obj/item/gun/energy/e_gun/starwars/dc15a,/obj/item/gun/energy/e_gun/starwars/dc15a,/turf/open/floor/tiled,/area/rebels/military)
+"co" = (/obj/structure/rack,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/laser/starwars/dl44,/turf/open/floor/tiled,/area/rebels/military)
+"cp" = (/obj/structure/rack,/obj/item/gun/energy/laser/starwars/a280,/obj/item/gun/energy/laser/starwars/a280,/obj/item/gun/energy/laser/starwars/a280,/obj/item/gun/energy/laser/starwars/a280,/obj/item/gun/energy/laser/starwars/a280,/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cq" = (/obj/structure/rack,/obj/item/gun/energy/laser/practice,/obj/item/gun/energy/laser/practice,/obj/item/gun/energy/laser/practice,/obj/item/gun/energy/laser/practice,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cr" = (/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cs" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/floor/tiled,/area/rebels/military)
+"ct" = (/obj/structure/window/reinforced/fulltile/indestructable,/turf/open/floor/tiled,/area/rebels/military)
+"cu" = (/obj/structure/closet,/obj/item/clothing/head/soft/orange,/obj/item/clothing/shoes/sneakers/orange,/obj/item/clothing/under/color/orange,/obj/item/restraints/legcuffs,/turf/open/floor/tiled,/area/rebels/military)
+"cv" = (/obj/structure/bed,/obj/item/bedsheet/orange,/turf/open/floor/tiled,/area/rebels/military)
+"cw" = (/obj/structure/window/reinforced{dir = 4},/turf/open/floor/tiled,/area/rebels/military)
+"cx" = (/obj/structure/window/reinforced{dir = 8},/turf/open/floor/tiled,/area/rebels/military)
+"cy" = (/obj/structure/table,/obj/machinery/recharger,/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cz" = (/obj/structure/target_stake,/turf/open/floor/tiled,/area/rebels/military)
+"cA" = (/obj/structure/closet,/obj/item/card/id/away/hotel/securty,/obj/item/flashlight/seclite,/obj/item/gun/energy/laser/starwars/dl44,/obj/item/gun/energy/e_gun,/obj/item/clothing/under/rebels/grey,/obj/item/clothing/suit/armor/vest/alt,/obj/item/storage/belt/holster,/obj/item/melee/baton,/obj/item/restraints/handcuffs,/obj/item/restraints/handcuffs,/turf/open/floor/tiled,/area/rebels/military)
+"cB" = (/obj/machinery/door/airlock/security/glass{name = "Equipment Room"; req_access_txt = "1"},/obj/machinery/door/poddoor/shutters/preopen{id = "cell23"; name = "security shutters"},/turf/open/floor/tiled,/area/rebels/military)
+"cC" = (/obj/machinery/door/airlock/security/glass{name = "Holding Area"; req_access_txt = "2"},/turf/open/floor/tiled,/area/rebels/military)
+"cD" = (/obj/structure/table,/turf/open/floor/tiled,/area/rebels/military)
+"cE" = (/obj/machinery/door/poddoor/shutters/preopen{id = "cellrebel2"; name = "security shutters"},/turf/open/floor/tiled,/area/rebels/military)
+"cF" = (/obj/structure/window/reinforced,/turf/open/floor/tiled,/area/rebels/military)
+"cG" = (/obj/machinery/door/window,/turf/open/floor/tiled,/area/rebels/military)
+"cH" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced,/turf/open/floor/tiled,/area/rebels/military)
+"cI" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/turf/open/floor/tiled,/area/rebels/military)
+"cJ" = (/obj/machinery/button/door{id = "cellrebel1"},/turf/closed/wall,/area/rebels/military)
+"cK" = (/obj/structure/rack,/obj/item/target/clown,/obj/item/target/clown,/obj/item/target/clown,/obj/item/target/clown,/turf/open/floor/tiled,/area/rebels/military)
+"cL" = (/obj/structure/table,/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/military)
+"cM" = (/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/obj/structure/table,/obj/machinery/recharger,/turf/open/floor/tiled,/area/rebels/military)
+"cN" = (/obj/structure/extinguisher_cabinet,/turf/closed/wall,/area/rebels/military)
+"cO" = (/obj/machinery/recharger,/obj/structure/table,/turf/open/floor/tiled,/area/rebels/military)
+"cP" = (/obj/structure/rack,/obj/item/target,/obj/item/target,/obj/item/target,/obj/item/target,/obj/item/target,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cQ" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/military)
+"cR" = (/obj/machinery/button/door{id = "cellrebel2"},/turf/closed/wall,/area/rebels/military)
+"cS" = (/obj/machinery/door/poddoor/shutters/preopen{id = "cellrebel3"; name = "security shutters"},/turf/open/floor/tiled,/area/rebels/military)
+"cT" = (/obj/structure/window/reinforced,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cU" = (/obj/structure/window/reinforced,/obj/machinery/light{dir = 4},/turf/open/floor/tiled,/area/rebels/military)
+"cV" = (/obj/structure/sign/warning/securearea,/turf/closed/wall,/area/rebels/military)
+"cW" = (/obj/machinery/door/airlock,/obj/machinery/door/firedoor,/turf/open/floor/tiled,/area/rebels/military)
+"cX" = (/obj/structure/window/reinforced/fulltile,/turf/open/floor/tiled,/area/rebels/military)
+"cY" = (/obj/structure/chair/office/dark,/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/military)
+"cZ" = (/obj/machinery/light{dir = 4},/obj/structure/bed,/obj/item/bedsheet/orange,/turf/open/floor/tiled,/area/rebels/military)
+"da" = (/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/tiled,/area/rebels/military)
+"db" = (/obj/structure/filingcabinet/filingcabinet,/turf/open/floor/tiled,/area/rebels/military)
+"dc" = (/obj/structure/table,/obj/item/paper_bin,/turf/open/floor/tiled,/area/rebels/military)
+"dd" = (/obj/structure/table,/obj/item/paper,/obj/item/pen,/turf/open/floor/tiled,/area/rebels/military)
+"de" = (/obj/structure/table,/obj/item/folder,/obj/item/folder/blue,/obj/item/folder/red,/obj/item/folder/white,/obj/item/folder/yellow,/turf/open/floor/tiled,/area/rebels/military)
+"df" = (/obj/machinery/button/door{dir = 2; id = "cellrebel3"},/turf/closed/wall,/area/rebels/military)
+"dg" = (/obj/structure/chair/office/dark{icon_state = "officechair_dark"; dir = 4},/turf/open/floor/tiled,/area/rebels/military)
+"dh" = (/obj/machinery/door/poddoor/shutters/preopen{id = "cellrebel4"; name = "security shutters"},/turf/open/floor/tiled,/area/rebels/military)
+"di" = (/obj/structure/filingcabinet/chestdrawer,/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/military)
+"dj" = (/obj/machinery/button/door{dir = 2; id = "cellrebel4"},/turf/closed/wall,/area/rebels/military)
+"dk" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/security/glass{id_tag = "outerbrig"; name = "Brig"; req_access_txt = "63"},/turf/open/floor/tiled,/area/rebels/military)
+"dl" = (/obj/structure/sign/departments/security,/turf/closed/wall,/area/rebels/military)
+"dm" = (/obj/structure/reagent_dispensers/watertank,/turf/open/floor/tiled,/area/rebels/military)
+"dn" = (/obj/machinery/light{dir = 4},/obj/structure/reagent_dispensers/watertank,/turf/open/floor/tiled,/area/rebels/military)
+"do" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/chair,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dp" = (/obj/item/banner/rebel/banner,/turf/closed/wall,/area/rebels/military)
+"dq" = (/obj/structure/sign/directions/medical{icon_state = "direction_med"; dir = 4},/turf/closed/wall,/area/rebels/military)
+"dr" = (/obj/machinery/light{dir = 1; pixel_y = 0},/obj/structure/chair,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"ds" = (/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"dt" = (/obj/machinery/light{dir = 4},/obj/machinery/vending/medical,/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"du" = (/turf/closed/wall,/area/rebels/medical)
+"dv" = (/obj/structure/bed,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dw" = (/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dx" = (/obj/structure/bed,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dy" = (/obj/machinery/vending/wallmed,/turf/closed/wall,/area/rebels/medical)
+"dz" = (/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dA" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dB" = (/obj/structure/sign/directions/security{dir = 1; pixel_x = 0; pixel_y = 0},/turf/closed/wall,/area/rebels/military)
+"dC" = (/obj/machinery/vending/medical,/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"dD" = (/obj/machinery/iv_drip,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dE" = (/obj/machinery/door/airlock,/turf/open/floor/tiled,/area/rebels/military)
+"dF" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical/glass,/turf/open/floor/tiled,/area/rebels/medical)
+"dG" = (/turf/open/floor/tiled,/area/rebels/medical)
+"dH" = (/obj/effect/landmark/start/rebels/medic,/turf/open/floor/tiled,/area/rebels/medical)
+"dI" = (/obj/effect/landmark/start/rebels/medic,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dJ" = (/obj/structure/bed,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dK" = (/obj/item/reagent_containers/spray/cleaner,/obj/item/reagent_containers/spray/cleaner,/turf/open/floor/tiled,/area/rebels/military)
+"dL" = (/obj/item/storage/bag/trash,/obj/item/storage/bag/trash,/obj/item/storage/bag/trash,/turf/open/floor/tiled,/area/rebels/military)
+"dM" = (/obj/machinery/light,/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dN" = (/obj/structure/sign/departments/medbay,/turf/closed/wall,/area/rebels/medical)
+"dO" = (/obj/structure/janitorialcart,/turf/open/floor/tiled,/area/rebels/military)
+"dP" = (/obj/machinery/light{dir = 4},/obj/structure/mopbucket,/obj/item/mop,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/tiled,/area/rebels/military)
+"dQ" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dR" = (/obj/machinery/light,/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/airless,/area/rebels/military)
+"dS" = (/obj/structure/sign/directions/security{icon_state = "direction_sec"; dir = 4},/turf/closed/wall,/area/rebels/military)
+"dT" = (/obj/item/banner/rebel/banner/logo,/turf/closed/wall,/area/rebels/medical)
+"dU" = (/obj/machinery/light,/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"dV" = (/obj/structure/extinguisher_cabinet,/turf/closed/wall,/area/rebels/medical)
+"dW" = (/obj/structure/table,/obj/machinery/door/firedoor,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dX" = (/obj/machinery/door/firedoor,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"dY" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"dZ" = (/obj/machinery/door/firedoor,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"ea" = (/obj/effect/landmark/start/rebels/soldier,/obj/effect/landmark/start/rebels/latejoin,/obj/structure/bed,/obj/item/bedsheet/blue,/turf/open/floor/tiled,/area/rebels/latejoin)
+"eb" = (/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/latejoin)
+"ec" = (/obj/effect/landmark/start/rebels/soldier,/obj/effect/landmark/start/rebels/latejoin,/obj/structure/bed,/obj/item/bedsheet/black,/turf/open/floor/tiled,/area/rebels/latejoin)
+"ed" = (/obj/effect/landmark/start/rebels/soldier,/obj/effect/landmark/start/rebels/latejoin,/obj/structure/bed,/obj/item/bedsheet/brown,/turf/open/floor/tiled,/area/rebels/latejoin)
+"ee" = (/obj/structure/bed,/obj/item/bedsheet/grey,/obj/effect/landmark/start/rebels/commander,/turf/open/floor/tiled,/area/rebels/command)
+"ef" = (/obj/structure/closet,/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/command)
+"eg" = (/turf/closed/wall,/area/rebels/command)
+"eh" = (/obj/machinery/light{dir = 1; pixel_y = 0},/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/tiled,/area/rebels/command)
+"ei" = (/turf/open/floor/tiled,/area/rebels/command)
+"ej" = (/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/tiled,/area/rebels/command)
+"ek" = (/obj/structure/closet,/turf/open/floor/tiled,/area/rebels/military)
+"el" = (/obj/structure/table/glass,/obj/item/reagent_containers/glass/bottle/epinephrine,/obj/item/stack/sheet/mineral/plasma,/obj/item/stack/sheet/mineral/plasma,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"em" = (/obj/structure/chair/office/light{icon_state = "officechair_white"; dir = 1},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"en" = (/obj/machinery/chem_dispenser,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eo" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical/glass,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ep" = (/obj/structure/closet,/turf/open/floor/tiled,/area/rebels/latejoin)
+"eq" = (/turf/open/floor/tiled,/area/rebels/latejoin)
+"er" = (/obj/structure/chair/office/dark,/turf/open/floor/tiled,/area/rebels/command)
+"es" = (/obj/structure/table,/obj/machinery/recharger,/turf/open/floor/tiled,/area/rebels/command)
+"et" = (/obj/structure/bed/roller,/obj/item/bedsheet/medical,/obj/effect/landmark/start/rebels/medic,/turf/open/floor/tiled,/area/rebels/military)
+"eu" = (/obj/structure/table/glass,/obj/machinery/reagentgrinder,/obj/structure/extinguisher_cabinet{pixel_x = -27},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ev" = (/obj/machinery/chem_master,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ew" = (/obj/structure/window/reinforced/fulltile,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ex" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"ey" = (/obj/structure/table,/obj/item/folder,/obj/item/folder/blue,/obj/item/folder/red,/obj/item/folder/white,/obj/item/folder/yellow,/turf/open/floor/tiled,/area/rebels/command)
+"ez" = (/obj/structure/table,/obj/item/paper,/obj/item/pen,/turf/open/floor/tiled,/area/rebels/command)
+"eA" = (/obj/structure/table,/obj/item/paper_bin,/turf/open/floor/tiled,/area/rebels/command)
+"eB" = (/obj/structure/chair/office/dark{dir = 8},/turf/open/floor/tiled,/area/rebels/military)
+"eC" = (/obj/structure/table/glass,/obj/item/storage/box/syringes,/obj/item/clothing/glasses/science{pixel_x = 2; pixel_y = 4},/obj/item/clothing/glasses/science,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eD" = (/obj/machinery/chem_heater,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eE" = (/obj/structure/table,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eF" = (/obj/structure/table,/obj/item/storage/firstaid/brute,/obj/item/storage/firstaid/brute,/obj/item/storage/firstaid/brute,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eG" = (/obj/structure/table,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eH" = (/obj/structure/closet/crate/medical,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eI" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/latejoin)
+"eJ" = (/obj/structure/safe,/turf/open/floor/tiled,/area/rebels/command)
+"eK" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/command)
+"eL" = (/obj/machinery/door/airlock/command,/obj/machinery/door/firedoor,/turf/open/floor/tiled,/area/rebels/command)
+"eM" = (/obj/structure/table/glass,/obj/item/assembly/igniter{pixel_x = -2; pixel_y = 2},/obj/item/assembly/igniter{pixel_x = -2; pixel_y = 2},/obj/item/assembly/igniter{pixel_x = -2; pixel_y = 2},/obj/item/assembly/igniter{pixel_x = -2; pixel_y = 2},/obj/item/assembly/timer{pixel_x = 3; pixel_y = -3},/obj/item/assembly/timer{pixel_x = 3; pixel_y = -3},/obj/item/assembly/timer{pixel_x = 3; pixel_y = -3},/obj/item/assembly/timer{pixel_x = 3; pixel_y = -3},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eN" = (/obj/machinery/vending/wallmed,/turf/closed/wall,/area/rebels/command)
+"eO" = (/obj/machinery/door/airlock/medical,/obj/machinery/door/firedoor,/turf/open/floor/tiled,/area/rebels/military)
+"eP" = (/obj/structure/table/glass,/obj/item/screwdriver{pixel_x = 2; pixel_y = 18},/obj/item/stack/cable_coil/random,/obj/item/stack/cable_coil/random,/obj/item/grenade/chem_grenade,/obj/item/grenade/chem_grenade,/obj/item/grenade/chem_grenade,/obj/item/grenade/chem_grenade,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eQ" = (/obj/structure/sink,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eR" = (/obj/structure/closet/crate/medical,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eS" = (/obj/machinery/computer/operating,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eT" = (/obj/structure/table,/obj/item/clothing/gloves/color/latex,/obj/item/clothing/mask/surgical,/obj/item/clothing/suit/apron/surgical,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eU" = (/obj/structure/sign/directions/command{icon_state = "direction_bridge"; dir = 4},/obj/item/banner/rebel/banner/logo,/turf/closed/wall,/area/rebels/military)
+"eV" = (/obj/machinery/vending/wardrobe/chem_wardrobe,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eW" = (/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"eX" = (/obj/structure/table/optable,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eY" = (/obj/structure/table,/obj/item/surgicaldrill,/obj/item/reagent_containers/spray/cleaner,/obj/item/reagent_containers/spray/cleaner,/obj/item/reagent_containers/spray/cleaner,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"eZ" = (/obj/structure/chair/office/light,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fa" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical/glass{name = "Chemistry Lab"; req_access_txt = "5; 33"},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fb" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fc" = (/obj/structure/table,/obj/item/book/manual/wiki/surgery,/obj/item/cautery{pixel_x = 4},/obj/machinery/camera{c_tag = "Medbay Surgery"},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fd" = (/obj/machinery/computer/med_data{icon_state = "computer"; dir = 1},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fe" = (/obj/machinery/computer/crew{icon_state = "computer"; dir = 1},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ff" = (/obj/machinery/computer/communications{icon_state = "computer"; dir = 1},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fg" = (/obj/structure/table,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fh" = (/obj/structure/table,/obj/item/retractor,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fi" = (/obj/machinery/door/airlock,/turf/open/floor/plasteel/airless,/area/rebels/military)
+"fj" = (/turf/closed/wall,/area/rebels/general)
+"fk" = (/obj/machinery/vending/wallmed,/turf/closed/wall,/area/rebels/general)
+"fl" = (/obj/machinery/door/airlock,/obj/machinery/door/firedoor,/turf/open/floor/tiled,/area/rebels/general)
+"fm" = (/obj/machinery/door/firedoor,/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"fn" = (/obj/structure/table,/obj/item/storage/backpack/duffelbag/med/surgery,/obj/item/storage/backpack/duffelbag/med/surgery,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fo" = (/obj/structure/table,/obj/item/storage/backpack/duffelbag/sec/surgery,/obj/item/storage/backpack/duffelbag/sec/surgery,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fp" = (/obj/structure/table,/obj/item/scalpel{pixel_y = 12},/obj/item/circular_saw,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fq" = (/obj/structure/table,/obj/item/hemostat,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fr" = (/obj/structure/table,/obj/item/surgical_drapes,/obj/item/razor,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fs" = (/obj/machinery/light{dir = 1; pixel_y = 0},/obj/machinery/shower,/obj/structure/curtain,/turf/open/floor/tiled,/area/rebels/general)
+"ft" = (/obj/machinery/shower,/obj/structure/curtain,/turf/open/floor/tiled,/area/rebels/general)
+"fu" = (/turf/open/floor/tiled,/area/rebels/general)
+"fv" = (/obj/structure/table,/obj/machinery/light{dir = 8; pixel_x = 0; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fw" = (/obj/structure/table,/obj/item/storage/firstaid/advanced,/obj/item/storage/firstaid/advanced,/obj/item/storage/firstaid/advanced,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fx" = (/obj/structure/closet/crate/medical,/obj/item/reagent_containers/blood/AMinus,/obj/item/reagent_containers/blood/AMinus,/obj/item/reagent_containers/blood/APlus,/obj/item/reagent_containers/blood/APlus,/obj/item/reagent_containers/blood/BMinus,/obj/item/reagent_containers/blood/BMinus,/obj/item/reagent_containers/blood/BPlus,/obj/item/reagent_containers/blood/BPlus,/obj/item/reagent_containers/blood/OPlus,/obj/item/reagent_containers/blood/OPlus,/obj/item/reagent_containers/blood/OMinus,/obj/item/reagent_containers/blood/OMinus,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fy" = (/obj/effect/landmark/start/rebels/support,/obj/structure/bed,/obj/item/bedsheet/black,/turf/open/floor/tiled,/area/rebels/military)
+"fz" = (/obj/effect/landmark/start/rebels/support,/obj/structure/bed,/obj/item/bedsheet/blue,/turf/open/floor/tiled,/area/rebels/military)
+"fA" = (/obj/effect/landmark/start/rebels/pilot,/obj/structure/bed,/obj/item/bedsheet/brown,/turf/open/floor/tiled,/area/rebels/military)
+"fB" = (/obj/effect/landmark/start/rebels/pilot,/obj/structure/bed,/obj/item/bedsheet/black,/turf/open/floor/tiled,/area/rebels/military)
+"fC" = (/obj/structure/bed,/obj/item/bedsheet/brown,/obj/effect/landmark/start/rebels/jedi,/turf/open/floor/tiled,/area/rebels/military)
+"fD" = (/obj/structure/bed,/obj/item/bedsheet/black,/obj/effect/landmark/start/rebels/jedi,/turf/open/floor/tiled,/area/rebels/military)
+"fE" = (/obj/machinery/light{dir = 1; pixel_y = 0},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fF" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fG" = (/obj/structure/chair/office/dark{dir = 1},/turf/open/floor/tiled,/area/rebels/command)
+"fH" = (/obj/machinery/door/airlock,/turf/open/floor/tiled,/area/rebels/general)
+"fI" = (/obj/structure/urinal{icon_state = "urinal"; dir = 8},/turf/closed/wall,/area/rebels/general)
+"fJ" = (/obj/structure/table,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fK" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical/glass{name = "Medbay Storage"; req_access_txt = "5"},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fL" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/medical{name = "Operating Theatre"; req_access_txt = "45"},/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fM" = (/obj/structure/bed,/obj/item/bedsheet/black,/obj/effect/landmark/start/rebels/agent,/turf/open/floor/tiled,/area/rebels/military)
+"fN" = (/obj/structure/bed,/obj/item/bedsheet/brown,/obj/effect/landmark/start/rebels/agent,/turf/open/floor/tiled,/area/rebels/military)
+"fO" = (/obj/structure/bed,/obj/item/bedsheet/grey,/obj/effect/landmark/start/rebels/general,/turf/open/floor/tiled,/area/rebels/command)
+"fP" = (/obj/structure/closet,/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/command)
+"fQ" = (/obj/machinery/light,/obj/structure/filingcabinet/chestdrawer,/turf/open/floor/tiled,/area/rebels/command)
+"fR" = (/obj/machinery/light,/obj/structure/table,/obj/machinery/recharger,/turf/open/floor/tiled,/area/rebels/military)
+"fS" = (/obj/machinery/light,/obj/structure/table,/obj/item/paper_bin,/turf/open/floor/tiled,/area/rebels/military)
+"fT" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 1},/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/general)
+"fU" = (/obj/structure/sink,/turf/open/floor/tiled,/area/rebels/general)
+"fV" = (/obj/machinery/light,/turf/open/floor/tiled,/area/rebels/general)
+"fW" = (/obj/structure/table,/obj/item/storage/firstaid/o2,/obj/item/storage/firstaid/o2,/obj/item/storage/firstaid/o2,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fX" = (/obj/structure/mirror,/turf/closed/wall,/area/rebels/general)
+"fY" = (/obj/structure/table,/obj/item/storage/firstaid/tactical,/obj/item/storage/firstaid/tactical,/obj/item/storage/firstaid/tactical,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"fZ" = (/obj/structure/table,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/open/floor/plasteel/white,/area/rebels/medical)
+"ga" = (/obj/machinery/light,/obj/machinery/vending/snack,/turf/open/floor/plasteel/airless,/area/rebels/medical)
+"gb" = (/obj/machinery/light,/turf/open/floor/plasteel/white,/area/rebels/medical)
 
 (1,1,1) = {"
 aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
@@ -145,51 +365,51 @@ aeaaaaaaalaoaoaOaPaQbsaRaSaTaUaVaWalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aeaaaaaaalamaXaYaZamazbabbbcbdbebfalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
 aeaaaaaaalbgbhamamambibjbkblawbmbnalaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
 aeaaaaaaalaobobpambqbrbsaCbtaFbubvbwaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaalambxbyambzbAbBbCbDbEbFbGbHaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaalamaobIbJbKaoambLbMbNbObPalafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaalalalalalalalalalalalalalalafaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafafafafafafafafafaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafaaaaagaaaaaaafafafaaabaaaaaaabaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaacaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafaaaaahaaaaaaafafafaaabaaaaaaabaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaafafafafafafafafafaaaaaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaafaaaaaaafaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafaaaaaaafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaaaaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaiaaaaaaajafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaakaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafafafafafafafafafafafafafaaaaaaaaaaafafafafafafafafafafafafafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafaaaaaaaaagaaaaaaaaaaafafafaaaaaaafafafaaaaaaaaaaaaagaaaaaaaaaaaaaaaaaaaaagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaagaaaaaaaaaaagaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaahaaaaaaaaaaahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafaaaaaaaaahaaaaaaaaaaafafafaaaaaaafafafaaaaaaaaaaaaahaaaaaaaaaaaaaaaaaaaaahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaafafafafafafafafafafafafafaaaaaaaaaaafafafafafafafafafafafafafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaiaaaaaaajafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaiaaaaaaajafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafaaaaaaaaaaafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
-aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaalambxbyambzbAbBbCbDbEbFbGbHaaafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaalamaobIbJbKaoambLbMbNbObPalafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaalalalalalalalalalalalalalalafaaaaacacacacacaaaaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafafafafafafafafafaaaaaaaaaaaaaaaaaaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafadaaagaaaaaaafafbQaaabaaaaaaabaabRafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafbSaaaaaaaaaaaabTaaaaaaaaaaaaaaaabRafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafbUaaaaaaaaaaaabTaaaaaaaabVaaaaaabRbWafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafbXaaaaaaaaaaaabTaaaaaaaabYaaaaaabRafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafbZaaahaaaaaaafafbQaaabaacaaaabaabRafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafafafafafafafafafaaaaaaaacaaaaaaaaaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaafafafafafafafafafafaaaabQaacaaabQaaaaafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafbTcbbTccafafafafafafafafafafafafafafafafafafafafafafafafafcdcaakafcecfcgafchcacacicaakafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafaacaaacjafckclcmcncocpafcqcacacrcacaafcacacacacrcacacaakafcscacaafchcaakafcacacactcucvafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafcacacwcxcacaafcacacacacacacycaczcacacacacacacaafcAcacacBcacacacCcacacaafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafchcacwcxcaakafcacacacacacacDcacacaczcacacacacaafcscacaafchcaakafchcacacEcaakafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafcFcGcHcIcGcFafcacacacacacacscacacacacaczcacacaafcAcacaafcacacacJcacacactcucvafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaiaacaaaajafcacacacacacaafcKcacacacacacLcacacacacacacaczcaafcMcaakafcacacaafcacacaafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafcNaaaacaaaaaafcOcacacacacOafcPcacacQcacaafcacacacacQcacacaakafafafafafchcaakcRcacacacScacaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafcTcFcGcFcFcUcVafafcWafcXcXafcWafafafafafafafafafcrcacacYcacacaafchcacactcucZafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafcacacacacacacacacacacacacacacacacacacacacacacaafdadbdcdddecacadfcacacaafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafaaaacaaaaaafcacacacacacadgddcacacacacacacacacacacacacacacaafcacacacacacacaafcacacadhcacaafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafafafafafafafafafafafafafafafafafaaaacaaaaaafdidbdadbdbcQdcdecacQcacQcacacacQcacacacacacacQafcQcacacacacaakdjchcacactcucZafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafafafafafafafafafafafafafafafafafaaaacaaaaaafafafafafafafafafafbQcWbQafafafafafafafafafafafafafcXcXbQdkdlafafafafafbWafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafdmdnafafaaaaaaacdoacacaaaaaaafafdpbTcbbTdpafdqaaaaacacacacagaaaacaaaaaacacacacaaagaaaaaaaabQdracacaccadsdsdtdudvdwdwdwdxdyafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafcacaafafdzaaaaaaaaaaaaaaaaaaaadAaaaacaaaaadAaaaaaaaaaaaaaaaaaaaacaaaaaaaaaaaaaaaaaaaaaaaaadBaaaaaaaacadsdsdCdudDdwdwdwdDduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafcacacadEcacacacacacacacacacacacbcacacacacacbcacacacacacacacacacacacacacacacacacacacacacacadFdGdGdHdGdGdwdIdsdudJdwdwdwdJduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafdKdLafafdzaaaaaaaaaaaaaaaaaaaadMaaaacaaaaadMaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadNdsdsdsdsdsdsdwdsdydDdwdwdwdDdyafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafdOdPafafaaaaaadQdRdQdQaaaaaaafafdpbTcbbTdpafdSaaaadQdQdQdQahaaaaaaaaaadQdQdQdQaaahaaaaaaaadTdUdsdsdsdUdsdwdsdVdvdwdwdwdxduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaafafafafafafafafafafafafafafafafafafaaaacaaaaaafafafbWafafafafafafafafafafafafbWafafafafafafafdududWdududNdXdYdZdNdDdwdwdwdDduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafeaebecafecebedafecebedafaaaacaaaaaafeeefegeheieiejafcrekcaafcaekcrafcrcacadbcacacrduelemdwendudsdwdweodwdwdwdwdwdyafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafepeqepafepeqepafepeqepcNaaaacaaaaaafeieiegeieieresafcaetcaafcaetcaafcadecadacadccadueudwdwevewdsdwexdudwdwdwdwdwduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafeceqedafedeqecafedeqeaafaaaacaaaaaafeieiegeieyezeAafcacaafafafcacaafdgddcacacaddeBdueCdwdweDewdsdwdsdueEeFeGdweHduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafeqeIeqafeIeqeIafeqeIeqafaiaacaaaajafeJeKeLeKeieieKafcQcacacacacacQafcQdccacacadecQdueMdwdwdwdudsdwdsdudududydududuafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafafbWdEbQbWdEafbQdEbWafafaaaacaaaaaafegegeNegeLegegbQafbWafeOafafafbQafbWafcWafafafduePdwdwdwdudsdwdsdueQeReSdDeTduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafcOcrcacacrcacrcacacrcabQdzaacaaaaaeUcacacacrcacrcacacacacrcacrcacacacacacrcacrcacadueVdwdwdwdNeWdwexdNdwdweXdweYduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafcOcacacacacacacacacacacWcacacacacacWcacacacacacacacacacacacacacacacacacacacacacacadydweZdwdwfadwdwdwfbdwdwdwdwfcduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafcOcQcacacQcacQcacacQcabQdzaaaaaaaabQcacacacQcacQcacacacacQcacQcacacacacacQcacQcacadufdfefffgdTeWdwexdTdwdwdwdwfhduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafafbWfibQbWfiafbQdEbWafafaaaaaaaaaaafegegeNegeLegegbQafbWafcWafafafbQfjfkfjflfjfjfjfjdududududufmdYfmdufnfofpfqfrduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafcacrcaafcrcacrafcacrcaafaaaaaaaaaaafeJejeLejeieiejafcrcacacacacacraffsftfufufuftfsfjfvfweGfxdudsdwdsduduewewewduduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafaffycafzaffAcafBaffCcafDafaiaaaaaaajafeieiegeieyezeAafdcdecadacadecsaffufufufufufufufjeFdwdwdwdueWdwexdufEfFfFfFfEduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafekcaekafekcaekafekcaekcNaaaaaaaaaaafeieiegeieifGesafddeBcadbcadgddaffHfjfHfjfufufufIfJdwdwdwfKdwdwdwfLdwdwdwdwdwduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafaffzcQfyaffAcQfAaffMcQfNafaadQdQdQaaaffOfPegfQeieieKaffRcacadbcacafSaffTfjfTfjfUfUfVfIfWdwdwdwdNeWdsexdNdwfFfFfFdwduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafafafafafafafafafafafafafafafafafafafegegegegegegegafafafafafafafafaffjfjfjfjfXfXfjfjfvfYfZeHdudCgadsdugbdwdwdwgbduafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafafdudududududududududududududududuafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
+aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaafafafafafafafafafafafafafafafafafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
 aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
 aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae
 aeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaae

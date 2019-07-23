@@ -22,6 +22,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	anchored = TRUE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF // it floats above lava or something, I dunno
 
+	var warpsound = 'sound/effects/bamf.ogg'
 	max_integrity = 50
 	integrity_failure = 50
 	var/tracked_buoy = ""
@@ -648,16 +649,16 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 
 	if(istype(loc, /turf/open/space) && isinsector)
 		to_chat(usr, "Entering hyperspace")
-		Cinematic(CINEMATIC_HYPERSPACE,usr)
+		Cinematic(CINEMATIC_HYPERSPACE,src)
 	//	do_teleport(src, pick(get_area_turfs(/area/space/hyperspace)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
 		addtimer(CALLBACK(src, .proc/hyperjump, src), 100)
 	else
-		to_chat(usr, "You can not enter hyperspace in this location")
+		to_chat(usr, "You can only enter hyperspace from the sector space")
 
 
 /obj/spacepod/proc/hyperjump()
 	to_chat(usr, "Exiting hyperspace")
-	do_teleport(src, pick(get_turf_pixel(tracked_buoy)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+	do_teleport(src, pick(get_turf_pixel(tracked_buoy)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC,  asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 
 
 /*	if(!verb_check())
@@ -702,7 +703,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
 			isinsector = 1
-			do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not jump to the sector in this location")
 	else if (podtype == "rebel")
@@ -711,7 +712,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
 			isinsector = 1
-			do_teleport(src, pick(get_area_turfs(/area/planets/rebelsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_area_turfs(/area/planets/rebelsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not jump to the sector in this location")
 	else if (podtype == "mercs")
@@ -720,7 +721,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
 			isinsector = 1
-			do_teleport(src, pick(get_area_turfs(/area/planets/mercsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_area_turfs(/area/planets/mercsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not jump to the sector in this location")
 
@@ -743,7 +744,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(isinsector)
 			to_chat(usr, "Jumping Home")
 			isinsector = 0
-			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/empire)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/empire)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not enter hyperspace when not in space")
 	else if (podtype == "rebel")
@@ -752,7 +753,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(isinsector)
 			to_chat(usr, "Jumping Home")
 			isinsector = 0
-			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/rebels)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/rebels)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not enter hyperspace in this location")
 	else if (podtype == "mercs")
@@ -761,7 +762,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 		else if(isinsector)
 			to_chat(usr, "Jumping Home")
 			isinsector = 0
-			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/mercs)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
+			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/mercs)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 		else
 			to_chat(usr, "You can not enter hyperspace in this location")
 

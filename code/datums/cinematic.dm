@@ -255,11 +255,11 @@ GLOBAL_LIST_EMPTY(cinematics)
 
 /datum/cinematic/hyperspace
 	id = CINEMATIC_HYPERSPACE
-	cleanup_time = 100
+	cleanup_time = 40
 
 /datum/cinematic/hyperspace/content()
 	flick("hyperspace",screen)
-	sleep(35)
+//	sleep(35)
 //	cinematic_sound(sound('sound/items/airhorn.ogg'))
 //	flick("summary_selfdes",screen) //???
 //	special()

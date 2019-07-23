@@ -1,7 +1,7 @@
 {
     "map_name": "Purge",
     "map_path": "map_files/ipb_purge",
-    "map_file": ["Purge.dmm", "planets.dmm", "rebel_base.dmm", "rebel_underground.dmm", "hyperspace.dmm"],
+    "map_file": ["Purge.dmm", "planets.dmm", "rebel_base.dmm", "rebel_underground.dmm"],
     "shuttles": {
 	    "cargo": "cargo_box",
 	    "ferry": "ferry_fancy",

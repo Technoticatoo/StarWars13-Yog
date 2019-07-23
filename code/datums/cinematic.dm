@@ -27,6 +27,14 @@ GLOBAL_LIST_EMPTY(cinematics)
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	screen_loc = "1,1"
 
+/*/obj/screen/cinematic_hyperspace
+	icon = 'icons/starwars/hyperspace.dmi'
+	icon_state = "hyperspace"
+	plane = SPLASHSCREEN_PLANE
+	layer = SPLASHSCREEN_LAYER
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	screen_loc = "1,1"*/
+
 /datum/cinematic
 	var/id = CINEMATIC_DEFAULT
 	var/list/watching = list() //List of clients watching this
@@ -84,7 +92,7 @@ GLOBAL_LIST_EMPTY(cinematics)
 
 	//Actually play it
 	content()
-	
+
 	//Cleanup
 	sleep(cleanup_time)
 
@@ -244,6 +252,18 @@ GLOBAL_LIST_EMPTY(cinematics)
 	cinematic_sound(sound('sound/items/airhorn.ogg'))
 	flick("summary_selfdes",screen) //???
 	special()
+
+/datum/cinematic/hyperspace
+	id = CINEMATIC_HYPERSPACE
+	cleanup_time = 100
+
+/datum/cinematic/hyperspace/content()
+	flick("hyperspace",screen)
+	sleep(35)
+//	cinematic_sound(sound('sound/items/airhorn.ogg'))
+//	flick("summary_selfdes",screen) //???
+//	special()
+
 
 /* Intended usage.
 Nuke.Explosion()

@@ -31,20 +31,16 @@
 "aE" = (/obj/machinery/autolathe,/turf/open/floor/tiled,/area/rebels/general)
 "aF" = (/obj/structure/table,/obj/item/stack/sheet/metal/fifty,/turf/open/floor/tiled,/area/rebels/general)
 "aG" = (/obj/structure/table,/obj/item/stack/sheet/glass/fifty,/turf/open/floor/tiled,/area/rebels/general)
-"aH" = (/obj/machinery/atmospherics/components/unary/vent_scrubber/on{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
-"aI" = (/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{dir = 4},/obj/structure/cable{icon_state = "2-4"},/obj/structure/cable{icon_state = "1-4"},/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
-"aJ" = (/obj/effect/turf_decal/tile/blue,/obj/effect/turf_decal/tile/blue{dir = 1},/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
+"aH" = (/obj/structure/starwars/home/buoy/rebels,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/bluespaceriver/ground)
 "aK" = (/obj/machinery/light{dir = 1; pixel_y = 7},/obj/structure/table,/turf/open/floor/tiled,/area/rebels/general)
 "aL" = (/obj/spacepod/prebuilt/xwing,/turf/open/floor/plasteel/arrival/arrival_rebelbase,/area/rebels/squadron)
 "aM" = (/obj/structure/table,/turf/open/floor/tiled,/area/rebels/general)
 "aN" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel,/area/bluespaceriver/ground)
 "aO" = (/obj/structure/closet/secure_closet/freezer/meat,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/rebels/general)
-"aP" = (/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,/obj/effect/turf_decal/tile/blue,/turf/open/floor/plasteel/white,/area/bluespaceriver/ground)
 "aQ" = (/turf/closed/wall,/area/rebels/agents)
 "aR" = (/obj/effect/spawner/structure/window/reinforced,/turf/open/floor/plasteel,/area/rebels/agents)
 "aS" = (/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/rebels/general)
 "aT" = (/obj/structure/table,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/obj/machinery/recharger,/turf/open/floor/plasteel/cafeteria,/area/rebels/general)
-"aU" = (/obj/effect/turf_decal/tile/blue{dir = 8},/obj/effect/turf_decal/tile/blue{dir = 4},/turf/open/floor/plasteel/cafeteria,/area/bluespaceriver/ground)
 "aV" = (/obj/structure/chair/stool/bar,/obj/effect/turf_decal/tile/blue{dir = 4},/obj/effect/turf_decal/tile/blue{dir = 8},/turf/open/floor/plasteel/cafeteria,/area/rebels/general)
 "aW" = (/obj/structure/closet/emcloset,/turf/open/floor/plasteel,/area/rebels/agents)
 "aX" = (/obj/structure/cable{icon_state = "0-2"; d2 = 2},/turf/open/floor/plasteel,/area/rebels/agents)
@@ -145,8 +141,6 @@
 "cO" = (/obj/machinery/telecomms/relay/preset/rebels,/turf/open/floor/tiled,/area/rebels/command)
 "cP" = (/obj/structure/window{icon_state = "window"; dir = 4},/turf/open/floor/plasteel,/area/rebels/general)
 "cQ" = (/obj/machinery/light/floor/hangar,/turf/open/floor/plasteel,/area/rebels/general)
-"cR" = (/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/warpto/rebel_home)
-"cS" = (/obj/structure/flora/bush,/turf/open/floor/plating/asteroid/snow/planetary{temperature = 240},/area/warpto/rebel_home)
 "cT" = (/obj/effect/landmark/start/rebels/agent,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel,/area/rebels/agents)
 "cU" = (/obj/structure/window{icon_state = "window"; dir = 8},/turf/open/floor/plasteel,/area/rebels/general)
 "cV" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel,/area/rebels/general)
@@ -187,18 +181,18 @@ ctawabababababababababababcCcCcCcCcCcCcCcCcCcCcCcCajcCcCcCcCcCcCcCcCcCcCcCcCcCcC
 ctawababababababababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCadcCcCcCcCcCcCcCcCcCcCcCafcCcCaicCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababawct
 ctawababababababababababcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababawct
 ctawababababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCadcCcCcCaeaicCcCcCcCcCababababababababababawct
-ctawababababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaHaIcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCabababababababababawct
-ctawababababababababcCcCcCcCcCcCcCcCcCcCcCaaaaaaaaaaaaaacCcCcCcCcCaJaPcCcCahcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCabababababababababababawct
-ctawababababababcCcCcCcCcCcCcCcCafcCcCcCacaaakalanaoaoaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCababababababababababababawct
-ctawabababababababcCcCcCcCcCcCcCcCcCcCaaaaapaAaAaAaAaAaqaaaacCcCcCaUcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawabababababcCabcCcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararcCcCcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawabababababcCcCcCcCcCaecCcCcCcCaaaaasaqbbaqbbaqaqbAaqaqcOaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCarararararararararcCcCcCafcCcRcRcRcRcRcRcRcRcRcScRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawababababababcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaqaqaqaaaaatcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCarauarararauarararauarcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawababababababcCcCafcCcCcCcCaaaaaqaqaqaqbbaqbbavaqaqaqaqaqatayatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCahcCcCarararararararararararcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCaecCcCcCababababababababababawct
-ctawababababababcCcCcCcCcCcCaxaaaaaaaaaaatatatatatatazaBaCatataDaDatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawababababababcCcCcCcCcCatataEaFaGaKaMataOaSaTaVaDbaaDaDatbaaDaDbcatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararaLararararaLarararcCcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCababababababababababawct
-ctawababababababcCcCcCcCcCataDaDaDaDaDaDatbdaSbeaVaDbfaDaDbiaDaDaDaDaDatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararauarararauarararauararcCcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCcCababababababababawct
-ctawababababababcCcCcCcCcCatblaDaDaDaDbmatbnaSbeaVaDaDaDaDbiaDaDaDaDaDataQaRaRaRaQaQcCcCcCcCcCcCcCcCcCarararararararararararararararcCcCcRcRcRcRcRcRcRcRcRcRcRcRcRcRcRcCcCcCcCcCcCcCcCabababababababababawct
+ctawababababababababcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababawct
+ctawababababababababcCcCcCcCcCcCcCcCcCcCcCaaaaaaaaaaaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababababawct
+ctawababababababcCcCcCcCcCcCcCcCafcCcCcCacaaakalanaoaoaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababababawct
+ctawabababababababcCcCcCcCcCcCcCcCcCcCaaaaapaAaAaAaAaAaqaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawabababababcCabcCcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaaaacCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCarararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawabababababcCcCcCcCcCaecCcCcCcCaaaaasaqbbaqbbaqaqbAaqaqcOaaaacCcCcCcCcCcCcCcCcCahcCcCcCcCcCcCcCcCcCcCcCcCarararararararararcCcCcCafcCcCcCcCcCcCcCcCcCcCafcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawababababababcCcCcCcCcCcCcCcCaaaaaqaqaqaqaqaqaqaqaqaqaqaqaaaaatcCcCcCcCcCcCcCcCcCcCaecCcCcCcCcCcCcCcCcCarauarararauarararauarcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawababababababcCcCafcCcCcCcCaaaaaqaqaqaqbbaqbbavaqaqaqaqaqatayatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCahcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCaecCcCcCababababababababababawct
+ctawababababababcCcCcCcCcCcCaxaaaaaaaaaaatatatatatatazaBaCatataDaDatatcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCarararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawababababababcCcCcCcCcCatataEaFaGaKaMataOaSaTaVaDbaaDaDatbaaDaDbcatatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararaLararararaLarararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababababawct
+ctawababababababcCcCcCcCcCataDaDaDaDaDaDatbdaSbeaVaDbfaDaDbiaDaDaDaDaDatcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCararauarararauarararauararcCcCcCcCcCcCcCcCcCcCcCcCaHcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababawct
+ctawababababababcCcCcCcCcCatblaDaDaDaDbmatbnaSbeaVaDaDaDaDbiaDaDaDaDaDataQaRaRaRaQaQcCcCcCcCcCcCcCcCcCarararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababawct
 ctawabababababcCcCcCcCcCcCatbobpaDaDaDbqatbraSbeaVaDaDaDaDbiaDaDaDaDbqataWaXaYaYaWaRcCcCcCcCcCcCcCcCaZararararararararararararararararcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCabababababababababawct
 ctawabababababcCcCcCcCcCcCataMaDaDaDaDaDatbtaSbeaVaDaDaDaDataDaDaDaDaDazaYcTaYcnaYbuamcCcCcCcCaicCcCarararararaLararararaLararararararcCcCcCcCcCcCcCcCcCcCcCcCaicCcCcCcCcCcCcCcCcCcCcCcCcCabababababababawct
 ctawabababababcCcCcCcCcCcCataDaDaDaDaDaDbvaDaDbybzbzbzbzbzbBbzbCbzbzbzbgbhbjbhbhbhbkaNaNaNaNaNaNaNaNaubTarbTauarararauarararauarararaucCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCcCababababababababawct

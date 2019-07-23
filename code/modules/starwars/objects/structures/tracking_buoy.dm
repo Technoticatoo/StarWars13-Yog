@@ -5,6 +5,10 @@
 	icon_state = "buoy"
 	anchored = TRUE
 
+/obj/structure/starwars/buoy/Initialize()
+	. = ..()
+	GLOB.hyperspace_targets += src
+
 /obj/structure/starwars/buoy/rebels
 	name = "rebel tracking buoy"
 	desc = "A tracking buoy with rebel insignia painted on it."
@@ -18,7 +22,7 @@
 	anchored = TRUE
 
 /obj/structure/starwars/buoy/mercs
-	name = "ladder"
+	name = "mercenary tracking buoy"
 	desc = "A tracking buoy with rebel mercenary painted on it."
 	icon_state = "buoy"
 	anchored = TRUE

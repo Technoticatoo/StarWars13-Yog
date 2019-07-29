@@ -43,7 +43,7 @@
 	. = ..()
 	var/dat = ""
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=eject_id'>Eject ID</A> \]<BR>"
-	dat += "<a href='?src=[REF(src)];choice=claim'>Claim Area</a><br>"
+	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=claim'>Claim Area</A>  \]<BR>"
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=logout'>Log Out</A> \]<BR>"
 	var/datum/browser/popup =  new(user, "control", "Area Control System")
 	popup.set_content(dat)

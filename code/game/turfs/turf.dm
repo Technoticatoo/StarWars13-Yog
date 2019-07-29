@@ -3,7 +3,7 @@
 	level = 1
 
 	var/intact = 1
-
+//	var/swfaction = ""
 	// baseturfs can be either a list or a single turf type.
 	// In class definition like here it should always be a single type.
 	// A list will be created in initialization that figures out the baseturf's baseturf etc.

@@ -8,7 +8,7 @@
 	var/signal_enabled = FALSE
 	var/datum_flags = NONE
 	var/datum/weakref/weak_reference
-
+	var/swfaction = ""
 #ifdef TESTING
 	var/running_find_references
 	var/last_find_references = 0

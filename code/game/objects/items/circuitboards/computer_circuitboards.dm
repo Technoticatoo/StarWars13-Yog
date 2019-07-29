@@ -394,3 +394,9 @@
 /obj/item/circuitboard/computer/nanite_cloud_controller
 	name = "Nanite Cloud Control (Computer Board)"
 	build_path = /obj/machinery/computer/nanite_cloud_controller
+
+//STAR WARS
+
+/obj/item/circuitboard/computer/main_control
+	name = "Main Area Control Console (Computer Board)"
+	build_path = /obj/machinery/computer/main_computer

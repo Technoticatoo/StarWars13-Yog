@@ -142,7 +142,7 @@
 	//suit = /obj/item/clothing/suit/armor/vest/sithcarapace
 	shoes = /obj/item/clothing/shoes/combat
 	head = /obj/item/clothing/head/sithat
-	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1, /obj/item/card/id/departmental_budget/civ=1)
+	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1, /obj/item/card/id/departmental_budget/civ=1, /obj/item/card/id/empire)
 
 	backpack = /obj/item/storage/backpack
 	satchel = /obj/item/storage/backpack/satchel

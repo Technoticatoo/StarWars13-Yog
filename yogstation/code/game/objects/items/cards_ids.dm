@@ -83,3 +83,17 @@
 /obj/item/card/id/gasclerk/New()
 	..()
 	registered_account = new("Clerk", FALSE)
+
+//STAR WARS
+
+/obj/item/card/id/empire
+	icon_state = "id_empire" //STAR WARS
+	swfaction = "Empire"
+
+/obj/item/card/id/rebels
+	icon_state = "id_rebels" //STAR WARS
+	swfaction = "Rebellion"
+
+/obj/item/card/id/mercs
+	icon_state = "id_mercs" //STAR WARS
+	swfaction = "Mercenaries"

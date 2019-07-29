@@ -6,7 +6,7 @@
 
 	var/damtype = BRUTE
 	var/force = 0
-
+//	var/swfaction = ""
 	var/datum/armor/armor
 	var/obj_integrity	//defaults to max_integrity
 	var/max_integrity = 500

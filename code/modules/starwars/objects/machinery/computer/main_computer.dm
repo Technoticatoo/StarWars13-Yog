@@ -42,6 +42,7 @@
 /obj/machinery/computer/main_computer/ui_interact(mob/user)
 	. = ..()
 	var/dat = ""
+	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=eject_id'>Eject ID</A> \]<BR>"
 	dat += "<a href='?src=[REF(src)];choice=claim'>Claim Area</a><br>"
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=logout'>Log Out</A> \]<BR>"
 	var/datum/browser/popup =  new(user, "control", "Area Control System")
@@ -53,11 +54,17 @@
 	switch(href_list["choice"])
 //BASIC FUNCTIONS
 		if ("claim")
+			to_chat(usr, "<span class='error'>Claiming area!</span>")
 			claim()
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
+		if ("eject_id")
+			to_chat(usr, "<span class='error'>Ejecting ID!</span>")
+			eject_id(usr)
 		if ("logout")
+			eject_id(usr)
 			authenticated = 0
 			playsound(src, 'sound/machines/terminal_off.ogg', 50, 0)
+		//	popup.close()
 
 	updateUsrDialog()
 	return

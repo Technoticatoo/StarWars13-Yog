@@ -3,43 +3,44 @@
 	icon_state = "factions"
 	has_gravity = STANDARD_GRAVITY
 	unique = FALSE
+	var/list/doors = list()
 
 /area/factions/command1
-	name = "Command"
+	name = "Command1"
 	icon_state = "factions_command"
 
 /area/factions/command2
-	name = "Command"
+	name = "Command2"
 	icon_state = "factions_command"
 
 /area/factions/command3
-	name = "Command"
+	name = "Command3"
 	icon_state = "factions_command"
 
 /area/factions/command4
-	name = "Command"
+	name = "Command4"
 	icon_state = "factions_command"
 
 /area/factions/command5
-	name = "Command"
+	name = "Command5"
 	icon_state = "factions_command"
 
 /area/factions/command6
-	name = "Command"
+	name = "Command6"
 	icon_state = "factions_command"
 
 /area/factions/command7
-	name = "Command"
+	name = "Command7"
 	icon_state = "factions_command"
 
 /area/factions/command8
-	name = "Command"
+	name = "Command8"
 	icon_state = "factions_command"
 
 /area/factions/command9
-	name = "Command"
+	name = "Command9"
 	icon_state = "factions_command"
 
 /area/factions/command10
-	name = "Command"
+	name = "Command10"
 	icon_state = "factions_command"

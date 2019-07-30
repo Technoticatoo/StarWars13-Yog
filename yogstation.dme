@@ -2742,6 +2742,7 @@
 #include "code\modules\starwars\objects\mercenary_banner.dm"
 #include "code\modules\starwars\objects\rebel_banners.dm"
 #include "code\modules\starwars\objects\machinery\computer\main_computer.dm"
+#include "code\modules\starwars\objects\machinery\door\door.dm"
 #include "code\modules\starwars\objects\structures\ladder.dm"
 #include "code\modules\starwars\objects\structures\planets.dm"
 #include "code\modules\starwars\objects\structures\purge.dm"

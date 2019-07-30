@@ -15,6 +15,7 @@
 	var/can_change_id = 0
 	var/list/Perp
 	var/tempname = null
+	var/area/factions/src_area = ""
 	//Sorting Variables
 	var/sortBy = "name"
 	var/order = 1 // -1 = Descending - 1 = Ascending
@@ -42,6 +43,9 @@
 /obj/machinery/computer/main_computer/ui_interact(mob/user)
 	. = ..()
 	var/dat = ""
+	if(istype(get_area(src), /area/factions))
+		src_area = get_area(src)
+	dat += "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=eject_id'>Eject ID</A> \]<BR>"
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=claim'>Claim Area</A>  \]<BR>"
 	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=logout'>Log Out</A> \]<BR>"
@@ -103,8 +107,15 @@
 
 /obj/machinery/computer/main_computer/proc/claim()
 	if(scan)
-		var/area/src_area = get_area(src)
 		if(scan.swfaction)
 			src_area.swfaction = scan.swfaction
+			for(var/obj/machinery/door/D in src_area.doors)
+				to_chat(usr, "<span class='error'>Working!</span>")
+				if(scan.swfaction == "Empire")
+					D.req_access_txt = "666"
+				if(scan.swfaction == "Rebels")
+					D.req_access_txt = "555"
+				if(scan.swfaction == "Mercs")
+					D.req_access_txt = "999"
 		else
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")

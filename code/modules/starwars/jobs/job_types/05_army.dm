@@ -108,7 +108,7 @@ Alpha Squad Sergeant
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
 	shoes = /obj/item/clothing/shoes/imperial
-	suit = /obj/item/clothing/suit/armor/vest/warden/alt
+	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/srsergeant
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/imperial/blast
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
@@ -301,7 +301,7 @@ Bravo Squad Sergeant
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
 	shoes = /obj/item/clothing/shoes/imperial
-	suit = /obj/item/clothing/suit/armor/vest/warden/alt
+	suit = /obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/sergeant
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/helmet/imperial/blast
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses

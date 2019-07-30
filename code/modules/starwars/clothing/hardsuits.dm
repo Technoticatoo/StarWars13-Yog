@@ -141,3 +141,35 @@
 	desc = "The flight suit of a tie pilot of the Imperial Navy."
 	icon_state = "tiepilot_suit"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/tiepilot
+
+
+
+/obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/surgeon
+	name = "Stormtrooper Surgeons Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "stormsurgen_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+
+/obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/srsergeant
+	name = "Stormtrooper Senior Sergeant Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "stormseniorsgt_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+
+/obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/chief
+	name = "Stormtrooper Chief Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "stormchief_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+
+/obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/sergeant
+	name = "Stormtrooper Sergeant Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "stormsgt_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper
+
+/obj/item/clothing/suit/space/hardsuit/imperial/stormtrooper/marksman
+	name = "Stormtrooper Marksman Armour"
+	desc = "A special armour designed for work in a hazardous, low pressure environment. Armoured and mass produced for troopers of the Imperial Army."
+	icon_state = "stormmarksmen_suit"
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/imperial/stormtrooper

@@ -2,31 +2,44 @@
 	name = "factions"
 	icon_state = "factions"
 	has_gravity = STANDARD_GRAVITY
+	unique = FALSE
 
-/area/factions/command
+/area/factions/command1
 	name = "Command"
 	icon_state = "factions_command"
 
-/area/factions/military
-	name = "Military"
-	icon_state = "factions_military"
+/area/factions/command2
+	name = "Command"
+	icon_state = "factions_command"
 
-/area/factions/medical
-	name = "Medical"
-	icon_state = "factions_medical"
+/area/factions/command3
+	name = "Command"
+	icon_state = "factions_command"
 
-/area/factions/squadron
-	name = "Squadron"
-	icon_state = "factions_squadron"
+/area/factions/command4
+	name = "Command"
+	icon_state = "factions_command"
 
-/area/factions/agents
-	name = "Agents"
-	icon_state = "factions_agents"
+/area/factions/command5
+	name = "Command"
+	icon_state = "factions_command"
 
-/area/factions/support
-	name = "Support"
-	icon_state = "factions_support"
+/area/factions/command6
+	name = "Command"
+	icon_state = "factions_command"
 
-/area/factions/general
-	name = "General"
-	icon_state = "factions_general"
+/area/factions/command7
+	name = "Command"
+	icon_state = "factions_command"
+
+/area/factions/command8
+	name = "Command"
+	icon_state = "factions_command"
+
+/area/factions/command9
+	name = "Command"
+	icon_state = "factions_command"
+
+/area/factions/command10
+	name = "Command"
+	icon_state = "factions_command"

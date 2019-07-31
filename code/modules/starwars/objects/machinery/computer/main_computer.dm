@@ -58,7 +58,6 @@
 	switch(href_list["choice"])
 //BASIC FUNCTIONS
 		if ("claim")
-			to_chat(usr, "<span class='error'>Claiming area!</span>")
 			claim()
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
 		if ("eject_id")
@@ -107,15 +106,15 @@
 
 /obj/machinery/computer/main_computer/proc/claim()
 	if(scan)
+		to_chat(usr, "<span class='error'>Claiming area!</span>")
 		if(scan.swfaction)
 			src_area.swfaction = scan.swfaction
 			for(var/obj/machinery/door/D in src_area.doors)
-				to_chat(usr, "<span class='error'>Working!</span>")
 				if(scan.swfaction == "Empire")
-					D.req_access_txt = "666"
+					D.req_access = list(ACCESS_FACTION_EMPIRE)
 				if(scan.swfaction == "Rebels")
-					D.req_access_txt = "555"
+					D.req_access = list(ACCESS_FACTION_REBELS)
 				if(scan.swfaction == "Mercs")
-					D.req_access_txt = "999"
+					D.req_access = list(ACCESS_FACTION_MERCS)
 		else
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")

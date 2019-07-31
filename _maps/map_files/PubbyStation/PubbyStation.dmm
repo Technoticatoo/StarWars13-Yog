@@ -43749,7 +43749,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/mob/living/simple_animal/parrot/Poly,
+/mob/living/simple_animal/parrot/jarjar,
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/chief)
 "bVE" = (

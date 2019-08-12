@@ -66,7 +66,7 @@
 	name = "Emperor"
 	jobtype = /datum/job/emperor
 
-	id = /obj/item/card/id/gold
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/sith
 	ears = /obj/item/radio/headset/heads/sith/alt
 	gloves = /obj/item/clothing/gloves/color/sith
@@ -154,7 +154,7 @@
 	name = "Sith"
 	jobtype = /datum/job/sith
 
-	id = /obj/item/card/id/gold
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/sith
 	ears = /obj/item/radio/headset/heads/sith/alt
 	gloves = /obj/item/clothing/gloves/color/sith
@@ -162,7 +162,7 @@
 	//suit = /obj/item/clothing/suit/armor/vest/sithcarapace
 	shoes = /obj/item/clothing/shoes/combat
 	head = /obj/item/clothing/head/sithat
-	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1, /obj/item/card/id/empire = 1)
+	backpack_contents = list(/obj/item/melee/transforming/energy/sword/saber/red=1)
 
 	backpack = /obj/item/storage/backpack
 	satchel = /obj/item/storage/backpack/satchel

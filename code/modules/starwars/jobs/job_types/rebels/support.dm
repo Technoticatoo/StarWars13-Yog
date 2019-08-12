@@ -26,7 +26,7 @@
 	name = "Support"
 	jobtype = /datum/job/rsupport
 
-//	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/rebels
 //	belt = /obj/item/pda/heads/hos
 	belt = /obj/item/pda/janitor
 	ears = /obj/item/radio/headset/rebel_support

@@ -48,7 +48,7 @@ Captain
 	name = "Captain"
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/gold
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/captain
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset/heads/captain/alt
@@ -119,7 +119,7 @@ Lieutenant
 	name = "Lieutenant"
 	jobtype = /datum/job/hop
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/heads/hop
 	ears = /obj/item/radio/headset/heads/hop
 	uniform = /obj/item/clothing/under/imperial/lieutenant
@@ -199,7 +199,7 @@ Navy Guard
 /datum/outfit/job/navy_guard
 	name = "Navy Guard"
 	jobtype = /datum/job/navy_guard
-
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
@@ -239,6 +239,7 @@ Tie Pilot
 	name = "Tie Pilot"
 	jobtype = /datum/job/tie_pilot
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman

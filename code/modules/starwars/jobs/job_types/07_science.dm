@@ -36,6 +36,7 @@ Coalition Administrative Officer
 	name = "Coalition Administrative Officer"
 	jobtype = /datum/job/cao
 
+	id = /obj/item/card/id/empire
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	belt = /obj/item/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
@@ -86,7 +87,7 @@ Science Director
 	name = "Research Director"
 	jobtype = /datum/job/rd
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/heads/rd
 	ears = /obj/item/radio/headset/heads/rd
 	uniform = /obj/item/clothing/under/rank/research_director
@@ -139,6 +140,7 @@ Scientist
 	name = "Researcher"
 	jobtype = /datum/job/scientist
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/toxins
 	ears = /obj/item/radio/headset/headset_sci
 	uniform = /obj/item/clothing/under/rank/scientist
@@ -176,6 +178,7 @@ Roboticist
 	name = "Roboticist"
 	jobtype = /datum/job/roboticist
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/storage/belt/utility/full
 	l_pocket = /obj/item/pda/roboticist
 	ears = /obj/item/radio/headset/headset_sci
@@ -219,6 +222,7 @@ Roboticist
 	name = "Clerk"
 	jobtype = /datum/job/clerk
 
+	id = /obj/item/card/id/empire
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	belt = /obj/item/pda/bar
 	ears = /obj/item/radio/headset/headset_srv

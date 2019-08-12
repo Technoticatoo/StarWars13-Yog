@@ -25,7 +25,7 @@
 	name = "Leader"
 	jobtype = /datum/job/mleader
 
-//	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/mercs
 	belt = /obj/item/pda/mleader
 	ears = /obj/item/radio/headset/heads/merc_leader
 	uniform = /obj/item/clothing/under/mercs/scarlet
@@ -76,7 +76,7 @@
 	jobtype = /datum/job/mercenary
 
 
-//	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/mercs
 //	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/heads/merc_merc
 	uniform = /obj/item/clothing/under/mercs/brown
@@ -122,7 +122,7 @@
 	name = "Paylord"
 	jobtype = /datum/job/paylord
 
-//	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/mercs
 	belt = /obj/item/pda/mpaylord
 	ears = /obj/item/radio/headset/heads/merc_merc
 	uniform = /obj/item/clothing/under/mercs/scarlet
@@ -159,7 +159,7 @@
 	name = "Overwatch"
 	jobtype = /datum/job/overwatch
 
-//	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/mercs
 //	belt = /obj/item/pda/mpaylord
 	ears = /obj/item/radio/headset/merc_support
 	uniform = /obj/item/clothing/under/mercs

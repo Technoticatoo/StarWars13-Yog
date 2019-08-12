@@ -24,6 +24,7 @@ Quartermaster
 	name = "Quartermaster"
 	jobtype = /datum/job/qm
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/quartermaster
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform =/obj/item/clothing/under/imperial/cargo
@@ -60,6 +61,7 @@ Away Team Leader
 	name = "Away Team Leader"
 	jobtype = /datum/job/away_lead
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/rank/cargotech
@@ -90,6 +92,8 @@ Cargo Technician
 /datum/outfit/job/cargo_tech
 	name = "Cargo Technician"
 	jobtype = /datum/job/cargo_tech
+
+	id = /obj/item/card/id/empire
 	head = /obj/item/clothing/head/helmet/imperial/cargo
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
@@ -122,6 +126,7 @@ Requisitions Officer
 	name = "Requisitions Officer"
 	jobtype = /datum/job/req_off
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
 	uniform = /obj/item/clothing/under/rank/cargotech

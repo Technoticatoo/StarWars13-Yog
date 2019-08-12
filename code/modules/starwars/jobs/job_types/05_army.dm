@@ -39,7 +39,7 @@ Captain of the Guard
 	name = "Captain of the Guard"
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/heads/hos/alt
 	uniform = /obj/item/clothing/under/imperial/cotg
@@ -104,6 +104,7 @@ Alpha Squad Sergeant
 	name = "Alpha Squad Sergeant"
 	jobtype = /datum/job/asergeant
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/warden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
@@ -238,6 +239,7 @@ Alpha Squad Stormtrooper
 	name = "Alpha Squad Stormtrooper"
 	jobtype = /datum/job/atrooper
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/stormtrooper
@@ -297,6 +299,7 @@ Bravo Squad Sergeant
 	name = "Bravo Squad Sergeant"
 	jobtype = /datum/job/bsergeant
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/warden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/crewman
@@ -430,6 +433,7 @@ Bravo Squad Stormtrooper
 	name = "Bravo Squad Stormtrooper"
 	jobtype = /datum/job/btrooper
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/security
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/stormtrooper
@@ -483,6 +487,7 @@ Interrogator
 	name = "Interrogator"
 	jobtype = /datum/job/detective
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/detective
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/interrogator

@@ -26,6 +26,7 @@
 	name = "Fighter Pilot"
 	jobtype = /datum/job/rpilot
 
+	id = /obj/item/card/id/rebels
 //	id = /obj/item/card/id/silver
 //	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/rebel_squadron

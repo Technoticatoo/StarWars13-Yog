@@ -39,6 +39,8 @@
 
 /datum/outfit/job/jedi
 	name= "Jedi"
+
+	id = /obj/item/card/id/rebels
 	uniform = /obj/item/clothing/under/rebels/jedi
 	shoes = /obj/item/clothing/shoes/rebels/jedi
 	ears = /obj/item/radio/headset/heads/rebel_jedi

@@ -37,6 +37,7 @@
 	name = "Warden"
 	jobtype = /datum/job/shipwarden
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/shipwarden
 	ears = /obj/item/radio/headset/headset_sec/alt
 	uniform = /obj/item/clothing/under/imperial/warden

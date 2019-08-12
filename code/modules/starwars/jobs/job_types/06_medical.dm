@@ -34,7 +34,7 @@ Chief Medical Officer
 	name = "Chief Medical Officer"
 	jobtype = /datum/job/cmo
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/heads/cmo
 	l_pocket = /obj/item/pinpointer/crew
 	ears = /obj/item/radio/headset/heads/cmo
@@ -85,6 +85,7 @@ Medical Doctor
 	name = "Head Surgeon"
 	jobtype = /datum/job/doctor
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/imperial/medical/surgeon
@@ -165,6 +166,7 @@ Stormtrooper Surgeon
 	name = "Stormtrooper Surgeon"
 	jobtype = /datum/job/storm_surgeon
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/rank/medical
@@ -205,6 +207,7 @@ Imperial Medic
 	name = "Imperial Medic"
 	jobtype = /datum/job/imperial_medic
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	uniform = /obj/item/clothing/under/imperial/medical
@@ -247,6 +250,7 @@ Geneticist
 	name = "Geneticist"
 	jobtype = /datum/job/geneticist
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/geneticist
 	ears = /obj/item/radio/headset/headset_medsci
 	uniform = /obj/item/clothing/under/rank/geneticist

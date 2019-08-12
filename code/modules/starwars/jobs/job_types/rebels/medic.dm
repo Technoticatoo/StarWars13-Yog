@@ -26,7 +26,7 @@
 	name = "Medic"
 	jobtype = /datum/job/rmedic
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/rebels
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/rebel_medical
 	uniform = /obj/item/clothing/under/rebels/blue

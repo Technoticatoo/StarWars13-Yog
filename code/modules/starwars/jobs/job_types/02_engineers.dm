@@ -36,7 +36,7 @@ Engineer Sergeant
 	name = "Head Engineer"
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
@@ -100,7 +100,7 @@ Engineer Sergeant
 	name = "Engineer Sergeant"
 	jobtype = /datum/job/engineer_sergeant
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/empire
 	belt = /obj/item/storage/belt/utility/chief/full
 	l_pocket = /obj/item/pda/heads/ce
 	ears = /obj/item/radio/headset/heads/ce
@@ -162,6 +162,7 @@ Engineer Corporal
 	name = "Engineer Corporal"
 	jobtype = /datum/job/engineer
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
@@ -220,6 +221,7 @@ Engineer Private
 	name = "Engineer Private"
 	jobtype = /datum/job/atmos
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/storage/belt/utility/atmostech
 	l_pocket = /obj/item/pda/atmos
 	ears = /obj/item/radio/headset/headset_eng

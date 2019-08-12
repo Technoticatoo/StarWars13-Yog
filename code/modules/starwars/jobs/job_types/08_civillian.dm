@@ -67,6 +67,7 @@ Shaft Miner
 	name = "Shaft Miner"
 	jobtype = /datum/job/mining
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/shaftminer
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
@@ -141,6 +142,7 @@ Bartender
 	name = "Bartender"
 	jobtype = /datum/job/bartender
 
+	id = /obj/item/card/id/empire
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	belt = /obj/item/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
@@ -176,6 +178,7 @@ Cook
 	name = "Cook"
 	jobtype = /datum/job/cook
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/cook
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/chef
@@ -271,6 +274,7 @@ Janitor
 	name = "Janitor"
 	jobtype = /datum/job/janitor
 
+	id = /obj/item/card/id/empire
 	belt = /obj/item/pda/janitor
 	ears = /obj/item/radio/headset/headset_srv
 	uniform = /obj/item/clothing/under/rank/janitor

@@ -26,7 +26,7 @@
 	name = "General"
 	jobtype = /datum/job/rgeneral
 
-	id = /obj/item/card/id/silver
+	id = /obj/item/card/id/rebels
 	belt = /obj/item/pda/heads/hos
 	ears = /obj/item/radio/headset/heads/rebel_general
 	uniform = /obj/item/clothing/under/rebels/grey

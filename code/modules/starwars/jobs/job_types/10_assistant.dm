@@ -34,3 +34,4 @@ Assistant
 		uniform = /obj/item/clothing/under/color/grey
 	else
 		uniform = /obj/item/clothing/under/color/random
+	id = /obj/item/card/id/empire

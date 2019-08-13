@@ -5,9 +5,10 @@
 	icon = 'icons/turf/desert.dmi'
 	baseturfs = /turf/open/floor/starwars/desert
 	icon_state = "desert"
-	light_range = 2
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
+/*	light_range = 2
 	light_power = 0.75
-	light_color = LIGHT_COLOR_SUN
+	light_color = LIGHT_COLOR_SUN*/
 	initial_gas_mix = DESERT_ATMOS
 	slowdown = 2
 //	environment_type = "desert"

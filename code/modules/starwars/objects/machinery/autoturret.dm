@@ -19,6 +19,7 @@
 	var/raised = 0			//if the turret cover is "open" and the turret is raised
 	var/raising= 0			//if the turret is currently opening or closing its cover
 	var/area/factions/src_area = ""
+	var/obj/item/worn_id = ""
 
 	max_integrity = 160		//the turret's health
 	integrity_failure = 80
@@ -473,11 +474,11 @@
 
 /obj/machinery/auto_turret/proc/assess_perp(mob/living/carbon/human/perp)
 	var/threatcount = 0	//the integer returned
-	var/obj/item/worn_id = perp.wear_id
+	worn_id = perp.wear_id
 	if(istype(get_area(src), /area/factions))
 		src_area = get_area(src)
-		if(src.swfaction)
-			if(worn_id.swfaction != src.swfaction)
+		if(src_area.swfaction)
+			if(!worn_id || worn_id.swfaction != src_area.swfaction )
 				return 10
 
 	if(obj_flags & EMAGGED)
@@ -514,15 +515,11 @@
 
 
 /obj/machinery/auto_turret/proc/in_faction(mob/living/carbon/human/target)
-	var/obj/item/worn_id = target.wear_id
-	to_chat(target, "ID: [worn_id]")
+	worn_id = target.wear_id
 	if(istype(get_area(src), /area/factions))
-		to_chat(target, "Area: [get_area(src)]")
 		src_area = get_area(src)
-		to_chat(target, "Faction Area: [src.swfaction]")
-		if(src.swfaction)
-			if(worn_id.swfaction != src.swfaction)
-				to_chat(target, "Faction ID: [worn_id.swfaction]")
+		if(src_area.swfaction)
+			if(!worn_id || worn_id.swfaction != src_area.swfaction)
 				return FALSE
 	return TRUE
 

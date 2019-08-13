@@ -2,7 +2,7 @@
 	name = "factions"
 	icon_state = "factions"
 	has_gravity = STANDARD_GRAVITY
-	unique = FALSE
+//	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	var/list/doors = list()
 
 /area/factions/command1

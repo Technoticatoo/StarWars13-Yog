@@ -476,9 +476,9 @@
 	var/obj/item/worn_id = perp.wear_id
 	if(istype(get_area(src), /area/factions))
 		src_area = get_area(src)
-	if(src.swfaction)
-		if(worn_id.swfaction != src.swfaction)
-			return 10
+		if(src.swfaction)
+			if(worn_id.swfaction != src.swfaction)
+				return 10
 
 	if(obj_flags & EMAGGED)
 		return 10	//if emagged, always return 10.
@@ -513,11 +513,18 @@
 	return threatcount
 
 
-/obj/machinery/auto_turret/proc/in_faction(mob/target)
-	for(var/faction1 in faction)
-		if(faction1 in target.faction)
-			return TRUE
-	return FALSE
+/obj/machinery/auto_turret/proc/in_faction(mob/living/carbon/human/target)
+	var/obj/item/worn_id = target.wear_id
+	to_chat(target, "ID: [worn_id]")
+	if(istype(get_area(src), /area/factions))
+		to_chat(target, "Area: [get_area(src)]")
+		src_area = get_area(src)
+		to_chat(target, "Faction Area: [src.swfaction]")
+		if(src.swfaction)
+			if(worn_id.swfaction != src.swfaction)
+				to_chat(target, "Faction ID: [worn_id.swfaction]")
+				return FALSE
+	return TRUE
 
 /obj/machinery/auto_turret/proc/target(atom/movable/target)
 	if(target)

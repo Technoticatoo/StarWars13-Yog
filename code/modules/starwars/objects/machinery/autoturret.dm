@@ -15,7 +15,9 @@
 	var/base_icon_state = "standard"
 	var/scan_range = 7
 	var/atom/base = null //for turrets inside other objects
-
+	var/mob/living/carbon/human/target = ""
+	var/mob/living/silicon/robot/targets = ""
+	var/mob/living/simple_animal/targeta = ""
 	var/raised = 0			//if the turret cover is "open" and the turret is raised
 	var/raising= 0			//if the turret is currently opening or closing its cover
 	var/area/factions/src_area = ""
@@ -345,6 +347,8 @@
 
 
 /obj/machinery/auto_turret/process()
+	if(istype(get_area(src), /area/factions))
+		src_area = get_area(src)
 	//the main machinery process
 	if(cover == null && anchored)	//if it has no cover and is anchored
 		if(stat & BROKEN)	//if the turret is borked
@@ -514,14 +518,30 @@
 	return threatcount
 
 
-/obj/machinery/auto_turret/proc/in_faction(mob/living/carbon/human/target)
-	worn_id = target.wear_id
-	if(istype(get_area(src), /area/factions))
-		src_area = get_area(src)
+/obj/machinery/auto_turret/proc/in_faction(mob/A)
+	if(iscarbon(A))
+		target = A
+	else if(issilicon(A))
+		targets = A
+	else if(isanimal(A))
+		targeta = A
+
+	if(target)
+		worn_id = target.wear_id
 		if(src_area.swfaction)
 			if(!worn_id || worn_id.swfaction != src_area.swfaction)
 				return FALSE
-	return TRUE
+		return TRUE
+	if(targets)
+		if(src_area.swfaction)
+			if(!targets.swfaction || targets.swfaction != src_area.swfaction)
+				return FALSE
+		return TRUE
+	if(targeta)
+		if(src_area.swfaction)
+			if(!targeta.swfaction || targeta.swfaction != src_area.swfaction)
+				return FALSE
+		return TRUE
 
 /obj/machinery/auto_turret/proc/target(atom/movable/target)
 	if(target)

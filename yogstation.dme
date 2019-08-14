@@ -2738,6 +2738,7 @@
 #include "code\modules\starwars\mob\bantha.dm"
 #include "code\modules\starwars\mob\living.dm"
 #include "code\modules\starwars\mob\rancor.dm"
+#include "code\modules\starwars\mob\sec_droid.dm"
 #include "code\modules\starwars\objects\imperial_banner.dm"
 #include "code\modules\starwars\objects\mercenary_banner.dm"
 #include "code\modules\starwars\objects\rebel_banners.dm"

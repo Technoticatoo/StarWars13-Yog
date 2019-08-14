@@ -108,10 +108,6 @@ Auto Patrol: []"},
 	if(!..())
 		return
 
-	if(istype(get_area(src), /area/factions))
-		src_area = get_area(src)
-		src.swfaction = src_area.swfaction
-
 	switch(mode)
 
 		if(BOT_IDLE)		// idle
@@ -226,6 +222,7 @@ Auto Patrol: []"},
 	if(istype(get_area(src), /area/factions))
 		src_area = get_area(src)
 		if(src_area.swfaction)
+			src.swfaction = src_area.swfaction
 			if(!worn_id || worn_id.swfaction != src_area.swfaction )
 				return 10
 

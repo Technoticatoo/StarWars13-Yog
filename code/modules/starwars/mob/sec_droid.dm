@@ -108,6 +108,10 @@ Auto Patrol: []"},
 	if(!..())
 		return
 
+	if(istype(get_area(src), /area/factions))
+		src_area = get_area(src)
+		src.swfaction = src_area.swfaction
+
 	switch(mode)
 
 		if(BOT_IDLE)		// idle

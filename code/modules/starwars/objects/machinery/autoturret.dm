@@ -368,19 +368,18 @@
 
 		if(check_anomalies)//if it's set to check for simple animals
 			if(isanimal(A))
-				var/mob/living/simple_animal/SA = A
-				if(SA.stat || in_faction(SA)) //don't target if dead or in faction
+				//var/mob/living/simple_animal/SA = A
+				if(!src_area.swfaction || in_faction(A) || A.stat) //don't target if dead or in faction
 					continue
-				targets += SA
+				targets += A
 				continue
 
 		if(issilicon(A))
 			var/mob/living/silicon/sillycone = A
-
 			if(ispAI(A))
 				continue
 
-			if(sillycone.stat || in_faction(sillycone))
+			if(!src_area.swfaction || sillycone.stat || in_faction(sillycone))
 				continue
 
 			if(iscyborg(sillycone))
@@ -409,6 +408,7 @@
 			else if(check_anomalies) //non humans who are not simple animals (xenos etc)
 				if(!in_faction(C))
 					targets += C
+
 	for(var/A in GLOB.mechas_list)
 		if((get_dist(A, base) < scan_range) && can_see(base, A, scan_range))
 			var/obj/mecha/Mech = A
@@ -477,6 +477,7 @@
 	update_icon()
 
 /obj/machinery/auto_turret/proc/assess_perp(mob/living/carbon/human/perp)
+
 	var/threatcount = 0	//the integer returned
 	worn_id = perp.wear_id
 	if(istype(get_area(src), /area/factions))
@@ -492,56 +493,31 @@
 		//if the turret has been attacked or is angry, target all non-sec people
 		if(!allowed(perp))
 			return 10
-
-	/*if(auth_weapons)	//check for weapon authorization
-		if(isnull(perp.wear_id) || istype(perp.wear_id.GetID(), /obj/item/card/id/syndicate))
-
-			if(allowed(perp)) //if the perp has security access, return 0
-				return 0
-
-			if(perp.is_holding_item_of_type(/obj/item/gun) ||  perp.is_holding_item_of_type(/obj/item/melee/baton))
-				threatcount += 4
-
-			if(istype(perp.belt, /obj/item/gun) || istype(perp.belt, /obj/item/melee/baton))
-				threatcount += 2*/
-
-	/*if(check_records)	//if the turret can check the records, check if they are set to *Arrest* on records
-		var/perpname = perp.get_face_name(perp.get_id_name())
-		var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.security)
-		if(!R || (R.fields["criminal"] == "*Arrest*"))
-			threatcount += 4
-
-	if(shoot_unloyal)
-		if (!perp.has_trait(TRAIT_MINDSHIELD))
-			threatcount += 4*/
-
 	return threatcount
 
 
 /obj/machinery/auto_turret/proc/in_faction(mob/A)
 	if(iscarbon(A))
 		target = A
-	else if(issilicon(A))
-		targets = A
-	else if(isanimal(A))
-		targeta = A
-
-	if(target)
 		worn_id = target.wear_id
 		if(src_area.swfaction)
 			if(!worn_id || worn_id.swfaction != src_area.swfaction)
 				return FALSE
 		return TRUE
-	if(targets)
+	if(issilicon(A))
+		target = A
 		if(src_area.swfaction)
-			if(!targets.swfaction || targets.swfaction != src_area.swfaction)
+			if(!target.swfaction || target.swfaction != src_area.swfaction)
 				return FALSE
 		return TRUE
-	if(targeta)
+	if(isanimal(A))
+		target = A
 		if(src_area.swfaction)
-			if(!targeta.swfaction || targeta.swfaction != src_area.swfaction)
+			if(!target.swfaction || target.swfaction != src_area.swfaction)
 				return FALSE
 		return TRUE
+
+
 
 /obj/machinery/auto_turret/proc/target(atom/movable/target)
 	if(target)

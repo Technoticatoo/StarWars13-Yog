@@ -225,6 +225,14 @@ Auto Patrol: []"},
 			src.swfaction = src_area.swfaction
 			if(!worn_id || worn_id.swfaction != src_area.swfaction )
 				return 10
+	else if(src.swfaction && !istype(get_area(src), /area/factions))
+		var/turf/olddist = get_dist(src, src_area)
+		walk_to(src, src_area,1,4)
+		if((get_dist(src, src_area)) >= (olddist))
+			frustration++
+		else
+			frustration = 0
+			back_to_idle()
 
 /mob/living/simple_animal/bot/secbot/sec_droid/retaliate(mob/living/carbon/human/H)
 	threatlevel = assess_enemy(H)
@@ -236,21 +244,21 @@ Auto Patrol: []"},
 	playsound(src, 'sound/weapons/egloves.ogg', 50, TRUE, -1)
 	icon_state = "om_battledroid"
 	addtimer(CALLBACK(src, .proc/update_icon), 2)
-	var/threat = 5
+	//var/threat = 5
 	if(ishuman(C))
 		C.stuttering = 5
 		C.Paralyze(100)
-		var/mob/living/carbon/human/H = C
-		threat = assess_enemy(H)
+	//	var/mob/living/carbon/human/H = C
+		//threat = assess_enemy(H)
 	else
 		C.Paralyze(100)
 		C.stuttering = 5
-		threat = assess_enemy(C)
+	//	threat = assess_enemy(C)
 
 	log_combat(src,C,"stunned")
 	if(declare_arrests)
 		var/area/location = get_area(src)
-		speak("[arrest_type ? "Detaining" : "Arresting"] level [threat] scumbag <b>[C]</b> in [location].", radio_channel)
+		speak("[arrest_type ? "Detaining" : "Arresting"] scumbag <b>[C]</b> in [location].", radio_channel)
 	C.visible_message("<span class='danger'>[src] has stunned [C]!</span>",\
 							"<span class='userdanger'>[src] has stunned you!</span>")
 

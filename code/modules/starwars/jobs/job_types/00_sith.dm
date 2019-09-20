@@ -63,9 +63,6 @@
 
 
 /datum/job/emperor/datum/job/ai/special_check_latejoin(client/C)
-	if(check_emperorwhitelist(C))
-		return TRUE
-	else
 		return FALSE
 
 /datum/outfit/job/emperor

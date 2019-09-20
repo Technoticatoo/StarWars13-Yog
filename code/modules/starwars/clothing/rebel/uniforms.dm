@@ -74,7 +74,7 @@
 	name = "Rebel Squad Leader's Suit"
 	desc = "A Rebel Squad Leader's Suit"
 	alternate_worn_icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
-	icon = 'icons/starwars/clothing/rebeluniforms_mob.dmi'
+	icon = 'icons/starwars/clothing/rebeluniforms_obj.dmi'
 	icon_state = "rebel_squadleader"
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 30)
 	strip_delay = 50

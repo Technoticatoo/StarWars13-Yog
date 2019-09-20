@@ -62,9 +62,6 @@
 	display_order = JOB_DISPLAY_ORDER_EMPEROR
 
 
-/datum/job/emperor/datum/job/ai/special_check_latejoin(client/C)
-		return FALSE
-
 /datum/outfit/job/emperor
 	name = "Emperor"
 	jobtype = /datum/job/emperor

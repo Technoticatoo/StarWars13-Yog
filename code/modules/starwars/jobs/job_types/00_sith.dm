@@ -41,7 +41,7 @@
 	exp_type = EXP_TYPE_COMMAND
 	var/hud_version = "wizard"
 
-	outfit = /datum/outfit/job/sith
+	outfit = /datum/outfit/job/emperor
 
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_WEAPONS,
 			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS,
@@ -67,7 +67,7 @@
 	jobtype = /datum/job/emperor
 
 	id = /obj/item/card/id/empire
-	belt = /obj/item/pda/sith
+	belt = /obj/item/pda/emperor
 	ears = /obj/item/radio/headset/heads/sith/alt
 	gloves = /obj/item/clothing/gloves/color/sith
 	uniform =  /obj/item/clothing/under/imperial/sith

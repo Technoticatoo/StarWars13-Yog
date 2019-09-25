@@ -213,3 +213,10 @@
 	inserted_item = /obj/item/pen/fountain/captain
 	icon_state = "pda-sith"
 	detonatable = FALSE
+
+/obj/item/pda/emperor
+	name = "emperor PDA"
+	default_cartridge = /obj/item/cartridge/captain
+	inserted_item = /obj/item/pen/fountain/captain
+	icon_state = "pda-sith"
+	detonatable = FALSE

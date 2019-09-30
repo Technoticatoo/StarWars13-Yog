@@ -1,6 +1,6 @@
 /obj/machinery/computer/main_computer
 	name = "\improper area control console"
-	desc = "Used to set an areas security system to a certainf action."
+	desc = "Used to set an areas security system to a certain faction."
 	icon_screen = "security"
 	icon_keyboard = "security_key"
 	circuit = /obj/item/circuitboard/computer/main_control

@@ -124,3 +124,7 @@
 
 //SUPPLY
 
+/obj/item/clothing/under/imperial/cargo
+	name = "Cargo Technician's Uniform"
+	desc = "A Standard Issue Imperial Cargo Technician's Uniform"
+	icon_state = "CAO"

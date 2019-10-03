@@ -2660,6 +2660,7 @@
 #include "code\modules\starwars\areas\warp_destinations.dm"
 #include "code\modules\starwars\clothing\armor.dm"
 #include "code\modules\starwars\clothing\backpacks.dm"
+#include "code\modules\starwars\clothing\civillian_uniforms.dm"
 #include "code\modules\starwars\clothing\cloaks.dm"
 #include "code\modules\starwars\clothing\hardsuits.dm"
 #include "code\modules\starwars\clothing\head.dm"

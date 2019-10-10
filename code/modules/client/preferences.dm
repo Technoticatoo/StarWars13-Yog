@@ -68,7 +68,15 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 //STAR WARS
 	var preferred_side = "Empire"
-
+	var choosequipjob = "Emperor"
+	var/list/joblist = list()
+//	var/list/jobdatums = list()
+	var headslot = ""
+	var uniformslot = ""
+	var backpackslot = ""
+	var gloveslot = ""
+	var shoeslot = ""
+	var suitslot = ""
 //
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
@@ -169,6 +177,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	dat += "<a href='?_src_=prefs;preference=tab;tab=2' [current_tab == 2 ? "class='linkOn'" : ""]>OOC Preferences</a>"
 	dat += "<a href='?_src_=prefs;preference=tab;tab=3' [current_tab == 3 ? "class='linkOn'" : ""]>Donator Preferences</a>" // yogs - Donor features
 	dat += "<a href='?_src_=prefs;preference=tab;tab=4' [current_tab == 4 ? "class='linkOn'" : ""]>Keybindings</a>" // yogs - Custom keybindings
+	dat += "<a href='?_src_=prefs;preference=tab;tab=5' [current_tab == 5 ? "class='linkOn'" : ""]>Custom Equipment</a>" // Star Wars - Custom Equipment
 
 	if(!path)
 		dat += "<div class='notice'>Please create an account to save your preferences</div>"
@@ -734,11 +743,23 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			else
 				dat += "<b>Default keybindings selected</b>"
 		// yogs end
+		if (5) // Custom Equipment
+			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
+			dat += "<h2>Custom Equipment</h2>"
+			dat += "<br><a href='?_src_=prefs;preference=chsequipjob;task=input'><b>Select Job:</b> [choosequipjob]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=hdslot;task=input'><b>Head Slot:</b> [headslot]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=unslot;task=input'><b>Uniform Slot:</b> [uniformslot]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=glslot;task=input'><b>Gloves Slot:</b> [gloveslot]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=shslot;task=input'><b>Shoes Slot:</b> [shoeslot]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=baslot;task=input'><b>Backpack Slot:</b> [backpackslot]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=suslot;task=input'><b>Suit Slot:</b> [suitslot]</a></td></tr></table>"
+
 	dat += "<hr><center>"
 
 	if(!IsGuestKey(user.key))
 		dat += "<a href='?_src_=prefs;preference=load'>Undo</a> "
 		dat += "<a href='?_src_=prefs;preference=save'>Save Setup</a> "
+
 
 	dat += "<a href='?_src_=prefs;preference=reset_all'>Reset Setup</a>"
 	dat += "</center>"
@@ -1579,6 +1600,43 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/pside = input(user, "Choose your preferred Side:", "Side") as null|anything in GLOB.side_prefs
 					if(pside)
 						preferred_side = pside
+
+				if("chsequipjob")
+					for(var/datum/job/jobs in sortList(SSjob.occupations, /proc/cmp_job_display_asc))
+						joblist.Add(jobs.title)
+					var/eqjob = input(user, "Select Job:", "Job") as null|anything in sortList(SSjob.name_occupations, /proc/cmp_job_display_asc)
+					if(eqjob)
+						choosequipjob = eqjob
+
+				if("hdslot")
+					var/hdeq = input(user, "Choose the jobs headwear:", "Head Slot")  as null|anything in SSjob.name_occupations[choosequipjob].head_loadout
+					if(hdeq)
+						headslot = hdeq
+
+				if("unslot")
+					var/uneq = input(user, "Choose the jobs Uniform:", "Uniform Slot")  as null|anything in SSjob.name_occupations[choosequipjob].uniform_loadout
+					if(uneq)
+						uniformslot = uneq
+
+				if("glslot")
+					var/gleq = input(user, "Choose the jobs Gloves:", "Gloves Slot")  as null|anything in SSjob.name_occupations[choosequipjob].gloves_loadout
+					if(gleq)
+						gloveslot = gleq
+
+				if("shslot")
+					var/sheq = input(user, "Choose the jobs Shoes:", "Shoe Slot")  as null|anything in SSjob.name_occupations[choosequipjob].shoes_loadout
+					if(sheq)
+						shoeslot = sheq
+
+				if("baslot")
+					var/baeq = input(user, "Choose the jobs Backpack:", "Backpack Slot")  as null|anything in SSjob.name_occupations[choosequipjob].backpack_loadout
+					if(baeq)
+						backpackslot = baeq
+
+				if("suslot")
+					var/sueq = input(user, "Choose the jobs Suit:", "Suit Slot")  as null|anything in SSjob.name_occupations[choosequipjob].suit_loadout
+					if(sueq)
+						suitslot = sueq
 
 				if ("preferred_map")
 					var/maplist = list()

@@ -4,7 +4,15 @@
 	//Job access. The use of minimal_access or access is determined by a config setting: config.jobs_have_minimal_access
 	var/list/minimal_access = list()		//Useful for servers which prefer to only have access given to the places a job absolutely needs (Larger server population)
 	var/list/access = list()				//Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
+	//STAR WARS
+	var/list/head_loadout = list()
+	var/list/uniform_loadout = list()
+	var/list/suit_loadout = list()
+	var/list/backpack_loadout = list()
+	var/list/gloves_loadout = list()
+	var/list/shoes_loadout = list()
 
+	var/selectable_loadouts = FALSE
 	//Determines who can demote this position
 	var/department_head = list()
 
@@ -70,6 +78,7 @@
 	if(mind_traits)
 		for(var/t in mind_traits)
 			H.mind.add_trait(t, JOB_TRAIT)
+
 
 /datum/job/proc/announce(mob/living/carbon/human/H)
 	if(head_announce)

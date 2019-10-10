@@ -40,8 +40,13 @@
 	exp_requirements = 180
 	exp_type = EXP_TYPE_COMMAND
 	var/hud_version = "wizard"
+	selectable_loadouts = TRUE
 
 	outfit = /datum/outfit/job/emperor
+	head_loadout = list(/obj/item/clothing/head/sithat)
+	uniform_loadout = list(/obj/item/clothing/under/imperial/sith)
+	suit_loadout = list("")
+	backpack_loadout = list(/obj/item/storage/backpack)
 
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_WEAPONS,
 			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS,
@@ -89,6 +94,16 @@
 	suit = /obj/item/clothing/suit/space/hardsuit/imperial/sith
 	suit_store = /obj/item/tank/internals/oxygen
 
+/datum/job/emperor/special_check_latejoin(client/C)
+	return FALSE
+
+
+/*/datum/job/emperor/after_spawn(mob/living/H, mob/M)
+	. = ..()
+	if(selectable_loadouts)
+		var/obj/item/clothing/head/head_selected = input(H, "Choose your character's headwear:", "Character Preference")  as null|anything in head_loadout
+		H.equip_to_slot(head_selected, SLOT_HEAD)*/
+
 /datum/job/emperor/announce(mob/living/carbon/human/H)
 	..()
 	SSticker.OnRoundstart(CALLBACK(GLOBAL_PROC, .proc/minor_announce, "The Emperor, [H.real_name] on deck, tremble in fear, and perish before him, you who disobey him!"))
@@ -128,8 +143,15 @@
 	exp_requirements = 180
 	exp_type = EXP_TYPE_COMMAND
 	var/hud_version = "wizard"
+	selectable_loadouts = TRUE
 
 	outfit = /datum/outfit/job/sith
+	head_loadout = list(/obj/item/clothing/head/sithat)
+	uniform_loadout = list(/obj/item/clothing/under/imperial/sith)
+	backpack_loadout = list(/obj/item/storage/backpack)
+	gloves_loadout = /obj/item/clothing/gloves/color/sith
+	suit_loadout = ""
+	shoes_loadout = /obj/item/clothing/shoes/combat
 
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_WEAPONS,
 			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS,
@@ -149,6 +171,11 @@
 	paycheck_department = ACCOUNT_SEC
 	display_order = JOB_DISPLAY_ORDER_SITH
 
+/*/datum/job/sith/after_spawn(mob/living/H, mob/M)
+	. = ..()
+	if(selectable_loadouts)
+		var/obj/item/clothing/head/head_selected = input(M, "Choose your character's headwear:", "Head Slot")  as null|anything in head_loadout
+		H.equip_to_slot_or_del(new head_selected, SLOT_HEAD)*/
 
 /datum/outfit/job/sith
 	name = "Sith"

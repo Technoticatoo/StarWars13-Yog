@@ -146,7 +146,7 @@
 	var/hud_version = "wizard"
 	selectable_loadouts = TRUE
 
-	//outfit = /datum/outfit/job/sith
+	outfit = /datum/outfit/job/sith
 	head_loadout = list(/obj/item/clothing/head/sithat)
 	uniform_loadout = list(/obj/item/clothing/under/imperial/sith)
 	backpack_loadout = list(/obj/item/storage/backpack)

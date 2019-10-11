@@ -1841,6 +1841,21 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.gender = gender
 	character.age = age
+// STAR WARS
+	if(uniformslot)
+		character.equip_to_slot_or_del(new uniformslot,SLOT_W_UNIFORM)
+	if(suitslot)
+		character.equip_to_slot_or_del(new suitslot,SLOT_WEAR_SUIT)
+	if(backpackslot)
+		character.equip_to_slot_or_del(new backpackslot,SLOT_BACK)
+	if(gloveslot)
+		character.equip_to_slot_or_del(new gloveslot,SLOT_GLOVES)
+	if(shoeslot)
+		character.equip_to_slot_or_del(new shoeslot,SLOT_SHOES)
+	if(headslot)
+		character.equip_to_slot_or_del(new headslot,SLOT_HEAD)
+	if(suitslot)
+		character.equip_to_slot_or_del(new suitslot,SLOT_S_STORE)
 
 	character.eye_color = eye_color
 	var/obj/item/organ/eyes/organ_eyes = character.getorgan(/obj/item/organ/eyes)

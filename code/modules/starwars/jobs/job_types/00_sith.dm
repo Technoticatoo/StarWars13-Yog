@@ -149,9 +149,9 @@
 	head_loadout = list(/obj/item/clothing/head/sithat)
 	uniform_loadout = list(/obj/item/clothing/under/imperial/sith)
 	backpack_loadout = list(/obj/item/storage/backpack)
-	gloves_loadout = /obj/item/clothing/gloves/color/sith
+	gloves_loadout = list(/obj/item/clothing/gloves/color/sith)
 	suit_loadout = ""
-	shoes_loadout = /obj/item/clothing/shoes/combat
+	shoes_loadout = list(/obj/item/clothing/shoes/combat)
 
 	access = list(ACCESS_SECURITY, ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_WEAPONS,
 			            ACCESS_MEDICAL, ACCESS_ENGINE, ACCESS_CHANGE_IDS, ACCESS_AI_UPLOAD, ACCESS_EVA, ACCESS_HEADS,
@@ -173,8 +173,6 @@
 
 /*/datum/job/sith/after_spawn(mob/living/H, mob/M)
 	. = ..()
-	if(selectable_loadouts)
-		var/obj/item/clothing/head/head_selected = input(M, "Choose your character's headwear:", "Head Slot")  as null|anything in head_loadout
 		H.equip_to_slot_or_del(new head_selected, SLOT_HEAD)*/
 
 /datum/outfit/job/sith

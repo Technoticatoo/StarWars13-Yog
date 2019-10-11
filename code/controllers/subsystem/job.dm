@@ -592,8 +592,12 @@ SUBSYSTEM_DEF(job)
 	//bad mojo
 	var/area/shuttle/arrival/A = ""
 
-	if(J.faction != "Rebels" && J.faction != "Mercenaries")
+	if(J.faction == "Station")
 		A = GLOB.areas_by_type[/area/shuttle/arrival]
+	if(J.faction == "Rebels")
+		A = GLOB.areas_by_type[/area/rebels/shuttle]
+	if(J.faction == "Mercenaries")
+		A = GLOB.areas_by_type[/area/mercenaries/shuttle]
 
 	if(B)
 		//first check if we can find a chair

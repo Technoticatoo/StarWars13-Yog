@@ -39,6 +39,10 @@
 	name = "lateJoin"
 	icon_state = "mercenaries_latejoin"
 
+/area/mercenaries/shuttle
+	name = "mercs shuttle"
+	icon_state = "mercenaries_shuttle"
+
 // Telecommunications Satellite
 
 /area/tcommsatmercenaries

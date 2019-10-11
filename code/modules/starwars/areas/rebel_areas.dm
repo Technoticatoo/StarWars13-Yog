@@ -35,6 +35,10 @@
 	name = "lateJoin"
 	icon_state = "rebels_latejoin"
 
+/area/rebels/shuttle
+	name = "rebels shuttle"
+	icon_state = "rebels_shuttle"
+
 // Telecommunications Satellite
 
 /area/tcommsatrebels

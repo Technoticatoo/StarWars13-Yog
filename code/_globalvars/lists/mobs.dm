@@ -56,3 +56,13 @@ GLOBAL_LIST_EMPTY(mob_config_movespeed_type_lookup)
 	for(var/i in GLOB.mob_list)
 		var/mob/M = i
 		M.update_config_movespeed()
+
+//STAR WARS
+
+GLOBAL_LIST_INIT(saveqhd, list(list()))
+GLOBAL_LIST_INIT(savequn, list(list()))
+GLOBAL_LIST_INIT(saveqba, list(list()))
+GLOBAL_LIST_INIT(saveqgl, list(list()))
+GLOBAL_LIST_INIT(saveqsh, list(list()))
+GLOBAL_LIST_INIT(saveqsu, list(list()))
+//GLOBAL_LIST_INIT(saveqsu, list(list()))

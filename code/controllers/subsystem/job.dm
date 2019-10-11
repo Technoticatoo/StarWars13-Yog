@@ -633,7 +633,7 @@ SUBSYSTEM_DEF(job)
 	if(J.faction == "Rebels")
 		arrivals_turfs = shuffle(get_area_turfs(/area/rebels/latejoin))
 	else if(J.faction == "Mercenaries")
-		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival)) //arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin))
+		arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin)) //arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin))
 	else
 		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))
 

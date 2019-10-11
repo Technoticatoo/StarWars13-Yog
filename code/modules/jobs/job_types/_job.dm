@@ -119,6 +119,26 @@
 
 	if(!visualsOnly && announce)
 		announce(H)
+//STAR WARS
+	if(GLOB.savequn[title])
+		var/obj/item/clothing/under/puneq = GLOB.savequn[title]
+		H.equip_to_slot_or_del(new puneq,SLOT_W_UNIFORM)
+	if(GLOB.saveqsu[title])
+		var/obj/item/clothing/suit/space/hardsuit/psueq = GLOB.saveqsu[title]
+		H.equip_to_slot_or_del(new psueq,SLOT_WEAR_SUIT)
+	if(GLOB.saveqba[title])
+		var/obj/item/storage/backpack/pbaeq = GLOB.saveqba[title]
+		H.equip_to_slot_or_del(new pbaeq,SLOT_BACK)
+	if(GLOB.saveqgl[title])
+		var/obj/item/clothing/gloves/color/pgleq = GLOB.saveqgl[title]
+		H.equip_to_slot_or_del(new pgleq,SLOT_GLOVES)
+	if(GLOB.saveqsh[title])
+		var/obj/item/clothing/shoes/psheq = GLOB.saveqsh[title]
+		H.equip_to_slot_or_del(new psheq,SLOT_SHOES)
+	if(GLOB.saveqhd[title])
+		var/obj/item/clothing/head/phdeq = GLOB.saveqhd[title]
+		H.equip_to_slot_or_del(new phdeq,SLOT_HEAD)
+
 
 /datum/job/proc/get_access()
 	if(!config)	//Needed for robots.

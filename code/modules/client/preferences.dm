@@ -77,7 +77,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var gloveslot = ""
 	var shoeslot = ""
 	var suitslot = ""
-//
+
 	var/list/custom_names = list()
 	var/preferred_ai_core_display = "Blue"
 	var/prefered_security_department = SEC_DEPT_RANDOM
@@ -747,12 +747,12 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
 			dat += "<h2>Custom Equipment</h2>"
 			dat += "<br><a href='?_src_=prefs;preference=chsequipjob;task=input'><b>Select Job:</b> [choosequipjob]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=hdslot;task=input'><b>Head Slot:</b> [headslot]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=unslot;task=input'><b>Uniform Slot:</b> [uniformslot]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=glslot;task=input'><b>Gloves Slot:</b> [gloveslot]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=shslot;task=input'><b>Shoes Slot:</b> [shoeslot]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=baslot;task=input'><b>Backpack Slot:</b> [backpackslot]</a>"
-			dat += "<br><a href='?_src_=prefs;preference=suslot;task=input'><b>Suit Slot:</b> [suitslot]</a></td></tr></table>"
+			dat += "<br><a href='?_src_=prefs;preference=hdslot;task=input'><b>Head Slot:</b> [GLOB.saveqhd[choosequipjob]]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=unslot;task=input'><b>Uniform Slot:</b> [GLOB.savequn[choosequipjob]]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=glslot;task=input'><b>Gloves Slot:</b> [GLOB.saveqgl[choosequipjob]]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=shslot;task=input'><b>Shoes Slot:</b> [GLOB.saveqsh[choosequipjob]]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=baslot;task=input'><b>Backpack Slot:</b> [GLOB.saveqba[choosequipjob]]</a>"
+			dat += "<br><a href='?_src_=prefs;preference=suslot;task=input'><b>Suit Slot:</b> [GLOB.saveqsu[choosequipjob]]</a></td></tr></table>"
 
 	dat += "<hr><center>"
 
@@ -1612,31 +1612,37 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					var/hdeq = input(user, "Choose the jobs headwear:", "Head Slot")  as null|anything in SSjob.name_occupations[choosequipjob].head_loadout
 					if(hdeq)
 						headslot = hdeq
+						GLOB.saveqhd[choosequipjob] = hdeq
 
 				if("unslot")
 					var/uneq = input(user, "Choose the jobs Uniform:", "Uniform Slot")  as null|anything in SSjob.name_occupations[choosequipjob].uniform_loadout
 					if(uneq)
 						uniformslot = uneq
+						GLOB.savequn[choosequipjob] = uneq
 
 				if("glslot")
 					var/gleq = input(user, "Choose the jobs Gloves:", "Gloves Slot")  as null|anything in SSjob.name_occupations[choosequipjob].gloves_loadout
 					if(gleq)
 						gloveslot = gleq
+						GLOB.saveqgl[choosequipjob] = gleq
 
 				if("shslot")
 					var/sheq = input(user, "Choose the jobs Shoes:", "Shoe Slot")  as null|anything in SSjob.name_occupations[choosequipjob].shoes_loadout
 					if(sheq)
 						shoeslot = sheq
+						GLOB.saveqsh[choosequipjob] = sheq
 
 				if("baslot")
 					var/baeq = input(user, "Choose the jobs Backpack:", "Backpack Slot")  as null|anything in SSjob.name_occupations[choosequipjob].backpack_loadout
 					if(baeq)
 						backpackslot = baeq
+						GLOB.saveqba[choosequipjob] = baeq
 
 				if("suslot")
 					var/sueq = input(user, "Choose the jobs Suit:", "Suit Slot")  as null|anything in SSjob.name_occupations[choosequipjob].suit_loadout
 					if(sueq)
 						suitslot = sueq
+						GLOB.saveqsu[choosequipjob] = sueq
 
 				if ("preferred_map")
 					var/maplist = list()
@@ -1841,21 +1847,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	character.gender = gender
 	character.age = age
-// STAR WARS
-	if(uniformslot)
-		character.equip_to_slot_or_del(new uniformslot,SLOT_W_UNIFORM)
-	if(suitslot)
-		character.equip_to_slot_or_del(new suitslot,SLOT_WEAR_SUIT)
-	if(backpackslot)
-		character.equip_to_slot_or_del(new backpackslot,SLOT_BACK)
-	if(gloveslot)
-		character.equip_to_slot_or_del(new gloveslot,SLOT_GLOVES)
-	if(shoeslot)
-		character.equip_to_slot_or_del(new shoeslot,SLOT_SHOES)
-	if(headslot)
-		character.equip_to_slot_or_del(new headslot,SLOT_HEAD)
-	if(suitslot)
-		character.equip_to_slot_or_del(new suitslot,SLOT_S_STORE)
 
 	character.eye_color = eye_color
 	var/obj/item/organ/eyes/organ_eyes = character.getorgan(/obj/item/organ/eyes)
@@ -1874,6 +1865,27 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	character.socks = socks
 
 	character.backbag = backbag
+
+//STAR WARS
+	if(GLOB.savequn[character.job])
+		var/obj/item/clothing/under/puneq = GLOB.savequn[character.job]
+		character.equip_to_slot_or_del(new puneq,SLOT_W_UNIFORM)
+	if(GLOB.saveqsu[character.job])
+		var/obj/item/clothing/suit/space/hardsuit/psueq = GLOB.saveqsu[character.job]
+		character.equip_to_slot_or_del(new psueq,SLOT_WEAR_SUIT)
+	if(GLOB.saveqba[character.job])
+		var/obj/item/storage/backpack/pbaeq = GLOB.saveqba[character.job]
+		character.equip_to_slot_or_del(new pbaeq,SLOT_BACK)
+	if(GLOB.saveqgl[character.job])
+		var/obj/item/clothing/gloves/color/pgleq = GLOB.saveqgl[character.job]
+		character.equip_to_slot_or_del(new pgleq,SLOT_GLOVES)
+	if(GLOB.saveqsh[character.job])
+		var/obj/item/clothing/shoes/psheq = GLOB.saveqsh[character.job]
+		character.equip_to_slot_or_del(new psheq,SLOT_SHOES)
+	if(GLOB.saveqhd[character.job])
+		var/obj/item/clothing/head/phdeq = GLOB.saveqhd[character.job]
+		character.equip_to_slot_or_del(new phdeq,SLOT_HEAD)
+
 
 	var/datum/species/chosen_species
 	chosen_species = pref_species.type

@@ -54,3 +54,7 @@
 /area/tcommsatrebels/server
 	name = "Telecomms Server Room"
 	icon_state = "tcomsatcham"
+
+/area/shuttle/rebels
+	name = "Rebels Shuttle"
+	unique = TRUE

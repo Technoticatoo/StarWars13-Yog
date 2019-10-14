@@ -58,3 +58,8 @@
 /area/tcommsatmercenaries/server
 	name = "Telecomms Server Room"
 	icon_state = "tcomsatcham"
+
+
+/area/shuttle/mercenaries
+	name = "Mercenaries Shuttle"
+	unique = TRUE

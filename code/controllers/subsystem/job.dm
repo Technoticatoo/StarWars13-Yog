@@ -635,9 +635,9 @@ SUBSYSTEM_DEF(job)
 	var/list/arrivals_turfs = ""
 //LATEJOIN HOFTFIX UNTIL AREAS ARE ON THE MAP!!!
 	if(J.faction == "Rebels")
-		arrivals_turfs = shuffle(get_area_turfs(/area/rebels/latejoin))
+		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/rebels))
 	else if(J.faction == "Mercenaries")
-		arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin)) //arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin))
+		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/mercenaries)) //arrivals_turfs = shuffle(get_area_turfs(/area/mercenaries/latejoin))
 	else
 		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/arrival))
 

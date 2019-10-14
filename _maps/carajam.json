@@ -6,6 +6,8 @@
 	    "cargo": "cargo_box",
 	    "ferry": "ferry_fancy",
 	    "whiteship": "whiteship_box",
+		"mercenaries": "mercenaries_box",
+		"rebels": "rebels_box",
 	    "emergency": "emergency_box"
     }
 }

@@ -2746,6 +2746,8 @@
 #include "code\modules\starwars\objects\machinery\autoturret.dm"
 #include "code\modules\starwars\objects\machinery\computer\main_computer.dm"
 #include "code\modules\starwars\objects\machinery\door\door.dm"
+#include "code\modules\starwars\objects\shuttles\mercenaries_shuttle.dm"
+#include "code\modules\starwars\objects\shuttles\rebels_shuttle.dm"
 #include "code\modules\starwars\objects\structures\ladder.dm"
 #include "code\modules\starwars\objects\structures\planets.dm"
 #include "code\modules\starwars\objects\structures\purge.dm"

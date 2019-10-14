@@ -28,6 +28,8 @@
 		"cargo" = "cargo_box",
 		"ferry" = "ferry_fancy",
 		"whiteship" = "whiteship_box",
+		"mercenaries" = "mercenaries_box",
+		"rebels" = "rebels_box",
 		"emergency" = "emergency_box")
 
 /proc/load_map_config(filename = "data/next_map.json", default_to_box, delete_after, error_if_missing = TRUE)

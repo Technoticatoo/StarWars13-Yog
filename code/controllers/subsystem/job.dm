@@ -573,33 +573,36 @@ SUBSYSTEM_DEF(job)
 	var/atom/destination
 //STAR WARS EDIT
 	var/datum/job/J = SSjob.GetJob(M.mind.assigned_role) //STAR WARS EDIT
-	var/area/rebels/latejoin/B = ""
+	//var/area/rebels/latejoin/B = ""
 
 	if(M.mind && M.mind.assigned_role && length(GLOB.jobspawn_overrides[M.mind.assigned_role])) //We're doing something special today.
 		destination = pick(GLOB.jobspawn_overrides[M.mind.assigned_role])
 		destination.JoinPlayerHere(M, FALSE)
 		return
-	if(J.faction == "Rebels")
+//	else
+	if(latejoin_trackers.len)
+		destination = pick(latejoin_trackers)
+		destination.JoinPlayerHere(M, buckle)
+		return
+
+/*	if(J.faction == "Rebels")
 		B = GLOB.areas_by_type[/area/rebels/latejoin]
 	else if(J.faction == "Mercenaries")
 		B = GLOB.areas_by_type[/area/mercenaries/latejoin]
-	else
-		if(latejoin_trackers.len)
-			destination = pick(latejoin_trackers)
-			destination.JoinPlayerHere(M, buckle)
-			return
-
+	else if(J.faction == "Station")
+		B = GLOB.areas_by_type[/area/mercenaries/latejoin]
+*/
 	//bad mojo
 	var/area/shuttle/arrival/A = ""
 
 	if(J.faction == "Station")
 		A = GLOB.areas_by_type[/area/shuttle/arrival]
 	if(J.faction == "Rebels")
-		A = GLOB.areas_by_type[/area/rebels/shuttle]
+		A = GLOB.areas_by_type[/area/shuttle/rebels]
 	if(J.faction == "Mercenaries")
-		A = GLOB.areas_by_type[/area/mercenaries/shuttle]
+		A = GLOB.areas_by_type[/area/shuttle/mercenaries]
 
-	if(B)
+/*	if(B)
 		//first check if we can find a chair
 		var/obj/structure/chair/C = locate() in B
 		if(C)
@@ -614,7 +617,7 @@ SUBSYSTEM_DEF(job)
 			destination = pick(avail)
 			destination.JoinPlayerHere(M, FALSE)
 			return
-
+*/
 	if(A)
 		//first check if we can find a chair
 		var/obj/structure/chair/C = locate() in A

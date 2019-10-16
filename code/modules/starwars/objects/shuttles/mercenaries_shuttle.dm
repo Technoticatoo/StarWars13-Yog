@@ -91,3 +91,7 @@
 /obj/item/circuitboard/computer/mercenaries/pod/recall
 	name = "Salvage Pod Recall (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/mercenaries/pod/recall
+
+/datum/map_template/shuttle/mercenaries/box
+	suffix = "box"
+	name = "Mercenary Ship"

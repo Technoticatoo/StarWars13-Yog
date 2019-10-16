@@ -22,6 +22,17 @@
 	var/perma_docked = FALSE	//highlander with RESPAWN??? OH GOD!!!
 	var/obj/docking_port/stationary/target_dock  // for badminry
 
+/obj/docking_port/stationary/mercenaries
+	name = "mercenaries dock"
+	id = "mercenaries" //The Aux Base has to leave before this can be used as a dock.
+	//Should be checked on the map to ensure it matchs the mining shuttle dimensions.
+	dwidth = 3
+	width = 7
+	height = 15
+	dir = WEST
+	roundstart_template = /datum/map_template/shuttle/mercenaries/box
+	//area_type = /area/construction/mining/aux_base
+
 /obj/machinery/computer/shuttle/mercenaries
 	name = "Mercenaries Console"
 	desc = "Used to control the White Ship."

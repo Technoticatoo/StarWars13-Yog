@@ -23,7 +23,7 @@
 	var/obj/docking_port/stationary/target_dock  // for badminry
 
 /obj/machinery/computer/shuttle/mercenaries
-	name = "White Ship Console"
+	name = "Mercenaries Console"
 	desc = "Used to control the White Ship."
 	circuit = /obj/item/circuitboard/computer/mercenaries
 	shuttleId = "mercenaries"
@@ -43,7 +43,7 @@
 	possible_destinations = "mercenaries_pod_home"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/mercenaries
-	name = "White Ship Navigation Computer"
+	name = "Mercenaries Navigation Computer"
 	desc = "Used to designate a precise transit location for the White Ship."
 	shuttleId = "mercenaries"
 	lock_override = NONE
@@ -91,6 +91,9 @@
 /obj/item/circuitboard/computer/mercenaries/pod/recall
 	name = "Salvage Pod Recall (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/mercenaries/pod/recall
+
+/datum/map_template/shuttle/mercenaries
+	port_id = "mercenaries"
 
 /datum/map_template/shuttle/mercenaries/box
 	suffix = "box"

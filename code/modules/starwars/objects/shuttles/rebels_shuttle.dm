@@ -23,7 +23,7 @@
 	var/obj/docking_port/stationary/target_dock  // for badminry
 
 /obj/machinery/computer/shuttle/rebels
-	name = "White Ship Console"
+	name = "Rebels Console"
 	desc = "Used to control the White Ship."
 	circuit = /obj/item/circuitboard/computer/rebels
 	shuttleId = "rebels"
@@ -43,7 +43,7 @@
 	possible_destinations = "rebels_pod_home"
 
 /obj/machinery/computer/camera_advanced/shuttle_docker/rebels
-	name = "White Ship Navigation Computer"
+	name = "Rebels Navigation Computer"
 	desc = "Used to designate a precise transit location for the White Ship."
 	shuttleId = "rebels"
 	lock_override = NONE
@@ -90,6 +90,9 @@
 /obj/item/circuitboard/computer/rebels/pod/recall
 	name = "Salvage Pod Recall (Computer Board)"
 	build_path = /obj/machinery/computer/shuttle/rebels/pod/recall
+
+/datum/map_template/shuttle/rebels
+	port_id = "rebels"
 
 /datum/map_template/shuttle/rebels/box
 	suffix = "box"

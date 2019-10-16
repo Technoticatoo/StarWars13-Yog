@@ -2,6 +2,10 @@
 /datum/mapGeneratorModule/bottomLayer/asteroidTurfs
 	spawnableTurfs = list(/turf/open/floor/plating/asteroid = 100)
 
+//Desert turfs
+/datum/mapGeneratorModule/bottomLayer/desertTurfs
+	spawnableTurfs = list(/turf/open/floor/plating/desert = 100)
+
 /datum/mapGeneratorModule/bottomLayer/asteroidWalls
 	spawnableTurfs = list(/turf/closed/mineral = 100)
 

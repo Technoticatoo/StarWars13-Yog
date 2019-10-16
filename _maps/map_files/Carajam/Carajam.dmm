@@ -18,7 +18,7 @@
 "ar" = (/obj/structure/table,/turf/open/floor/plating,/area/hallway/secondary/entry)
 "as" = (/obj/effect/turf_decal{icon_state = "warningline"; dir = 1},/turf/open/floor/plating,/area/hallway/secondary/entry)
 "at" = (/obj/structure/chair,/turf/open/floor/plating,/area/hallway/secondary/entry)
-"au" = (/obj/docking_port/stationary{dir = 8; dwidth = 3; height = 15; id = "arrivals_stationary"; name = "arrivals"; roundstart_template = /datum/map_template/shuttle/arrival/carajam/imp; width = 7},/turf/open/floor/starwars/desert,/area/space)
+"au" = (/obj/docking_port/mobile/mercenaries,/turf/open/floor/starwars/desert,/area/space)
 "av" = (/obj/effect/turf_decal{icon_state = "warningline"; dir = 8},/turf/open/floor/plating,/area/hallway/secondary/entry)
 "aw" = (/obj/effect/spawner/structure/window/reinforced,/obj/machinery/door/poddoor/preopen{id = "bridge blast"; name = "bridge blast door"},/turf/open/floor/plating,/area/carajam/imperial/bridge)
 "ax" = (/obj/machinery/door/airlock/glass_large/secure,/turf/open/floor/plating,/area/space)

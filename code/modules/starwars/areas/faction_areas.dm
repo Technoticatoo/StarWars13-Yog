@@ -44,3 +44,32 @@
 /area/factions/command10
 	name = "Command10"
 	icon_state = "factions_command"
+
+//carajam city areas
+
+/area/factions/city/city_main
+	name = "Carajam City"
+	icon_state = "city_faction"
+
+/area/factions/city/city_mining
+	name = "Carajam City Mining Camp"
+	icon_state = "city_faction"
+
+//imperial base areas
+
+/area/factions/imperial/base
+	name = "Imperial Base"
+	icon_state = "imp_base_faction"
+
+/area/factions/imperial/yard
+	name = "Imperial Yard"
+	icon_state = "factions_command"
+
+/area/factions/imperial/mining
+	name = "Imperial Mining Camp"
+	icon_state = "factions_command"
+
+//merc areas
+/area/factions/merc/camp
+	name = "Mercenary Camp"
+	icon_state = "factions_command"

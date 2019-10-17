@@ -35,3 +35,22 @@
 /obj/item/vending_refill/engineering
 	machine_name = "Robco Tool Maker"
 	icon_state = "refill_engi"
+
+/obj/machinery/vending/circuits_plus
+	name = "\improper   Circuits Plus Vendor"
+	desc = "Everything you need for do-it-yourself machine building."
+	icon_state = "engi"
+	icon_deny = "engi-deny"
+	req_access = list(ACCESS_ENGINE_EQUIP)
+	products = list(/obj/item/circuitboard/machine/hydroponics = 5,
+		            /obj/item/circuitboard/machine/biogenerator = 5,
+		            /obj/item/circuitboard/machine/plantgenes = 5,
+		            /obj/item/circuitboard/machine/autolathe = 5)
+	refill_canister = /obj/item/vending_refill/engineering
+	default_price = 50
+	extra_price = 60
+	payment_department = ACCOUNT_ENG
+
+/obj/item/vending_refill/circuits_plus
+	machine_name = "Circuits Plus Vendor"
+	icon_state = "refill_engi"

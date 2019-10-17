@@ -10,13 +10,14 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
 	var/environment_type = "mars"
 	var/turf_type = /turf/open/floor/plating/desert //Because caves do whacky shit to revert to normal
 	var/floor_variance = 40 //probability floor has a different icon state
 	attachment_holes = FALSE
 	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
 	var/dug
-	slowdown = 1
+	slowdown = .5
 	planetary_atmos = TRUE
 	initial_gas_mix = DESERT_ATMOS
 

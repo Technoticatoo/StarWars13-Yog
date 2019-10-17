@@ -16,6 +16,8 @@
 	var/sound_played
 	var/damaged	//too damaged to undock?
 	var/list/areas	//areas in our shuttle
+	var/list/areas_rebs	//areas in our shuttle
+	var/list/areas_mercs	//areas in our shuttle
 	var/list/queued_announces	//people coming in that we have to announce
 	var/obj/machinery/requests_console/console
 	var/force_depart = FALSE
@@ -35,8 +37,13 @@
 
 /obj/docking_port/mobile/arrivals/LateInitialize()
 	areas = list()
+	areas_rebs = list()
+	areas_mercs = list()
 
 	var/list/new_latejoin = list()
+	var/list/new_latejoin_rebs = list()
+	var/list/new_latejoin_mercs = list()
+
 	for(var/area/shuttle/arrival/A in GLOB.sortedAreas)
 		for(var/obj/structure/chair/C in A)
 			new_latejoin += C
@@ -44,16 +51,34 @@
 			console = locate(/obj/machinery/requests_console) in A
 		areas += A
 
+	for(var/area/shuttle/rebels/RE in GLOB.sortedAreas)
+		for(var/obj/structure/chair/C in RE)
+			new_latejoin_rebs += C
+		if(!console)
+			console = locate(/obj/machinery/requests_console) in RE
+		areas_rebs += RE
+
+	for(var/area/shuttle/mercenaries/ME in GLOB.sortedAreas)
+		for(var/obj/structure/chair/C in ME)
+			new_latejoin_mercs += C
+		if(!console)
+			console = locate(/obj/machinery/requests_console) in ME
+		areas_mercs += ME
+
+
+
 	if(SSjob.latejoin_trackers.len)
 		WARNING("Map contains predefined latejoin spawn points and an arrivals shuttle. Using the arrivals shuttle.")
 
-	if(!new_latejoin.len)
+	if(!new_latejoin.len || !new_latejoin_rebs.len || !new_latejoin_mercs.len)
 		WARNING("Arrivals shuttle contains no chairs for spawn points. Reverting to latejoin landmarks.")
-		if(!SSjob.latejoin_trackers.len)
+		if(!SSjob.latejoin_trackers.len || !SSjob.latejoin_trackers_rebels.len || !SSjob.latejoin_trackers_mercenaries.len)
 			WARNING("No latejoin landmarks exist. Players will spawn unbuckled on the shuttle.")
 		return
 
 	SSjob.latejoin_trackers = new_latejoin
+	SSjob.latejoin_trackers_rebels = new_latejoin_rebs
+	SSjob.latejoin_trackers_mercenaries = new_latejoin_mercs
 
 /obj/docking_port/mobile/arrivals/check()
 	. = ..()
@@ -99,6 +124,8 @@
 			sound_played = FALSE
 		else if(!sound_played)
 			hyperspace_sound(HYPERSPACE_WARMUP, areas)
+			hyperspace_sound(HYPERSPACE_WARMUP, areas_rebs)
+			hyperspace_sound(HYPERSPACE_WARMUP, areas_mercs)
 			sound_played = TRUE
 	else if(!found_awake)
 		Launch(FALSE)
@@ -126,6 +153,10 @@
 	for (var/obj/item/disk/nuclear/N in GLOB.poi_list)
 		if (get_area(N) in areas)
 			return TRUE
+		if (get_area(N) in areas_rebs)
+			return TRUE
+		if (get_area(N) in areas_mercs)
+			return TRUE
 	return FALSE
 
 /obj/docking_port/mobile/arrivals/proc/SendToStation()
@@ -134,6 +165,8 @@
 		if(console)
 			console.say(damaged ? "Initiating emergency docking for repairs!" : "Now approaching: [station_name()].")
 		hyperspace_sound(HYPERSPACE_LAUNCH, areas)	//for the new guy
+//		hyperspace_sound(HYPERSPACE_LAUNCH, areas_rebs)	//for the new guy
+//		hyperspace_sound(HYPERSPACE_LAUNCH, areas_mercs)	//for the new guy
 		setTimer(dockTime)
 
 /obj/docking_port/mobile/arrivals/initiate_docking(obj/docking_port/stationary/S1, force=FALSE)
@@ -166,6 +199,9 @@
 	if(mode == SHUTTLE_CALL && !sound_played && timeLeft(1) <= HYPERSPACE_END_TIME)
 		sound_played = TRUE
 		hyperspace_sound(HYPERSPACE_END, areas)
+//		hyperspace_sound(HYPERSPACE_END, areas_rebs)
+//		hyperspace_sound(HYPERSPACE_END, areas_mercs)
+
 
 /obj/docking_port/mobile/arrivals/canDock(obj/docking_port/stationary/S)
 	. = ..()

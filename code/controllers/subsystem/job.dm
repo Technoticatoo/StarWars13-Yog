@@ -11,6 +11,8 @@ SUBSYSTEM_DEF(job)
 
 	var/list/prioritized_jobs = list()
 	var/list/latejoin_trackers = list()	//Don't read this list, use GetLateJoinTurfs() instead
+	var/list/latejoin_trackers_rebels = list()	//Don't read this list, use GetLateJoinTurfs() instead
+	var/list/latejoin_trackers_mercenaries = list()	//Don't read this list, use GetLateJoinTurfs() instead
 
 	var/overflow_role = "Assistant"
 
@@ -579,19 +581,22 @@ SUBSYSTEM_DEF(job)
 		destination = pick(GLOB.jobspawn_overrides[M.mind.assigned_role])
 		destination.JoinPlayerHere(M, FALSE)
 		return
-//	else
-	if(latejoin_trackers.len)
+
+	if(J.faction == "Station" && latejoin_trackers.len)
 		destination = pick(latejoin_trackers)
 		destination.JoinPlayerHere(M, buckle)
 		return
 
-/*	if(J.faction == "Rebels")
-		B = GLOB.areas_by_type[/area/rebels/latejoin]
-	else if(J.faction == "Mercenaries")
-		B = GLOB.areas_by_type[/area/mercenaries/latejoin]
-	else if(J.faction == "Station")
-		B = GLOB.areas_by_type[/area/mercenaries/latejoin]
-*/
+	if(J.faction == "Rebels" && latejoin_trackers_rebels.len)
+		destination = pick(latejoin_trackers_rebels)
+		destination.JoinPlayerHere(M, buckle)
+		return
+
+	if(J.faction == "Mercenaries" && latejoin_trackers_mercenaries.len)
+		destination = pick(latejoin_trackers_mercenaries)
+		destination.JoinPlayerHere(M, buckle)
+		return
+
 	//bad mojo
 	var/area/shuttle/arrival/A = ""
 
@@ -602,22 +607,6 @@ SUBSYSTEM_DEF(job)
 	if(J.faction == "Mercenaries")
 		A = GLOB.areas_by_type[/area/shuttle/mercenaries]
 
-/*	if(B)
-		//first check if we can find a chair
-		var/obj/structure/chair/C = locate() in B
-		if(C)
-			C.JoinPlayerHere(M, buckle)
-			return
-		//last hurrah
-		var/list/avail = list()
-		for(var/turf/T in B)
-			if(!is_blocked_turf(T, TRUE))
-				avail += T
-		if(avail.len)
-			destination = pick(avail)
-			destination.JoinPlayerHere(M, FALSE)
-			return
-*/
 	if(A)
 		//first check if we can find a chair
 		var/obj/structure/chair/C = locate() in A
@@ -636,7 +625,7 @@ SUBSYSTEM_DEF(job)
 
 	//pick an open spot on arrivals and dump em
 	var/list/arrivals_turfs = ""
-//LATEJOIN HOFTFIX UNTIL AREAS ARE ON THE MAP!!!
+
 	if(J.faction == "Rebels")
 		arrivals_turfs = shuffle(get_area_turfs(/area/shuttle/rebels))
 	else if(J.faction == "Mercenaries")

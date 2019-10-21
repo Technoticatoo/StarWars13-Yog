@@ -17,7 +17,7 @@
 	attachment_holes = FALSE
 	var/obj/item/stack/digResult = /obj/item/stack/ore/glass/basalt
 	var/dug
-	slowdown = .5
+	slowdown = 0.5
 	planetary_atmos = TRUE
 	initial_gas_mix = DESERT_ATMOS
 

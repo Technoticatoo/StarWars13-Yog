@@ -2744,6 +2744,7 @@
 #include "code\modules\starwars\objects\mercenary_banner.dm"
 #include "code\modules\starwars\objects\rebel_banners.dm"
 #include "code\modules\starwars\objects\machinery\autoturret.dm"
+#include "code\modules\starwars\objects\machinery\apc\apc.dm"
 #include "code\modules\starwars\objects\machinery\computer\main_computer.dm"
 #include "code\modules\starwars\objects\machinery\door\door.dm"
 #include "code\modules\starwars\objects\shuttles\mercenaries_shuttle.dm"

@@ -116,5 +116,12 @@
 					D.req_access = list(ACCESS_FACTION_REBELS)
 				if(scan.swfaction == "Mercs")
 					D.req_access = list(ACCESS_FACTION_MERCS)
+			for(var/obj/machinery/power/apc/APC in src_area.apcs)
+				if(scan.swfaction == "Empire")
+					APC.req_access = list(ACCESS_FACTION_EMPIRE)
+				if(scan.swfaction == "Rebels")
+					APC.req_access = list(ACCESS_FACTION_REBELS)
+				if(scan.swfaction == "Mercs")
+					APC.req_access = list(ACCESS_FACTION_MERCS)
 		else
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")

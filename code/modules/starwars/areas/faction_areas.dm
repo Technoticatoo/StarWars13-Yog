@@ -48,8 +48,12 @@
 
 //carajam city areas
 
-/area/factions/city/city_main
-	name = "Carajam City"
+/area/factions/city/city_center
+	name = "Carajam City - Center"
+	icon_state = "city_faction"
+
+/area/factions/city/city_south
+	name = "Carajam City - South"
 	icon_state = "city_faction"
 
 /area/factions/city/city_mining

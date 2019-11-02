@@ -34,10 +34,8 @@
 
 
 /mob/living/carbon/AltClickOn(atom/A)
-	if(!stat && mind && iscarbon(A) && A != src)
-		if(src.is_holding_item_of_type(/obj/item/melee/transforming/energy/sword/saber))
-			var/choice = show_radial_menu(src, A, radial_options, null, 48, null, TRUE)
-			switch(choice)
-				if("duel")
-					src.visible_message("Entering Duel!")
+	if(!incapacitated() && A != src  && ismob(A) && is_holding_item_of_type(/obj/item/melee/transforming/energy/sword/saber))
+		var/choice = show_radial_menu(src, A, radial_options, null, 48, null, TRUE)
+		if(choice == "duel")
+			src.visible_message("Entering Duel!")
 	..()

@@ -3,8 +3,9 @@
 	icon_state = "factions"
 	has_gravity = STANDARD_GRAVITY
 //	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED
-	var/list/doors = list()
-	var/list/apcs = list()
+//	var/list/doors = list()
+//	var/list/apcs = list()
+	var/list/objects = list()
 
 /area/factions/command1
 	name = "Command1"

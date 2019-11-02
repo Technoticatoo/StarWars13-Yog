@@ -109,7 +109,7 @@
 		to_chat(usr, "<span class='error'>Claiming area!</span>")
 		if(scan.swfaction)
 			src_area.swfaction = scan.swfaction
-			for(var/obj/machinery/door/D in src_area.doors)
+/*			for(var/obj/machinery/door/D in src_area.doors)
 				if(scan.swfaction == "Empire")
 					D.req_access = list(ACCESS_FACTION_EMPIRE)
 				if(scan.swfaction == "Rebels")
@@ -122,6 +122,13 @@
 				if(scan.swfaction == "Rebels")
 					APC.req_access = list(ACCESS_FACTION_REBELS)
 				if(scan.swfaction == "Mercs")
-					APC.req_access = list(ACCESS_FACTION_MERCS)
+					APC.req_access = list(ACCESS_FACTION_MERCS)*/
+			for(var/obj/O in src_area.objects)
+				if(scan.swfaction == "Empire")
+					O.req_access = list(ACCESS_FACTION_EMPIRE)
+				if(scan.swfaction == "Rebels")
+					O.req_access = list(ACCESS_FACTION_REBELS)
+				if(scan.swfaction == "Mercs")
+					O.req_access = list(ACCESS_FACTION_MERCS)
 		else
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")

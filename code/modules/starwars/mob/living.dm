@@ -6,6 +6,8 @@
 /mob/living/proc/clear_tracking()
 	return*/
 /mob/living
+	var/static/duel = image(icon = 'icons/starwars/lightsabers.dmi', icon_state = "duel")
+	var/static/list/radial_options = list("duel" = duel)
 	var/stoptracking = FALSE
 	..()
 
@@ -30,3 +32,12 @@
 	var/obj/screen/LL_dir = hud_used.turf_locator
 	LL_dir.icon_state = "turf_locator_off"
 
+
+/mob/living/carbon/AltClickOn(atom/A)
+	if(!stat && mind && iscarbon(A) && A != src)
+		if(src.is_holding_item_of_type(/obj/item/melee/transforming/energy/sword/saber))
+			var/choice = show_radial_menu(src, A, radial_options, null, 48, null, TRUE)
+			switch(choice)
+				if("duel")
+					src.visible_message("Entering Duel!")
+	..()

@@ -10,6 +10,7 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 	resistance_flags = FIRE_PROOF
 	var/brightness_on = 3
 
+
 /obj/item/melee/transforming/energy/Initialize()
 	. = ..()
 	if(active)
@@ -34,6 +35,8 @@ GLOBAL_VAR_INIT(thrown_weapon, FALSE)
 
 /obj/item/melee/transforming/energy/process()
 	open_flame()
+
+
 
 /obj/item/melee/transforming/energy/transform_weapon(mob/living/user, supress_message_text)
 	. = ..()

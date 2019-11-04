@@ -37,5 +37,8 @@
 	if(!incapacitated() && A != src  && ismob(A) && is_holding_item_of_type(/obj/item/melee/transforming/energy/sword/saber))
 		var/choice = show_radial_menu(src, A, radial_options, null, 48, null, TRUE)
 		if(choice == "duel")
-			src.visible_message("Entering Duel!")
+			var/enemy = show_radial_menu(A, src, radial_options, null, 48, null, TRUE)
+			if(enemy == "duel")
+				src.visible_message("Entering Duel!")
+
 	..()

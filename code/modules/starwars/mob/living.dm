@@ -7,7 +7,8 @@
 	return*/
 /mob/living
 	var/static/duel = image(icon = 'icons/starwars/lightsabers.dmi', icon_state = "duel")
-	var/static/list/radial_options = list("duel" = duel)
+	var/static/dont_duel = image(icon = 'icons/starwars/lightsabers.dmi', icon_state = "dont_duel")
+	var/static/list/radial_options = list("duel" = duel, "Denied" = dont_duel)
 	var/stoptracking = FALSE
 	..()
 
@@ -40,5 +41,19 @@
 			var/enemy = show_radial_menu(A, src, radial_options, null, 48, null, TRUE)
 			if(enemy == "duel")
 				src.visible_message("Entering Duel!")
+			if(enemy == "dont_duel")
+				return
+		if(choice == "dont_duel")
+			return
 
 	..()
+
+/mob/living/proc/duel_wall(mob/living/carbon/duelist, mob/living/carbon/duelee)
+	var/distance = get_dist(duelist, duelee)
+	var/duelee_dir = get_dir(duelist, duelee)
+	var/duelist_dir = get_dir(duelee, duelist)
+	if(distance > 4)
+		if(duelee.dir != duelist_dir)
+			duelee.apply_status_effect(STATUS_EFFECT_SLOW)
+		if(duelist.dir != duelee_dir)
+			duelee.apply_status_effect(STATUS_EFFECT_SLOW)

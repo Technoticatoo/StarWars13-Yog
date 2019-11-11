@@ -59,6 +59,8 @@
 		duelist_dir = get_dir(duelee, duelist)
 		if(duelee.dir != duelist_dir)
 			duelee.apply_status_effect(STATUS_EFFECT_SLOW)
+			duelee.Knockdown(20)
 		if(duelist.dir != duelee_dir)
 			duelist.apply_status_effect(STATUS_EFFECT_SLOW)
+			duelist.Knockdown(20)
 		sleep(20)

@@ -52,11 +52,16 @@
 
 /mob/living/proc/duel_wall(mob/living/carbon/duelist, mob/living/carbon/duelee)
 //	var/distance = get_dist(duelist, duelee)
+
 	var/duelee_dir = get_dir(duelist, duelee)
 	var/duelist_dir = get_dir(duelee, duelist)
-	while(get_dist(duelist, duelee) > 4)
+	duelist.visible_message("Dir! [duelee_dir]")
+	duelee.visible_message("Dir! [duelist_dir]")
+	while(get_dist(duelist, duelee) > 4 && (!incapacitated(duelee) && !incapacitated() && duelee != duelist  && ismob(duelee)))
 		duelee_dir = get_dir(duelist, duelee)
 		duelist_dir = get_dir(duelee, duelist)
+		duelist.visible_message("Dir 2! [duelee_dir]")
+		duelee.visible_message("Dir 2! [duelist_dir]")
 		if(duelee.dir != duelist_dir)
 			duelee.apply_status_effect(STATUS_EFFECT_SLOW)
 			duelee.Knockdown(20)

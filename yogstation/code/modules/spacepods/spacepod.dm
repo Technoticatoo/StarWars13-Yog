@@ -647,7 +647,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	M = input("Choose the Hyperspace destination.", "Hyperspace") as null|anything in GLOB.hyperspace_targets
 	tracked_buoy = M
 
-	if(istype(loc, /turf/open/space) && isinsector)
+	if(istype(loc, /turf/open/space))
 		to_chat(usr, "Entering hyperspace")
 		Cinematic(CINEMATIC_HYPERSPACE,src)
 	//	do_teleport(src, pick(get_area_turfs(/area/space/hyperspace)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, forced = TRUE)
@@ -698,32 +698,32 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	if(!verb_check())
 		return
 	if(podtype == "empire")
-		if(istype(loc, /turf/open/space/arrival_sector))
-			to_chat(usr, "The ship is already at the desired destination")
-		else if(!isinsector)
+		if(istype(loc, /turf/open/space))
+			to_chat(usr, "The ship is already in space.")
+		else// if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
-			isinsector = 1
+//			isinsector = 1
 			do_teleport(src, pick(get_area_turfs(/area/planets/sector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not jump to the sector in this location")
+//		else
+//			to_chat(usr, "You can not jump to the sector in this location")
 	else if (podtype == "rebel")
-		if(istype(loc, /turf/open/space/arrival_rebelsector))
-			to_chat(usr, "The ship is already at the desired destination")
-		else if(!isinsector)
+		if(istype(loc, /turf/open/space))
+			to_chat(usr, "The ship is already in space.")
+		else// if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
-			isinsector = 1
+//			isinsector = 1
 			do_teleport(src, pick(get_area_turfs(/area/planets/rebelsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not jump to the sector in this location")
+//		else
+//			to_chat(usr, "You can not jump to the sector in this location")
 	else if (podtype == "mercs")
-		if(istype(loc, /turf/open/space/arrival_mercsector))
-			to_chat(usr, "The ship is already at the desired destination")
-		else if(!isinsector)
+		if(istype(loc, /turf/open/space))
+			to_chat(usr, "The ship is already in space.")
+		else //if(!isinsector)
 			to_chat(usr, "Jumping to Sector")
-			isinsector = 1
+//			isinsector = 1
 			do_teleport(src, pick(get_area_turfs(/area/planets/mercsector)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not jump to the sector in this location")
+//		else
+///			to_chat(usr, "You can not jump to the sector in this location")
 
 
 /obj/spacepod/verb/warp_home()
@@ -739,32 +739,32 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 	if(!verb_check())
 		return
 	if(podtype == "empire")
-		if(istype(loc, /turf/open/space/home_sector))
+		if(istype(loc, /turf/open/space/arrival_sector))
 			to_chat(usr, "The ship is already at the desired destination")
-		else if(isinsector)
+		else //if(isinsector)
 			to_chat(usr, "Jumping Home")
-			isinsector = 0
+//			isinsector = 0
 			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/empire)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not enter hyperspace when not in space")
+//		else
+//			to_chat(usr, "You can not enter hyperspace when not in space")
 	else if (podtype == "rebel")
-		if(istype(loc, /turf/open/floor/plasteel/arrival/arrival_rebelbase))
+		if(istype(loc, /turf/open/space/arrival_rebelsector))
 			to_chat(usr, "The ship is already at the desired destination")
-		else if(isinsector)
+		else //if(isinsector)
 			to_chat(usr, "Jumping Home")
-			isinsector = 0
+//			isinsector = 0
 			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/rebels)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not enter hyperspace in this location")
+//		else
+//			to_chat(usr, "You can not enter hyperspace in this location")
 	else if (podtype == "mercs")
-		if(istype(loc, /turf/open/floor/plasteel/arrival/arrival_mercbase))
+		if(istype(loc, /turf/open/space/arrival_mercsector))
 			to_chat(usr, "The ship is already at the desired destination")
-		else if(isinsector)
+		else //if(isinsector)
 			to_chat(usr, "Jumping Home")
-			isinsector = 0
+//			isinsector = 0
 			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/mercs)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
-		else
-			to_chat(usr, "You can not enter hyperspace in this location")
+//		else
+//			to_chat(usr, "You can not enter hyperspace in this location")
 
 
 /obj/spacepod/verb/lock_pod()

@@ -726,7 +726,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 ///			to_chat(usr, "You can not jump to the sector in this location")
 
 
-/obj/spacepod/verb/warp_home()
+/*/obj/spacepod/verb/warp_home()
 	set name = "Jump home"
 	set category = "Spaceship"
 	set src = usr.loc
@@ -765,7 +765,7 @@ GLOBAL_LIST_INIT(spacepods_list, list())
 			do_teleport(src, pick(get_turf_pixel(/obj/structure/starwars/home/buoy/mercs)), forceMove = TRUE, channel = TELEPORT_CHANNEL_MAGIC, asoundin = warpsound, asoundout= warpsound, forced = TRUE)
 //		else
 //			to_chat(usr, "You can not enter hyperspace in this location")
-
+*/
 
 /obj/spacepod/verb/lock_pod()
 	set name = "Lock Doors"

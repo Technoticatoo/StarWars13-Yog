@@ -127,7 +127,7 @@
 	icon_state = "slave1"
 	podtype = "mercs"
 	locked = FALSE
-	armor_type = /obj/item/pod_parts/armor/merc_fighter
+	armor_type = /obj/item/pod_parts/armor/slave1
 	equipment_types = list(/obj/item/spacepod_equipment/weaponry/laser,
 		/obj/item/spacepod_equipment/lock/keyed/sec,
 		/obj/item/spacepod_equipment/tracker,

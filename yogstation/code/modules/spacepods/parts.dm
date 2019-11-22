@@ -226,7 +226,15 @@
 	name = "mercenary fighter armor"
 	icon_state = "merc_fighter_armor"
 	desc = "Tough fighter armor, meant for use by the mercenaries for space combat."
-	pod_icon_state = "ywing"
+	pod_icon_state = "merc_fighter_armor"
+	pod_desc = "An armed mercenary fighter with reinforced armor plating"
+	pod_integrity = 350
+
+/obj/item/pod_parts/armor/slave1
+	name = "slave 1 armor"
+	icon_state = "slave1"
+	desc = "Tough fighter armor, meant for use by the mercenaries for space combat."
+	pod_icon_state = "slave1"
 	pod_desc = "An armed mercenary fighter with reinforced armor plating"
 	pod_integrity = 350
 

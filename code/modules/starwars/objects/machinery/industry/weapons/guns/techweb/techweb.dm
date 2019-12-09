@@ -4,7 +4,7 @@
 	display_name = "Guns Research Technology"
 	description = "Guns research technologies."
 	// Default research tech, prevents bricking
-	design_ids = list("a280")
+	design_ids = list("a280","dl44","dc17","dc17s","dlt19")
 
 /datum/design/a280
 	name = "A280 Blaster Rifle"

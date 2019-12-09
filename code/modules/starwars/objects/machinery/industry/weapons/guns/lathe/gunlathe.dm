@@ -157,16 +157,20 @@
 			var/coeff = (is_stack ? 1 : prod_coeff) //stacks are unaffected by production coefficient
 			var/metal_cost = being_built.materials[MAT_METAL]
 			var/glass_cost = being_built.materials[MAT_GLASS]
+			var/diamond_cost = being_built.materials[MAT_DIAMOND]
+			var/uranium_cost = being_built.materials[MAT_URANIUM]
+			var/silver_cost = being_built.materials[MAT_SILVER]
+			var/gold_cost = being_built.materials[MAT_GOLD]
 
-			var/power = max(2000, (metal_cost+glass_cost)*multiplier/5)
+			var/power = max(2000, (metal_cost+glass_cost+diamond_cost+uranium_cost+silver_cost+gold_cost)*multiplier/10)
 
 			GET_COMPONENT(materials, /datum/component/material_container)
-			if((materials.amount(MAT_METAL) >= metal_cost*multiplier*coeff) && (materials.amount(MAT_GLASS) >= glass_cost*multiplier*coeff))
+			if((materials.amount(MAT_METAL) >= metal_cost*multiplier*coeff) && (materials.amount(MAT_GLASS) >= glass_cost*multiplier*coeff)  && (materials.amount(MAT_DIAMOND) >= diamond_cost*multiplier*coeff)  && (materials.amount(MAT_URANIUM) >= uranium_cost*multiplier*coeff)  && (materials.amount(MAT_SILVER) >= silver_cost*multiplier*coeff)  && (materials.amount(MAT_GOLD) >= gold_cost*multiplier*coeff))
 				busy = TRUE
 				use_power(power)
 				icon_state = "gunlathe_n"
 				var/time = is_stack ? 32 : 32*coeff*multiplier
-				addtimer(CALLBACK(src, .proc/make_item, power, metal_cost, glass_cost, multiplier, coeff, is_stack), time)
+				addtimer(CALLBACK(src, .proc/make_item, power, metal_cost, glass_cost, diamond_cost, uranium_cost, silver_cost, gold_cost, multiplier, coeff, is_stack), time)
 
 		if(href_list["search"])
 			matching_designs.Cut()
@@ -183,11 +187,11 @@
 
 	return
 
-/obj/machinery/gunlathe/proc/make_item(power, metal_cost, glass_cost, multiplier, coeff, is_stack)
+/obj/machinery/gunlathe/proc/make_item(power, metal_cost, glass_cost,  diamond_cost, uranium_cost, silver_cost, gold_cost, multiplier, coeff, is_stack)
 	GET_COMPONENT(materials, /datum/component/material_container)
 	var/atom/A = drop_location()
 	use_power(power)
-	var/list/materials_used = list(MAT_METAL=metal_cost*coeff*multiplier, MAT_GLASS=glass_cost*coeff*multiplier)
+	var/list/materials_used = list(MAT_METAL=metal_cost*coeff*multiplier, MAT_GLASS=glass_cost*coeff*multiplier, MAT_DIAMOND=diamond_cost*coeff*multiplier, MAT_URANIUM=uranium_cost*coeff*multiplier, MAT_SILVER=silver_cost*coeff*multiplier, MAT_GOLD=gold_cost*coeff*multiplier)
 	materials.use_amount(materials_used)
 
 	if(is_stack)
@@ -265,7 +269,7 @@
 
 		if(ispath(D.build_path, /obj/item/stack))
 			GET_COMPONENT(materials, /datum/component/material_container)
-			var/max_multiplier = min(D.maxstack, D.materials[MAT_METAL] ?round(materials.amount(MAT_METAL)/D.materials[MAT_METAL]):INFINITY,D.materials[MAT_GLASS]?round(materials.amount(MAT_GLASS)/D.materials[MAT_GLASS]):INFINITY)
+			var/max_multiplier = min(D.maxstack, D.materials[MAT_METAL] ?round(materials.amount(MAT_METAL)/D.materials[MAT_METAL]):INFINITY,D.materials[MAT_GLASS]?round(materials.amount(MAT_GLASS)/D.materials[MAT_GLASS]):INFINITY, D.materials[MAT_DIAMOND] ?round(materials.amount(MAT_DIAMOND)/D.materials[MAT_DIAMOND]):INFINITY, D.materials[MAT_URANIUM] ?round(materials.amount(MAT_URANIUM)/D.materials[MAT_URANIUM]):INFINITY, D.materials[MAT_SILVER] ?round(materials.amount(MAT_SILVER)/D.materials[MAT_SILVER]):INFINITY, D.materials[MAT_GOLD] ?round(materials.amount(MAT_GOLD)/D.materials[MAT_GOLD]):INFINITY)
 			if (max_multiplier>10 && !disabled)
 				dat += " <a href='?src=[REF(src)];make=[D.id];multiplier=10'>x10</a>"
 			if (max_multiplier>25 && !disabled)
@@ -297,7 +301,7 @@
 
 		if(ispath(D.build_path, /obj/item/stack))
 			GET_COMPONENT(materials, /datum/component/material_container)
-			var/max_multiplier = min(D.maxstack, D.materials[MAT_METAL] ?round(materials.amount(MAT_METAL)/D.materials[MAT_METAL]):INFINITY,D.materials[MAT_GLASS]?round(materials.amount(MAT_GLASS)/D.materials[MAT_GLASS]):INFINITY)
+			var/max_multiplier = min(D.maxstack, D.materials[MAT_METAL] ?round(materials.amount(MAT_METAL)/D.materials[MAT_METAL]):INFINITY,D.materials[MAT_GLASS]?round(materials.amount(MAT_GLASS)/D.materials[MAT_GLASS]):INFINITY, D.materials[MAT_DIAMOND] ?round(materials.amount(MAT_DIAMOND)/D.materials[MAT_DIAMOND]):INFINITY, D.materials[MAT_URANIUM] ?round(materials.amount(MAT_URANIUM)/D.materials[MAT_URANIUM]):INFINITY, D.materials[MAT_SILVER] ?round(materials.amount(MAT_SILVER)/D.materials[MAT_SILVER]):INFINITY, D.materials[MAT_GOLD] ?round(materials.amount(MAT_GOLD)/D.materials[MAT_GOLD]):INFINITY)
 			if (max_multiplier>10 && !disabled)
 				dat += " <a href='?src=[REF(src)];make=[D.id];multiplier=10'>x10</a>"
 			if (max_multiplier>25 && !disabled)
@@ -329,6 +333,14 @@
 		return FALSE
 	if(D.materials[MAT_GLASS] && (materials.amount(MAT_GLASS) < (D.materials[MAT_GLASS] * coeff * amount)))
 		return FALSE
+	if(D.materials[MAT_DIAMOND] && (materials.amount(MAT_DIAMOND) < (D.materials[MAT_DIAMOND] * coeff * amount)))
+		return FALSE
+	if(D.materials[MAT_URANIUM] && (materials.amount(MAT_URANIUM) < (D.materials[MAT_URANIUM] * coeff * amount)))
+		return FALSE
+	if(D.materials[MAT_SILVER] && (materials.amount(MAT_SILVER) < (D.materials[MAT_SILVER] * coeff * amount)))
+		return FALSE
+	if(D.materials[MAT_GOLD] && (materials.amount(MAT_GOLD) < (D.materials[MAT_GOLD] * coeff * amount)))
+		return FALSE
 	return TRUE
 
 /obj/machinery/gunlathe/proc/get_design_cost(datum/design/D)
@@ -337,7 +349,15 @@
 	if(D.materials[MAT_METAL])
 		dat += "[D.materials[MAT_METAL] * coeff] metal "
 	if(D.materials[MAT_GLASS])
-		dat += "[D.materials[MAT_GLASS] * coeff] glass"
+		dat += "[D.materials[MAT_GLASS] * coeff] glass "
+	if(D.materials[MAT_DIAMOND])
+		dat += "[D.materials[MAT_DIAMOND] * coeff] diamonds "
+	if(D.materials[MAT_URANIUM])
+		dat += "[D.materials[MAT_URANIUM] * coeff] uranium "
+	if(D.materials[MAT_SILVER])
+		dat += "[D.materials[MAT_SILVER] * coeff] silver "
+	if(D.materials[MAT_GOLD])
+		dat += "[D.materials[MAT_GOLD] * coeff] gold"
 	return dat
 
 /obj/machinery/gunlathe/proc/reset(wire)

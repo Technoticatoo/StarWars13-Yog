@@ -4,8 +4,9 @@
 
 /obj/machinery/gunlathe
 	name = "gunlathe"
-	desc = "It produces guns using metal and glass."
-	icon_state = "autolathe"
+	desc = "It produces guns."
+	icon = 'icons/starwars/machinery.dmi'
+	icon_state = "gunlathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE
 	idle_power_usage = 10
@@ -35,15 +36,15 @@
 	var/hacked_price = 50
 
 	var/list/categories = list(
-							"Security",
+							"Weapons",
 							)
 
 /obj/machinery/gunlathe/Initialize()
-	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS), 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
+	AddComponent(/datum/component/material_container, list(MAT_METAL, MAT_GLASS,  MAT_DIAMOND, MAT_URANIUM, MAT_SILVER, MAT_GOLD), 0, TRUE, null, null, CALLBACK(src, .proc/AfterMaterialInsert))
 	. = ..()
 
 	wires = new /datum/wires/autolathe(src)
-	stored_research = new /datum/techweb/specialized/autounlocking/autolathe
+	stored_research = new /datum/techweb/specialized/autounlocking/gunlathe
 	matching_designs = list()
 
 /obj/machinery/gunlathe/Destroy()
@@ -122,6 +123,8 @@
 				flick("gunlathe_o",src)//plays metal insertion animation
 			if (MAT_GLASS)
 				flick("gunlathe_r",src)//plays glass insertion animation
+			else
+				flick("gunlathe_p",src)
 		use_power(min(1000, amount_inserted / 100))
 	updateUsrDialog()
 
@@ -366,7 +369,7 @@
 	hacked = state
 	for(var/id in SSresearch.techweb_designs)
 		var/datum/design/D = SSresearch.techweb_design_by_id(id)
-		if((D.build_type & AUTOLATHE) && ("hacked" in D.category))
+		if((D.build_type & GUNLATHE) && ("hacked" in D.category))
 			if(hacked)
 				stored_research.add_design(D)
 			else

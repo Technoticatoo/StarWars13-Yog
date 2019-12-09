@@ -43,7 +43,7 @@
 //DLT-19
 /obj/item/gun/energy/laser/starwars/dlt19
 	name = "DLT-19 Heavy Blaster Rifle"
-	desc = "A model of blaster rifle manufactured by BlasTech Industries. They were used by stormtroopers of the Galactic Empire,"
+	desc = "A model of blaster rifle manufactured by BlasTech Industries. They were used by stormtroopers of the Galactic Empire."
 	icon_state = "dlt19"
 	item_state = "dlt19"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/dlt19)

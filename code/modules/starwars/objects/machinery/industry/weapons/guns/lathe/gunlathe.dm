@@ -5,7 +5,7 @@
 /obj/machinery/gunlathe
 	name = "gunlathe"
 	desc = "It produces guns."
-	icon = 'icons/starwars/machinery.dmi'
+	icon = 'icons/starwars/machinery_64.dmi'
 	icon_state = "gunlathe"
 	density = TRUE
 	use_power = IDLE_POWER_USE

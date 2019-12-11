@@ -4,7 +4,9 @@
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	lefthand_file = 'icons/starwars/obj/holocrons.dmi'
 	righthand_file = 'icons/starwars/obj/holocrons.dmi'
+	icon = 'icons/starwars/obj/holocrons.dmi'
 	icon_state = "jedi_holocron"
+	item_state = "jedi_holocron"
 	var/mutation
 
 /*/obj/item/starwars/holocron/Initialize()
@@ -24,6 +26,7 @@
 	desc = "A holocron containing secrets of the dark side"
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	icon_state = "sith_holocron"
+	item_state = "sith_holocron"
 
 /obj/item/starwars/holocron/jedi/basic/attack_self(mob/living/carbon/human/user = usr)
 	user.taught = user.taught + 1
@@ -54,12 +57,14 @@
 	desc = "A holocron containing deep secrets of the force"
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	icon_state = "masterjedi_holocron"
+	item_state = "masterjedi_holocron"
 
 /obj/item/starwars/holocron/sith/master
 	name = "A master holocron"
 	desc = "A holocron containing deep secrets of the dark side"
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	icon_state = "mastersith_holocron"
+	item_state = "mastersith_holocron"
 
 /obj/item/starwars/holocron/jedi/master/attack_self(mob/living/carbon/human/user = usr)
 	user.taught = user.taught + 1
@@ -82,12 +87,14 @@
 	desc = "A holocron containing deepest secrets of the force"
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	icon_state = "grandjedi_holocron"
+	item_state = "grandjedi_holocron"
 
 /obj/item/starwars/holocron/sith/grand
 	name = "A grand holocron"
 	desc = "A holocron containing deepest secrets of the dark side"
 	//icon = 'icons/starwars/clothing/hardsuit_obj.dmi'
 	icon_state = "grandsith_holocron"
+	item_state = "grandsith_holocron"
 
 
 /obj/item/starwars/holocron/jedi/grand/attack_self(mob/living/carbon/human/user = usr)

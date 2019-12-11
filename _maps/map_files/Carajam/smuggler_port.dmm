@@ -4,6 +4,12 @@
 "d" = (/turf/closed/wall/r_wall,/area/space)
 "e" = (/turf/closed/wall,/area/space)
 "f" = (/turf/open/floor/plasteel,/area/space)
+"g" = (/obj/item/starwars/holocron/sith/basic,/turf/open/floor/plasteel,/area/space)
+"h" = (/obj/item/starwars/holocron/sith/grand,/turf/open/floor/plasteel,/area/space)
+"i" = (/obj/item/starwars/holocron/sith/master,/turf/open/floor/plasteel,/area/space)
+"j" = (/obj/item/starwars/holocron/jedi/basic,/turf/open/floor/plasteel,/area/space)
+"k" = (/obj/item/starwars/holocron/jedi/grand,/turf/open/floor/plasteel,/area/space)
+"l" = (/obj/item/starwars/holocron/jedi/master,/turf/open/floor/plasteel,/area/space)
 
 (1,1,1) = {"
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -53,8 +59,8 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddfffffffffefffffffffffffeeffffffffddaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffeefffffffffffffeefffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffefffffffffffffffefffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddffffffffeefffffffffffffffeeffffffffddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffffffffffffffffffffffffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffffffffffffffffffffffffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffghifffffffffffffffffffffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffjklfffffffffffffffffffffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddffffffffeefffffffffffffffeeffffffffddaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffefffffffffffffffefffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadfffffffffeefffffffffffffeefffffffffdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

@@ -270,3 +270,43 @@ Auto Patrol: []"},
 	if(mode == BOT_HUNT)
 		icon_state = "om_battledroid"
 		return
+
+
+/mob/living/simple_animal/bot/secbot/sec_droid/kx_droid
+	name = "KX Security Droid"
+	desc = "It's a KX security droid! Protects faction areas against enemies."
+	model= "KX Security Droid"
+	icon = 'icons/starwars/mob/droids_x64.dmi'
+	icon_state = "kx_secdroid"
+	idcheck = FALSE
+	weaponscheck = FALSE
+	auto_patrol = TRUE
+
+
+/mob/living/simple_animal/bot/secbot/sec_droid/kx_droid/stun_attack(mob/living/carbon/C)
+	playsound(src, 'sound/weapons/egloves.ogg', 50, TRUE, -1)
+	icon_state = "kx_secdroid"
+	addtimer(CALLBACK(src, .proc/update_icon), 2)
+	//var/threat = 5
+	if(ishuman(C))
+		C.stuttering = 5
+		C.Paralyze(100)
+	//	var/mob/living/carbon/human/H = C
+		//threat = assess_enemy(H)
+	else
+		C.Paralyze(100)
+		C.stuttering = 5
+	//	threat = assess_enemy(C)
+
+	log_combat(src,C,"stunned")
+	if(declare_arrests)
+		var/area/location = get_area(src)
+		speak("[arrest_type ? "Detaining" : "Arresting"] scumbag <b>[C]</b> in [location].", radio_channel)
+	C.visible_message("<span class='danger'>[src] has stunned [C]!</span>",\
+							"<span class='userdanger'>[src] has stunned you!</span>")
+
+/mob/living/simple_animal/bot/secbot/sec_droid/kx_droid/update_icon()
+	..()
+	if(mode == BOT_HUNT)
+		icon_state = "kx_secdroid"
+		return

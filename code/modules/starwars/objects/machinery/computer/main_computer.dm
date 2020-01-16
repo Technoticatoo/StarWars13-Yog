@@ -25,6 +25,33 @@
 	var/sortBy = "name"
 	var/order = 1 // -1 = Descending - 1 = Ascending
 
+/obj/machinery/computer/main_computer/Initialize()
+	..()
+	map_data += "<BR>\[ Map:</A> \]<BR>"
+	tiley = world.maxy
+	while(tiley >= 1)
+		while(tilex <= world.maxx)
+			var/turf/T = locate(tilex, tiley, 3)
+			//var/turf/TT = locate(/turf/open/floor/plating/desert)
+			//to_chat(usr, "<span class='error'>[TT] = [TT.x]:[TT.y]:[TT.z]</span>")
+			if(istype(get_area(T), /area/factions/command1))
+				map_data += "<font color='red' style='LINE-HEIGHT:6px;'>x</font>"
+			else if(istype(T, /turf/open/floor/plating/desert))
+				map_data += "<font color='orange' style='LINE-HEIGHT:6px;'>x</font>"
+			else if(istype(T, /turf/open/floor/plasteel))
+				map_data += "<font color='black' style='LINE-HEIGHT:6px;'>x</font>"
+			else if(istype(T, /turf/closed/wall/mineral/sandstone))
+				map_data += "<font color='brown' style='LINE-HEIGHT:6px;'>x</font>"
+			else
+				map_data += "<font color='gray' style='LINE-HEIGHT:6px;'>x</font>"
+			if(tilex == 1)
+				tilex += 3
+			else
+				tilex += 4
+		map_data += "<BR>"
+
+			tiley -= 4
+		tilex = 1
 
 /obj/machinery/computer/main_computer/examine(mob/user)
 	..()
@@ -154,32 +181,6 @@
 
 /obj/machinery/computer/main_computer/proc/show_map()
 	map_data = "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
-	map_data += "<BR>\[ Map:</A> \]<BR>"
-	tiley = world.maxy
-	while(tiley >= 1)
-		while(tilex <= world.maxx)
-			var/turf/T = locate(tilex, tiley, 3)
-			//var/turf/TT = locate(/turf/open/floor/plating/desert)
-			//to_chat(usr, "<span class='error'>[TT] = [TT.x]:[TT.y]:[TT.z]</span>")
-			if(istype(T, /turf/open/floor/plating/desert))
-				map_data += "<font color='orange' style='LINE-HEIGHT:6px;'>x</font>"
-			else if(istype(T, /turf/open/floor/plasteel))
-				map_data += "<font color='black' style='LINE-HEIGHT:6px;'>x</font>"
-			else if(istype(T, /turf/closed/wall/mineral/sandstone))
-				map_data += "<font color='brown' style='LINE-HEIGHT:6px;'>x</font>"
-			else
-				map_data += "<font color='gray' style='LINE-HEIGHT:6px;'>x</font>"
-
-			if(tilex == 1)
-				tilex += 3
-			else
-				tilex += 4
-		map_data += "<BR>"
-
-			tiley -= 4
-		tilex = 1
-
-
 
 /*	for(var/i = map_data_reversed.len to 1 step -1)
 		map_data << map_data_reversed[i]*/

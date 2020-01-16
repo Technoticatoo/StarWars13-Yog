@@ -16,9 +16,16 @@
 	var/list/Perp
 	var/tempname = null
 	var/area/factions/src_area = ""
+	var/map_data = ""
+	var/lastfaction = ""
+	var/tilex = 1
+	var/tiley = 1
+	var/mapshowing = 0
+	var/turf/T = ""
 	//Sorting Variables
 	var/sortBy = "name"
 	var/order = 1 // -1 = Descending - 1 = Ascending
+
 
 /obj/machinery/computer/main_computer/examine(mob/user)
 	..()
@@ -45,10 +52,17 @@
 	var/dat = ""
 	if(istype(get_area(src), /area/factions))
 		src_area = get_area(src)
-	dat += "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
-	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=eject_id'>Eject ID</A> \]<BR>"
-	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=claim'>Claim Area</A>  \]<BR>"
-	dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=logout'>Log Out</A> \]<BR>"
+	if(mapshowing == 0)
+		dat += "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
+		dat += "<BR>\[ Last claimed by: [lastfaction]</A> \]<BR>"
+		dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=eject_id'>Eject ID</A> \]<BR>"
+		dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=claim'>Claim Area</A>  \]<BR>"
+		dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=map'>Map</A> \]<BR>"
+		dat += "<BR>\[ <A HREF='?src=[REF(src)];choice=logout'>Log Out</A> \]<BR>"
+	else
+		dat = map_data
+	var/datum/asset/spritesheet/assets = get_asset_datum(/datum/asset/spritesheet/simple/minimap)
+	assets.send(user)
 	var/datum/browser/popup =  new(user, "control", "Area Control System")
 	popup.set_content(dat)
 	popup.set_title_image(user.browse_rsc_icon(src.icon, src.icon_state))
@@ -63,6 +77,11 @@
 		if ("eject_id")
 			to_chat(usr, "<span class='error'>Ejecting ID!</span>")
 			eject_id(usr)
+		if ("map")
+			show_map()
+			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
+		if ("back")
+			mapshowing = 0
 		if ("logout")
 			eject_id(usr)
 			authenticated = 0
@@ -108,6 +127,7 @@
 	if(scan)
 		to_chat(usr, "<span class='error'>Claiming area!</span>")
 		if(scan.swfaction)
+			lastfaction = src_area.swfaction
 			src_area.swfaction = scan.swfaction
 /*			for(var/obj/machinery/door/D in src_area.doors)
 				if(scan.swfaction == "Empire")
@@ -132,3 +152,34 @@
 					O.req_access = list(ACCESS_FACTION_MERCS)
 		else
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")
+
+/obj/machinery/computer/main_computer/proc/show_map()
+	map_data = "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
+	map_data += "<BR>\[ Map:</A> \]<BR>"
+	while(tiley <= world.maxy)
+		while(tilex <= world.maxx)
+			var/atom/A = locate(tilex, tiley, 1)
+			if(istype(get_area(A), /area/factions/command1))
+				map_data += "+"
+			else
+				map_data += "o"
+
+			if(tilex == 1)
+				tilex = 5
+			else
+				tilex += 5
+		map_data += "<BR>"
+
+		if(tiley == 1)
+			tiley = 5
+		else
+			tiley += 5
+		tilex = 1
+
+
+
+/*	for(var/i = map_data_reversed.len to 1 step -1)
+		map_data << map_data_reversed[i]*/
+
+	map_data += "<BR>\[ <A HREF='?src=[REF(src)];choice=back'>Back</A> \]<BR>"
+	mapshowing= 1

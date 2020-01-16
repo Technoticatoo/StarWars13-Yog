@@ -446,3 +446,5 @@ GLOBAL_LIST_INIT(pda_styles, list(MONO, VT, ORBITRON, SHARE))
 #define DICE_NOT_RIGGED 1
 #define DICE_BASICALLY_RIGGED 2
 #define DICE_TOTALLY_RIGGED 3
+
+#define MAPIMG(what) {"<img border='0' width='2' height='2' src='[#what]' /></img>"}

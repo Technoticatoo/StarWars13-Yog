@@ -25,34 +25,6 @@
 	var/sortBy = "name"
 	var/order = 1 // -1 = Descending - 1 = Ascending
 
-/obj/machinery/computer/main_computer/Initialize()
-	..()
-	map_data += "<BR>\[ Map:</A> \]<BR>"
-	tiley = world.maxy
-	while(tiley >= 1)
-		while(tilex <= world.maxx)
-			var/turf/T = locate(tilex, tiley, 3)
-			//var/turf/TT = locate(/turf/open/floor/plating/desert)
-			//to_chat(usr, "<span class='error'>[TT] = [TT.x]:[TT.y]:[TT.z]</span>")
-			if(istype(get_area(T), /area/factions/command1))
-				map_data += "<font color='red' style='LINE-HEIGHT:6px;'>x</font>"
-			else if(istype(T, /turf/open/floor/plating/desert))
-				map_data += "<font color='orange' style='LINE-HEIGHT:6px;'>x</font>"
-			else if(istype(T, /turf/open/floor/plasteel))
-				map_data += "<font color='black' style='LINE-HEIGHT:6px;'>x</font>"
-			else if(istype(T, /turf/closed/wall/mineral/sandstone))
-				map_data += "<font color='brown' style='LINE-HEIGHT:6px;'>x</font>"
-			else
-				map_data += "<font color='gray' style='LINE-HEIGHT:6px;'>x</font>"
-			if(tilex == 1)
-				tilex += 3
-			else
-				tilex += 4
-		map_data += "<BR>"
-
-			tiley -= 4
-		tilex = 1
-
 /obj/machinery/computer/main_computer/examine(mob/user)
 	..()
 	if(scan)
@@ -155,6 +127,7 @@
 		if(scan.swfaction)
 			lastfaction = src_area.swfaction
 			src_area.swfaction = scan.swfaction
+			map_data = ""
 /*			for(var/obj/machinery/door/D in src_area.doors)
 				if(scan.swfaction == "Empire")
 					D.req_access = list(ACCESS_FACTION_EMPIRE)
@@ -180,10 +153,40 @@
 			to_chat(usr, "<span class='error'>ID has no faction record.</span>")
 
 /obj/machinery/computer/main_computer/proc/show_map()
-	map_data = "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
+	tiley = world.maxy
+	if(map_data == "")
+		map_data = "<BR>\[ Faction: [src_area.swfaction]</A> \]<BR>"
+		map_data += "<BR>\[ Map:</A> \]<BR>"
+		while(tiley >= 1)
+			while(tilex <= world.maxx)
+				var/turf/T = locate(tilex, tiley, 3)
+				var/area/A = get_area(T)
+				//var/turf/TT = locate(/turf/open/floor/plating/desert)
+				//to_chat(usr, "<span class='error'>[TT] = [TT.x]:[TT.y]:[TT.z]</span>")
+				if(A.swfaction == "Empire")
+					map_data += "<font color='blue' style='LINE-HEIGHT:6px;'>x</font>"
+				else if(A.swfaction == "Rebels")
+					map_data += "<font color='red' style='LINE-HEIGHT:6px;'>x</font>"
+				else if(A.swfaction == "Mercs")
+					map_data += "<font color='green' style='LINE-HEIGHT:6px;'>x</font>"
+				else if(istype(T, /turf/open/floor/plating/desert))
+					map_data += "<font color='orange' style='LINE-HEIGHT:6px;'>x</font>"
+				else if(istype(T, /turf/open/floor/plasteel))
+					map_data += "<font color='black' style='LINE-HEIGHT:6px;'>x</font>"
+				else if(istype(T, /turf/closed/wall/mineral/sandstone))
+					map_data += "<font color='brown' style='LINE-HEIGHT:6px;'>x</font>"
+				else
+					map_data += "<font color='gray' style='LINE-HEIGHT:6px;'>x</font>"
+				if(tilex == 1)
+					tilex += 3
+				else
+					tilex += 4
+			map_data += "<BR>"
 
+				tiley -= 4
+			tilex = 1
+		map_data += "<BR>\[ <A HREF='?src=[REF(src)];choice=back'>Back</A> \]<BR>"
+		mapshowing= 1
 /*	for(var/i = map_data_reversed.len to 1 step -1)
 		map_data << map_data_reversed[i]*/
 
-	map_data += "<BR>\[ <A HREF='?src=[REF(src)];choice=back'>Back</A> \]<BR>"
-	mapshowing= 1

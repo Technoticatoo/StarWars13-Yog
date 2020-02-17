@@ -31,6 +31,7 @@
 #define SMELTER			(1<<7) 	//uses various minerals
 #define NANITE_COMPILER  (1<<8)	//Prints nanite disks
 #define GUNLATHE		(1<<9)//STAR WARS Guns
+#define DROIDLATHE		(1<<9)//STAR WARS Droids
 //Note: More than one of these can be added to a design but imprinter and lathe designs are incompatable.
 
 //Modular computer/NTNet defines

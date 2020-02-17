@@ -56,6 +56,29 @@
 	category = list("Weapons")
 	//departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 
+/datum/techweb_node/droidss
+	id = "droids"
+	starting_node = TRUE
+	display_name = "Droids Research Technology"
+	description = "Droids research technologies."
+	// Default research tech, prevents bricking
+	design_ids = list("battledroid")
+
+/datum/design/battledroid
+	name = "Battledroid"
+	desc = "An imperial battledroid."
+	id = "battledroid"
+	build_type = DROIDLATHE
+	materials = list(MAT_METAL = 10000, MAT_GLASS = 5000, MAT_DIAMOND = 5000, MAT_URANIUM = 8000, MAT_SILVER = 4500, MAT_GOLD = 5000)
+	build_path = /mob/living/simple_animal/bot/secbot/sec_droid
+	category = list("Droids")
+	//departmental_flags = DEPARTMENTAL_FLAG_SECURITY
+
 /datum/techweb/specialized/autounlocking/gunlathe
 	design_autounlock_buildtypes = GUNLATHE
 	allowed_buildtypes = GUNLATHE
+
+/datum/techweb/specialized/autounlocking/droidlathe
+	design_autounlock_buildtypes = DROIDLATHE
+	allowed_buildtypes = DROIDLATHE
+

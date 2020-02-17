@@ -2640,6 +2640,7 @@
 #include "code\modules\starwars\objects\machinery\computer\main_computer.dm"
 #include "code\modules\starwars\objects\machinery\industry\weapons\guns\circuits\circuits.dm"
 #include "code\modules\starwars\objects\machinery\industry\weapons\guns\computers\main_control.dm"
+#include "code\modules\starwars\objects\machinery\industry\weapons\guns\lathe\droidlathe.dm"
 #include "code\modules\starwars\objects\machinery\industry\weapons\guns\lathe\gunlathe.dm"
 #include "code\modules\starwars\objects\machinery\industry\weapons\guns\techweb\techweb.dm"
 #include "code\modules\starwars\objects\shuttles\mercenaries_shuttle.dm"

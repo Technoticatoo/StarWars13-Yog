@@ -151,7 +151,7 @@
 		for (var/i in 1 to L.len)
 			var/key = L[i]
 			var/value
-			if (IS_NORMAL_LIST(L) && !isnum(key))
+			if (length(L) && !isnum(key))
 				value = L[key]
 			variable_html += debug_variable(i, value, 0, D)
 	else
@@ -448,11 +448,11 @@
 		var/list/L = value
 		var/list/items = list()
 
-		if (L.len > 0 && !(name == "underlays" || name == "overlays" || L.len > (IS_NORMAL_LIST(L) ? 50 : 150)))
+		if (L > 0 && !(name == "underlays" || name == "overlays" || L > (length(L) ? 50 : 150)))
 			for (var/i in 1 to L.len)
 				var/key = L[i]
 				var/val
-				if (IS_NORMAL_LIST(L) && !isnum(key))
+				if (length(L) && !isnum(key))
 					val = L[key]
 				if (isnull(val))	// we still want to display non-null false values, such as 0 or ""
 					val = key
@@ -841,7 +841,7 @@
 
 			if(usr.client)
 				usr.client.cmd_assume_direct_control(M)
-				
+
 		// yogs - offer control moved up
 
 		else if (href_list["modarmor"])
@@ -1323,7 +1323,7 @@
 				var/msg = "[key_name(usr)] has removed [key_name(H)] from purrbation." // yogs - Yog Tickets
 				message_admins(msg)
 				admin_ticket_log(H, msg)
-				
+
 		else if(href_list["cluwneing"]) // yogs start -- adds cluwneify verb in VV
 			if(!check_rights(R_SPAWN))	return
 			var/mob/living/carbon/human/H = locate(href_list["cluwneing"])
